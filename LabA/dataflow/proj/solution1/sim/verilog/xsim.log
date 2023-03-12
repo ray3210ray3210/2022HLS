@@ -1,0 +1,124 @@
+#-----------------------------------------------------------
+# xsim v2022.1 (64-bit)
+# SW Build 3526262 on Mon Apr 18 15:47:01 MDT 2022
+# IP Build 3524634 on Mon Apr 18 20:55:01 MDT 2022
+# Start of session at: Sun Mar 12 22:32:21 2023
+# Process ID: 55765
+# Current directory: /mnt/HLSNAS/02.Yhjyyx/Vitis-Tutorials/Hardware_Acceleration/Feature_Tutorials/03-dataflow_debug_and_optimization/reference_files/dataflow/proj/solution1/sim/verilog
+# Command line: xsim -source {xsim.dir/diamond/xsim_script.tcl}
+# Log file: /mnt/HLSNAS/02.Yhjyyx/Vitis-Tutorials/Hardware_Acceleration/Feature_Tutorials/03-dataflow_debug_and_optimization/reference_files/dataflow/proj/solution1/sim/verilog/xsim.log
+# Journal file: /mnt/HLSNAS/02.Yhjyyx/Vitis-Tutorials/Hardware_Acceleration/Feature_Tutorials/03-dataflow_debug_and_optimization/reference_files/dataflow/proj/solution1/sim/verilog/xsim.jou
+# Running On: HLS02, OS: Linux, CPU Frequency: 4547.415 MHz, CPU Physical cores: 8, Host memory: 50291 MB
+#-----------------------------------------------------------
+start_gui
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk120_es:part0:1.2 available at /opt/Xilinx/Vivado/2022.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vpk120/es/1.2/board.xml as part xcvp1202-vsva2785-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk120_es_revb:part0:1.0 available at /opt/Xilinx/Vivado/2022.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vpk120_revb/es/1.0/board.xml as part xcvp1202-vsva2785-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu208ld:part0:2.0 available at /opt/Xilinx/Vivado/2022.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu208ld/production/2.0/board.xml as part xczu58dr-fsvg1517-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu216ld:part0:2.0 available at /opt/Xilinx/Vivado/2022.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu216ld/production/2.0/board.xml as part xczu59dr-ffvf1760-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu670:part0:2.0 available at /opt/Xilinx/Vivado/2022.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu670/2.0/board.xml as part xczu67dr-fsve1156-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu670ld:part0:1.0 available at /opt/Xilinx/Vivado/2022.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu670ld/1.0/board.xml as part xczu57dr-fsve1156-2-i specified in board_part file is either invalid or not available
+source xsim.dir/diamond/xsim_script.tcl
+# set_param project.enableReportConfiguration 0
+# load_feature core
+# current_fileset
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/opt/Xilinx/Vivado/2022.1/data/ip'.
+# xsim {diamond} -view {{diamond_dataflow_ana.wcfg}} -tclbatch {diamond.tcl} -protoinst {diamond.protoinst}
+INFO: [Wavedata 42-565] Reading protoinst file diamond.protoinst
+INFO: [Wavedata 42-564]   Found protocol instance at /apatb_diamond_top/AESL_inst_diamond//AESL_inst_diamond_activity
+INFO: [Wavedata 42-564]   Found protocol instance at /apatb_diamond_top/AESL_inst_diamond/funcA_U0/funcA_U0_activity
+INFO: [Wavedata 42-564]   Found protocol instance at /apatb_diamond_top/AESL_inst_diamond/funcB_U0/funcB_U0_activity
+INFO: [Wavedata 42-564]   Found protocol instance at /apatb_diamond_top/AESL_inst_diamond/funcC_U0/funcC_U0_activity
+INFO: [Wavedata 42-564]   Found protocol instance at /apatb_diamond_top/AESL_inst_diamond/funcD_U0/funcD_U0_activity
+Time resolution is 1 ps
+open_wave_config diamond_dataflow_ana.wcfg
+source diamond.tcl
+## log_wave -r /
+WARNING: [Simtcl 6-197] One or more HDL objects could not be logged because of object type or size limitations.  To see details please rerun the command with -verbose (-v).
+## set designtopgroup [add_wave_group "Design Top Signals"]
+## set coutputgroup [add_wave_group "C Outputs" -into $designtopgroup]
+## set return_group [add_wave_group return(memory) -into $coutputgroup]
+## add_wave /apatb_diamond_top/AESL_inst_diamond/vecOut_we1 -into $return_group -color #ffff00 -radix hex
+## add_wave /apatb_diamond_top/AESL_inst_diamond/vecOut_q1 -into $return_group -radix hex
+## add_wave /apatb_diamond_top/AESL_inst_diamond/vecOut_d1 -into $return_group -radix hex
+## add_wave /apatb_diamond_top/AESL_inst_diamond/vecOut_ce1 -into $return_group -color #ffff00 -radix hex
+## add_wave /apatb_diamond_top/AESL_inst_diamond/vecOut_address1 -into $return_group -radix hex
+## add_wave /apatb_diamond_top/AESL_inst_diamond/vecOut_we0 -into $return_group -color #ffff00 -radix hex
+## add_wave /apatb_diamond_top/AESL_inst_diamond/vecOut_q0 -into $return_group -radix hex
+## add_wave /apatb_diamond_top/AESL_inst_diamond/vecOut_d0 -into $return_group -radix hex
+## add_wave /apatb_diamond_top/AESL_inst_diamond/vecOut_ce0 -into $return_group -color #ffff00 -radix hex
+## add_wave /apatb_diamond_top/AESL_inst_diamond/vecOut_address0 -into $return_group -radix hex
+## set cinputgroup [add_wave_group "C Inputs" -into $designtopgroup]
+## set return_group [add_wave_group return(memory) -into $cinputgroup]
+## add_wave /apatb_diamond_top/AESL_inst_diamond/vecIn_we1 -into $return_group -color #ffff00 -radix hex
+## add_wave /apatb_diamond_top/AESL_inst_diamond/vecIn_q1 -into $return_group -radix hex
+## add_wave /apatb_diamond_top/AESL_inst_diamond/vecIn_d1 -into $return_group -radix hex
+## add_wave /apatb_diamond_top/AESL_inst_diamond/vecIn_ce1 -into $return_group -color #ffff00 -radix hex
+## add_wave /apatb_diamond_top/AESL_inst_diamond/vecIn_address1 -into $return_group -radix hex
+## add_wave /apatb_diamond_top/AESL_inst_diamond/vecIn_we0 -into $return_group -color #ffff00 -radix hex
+## add_wave /apatb_diamond_top/AESL_inst_diamond/vecIn_q0 -into $return_group -radix hex
+## add_wave /apatb_diamond_top/AESL_inst_diamond/vecIn_d0 -into $return_group -radix hex
+## add_wave /apatb_diamond_top/AESL_inst_diamond/vecIn_ce0 -into $return_group -color #ffff00 -radix hex
+## add_wave /apatb_diamond_top/AESL_inst_diamond/vecIn_address0 -into $return_group -radix hex
+## set blocksiggroup [add_wave_group "Block-level IO Handshake" -into $designtopgroup]
+## add_wave /apatb_diamond_top/AESL_inst_diamond/ap_start -into $blocksiggroup
+## add_wave /apatb_diamond_top/AESL_inst_diamond/ap_done -into $blocksiggroup
+## add_wave /apatb_diamond_top/AESL_inst_diamond/ap_ready -into $blocksiggroup
+## add_wave /apatb_diamond_top/AESL_inst_diamond/ap_idle -into $blocksiggroup
+## set resetgroup [add_wave_group "Reset" -into $designtopgroup]
+## add_wave /apatb_diamond_top/AESL_inst_diamond/ap_rst -into $resetgroup
+## set clockgroup [add_wave_group "Clock" -into $designtopgroup]
+## add_wave /apatb_diamond_top/AESL_inst_diamond/ap_clk -into $clockgroup
+## set testbenchgroup [add_wave_group "Test Bench Signals"]
+## set tbinternalsiggroup [add_wave_group "Internal Signals" -into $testbenchgroup]
+## set tb_simstatus_group [add_wave_group "Simulation Status" -into $tbinternalsiggroup]
+## set tb_portdepth_group [add_wave_group "Port Depth" -into $tbinternalsiggroup]
+## add_wave /apatb_diamond_top/AUTOTB_TRANSACTION_NUM -into $tb_simstatus_group -radix hex
+## add_wave /apatb_diamond_top/ready_cnt -into $tb_simstatus_group -radix hex
+## add_wave /apatb_diamond_top/done_cnt -into $tb_simstatus_group -radix hex
+## add_wave /apatb_diamond_top/LENGTH_vecIn -into $tb_portdepth_group -radix hex
+## add_wave /apatb_diamond_top/LENGTH_vecOut -into $tb_portdepth_group -radix hex
+## set tbcoutputgroup [add_wave_group "C Outputs" -into $testbenchgroup]
+## set tb_return_group [add_wave_group return(memory) -into $tbcoutputgroup]
+## add_wave /apatb_diamond_top/vecOut_we1 -into $tb_return_group -color #ffff00 -radix hex
+## add_wave /apatb_diamond_top/vecOut_q1 -into $tb_return_group -radix hex
+## add_wave /apatb_diamond_top/vecOut_d1 -into $tb_return_group -radix hex
+## add_wave /apatb_diamond_top/vecOut_ce1 -into $tb_return_group -color #ffff00 -radix hex
+## add_wave /apatb_diamond_top/vecOut_address1 -into $tb_return_group -radix hex
+## add_wave /apatb_diamond_top/vecOut_we0 -into $tb_return_group -color #ffff00 -radix hex
+## add_wave /apatb_diamond_top/vecOut_q0 -into $tb_return_group -radix hex
+## add_wave /apatb_diamond_top/vecOut_d0 -into $tb_return_group -radix hex
+## add_wave /apatb_diamond_top/vecOut_ce0 -into $tb_return_group -color #ffff00 -radix hex
+## add_wave /apatb_diamond_top/vecOut_address0 -into $tb_return_group -radix hex
+## set tbcinputgroup [add_wave_group "C Inputs" -into $testbenchgroup]
+## set tb_return_group [add_wave_group return(memory) -into $tbcinputgroup]
+## add_wave /apatb_diamond_top/vecIn_we1 -into $tb_return_group -color #ffff00 -radix hex
+## add_wave /apatb_diamond_top/vecIn_q1 -into $tb_return_group -radix hex
+## add_wave /apatb_diamond_top/vecIn_d1 -into $tb_return_group -radix hex
+## add_wave /apatb_diamond_top/vecIn_ce1 -into $tb_return_group -color #ffff00 -radix hex
+## add_wave /apatb_diamond_top/vecIn_address1 -into $tb_return_group -radix hex
+## add_wave /apatb_diamond_top/vecIn_we0 -into $tb_return_group -color #ffff00 -radix hex
+## add_wave /apatb_diamond_top/vecIn_q0 -into $tb_return_group -radix hex
+## add_wave /apatb_diamond_top/vecIn_d0 -into $tb_return_group -radix hex
+## add_wave /apatb_diamond_top/vecIn_ce0 -into $tb_return_group -color #ffff00 -radix hex
+## add_wave /apatb_diamond_top/vecIn_address0 -into $tb_return_group -radix hex
+## save_wave_config diamond.wcfg
+## run all
+////////////////////////////////////////////////////////////////////////////////////
+// Inter-Transaction Progress: Completed Transaction / Total Transaction
+// Intra-Transaction Progress: Measured Latency / Latency Estimation * 100%
+//
+// RTL Simulation : "Inter-Transaction Progress" ["Intra-Transaction Progress"] @ "Simulation Time"
+////////////////////////////////////////////////////////////////////////////////////
+// RTL Simulation : 0 / 3 [0.00%] @ "113000"
+// RTL Simulation : 1 / 3 [67.10%] @ "898000"
+// RTL Simulation : 2 / 3 [67.10%] @ "1148000"
+// RTL Simulation : 3 / 3 [100.00%] @ "1418000"
+////////////////////////////////////////////////////////////////////////////////////
+$finish called at time : 1447500 ps : File "/mnt/HLSNAS/02.Yhjyyx/Vitis-Tutorials/Hardware_Acceleration/Feature_Tutorials/03-dataflow_debug_and_optimization/reference_files/dataflow/proj/solution1/sim/verilog/diamond.autotb.v" Line 296
+xsim: Time (s): cpu = 00:00:08 ; elapsed = 00:00:05 . Memory (MB): peak = 12208.645 ; gain = 1462.902 ; free physical = 31532 ; free virtual = 73696
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+exit
+INFO: [Common 17-206] Exiting xsim at Sun Mar 12 22:47:27 2023...

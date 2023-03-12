@@ -1,0 +1,45 @@
+<xilinx:hls_fe_msgs>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/mnt/HLSNAS/02.Yhjyyx/Vitis-Tutorials/Hardware_Acceleration/Feature_Tutorials/03-dataflow_debug_and_optimization/reference_files/dataflow/proj/solution1/csynth.tcl:16:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="directive" ARG_PragmaFunction="diamond" ARG_PragmaIsValid="1" ARG_PragmaOptions="name=diamond" ARG_PragmaType="top" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="diamond.cpp:22:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="diamond" ARG_PragmaIsValid="1" ARG_PragmaType="dataflow" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="diamond.cpp:34:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="funcA" ARG_PragmaIsValid="1" ARG_PragmaOptions="rewind" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="diamond.cpp:35:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="funcA" ARG_PragmaIsValid="1" ARG_PragmaOptions="factor = 2" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="diamond.cpp:47:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="funcB" ARG_PragmaIsValid="1" ARG_PragmaOptions="rewind" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="diamond.cpp:48:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="funcB" ARG_PragmaIsValid="1" ARG_PragmaOptions="factor = 2" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="diamond.cpp:58:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="funcC" ARG_PragmaIsValid="1" ARG_PragmaOptions="rewind" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="diamond.cpp:59:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="funcC" ARG_PragmaIsValid="1" ARG_PragmaOptions="factor = 2" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="diamond.cpp:69:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="funcD" ARG_PragmaIsValid="1" ARG_PragmaOptions="rewind" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="diamond.cpp:70:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="funcD" ARG_PragmaIsValid="1" ARG_PragmaOptions="factor = 2" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-188" msg_severity="INFO" msg_loc="diamond.cpp:65:0" msg_body="Unrolling loop 'Loop0' (diamond.cpp:67:3) in function 'funcD' partially with a factor of 2">
+        <args Factor="2" LoopLoc="diamond.cpp:67:3" LoopName="Loop0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-188" msg_severity="INFO" msg_loc="diamond.cpp:54:0" msg_body="Unrolling loop 'Loop0' (diamond.cpp:56:3) in function 'funcC' partially with a factor of 2">
+        <args Factor="2" LoopLoc="diamond.cpp:56:3" LoopName="Loop0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-188" msg_severity="INFO" msg_loc="diamond.cpp:43:0" msg_body="Unrolling loop 'Loop0' (diamond.cpp:45:3) in function 'funcB' partially with a factor of 2">
+        <args Factor="2" LoopLoc="diamond.cpp:45:3" LoopName="Loop0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-188" msg_severity="INFO" msg_loc="diamond.cpp:30:0" msg_body="Unrolling loop 'Loop0' (diamond.cpp:32:3) in function 'funcA' partially with a factor of 2">
+        <args Factor="2" LoopLoc="diamond.cpp:32:3" LoopName="Loop0"/>
+    </msg>
+</xilinx:hls_fe_msgs>
+

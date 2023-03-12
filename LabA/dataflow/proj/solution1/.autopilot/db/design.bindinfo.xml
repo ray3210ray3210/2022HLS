@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<BindInfo>
+	<BindNode BINDTYPE="op" DISPLAY="bind_op sub" ID="" IMPL="fabric" LATENCY="0" OPTYPE="sub" PRAGMA="" RTLNAME="t_fu_161_p2" SOURCE="diamond.cpp:36" VARIABLE="t" MODULE="funcA" LOOP="Loop0" BUNDLEDNAME="" DSP="0" BRAM="0" URAM="0"/>
+	<BindNode BINDTYPE="op" DISPLAY="bind_op sub" ID="" IMPL="fabric" LATENCY="0" OPTYPE="sub" PRAGMA="" RTLNAME="t_1_fu_179_p2" SOURCE="diamond.cpp:36" VARIABLE="t_1" MODULE="funcA" LOOP="Loop0" BUNDLEDNAME="" DSP="0" BRAM="0" URAM="0"/>
+	<BindNode BINDTYPE="op" DISPLAY="bind_op add" ID="" IMPL="fabric" LATENCY="0" OPTYPE="add" PRAGMA="" RTLNAME="i_fu_143_p2" SOURCE="diamond.cpp:32" VARIABLE="i" MODULE="funcA" LOOP="Loop0" BUNDLEDNAME="" DSP="0" BRAM="0" URAM="0"/>
+	<BindNode BINDTYPE="op" DISPLAY="bind_op icmp" ID="" IMPL="auto" LATENCY="0" OPTYPE="icmp" PRAGMA="" RTLNAME="icmp_ln32_fu_149_p2" SOURCE="diamond.cpp:32" VARIABLE="icmp_ln32" MODULE="funcA" LOOP="Loop0" BUNDLEDNAME="" DSP="0" BRAM="0" URAM="0"/>
+	<BindNode BINDTYPE="op" DISPLAY="bind_op add" ID="" IMPL="fabric" LATENCY="0" OPTYPE="add" PRAGMA="" RTLNAME="out_r_d1" SOURCE="diamond.cpp:49" VARIABLE="add_ln49" MODULE="funcB" LOOP="Loop0" BUNDLEDNAME="" DSP="0" BRAM="0" URAM="0"/>
+	<BindNode BINDTYPE="op" DISPLAY="bind_op add" ID="" IMPL="fabric" LATENCY="0" OPTYPE="add" PRAGMA="" RTLNAME="out_r_d0" SOURCE="diamond.cpp:49" VARIABLE="add_ln49_1" MODULE="funcB" LOOP="Loop0" BUNDLEDNAME="" DSP="0" BRAM="0" URAM="0"/>
+	<BindNode BINDTYPE="op" DISPLAY="bind_op add" ID="" IMPL="fabric" LATENCY="0" OPTYPE="add" PRAGMA="" RTLNAME="i_fu_112_p2" SOURCE="diamond.cpp:45" VARIABLE="i" MODULE="funcB" LOOP="Loop0" BUNDLEDNAME="" DSP="0" BRAM="0" URAM="0"/>
+	<BindNode BINDTYPE="op" DISPLAY="bind_op icmp" ID="" IMPL="auto" LATENCY="0" OPTYPE="icmp" PRAGMA="" RTLNAME="icmp_ln45_fu_118_p2" SOURCE="diamond.cpp:45" VARIABLE="icmp_ln45" MODULE="funcB" LOOP="Loop0" BUNDLEDNAME="" DSP="0" BRAM="0" URAM="0"/>
+	<BindNode BINDTYPE="op" DISPLAY="bind_op add" ID="" IMPL="fabric" LATENCY="0" OPTYPE="add" PRAGMA="" RTLNAME="i_fu_114_p2" SOURCE="diamond.cpp:56" VARIABLE="i" MODULE="funcC" LOOP="Loop0" BUNDLEDNAME="" DSP="0" BRAM="0" URAM="0"/>
+	<BindNode BINDTYPE="op" DISPLAY="bind_op icmp" ID="" IMPL="auto" LATENCY="0" OPTYPE="icmp" PRAGMA="" RTLNAME="icmp_ln56_fu_120_p2" SOURCE="diamond.cpp:56" VARIABLE="icmp_ln56" MODULE="funcC" LOOP="Loop0" BUNDLEDNAME="" DSP="0" BRAM="0" URAM="0"/>
+	<BindNode BINDTYPE="op" DISPLAY="bind_op add" ID="" IMPL="fabric" LATENCY="0" OPTYPE="add" PRAGMA="" RTLNAME="vecOut_d1" SOURCE="diamond.cpp:71" VARIABLE="add_ln71" MODULE="funcD" LOOP="Loop0" BUNDLEDNAME="" DSP="0" BRAM="0" URAM="0"/>
+	<BindNode BINDTYPE="op" DISPLAY="bind_op add" ID="" IMPL="fabric" LATENCY="0" OPTYPE="add" PRAGMA="" RTLNAME="vecOut_d0" SOURCE="diamond.cpp:71" VARIABLE="add_ln71_1" MODULE="funcD" LOOP="Loop0" BUNDLEDNAME="" DSP="0" BRAM="0" URAM="0"/>
+	<BindNode BINDTYPE="op" DISPLAY="bind_op add" ID="" IMPL="fabric" LATENCY="0" OPTYPE="add" PRAGMA="" RTLNAME="i_fu_147_p2" SOURCE="diamond.cpp:67" VARIABLE="i" MODULE="funcD" LOOP="Loop0" BUNDLEDNAME="" DSP="0" BRAM="0" URAM="0"/>
+	<BindNode BINDTYPE="op" DISPLAY="bind_op icmp" ID="" IMPL="auto" LATENCY="0" OPTYPE="icmp" PRAGMA="" RTLNAME="icmp_ln67_fu_153_p2" SOURCE="diamond.cpp:67" VARIABLE="icmp_ln67" MODULE="funcD" LOOP="Loop0" BUNDLEDNAME="" DSP="0" BRAM="0" URAM="0"/>
+	<BindNode BINDTYPE="storage" DISPLAY="bind_storage ram_t2p" ID="" IMPL="auto" LATENCY="1" OPTYPE="ram_t2p" PRAGMA="" RTLNAME="c1_U" SOURCE="diamond.cpp:21" VARIABLE="c1" MODULE="diamond" LOOP="" BUNDLEDNAME="" DSP="0" BRAM="0" URAM="0"/>
+	<BindNode BINDTYPE="storage" DISPLAY="bind_storage ram_t2p" ID="" IMPL="auto" LATENCY="1" OPTYPE="ram_t2p" PRAGMA="" RTLNAME="c2_U" SOURCE="diamond.cpp:21" VARIABLE="c2" MODULE="diamond" LOOP="" BUNDLEDNAME="" DSP="0" BRAM="0" URAM="0"/>
+	<BindNode BINDTYPE="storage" DISPLAY="bind_storage ram_t2p" ID="" IMPL="auto" LATENCY="1" OPTYPE="ram_t2p" PRAGMA="" RTLNAME="c3_U" SOURCE="diamond.cpp:21" VARIABLE="c3" MODULE="diamond" LOOP="" BUNDLEDNAME="" DSP="0" BRAM="0" URAM="0"/>
+	<BindNode BINDTYPE="storage" DISPLAY="bind_storage ram_t2p" ID="" IMPL="auto" LATENCY="1" OPTYPE="ram_t2p" PRAGMA="" RTLNAME="c4_U" SOURCE="diamond.cpp:21" VARIABLE="c4" MODULE="diamond" LOOP="" BUNDLEDNAME="" DSP="0" BRAM="0" URAM="0"/>
+</BindInfo>

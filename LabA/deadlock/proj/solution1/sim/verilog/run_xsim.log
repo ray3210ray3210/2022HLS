@@ -1,0 +1,1 @@
+WARNING: Hls::stream 'hls::stream<int, 0>1' contains leftover data, which may result in RTL simulation hanging.

@@ -1,0 +1,148 @@
+INFO: [HLS 200-10] Running '/opt/Xilinx/Vitis_HLS/2022.1/bin/unwrapped/lnx64.o/vitis_hls'
+INFO: [HLS 200-10] For user '02.Yhjyyx' on host 'HLS02' (Linux_x86_64 version 5.8.0-41-generic) on Sun Mar 12 23:41:42 CST 2023
+INFO: [HLS 200-10] On os Ubuntu 20.04.4 LTS
+INFO: [HLS 200-10] In directory '/mnt/HLSNAS/02.Yhjyyx/Vitis-Tutorials/Hardware_Acceleration/Feature_Tutorials/03-dataflow_debug_and_optimization/reference_files/deadlock'
+Sourcing Tcl script '/mnt/HLSNAS/02.Yhjyyx/Vitis-Tutorials/Hardware_Acceleration/Feature_Tutorials/03-dataflow_debug_and_optimization/reference_files/deadlock/proj/solution1/cosim.tcl'
+INFO: [HLS 200-1510] Running: source /mnt/HLSNAS/02.Yhjyyx/Vitis-Tutorials/Hardware_Acceleration/Feature_Tutorials/03-dataflow_debug_and_optimization/reference_files/deadlock/proj/solution1/cosim.tcl
+INFO: [HLS 200-1510] Running: open_project proj 
+INFO: [HLS 200-10] Opening project '/mnt/HLSNAS/02.Yhjyyx/Vitis-Tutorials/Hardware_Acceleration/Feature_Tutorials/03-dataflow_debug_and_optimization/reference_files/deadlock/proj'.
+INFO: [HLS 200-1510] Running: set_top example 
+INFO: [HLS 200-1510] Running: add_files example.cpp 
+INFO: [HLS 200-10] Adding design file 'example.cpp' to the project
+INFO: [HLS 200-1510] Running: add_files -tb example_test.cpp -cflags -Wno-unknown-pragmas -csimflags -Wno-unknown-pragmas 
+INFO: [HLS 200-10] Adding test bench file 'example_test.cpp' to the project
+INFO: [HLS 200-1510] Running: open_solution solution1 -flow_target vivado 
+INFO: [HLS 200-10] Opening solution '/mnt/HLSNAS/02.Yhjyyx/Vitis-Tutorials/Hardware_Acceleration/Feature_Tutorials/03-dataflow_debug_and_optimization/reference_files/deadlock/proj/solution1'.
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 13.333ns.
+INFO: [HLS 200-1611] Setting target device to 'xc7v585t-ffg1761-2'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+Resolution: For help on HLS 200-1505 see www.xilinx.com/cgi-bin/docs/rdoc?v=2022.1;t=hls+guidance;d=200-1505.html
+INFO: [HLS 200-1464] Running solution command: config_interface -m_axi_latency=0
+INFO: [HLS 200-1510] Running: set_part xc7v585t-ffg1761-2 
+INFO: [HLS 200-1510] Running: create_clock -period 75MHz -name default 
+INFO: [HLS 200-1510] Running: config_interface -m_axi_latency 0 
+INFO: [HLS 200-1510] Running: cosim_design -enable_dataflow_profiling 
+INFO: [COSIM 212-47] Using XSIM for RTL simulation.
+INFO: [COSIM 212-14] Instrumenting C test bench ...
+   Build using "/opt/Xilinx/Vitis_HLS/2022.1/tps/lnx64/gcc-8.3.0/bin/g++"
+   Compiling example_test.cpp_pre.cpp.tb.cpp
+   Compiling apatb_example_util.cpp
+   Compiling example.cpp_pre.cpp.tb.cpp
+   Compiling apatb_example.cpp
+   Compiling apatb_example_ir.ll
+   Generating cosim.tv.exe
+INFO: [COSIM 212-302] Starting C TB testing ... 
+WARNING: Hls::stream 'hls::stream<int, 0>1' contains leftover data, which may result in RTL simulation hanging.
+INFO: [COSIM 212-333] Generating C post check test bench ...
+INFO: [COSIM 212-12] Generating RTL test bench ...
+INFO: [COSIM 212-1] *** C/RTL co-simulation file generation completed. ***
+INFO: [COSIM 212-323] Starting verilog simulation. 
+INFO: [COSIM 212-15] Starting XSIM ...
+Vivado Simulator v2022.1
+Copyright 1986-1999, 2001-2022 Xilinx, Inc. All Rights Reserved.
+Running: /opt/Xilinx/Vivado/2022.1/bin/unwrapped/lnx64.o/xelab xil_defaultlib.apatb_example_top glbl -Oenable_linking_all_libraries -prj example.prj -L smartconnect_v1_0 -L axi_protocol_checker_v1_1_12 -L axi_protocol_checker_v1_1_13 -L axis_protocol_checker_v1_1_11 -L axis_protocol_checker_v1_1_12 -L xil_defaultlib -L unisims_ver -L xpm -L floating_point_v7_0_20 -L floating_point_v7_1_14 --lib ieee_proposed=./ieee_proposed -s example 
+Multi-threading is on. Using 14 slave threads.
+WARNING: [XSIM 43-3431] One or more environment variables have been detected which affect the operation of the C compiler. These are typically not set in standard installations and are not tested by Xilinx, however they may be appropriate for your system, so the flow will attempt to continue.  If errors occur, try running xelab with the "-mt off -v 1" switches to see more information from the C compiler. The following environment variables have been detected:
+    LIBRARY_PATH
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/mnt/HLSNAS/02.Yhjyyx/Vitis-Tutorials/Hardware_Acceleration/Feature_Tutorials/03-dataflow_debug_and_optimization/reference_files/deadlock/proj/solution1/sim/verilog/glbl.v" into library work
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/mnt/HLSNAS/02.Yhjyyx/Vitis-Tutorials/Hardware_Acceleration/Feature_Tutorials/03-dataflow_debug_and_optimization/reference_files/deadlock/proj/solution1/sim/verilog/example.autotb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module apatb_example_top
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/mnt/HLSNAS/02.Yhjyyx/Vitis-Tutorials/Hardware_Acceleration/Feature_Tutorials/03-dataflow_debug_and_optimization/reference_files/deadlock/proj/solution1/sim/verilog/AESL_autofifo_A.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_autofifo_A
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/mnt/HLSNAS/02.Yhjyyx/Vitis-Tutorials/Hardware_Acceleration/Feature_Tutorials/03-dataflow_debug_and_optimization/reference_files/deadlock/proj/solution1/sim/verilog/AESL_autofifo_B.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_autofifo_B
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/mnt/HLSNAS/02.Yhjyyx/Vitis-Tutorials/Hardware_Acceleration/Feature_Tutorials/03-dataflow_debug_and_optimization/reference_files/deadlock/proj/solution1/sim/verilog/AESL_deadlock_detection_unit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_deadlock_detect_unit
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/mnt/HLSNAS/02.Yhjyyx/Vitis-Tutorials/Hardware_Acceleration/Feature_Tutorials/03-dataflow_debug_and_optimization/reference_files/deadlock/proj/solution1/sim/verilog/AESL_deadlock_report_unit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_deadlock_report_unit
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/mnt/HLSNAS/02.Yhjyyx/Vitis-Tutorials/Hardware_Acceleration/Feature_Tutorials/03-dataflow_debug_and_optimization/reference_files/deadlock/proj/solution1/sim/verilog/AESL_deadlock_detector.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_deadlock_detector
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/mnt/HLSNAS/02.Yhjyyx/Vitis-Tutorials/Hardware_Acceleration/Feature_Tutorials/03-dataflow_debug_and_optimization/reference_files/deadlock/proj/solution1/sim/verilog/example_proc_1_1_Pipeline_VITIS_LOOP_43_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module example_proc_1_1_Pipeline_VITIS_LOOP_43_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/mnt/HLSNAS/02.Yhjyyx/Vitis-Tutorials/Hardware_Acceleration/Feature_Tutorials/03-dataflow_debug_and_optimization/reference_files/deadlock/proj/solution1/sim/verilog/example_proc_1_1_Pipeline_VITIS_LOOP_47_2.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module example_proc_1_1_Pipeline_VITIS_LOOP_47_2
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/mnt/HLSNAS/02.Yhjyyx/Vitis-Tutorials/Hardware_Acceleration/Feature_Tutorials/03-dataflow_debug_and_optimization/reference_files/deadlock/proj/solution1/sim/verilog/example_proc_1_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module example_proc_1_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/mnt/HLSNAS/02.Yhjyyx/Vitis-Tutorials/Hardware_Acceleration/Feature_Tutorials/03-dataflow_debug_and_optimization/reference_files/deadlock/proj/solution1/sim/verilog/example_proc_1_2_Pipeline_VITIS_LOOP_56_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module example_proc_1_2_Pipeline_VITIS_LOOP_56_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/mnt/HLSNAS/02.Yhjyyx/Vitis-Tutorials/Hardware_Acceleration/Feature_Tutorials/03-dataflow_debug_and_optimization/reference_files/deadlock/proj/solution1/sim/verilog/example_proc_1_2_Pipeline_VITIS_LOOP_60_2.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module example_proc_1_2_Pipeline_VITIS_LOOP_60_2
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/mnt/HLSNAS/02.Yhjyyx/Vitis-Tutorials/Hardware_Acceleration/Feature_Tutorials/03-dataflow_debug_and_optimization/reference_files/deadlock/proj/solution1/sim/verilog/example_proc_1_2.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module example_proc_1_2
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/mnt/HLSNAS/02.Yhjyyx/Vitis-Tutorials/Hardware_Acceleration/Feature_Tutorials/03-dataflow_debug_and_optimization/reference_files/deadlock/proj/solution1/sim/verilog/example_proc_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module example_proc_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/mnt/HLSNAS/02.Yhjyyx/Vitis-Tutorials/Hardware_Acceleration/Feature_Tutorials/03-dataflow_debug_and_optimization/reference_files/deadlock/proj/solution1/sim/verilog/example_proc_2_1_Pipeline_VITIS_LOOP_78_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module example_proc_2_1_Pipeline_VITIS_LOOP_78_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/mnt/HLSNAS/02.Yhjyyx/Vitis-Tutorials/Hardware_Acceleration/Feature_Tutorials/03-dataflow_debug_and_optimization/reference_files/deadlock/proj/solution1/sim/verilog/example_proc_2_1_Pipeline_VITIS_LOOP_82_2.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module example_proc_2_1_Pipeline_VITIS_LOOP_82_2
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/mnt/HLSNAS/02.Yhjyyx/Vitis-Tutorials/Hardware_Acceleration/Feature_Tutorials/03-dataflow_debug_and_optimization/reference_files/deadlock/proj/solution1/sim/verilog/example_proc_2_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module example_proc_2_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/mnt/HLSNAS/02.Yhjyyx/Vitis-Tutorials/Hardware_Acceleration/Feature_Tutorials/03-dataflow_debug_and_optimization/reference_files/deadlock/proj/solution1/sim/verilog/example_proc_2_2.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module example_proc_2_2
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/mnt/HLSNAS/02.Yhjyyx/Vitis-Tutorials/Hardware_Acceleration/Feature_Tutorials/03-dataflow_debug_and_optimization/reference_files/deadlock/proj/solution1/sim/verilog/example_proc_2.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module example_proc_2
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/mnt/HLSNAS/02.Yhjyyx/Vitis-Tutorials/Hardware_Acceleration/Feature_Tutorials/03-dataflow_debug_and_optimization/reference_files/deadlock/proj/solution1/sim/verilog/example.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module example
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/mnt/HLSNAS/02.Yhjyyx/Vitis-Tutorials/Hardware_Acceleration/Feature_Tutorials/03-dataflow_debug_and_optimization/reference_files/deadlock/proj/solution1/sim/verilog/example_flow_control_loop_pipe_sequential_init.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module example_flow_control_loop_pipe_sequential_init
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/mnt/HLSNAS/02.Yhjyyx/Vitis-Tutorials/Hardware_Acceleration/Feature_Tutorials/03-dataflow_debug_and_optimization/reference_files/deadlock/proj/solution1/sim/verilog/example_flow_control_loop_pipe.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module example_flow_control_loop_pipe
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/mnt/HLSNAS/02.Yhjyyx/Vitis-Tutorials/Hardware_Acceleration/Feature_Tutorials/03-dataflow_debug_and_optimization/reference_files/deadlock/proj/solution1/sim/verilog/example_fifo_w32_d2_S.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module example_fifo_w32_d2_S_shiftReg
+INFO: [VRFC 10-311] analyzing module example_fifo_w32_d2_S
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/mnt/HLSNAS/02.Yhjyyx/Vitis-Tutorials/Hardware_Acceleration/Feature_Tutorials/03-dataflow_debug_and_optimization/reference_files/deadlock/proj/solution1/sim/verilog/example_start_for_proc_1_2_U0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module example_start_for_proc_1_2_U0_shiftReg
+INFO: [VRFC 10-311] analyzing module example_start_for_proc_1_2_U0
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/mnt/HLSNAS/02.Yhjyyx/Vitis-Tutorials/Hardware_Acceleration/Feature_Tutorials/03-dataflow_debug_and_optimization/reference_files/deadlock/proj/solution1/sim/verilog/example_fifo_w32_d10_S.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module example_fifo_w32_d10_S_shiftReg
+INFO: [VRFC 10-311] analyzing module example_fifo_w32_d10_S
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/mnt/HLSNAS/02.Yhjyyx/Vitis-Tutorials/Hardware_Acceleration/Feature_Tutorials/03-dataflow_debug_and_optimization/reference_files/deadlock/proj/solution1/sim/verilog/example_fifo_w32_d2_S_x.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module example_fifo_w32_d2_S_x_shiftReg
+INFO: [VRFC 10-311] analyzing module example_fifo_w32_d2_S_x
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/mnt/HLSNAS/02.Yhjyyx/Vitis-Tutorials/Hardware_Acceleration/Feature_Tutorials/03-dataflow_debug_and_optimization/reference_files/deadlock/proj/solution1/sim/verilog/example_start_for_proc_2_2_U0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module example_start_for_proc_2_2_U0_shiftReg
+INFO: [VRFC 10-311] analyzing module example_start_for_proc_2_2_U0
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/mnt/HLSNAS/02.Yhjyyx/Vitis-Tutorials/Hardware_Acceleration/Feature_Tutorials/03-dataflow_debug_and_optimization/reference_files/deadlock/proj/solution1/sim/verilog/example_fifo_w32_d10_S_x.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module example_fifo_w32_d10_S_x_shiftReg
+INFO: [VRFC 10-311] analyzing module example_fifo_w32_d10_S_x
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/mnt/HLSNAS/02.Yhjyyx/Vitis-Tutorials/Hardware_Acceleration/Feature_Tutorials/03-dataflow_debug_and_optimization/reference_files/deadlock/proj/solution1/sim/verilog/example_fifo_w32_d2_S_x0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module example_fifo_w32_d2_S_x0_shiftReg
+INFO: [VRFC 10-311] analyzing module example_fifo_w32_d2_S_x0
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/mnt/HLSNAS/02.Yhjyyx/Vitis-Tutorials/Hardware_Acceleration/Feature_Tutorials/03-dataflow_debug_and_optimization/reference_files/deadlock/proj/solution1/sim/verilog/example_start_for_proc_2_U0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module example_start_for_proc_2_U0_shiftReg
+INFO: [VRFC 10-311] analyzing module example_start_for_proc_2_U0
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/mnt/HLSNAS/02.Yhjyyx/Vitis-Tutorials/Hardware_Acceleration/Feature_Tutorials/03-dataflow_debug_and_optimization/reference_files/deadlock/proj/solution1/sim/verilog/dataflow_monitor.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dataflow_monitor
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-3091] actual bit length 2 differs from formal bit length 5 for port 'if_num_data_valid' [/mnt/HLSNAS/02.Yhjyyx/Vitis-Tutorials/Hardware_Acceleration/Feature_Tutorials/03-dataflow_debug_and_optimization/reference_files/deadlock/proj/solution1/sim/verilog/example_proc_1.v:168]
+WARNING: [VRFC 10-3091] actual bit length 2 differs from formal bit length 5 for port 'if_fifo_cap' [/mnt/HLSNAS/02.Yhjyyx/Vitis-Tutorials/Hardware_Acceleration/Feature_Tutorials/03-dataflow_debug_and_optimization/reference_files/deadlock/proj/solution1/sim/verilog/example_proc_1.v:169]
+WARNING: [VRFC 10-3091] actual bit length 2 differs from formal bit length 1 for port 'if_num_data_valid' [/mnt/HLSNAS/02.Yhjyyx/Vitis-Tutorials/Hardware_Acceleration/Feature_Tutorials/03-dataflow_debug_and_optimization/reference_files/deadlock/proj/solution1/sim/verilog/example_proc_1.v:183]
+WARNING: [VRFC 10-3091] actual bit length 2 differs from formal bit length 1 for port 'if_fifo_cap' [/mnt/HLSNAS/02.Yhjyyx/Vitis-Tutorials/Hardware_Acceleration/Feature_Tutorials/03-dataflow_debug_and_optimization/reference_files/deadlock/proj/solution1/sim/verilog/example_proc_1.v:184]
+WARNING: [VRFC 10-3091] actual bit length 2 differs from formal bit length 1 for port 'if_num_data_valid' [/mnt/HLSNAS/02.Yhjyyx/Vitis-Tutorials/Hardware_Acceleration/Feature_Tutorials/03-dataflow_debug_and_optimization/reference_files/deadlock/proj/solution1/sim/verilog/example_proc_2.v:164]
+WARNING: [VRFC 10-3091] actual bit length 2 differs from formal bit length 1 for port 'if_fifo_cap' [/mnt/HLSNAS/02.Yhjyyx/Vitis-Tutorials/Hardware_Acceleration/Feature_Tutorials/03-dataflow_debug_and_optimization/reference_files/deadlock/proj/solution1/sim/verilog/example_proc_2.v:165]
+WARNING: [VRFC 10-3091] actual bit length 2 differs from formal bit length 1 for port 'if_num_data_valid' [/mnt/HLSNAS/02.Yhjyyx/Vitis-Tutorials/Hardware_Acceleration/Feature_Tutorials/03-dataflow_debug_and_optimization/reference_files/deadlock/proj/solution1/sim/verilog/example.v:142]
+WARNING: [VRFC 10-3091] actual bit length 2 differs from formal bit length 1 for port 'if_fifo_cap' [/mnt/HLSNAS/02.Yhjyyx/Vitis-Tutorials/Hardware_Acceleration/Feature_Tutorials/03-dataflow_debug_and_optimization/reference_files/deadlock/proj/solution1/sim/verilog/example.v:143]
+WARNING: [VRFC 10-3705] select index -1 into 'mOutPtr' is out of bounds [/mnt/HLSNAS/02.Yhjyyx/Vitis-Tutorials/Hardware_Acceleration/Feature_Tutorials/03-dataflow_debug_and_optimization/reference_files/deadlock/proj/solution1/sim/verilog/example_fifo_w32_d2_S.v:114]
+ERROR: [VRFC 10-1324] repetition multiplier must be positive [/mnt/HLSNAS/02.Yhjyyx/Vitis-Tutorials/Hardware_Acceleration/Feature_Tutorials/03-dataflow_debug_and_optimization/reference_files/deadlock/proj/solution1/sim/verilog/example_fifo_w32_d2_S.v:114]
+WARNING: [VRFC 10-3705] select index -1 into 'mOutPtr' is out of bounds [/mnt/HLSNAS/02.Yhjyyx/Vitis-Tutorials/Hardware_Acceleration/Feature_Tutorials/03-dataflow_debug_and_optimization/reference_files/deadlock/proj/solution1/sim/verilog/example_fifo_w32_d2_S_x.v:114]
+ERROR: [VRFC 10-1324] repetition multiplier must be positive [/mnt/HLSNAS/02.Yhjyyx/Vitis-Tutorials/Hardware_Acceleration/Feature_Tutorials/03-dataflow_debug_and_optimization/reference_files/deadlock/proj/solution1/sim/verilog/example_fifo_w32_d2_S_x.v:114]
+WARNING: [VRFC 10-3705] select index -1 into 'mOutPtr' is out of bounds [/mnt/HLSNAS/02.Yhjyyx/Vitis-Tutorials/Hardware_Acceleration/Feature_Tutorials/03-dataflow_debug_and_optimization/reference_files/deadlock/proj/solution1/sim/verilog/example_fifo_w32_d2_S_x0.v:114]
+ERROR: [VRFC 10-1324] repetition multiplier must be positive [/mnt/HLSNAS/02.Yhjyyx/Vitis-Tutorials/Hardware_Acceleration/Feature_Tutorials/03-dataflow_debug_and_optimization/reference_files/deadlock/proj/solution1/sim/verilog/example_fifo_w32_d2_S_x0.v:114]
+ERROR: [XSIM 43-3322] Static elaboration of top level Verilog design unit(s) in library work failed.
+ERROR: Please check the snapshot name which is created during 'xelab',the current snapshot name "xsim.dir/example/xsimk" does not exist 
+ERROR: [COSIM 212-4] *** C/RTL co-simulation finished: FAIL ***
+INFO: [HLS 200-111] Finished Command cosim_design CPU user time: 5.45 seconds. CPU system time: 0.75 seconds. Elapsed time: 6.37 seconds; current allocated memory: -1029.164 MB.
+command 'ap_source' returned error code
+    while executing
+"source /mnt/HLSNAS/02.Yhjyyx/Vitis-Tutorials/Hardware_Acceleration/Feature_Tutorials/03-dataflow_debug_and_optimization/reference_files/deadlock/proj/..."
+    invoked from within
+"hls::main /mnt/HLSNAS/02.Yhjyyx/Vitis-Tutorials/Hardware_Acceleration/Feature_Tutorials/03-dataflow_debug_and_optimization/reference_files/deadlock/pr..."
+    ("uplevel" body line 1)
+    invoked from within
+"uplevel 1 hls::main {*}$newargs"
+    (procedure "hls_proc" line 16)
+    invoked from within
+"hls_proc [info nameofexecutable] $argv"
+INFO: [HLS 200-112] Total CPU user time: 7.22 seconds. Total CPU system time: 1.09 seconds. Total elapsed time: 7.65 seconds; peak allocated memory: 466.875 MB.

@@ -1,0 +1,47 @@
+INFO-FLOW: Workspace /mnt/HLSNAS/02.Yhjyyx/Vitis-Tutorials/Hardware_Acceleration/Feature_Tutorials/03-dataflow_debug_and_optimization/reference_files/deadlock/proj/solution1 opened at Sun Mar 12 23:02:46 CST 2023
+Execute         send_msg_by_id INFO @200-1505@%s%s default  vivado 
+INFO: [HLS 200-1505] Using default flow_target 'vivado'
+Execute         get_config_interface -m_axi_latency 
+Execute         send_msg_by_id INFO @200-435@%s%s 'open_solution -flow_target vivado' config_interface -m_axi_latency=0 
+INFO: [HLS 200-435] Setting 'open_solution -flow_target vivado' configuration: config_interface -m_axi_latency=0
+Execute         config_interface -m_axi_latency=0 
+Execute         get_config_interface -m_axi_alignment_byte_size 
+Execute         get_config_interface -m_axi_max_widen_bitwidth 
+Execute         get_config_interface -default_interface 
+Execute         get_config_rtl -register_reset_num 
+Execute       set_part virtex7 
+INFO: [HLS 200-1510] Running: set_part virtex7 
+Execute         create_platform virtex7 -board  
+DBG:HLSDevice: Trying to load device library: /opt/Xilinx/Vitis_HLS/2022.1/lib/lnx64.o/librdi_hlsvwrap.so
+DBG:HLSDevice: first parts/arch.xml in RDI_DATADIR: /opt/Xilinx/Vivado/2022.1/data/parts/arch.xml
+DBG:HLSDevice: init success
+INFO: [HLS 200-1611] Setting target device to 'xc7v585t-ffg1761-2'
+Command         create_platform done; 0.88 sec.
+Execute         source /opt/Xilinx/Vitis_HLS/2022.1/common/technology/xilinx/common/xilinx.gen 
+Execute           source /opt/Xilinx/Vitis_HLS/2022.1/common/technology/xilinx/interface/plb46.gen 
+Execute           source /opt/Xilinx/Vitis_HLS/2022.1/common/technology/xilinx/interface/axi4.gen 
+Execute           source /opt/Xilinx/Vitis_HLS/2022.1/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute             source /opt/Xilinx/Vitis_HLS/2022.1/common/technology/xilinx/interface/saxilite.gen 
+Execute           source /opt/Xilinx/Vitis_HLS/2022.1/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute           source /opt/Xilinx/Vitis_HLS/2022.1/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute           source /opt/Xilinx/Vitis_HLS/2022.1/common/technology/xilinx/ip/xfir.gen 
+Execute           source /opt/Xilinx/Vitis_HLS/2022.1/common/technology/xilinx/ip/util.gen 
+Execute           source /opt/Xilinx/Vitis_HLS/2022.1/common/technology/xilinx/ip/dds_compiler.gen 
+Execute           source /opt/Xilinx/Vitis_HLS/2022.1/common/technology/xilinx/ip/xfft.gen 
+Execute           source /opt/Xilinx/Vitis_HLS/2022.1/common/technology/xilinx/DSP48/dsp48.gen 
+Execute         ap_part_info -name xc7v585t-ffg1761-2 -data info 
+Execute         config_compile -quiet -complex-mul-dsp=0 
+Command       set_part done; 0.95 sec.
+Execute       create_clock -period 75MHz 
+INFO: [HLS 200-1510] Running: create_clock -period 75MHz 
+Execute         ap_set_clock -name default -period 13.333 -unit ns -default=false 
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 13.333ns.
+INFO: [HLS 200-1511] Skipping solution action command: csim_design
+INFO: [HLS 200-1511] Skipping solution action command: csynth_design
+INFO: [HLS 200-1511] Skipping solution action command: cosim_design
+Execute       get_project -directory 
+INFO: [HLS 200-1511] Skipping solution action command: close_project
+Command     ap_source done; error code: 1; 1.15 sec.
+Execute     get_project 
+Command   open_tcl_project done; 1.15 sec.
+Execute   get_project -directory 

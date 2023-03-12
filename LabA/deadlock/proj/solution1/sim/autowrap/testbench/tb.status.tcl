@@ -1,0 +1,1 @@
+set ::AESL_AUTOSIM::gTopFileName /mnt/HLSNAS/02.Yhjyyx/Vitis-Tutorials/Hardware_Acceleration/Feature_Tutorials/03-dataflow_debug_and_optimization/reference_files/deadlock/proj/solution1/./sim/autowrap/testbench/example.cpp_pre.cpp.tb.cpp
