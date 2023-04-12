@@ -1,0 +1,255 @@
+
+
+================================================================
+== Vitis HLS Report for 'Loop_1_proc1'
+================================================================
+* Date:           Wed Apr 12 06:54:24 2023
+
+* Version:        2022.1 (Build 3526262 on Mon Apr 18 15:48:16 MDT 2022)
+* Project:        LabB
+* Solution:       solution5 (Vivado IP Flow Target)
+* Product family: zynq
+* Target device:  xc7z020-clg400-1
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+----------+----------+------------+
+    |  Clock |  Target  | Estimated| Uncertainty|
+    +--------+----------+----------+------------+
+    |ap_clk  |  10.00 ns|  6.912 ns|     2.70 ns|
+    +--------+----------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+----------+----------+-----+-----+---------+
+    |  Latency (cycles) |  Latency (absolute) |  Interval | Pipeline|
+    |   min   |   max   |    min   |    max   | min | max |   Type  |
+    +---------+---------+----------+----------+-----+-----+---------+
+    |      346|      413|  3.460 us|  4.130 us|  346|  413|       no|
+    +---------+---------+----------+----------+-----+-----+---------+
+
+    + Detail: 
+        * Instance: 
+        +---------------------------------------------+----------------------------------+---------+---------+----------+----------+-----+-----+---------+
+        |                                             |                                  |  Latency (cycles) |  Latency (absolute) |  Interval | Pipeline|
+        |                   Instance                  |              Module              |   min   |   max   |    min   |    max   | min | max |   Type  |
+        +---------------------------------------------+----------------------------------+---------+---------+----------+----------+-----+-----+---------+
+        |grp_Loop_1_proc1_Pipeline_1_fu_323           |Loop_1_proc1_Pipeline_1           |      258|      258|  2.580 us|  2.580 us|  258|  258|       no|
+        |grp_Loop_1_proc1_Pipeline_loadA_fu_329       |Loop_1_proc1_Pipeline_loadA       |       66|       66|  0.660 us|  0.660 us|   66|   66|       no|
+        |grp_Loop_1_proc1_Pipeline_partialsum_fu_367  |Loop_1_proc1_Pipeline_partialsum  |       69|       69|  0.690 us|  0.690 us|   69|   69|       no|
+        +---------------------------------------------+----------------------------------+---------+---------+----------+----------+-----+-----+---------+
+
+        * Loop: 
+        N/A
+
+
+
+================================================================
+== Utilization Estimates
+================================================================
+* Summary: 
++-----------------+---------+-----+--------+-------+-----+
+|       Name      | BRAM_18K| DSP |   FF   |  LUT  | URAM|
++-----------------+---------+-----+--------+-------+-----+
+|DSP              |        -|    -|       -|      -|    -|
+|Expression       |        -|    -|       0|     10|    -|
+|FIFO             |        -|    -|       -|      -|    -|
+|Instance         |        -|  768|   59757|  23351|    -|
+|Memory           |       16|    -|       0|      0|    0|
+|Multiplexer      |        -|    -|       -|   1038|    -|
+|Register         |        -|    -|    8217|      -|    -|
++-----------------+---------+-----+--------+-------+-----+
+|Total            |       16|  768|   67974|  24399|    0|
++-----------------+---------+-----+--------+-------+-----+
+|Available        |      280|  220|  106400|  53200|    0|
++-----------------+---------+-----+--------+-------+-----+
+|Utilization (%)  |        5|  349|      63|     45|    0|
++-----------------+---------+-----+--------+-------+-----+
+
++ Detail: 
+    * Instance: 
+    +---------------------------------------------+----------------------------------+---------+-----+-------+-------+-----+
+    |                   Instance                  |              Module              | BRAM_18K| DSP |   FF  |  LUT  | URAM|
+    +---------------------------------------------+----------------------------------+---------+-----+-------+-------+-----+
+    |grp_Loop_1_proc1_Pipeline_1_fu_323           |Loop_1_proc1_Pipeline_1           |        0|    0|     11|    243|    0|
+    |grp_Loop_1_proc1_Pipeline_loadA_fu_329       |Loop_1_proc1_Pipeline_loadA       |        0|    0|     17|     74|    0|
+    |grp_Loop_1_proc1_Pipeline_partialsum_fu_367  |Loop_1_proc1_Pipeline_partialsum  |        0|  768|  59729|  23034|    0|
+    +---------------------------------------------+----------------------------------+---------+-----+-------+-------+-----+
+    |Total                                        |                                  |        0|  768|  59757|  23351|    0|
+    +---------------------------------------------+----------------------------------+---------+-----+-------+-------+-----+
+
+    * DSP: 
+    N/A
+
+    * Memory: 
+    +----------------------------------------------------------------------+----------------------------------------------------------------------------------+---------+---+----+-----+------+-----+------+-------------+
+    |                                Memory                                |                                      Module                                      | BRAM_18K| FF| LUT| URAM| Words| Bits| Banks| W*Bits*Banks|
+    +----------------------------------------------------------------------+----------------------------------------------------------------------------------+---------+---+----+-----+------+-----+------+-------------+
+    |blockmatmul_stream_blockvec_0_stream_blockvec_0_blockmat_int_A_U      |Loop_1_proc1_blockmatmul_stream_blockvec_0_stream_blockvec_0_blockmat_int_A_Rbkb  |        1|  0|   0|    0|    64|   32|     1|         2048|
+    |blockmatmul_stream_blockvec_0_stream_blockvec_0_blockmat_int_A_1_U    |Loop_1_proc1_blockmatmul_stream_blockvec_0_stream_blockvec_0_blockmat_int_A_Rbkb  |        1|  0|   0|    0|    64|   32|     1|         2048|
+    |blockmatmul_stream_blockvec_0_stream_blockvec_0_blockmat_int_A_2_U    |Loop_1_proc1_blockmatmul_stream_blockvec_0_stream_blockvec_0_blockmat_int_A_Rbkb  |        1|  0|   0|    0|    64|   32|     1|         2048|
+    |blockmatmul_stream_blockvec_0_stream_blockvec_0_blockmat_int_A_3_U    |Loop_1_proc1_blockmatmul_stream_blockvec_0_stream_blockvec_0_blockmat_int_A_Rbkb  |        1|  0|   0|    0|    64|   32|     1|         2048|
+    |blockmatmul_stream_blockvec_0_stream_blockvec_0_blockmat_int_A_4_U    |Loop_1_proc1_blockmatmul_stream_blockvec_0_stream_blockvec_0_blockmat_int_A_Rbkb  |        1|  0|   0|    0|    64|   32|     1|         2048|
+    |blockmatmul_stream_blockvec_0_stream_blockvec_0_blockmat_int_A_5_U    |Loop_1_proc1_blockmatmul_stream_blockvec_0_stream_blockvec_0_blockmat_int_A_Rbkb  |        1|  0|   0|    0|    64|   32|     1|         2048|
+    |blockmatmul_stream_blockvec_0_stream_blockvec_0_blockmat_int_A_6_U    |Loop_1_proc1_blockmatmul_stream_blockvec_0_stream_blockvec_0_blockmat_int_A_Rbkb  |        1|  0|   0|    0|    64|   32|     1|         2048|
+    |blockmatmul_stream_blockvec_0_stream_blockvec_0_blockmat_int_A_7_U    |Loop_1_proc1_blockmatmul_stream_blockvec_0_stream_blockvec_0_blockmat_int_A_Rbkb  |        1|  0|   0|    0|    64|   32|     1|         2048|
+    |blockmatmul_stream_blockvec_0_stream_blockvec_0_blockmat_int_A_8_U    |Loop_1_proc1_blockmatmul_stream_blockvec_0_stream_blockvec_0_blockmat_int_A_Rbkb  |        1|  0|   0|    0|    64|   32|     1|         2048|
+    |blockmatmul_stream_blockvec_0_stream_blockvec_0_blockmat_int_A_9_U    |Loop_1_proc1_blockmatmul_stream_blockvec_0_stream_blockvec_0_blockmat_int_A_Rbkb  |        1|  0|   0|    0|    64|   32|     1|         2048|
+    |p_ZZ11blockmatmulRN3hls6streamI8blockvecLi0EEES3_R8blockmatiE1A_10_U  |Loop_1_proc1_blockmatmul_stream_blockvec_0_stream_blockvec_0_blockmat_int_A_Rbkb  |        1|  0|   0|    0|    64|   32|     1|         2048|
+    |p_ZZ11blockmatmulRN3hls6streamI8blockvecLi0EEES3_R8blockmatiE1A_11_U  |Loop_1_proc1_blockmatmul_stream_blockvec_0_stream_blockvec_0_blockmat_int_A_Rbkb  |        1|  0|   0|    0|    64|   32|     1|         2048|
+    |p_ZZ11blockmatmulRN3hls6streamI8blockvecLi0EEES3_R8blockmatiE1A_12_U  |Loop_1_proc1_blockmatmul_stream_blockvec_0_stream_blockvec_0_blockmat_int_A_Rbkb  |        1|  0|   0|    0|    64|   32|     1|         2048|
+    |p_ZZ11blockmatmulRN3hls6streamI8blockvecLi0EEES3_R8blockmatiE1A_13_U  |Loop_1_proc1_blockmatmul_stream_blockvec_0_stream_blockvec_0_blockmat_int_A_Rbkb  |        1|  0|   0|    0|    64|   32|     1|         2048|
+    |p_ZZ11blockmatmulRN3hls6streamI8blockvecLi0EEES3_R8blockmatiE1A_14_U  |Loop_1_proc1_blockmatmul_stream_blockvec_0_stream_blockvec_0_blockmat_int_A_Rbkb  |        1|  0|   0|    0|    64|   32|     1|         2048|
+    |p_ZZ11blockmatmulRN3hls6streamI8blockvecLi0EEES3_R8blockmatiE1A_15_U  |Loop_1_proc1_blockmatmul_stream_blockvec_0_stream_blockvec_0_blockmat_int_A_Rbkb  |        1|  0|   0|    0|    64|   32|     1|         2048|
+    +----------------------------------------------------------------------+----------------------------------------------------------------------------------+---------+---+----+-----+------+-----+------+-------------+
+    |Total                                                                 |                                                                                  |       16|  0|   0|    0|  1024|  512|    16|        32768|
+    +----------------------------------------------------------------------+----------------------------------------------------------------------------------+---------+---+----+-----+------+-----+------+-------------+
+
+    * FIFO: 
+    N/A
+
+    * Expression: 
+    +---------------------+----------+----+---+----+------------+------------+
+    |    Variable Name    | Operation| DSP| FF| LUT| Bitwidth P0| Bitwidth P1|
+    +---------------------+----------+----+---+----+------------+------------+
+    |icmp_ln13_fu_443_p2  |      icmp|   0|  0|   8|           2|           1|
+    |ap_block_state1      |        or|   0|  0|   2|           1|           1|
+    +---------------------+----------+----+---+----+------------+------------+
+    |Total                |          |   0|  0|  10|           3|           2|
+    +---------------------+----------+----+---+----+------------+------------+
+
+    * Multiplexer: 
+    +-----------------------------------------------------------------------------+-----+-----------+-----+-----------+
+    |                                     Name                                    | LUT | Input Size| Bits| Total Bits|
+    +-----------------------------------------------------------------------------+-----+-----------+-----+-----------+
+    |AB_address0                                                                  |   87|         18|    4|         72|
+    |AB_address1                                                                  |   81|         17|    4|         68|
+    |AB_ce0                                                                       |   14|          3|    1|          3|
+    |AB_d0                                                                        |   53|         10|  512|       5120|
+    |AB_d1                                                                        |   48|          9|  512|       4608|
+    |AB_we0                                                                       |   14|          3|   64|        192|
+    |AB_we1                                                                       |    9|          2|   64|        128|
+    |Arows_read                                                                   |    9|          2|    1|          2|
+    |Bcols_read                                                                   |    9|          2|    1|          2|
+    |ap_NS_fsm                                                                    |  113|         22|    1|         22|
+    |ap_done                                                                      |    9|          2|    1|          2|
+    |blockmatmul_stream_blockvec_0_stream_blockvec_0_blockmat_int_A_1_address0    |   14|          3|    6|         18|
+    |blockmatmul_stream_blockvec_0_stream_blockvec_0_blockmat_int_A_1_ce0         |   14|          3|    1|          3|
+    |blockmatmul_stream_blockvec_0_stream_blockvec_0_blockmat_int_A_1_we0         |    9|          2|    1|          2|
+    |blockmatmul_stream_blockvec_0_stream_blockvec_0_blockmat_int_A_2_address0    |   14|          3|    6|         18|
+    |blockmatmul_stream_blockvec_0_stream_blockvec_0_blockmat_int_A_2_ce0         |   14|          3|    1|          3|
+    |blockmatmul_stream_blockvec_0_stream_blockvec_0_blockmat_int_A_2_we0         |    9|          2|    1|          2|
+    |blockmatmul_stream_blockvec_0_stream_blockvec_0_blockmat_int_A_3_address0    |   14|          3|    6|         18|
+    |blockmatmul_stream_blockvec_0_stream_blockvec_0_blockmat_int_A_3_ce0         |   14|          3|    1|          3|
+    |blockmatmul_stream_blockvec_0_stream_blockvec_0_blockmat_int_A_3_we0         |    9|          2|    1|          2|
+    |blockmatmul_stream_blockvec_0_stream_blockvec_0_blockmat_int_A_4_address0    |   14|          3|    6|         18|
+    |blockmatmul_stream_blockvec_0_stream_blockvec_0_blockmat_int_A_4_ce0         |   14|          3|    1|          3|
+    |blockmatmul_stream_blockvec_0_stream_blockvec_0_blockmat_int_A_4_we0         |    9|          2|    1|          2|
+    |blockmatmul_stream_blockvec_0_stream_blockvec_0_blockmat_int_A_5_address0    |   14|          3|    6|         18|
+    |blockmatmul_stream_blockvec_0_stream_blockvec_0_blockmat_int_A_5_ce0         |   14|          3|    1|          3|
+    |blockmatmul_stream_blockvec_0_stream_blockvec_0_blockmat_int_A_5_we0         |    9|          2|    1|          2|
+    |blockmatmul_stream_blockvec_0_stream_blockvec_0_blockmat_int_A_6_address0    |   14|          3|    6|         18|
+    |blockmatmul_stream_blockvec_0_stream_blockvec_0_blockmat_int_A_6_ce0         |   14|          3|    1|          3|
+    |blockmatmul_stream_blockvec_0_stream_blockvec_0_blockmat_int_A_6_we0         |    9|          2|    1|          2|
+    |blockmatmul_stream_blockvec_0_stream_blockvec_0_blockmat_int_A_7_address0    |   14|          3|    6|         18|
+    |blockmatmul_stream_blockvec_0_stream_blockvec_0_blockmat_int_A_7_ce0         |   14|          3|    1|          3|
+    |blockmatmul_stream_blockvec_0_stream_blockvec_0_blockmat_int_A_7_we0         |    9|          2|    1|          2|
+    |blockmatmul_stream_blockvec_0_stream_blockvec_0_blockmat_int_A_8_address0    |   14|          3|    6|         18|
+    |blockmatmul_stream_blockvec_0_stream_blockvec_0_blockmat_int_A_8_ce0         |   14|          3|    1|          3|
+    |blockmatmul_stream_blockvec_0_stream_blockvec_0_blockmat_int_A_8_we0         |    9|          2|    1|          2|
+    |blockmatmul_stream_blockvec_0_stream_blockvec_0_blockmat_int_A_9_address0    |   14|          3|    6|         18|
+    |blockmatmul_stream_blockvec_0_stream_blockvec_0_blockmat_int_A_9_ce0         |   14|          3|    1|          3|
+    |blockmatmul_stream_blockvec_0_stream_blockvec_0_blockmat_int_A_9_we0         |    9|          2|    1|          2|
+    |blockmatmul_stream_blockvec_0_stream_blockvec_0_blockmat_int_A_address0      |   14|          3|    6|         18|
+    |blockmatmul_stream_blockvec_0_stream_blockvec_0_blockmat_int_A_ce0           |   14|          3|    1|          3|
+    |blockmatmul_stream_blockvec_0_stream_blockvec_0_blockmat_int_A_we0           |    9|          2|    1|          2|
+    |p_ZZ11blockmatmulRN3hls6streamI8blockvecLi0EEES3_R8blockmatiE1A_10_address0  |   14|          3|    6|         18|
+    |p_ZZ11blockmatmulRN3hls6streamI8blockvecLi0EEES3_R8blockmatiE1A_10_ce0       |   14|          3|    1|          3|
+    |p_ZZ11blockmatmulRN3hls6streamI8blockvecLi0EEES3_R8blockmatiE1A_10_we0       |    9|          2|    1|          2|
+    |p_ZZ11blockmatmulRN3hls6streamI8blockvecLi0EEES3_R8blockmatiE1A_11_address0  |   14|          3|    6|         18|
+    |p_ZZ11blockmatmulRN3hls6streamI8blockvecLi0EEES3_R8blockmatiE1A_11_ce0       |   14|          3|    1|          3|
+    |p_ZZ11blockmatmulRN3hls6streamI8blockvecLi0EEES3_R8blockmatiE1A_11_we0       |    9|          2|    1|          2|
+    |p_ZZ11blockmatmulRN3hls6streamI8blockvecLi0EEES3_R8blockmatiE1A_12_address0  |   14|          3|    6|         18|
+    |p_ZZ11blockmatmulRN3hls6streamI8blockvecLi0EEES3_R8blockmatiE1A_12_ce0       |   14|          3|    1|          3|
+    |p_ZZ11blockmatmulRN3hls6streamI8blockvecLi0EEES3_R8blockmatiE1A_12_we0       |    9|          2|    1|          2|
+    |p_ZZ11blockmatmulRN3hls6streamI8blockvecLi0EEES3_R8blockmatiE1A_13_address0  |   14|          3|    6|         18|
+    |p_ZZ11blockmatmulRN3hls6streamI8blockvecLi0EEES3_R8blockmatiE1A_13_ce0       |   14|          3|    1|          3|
+    |p_ZZ11blockmatmulRN3hls6streamI8blockvecLi0EEES3_R8blockmatiE1A_13_we0       |    9|          2|    1|          2|
+    |p_ZZ11blockmatmulRN3hls6streamI8blockvecLi0EEES3_R8blockmatiE1A_14_address0  |   14|          3|    6|         18|
+    |p_ZZ11blockmatmulRN3hls6streamI8blockvecLi0EEES3_R8blockmatiE1A_14_ce0       |   14|          3|    1|          3|
+    |p_ZZ11blockmatmulRN3hls6streamI8blockvecLi0EEES3_R8blockmatiE1A_14_we0       |    9|          2|    1|          2|
+    |p_ZZ11blockmatmulRN3hls6streamI8blockvecLi0EEES3_R8blockmatiE1A_15_address0  |   14|          3|    6|         18|
+    |p_ZZ11blockmatmulRN3hls6streamI8blockvecLi0EEES3_R8blockmatiE1A_15_ce0       |   14|          3|    1|          3|
+    |p_ZZ11blockmatmulRN3hls6streamI8blockvecLi0EEES3_R8blockmatiE1A_15_we0       |    9|          2|    1|          2|
+    +-----------------------------------------------------------------------------+-----+-----------+-----+-----------+
+    |Total                                                                        | 1038|        218| 1293|      10587|
+    +-----------------------------------------------------------------------------+-----+-----------+-----+-----------+
+
+    * Register: 
+    +----------------------------------------------------------+-----+----+-----+-----------+
+    |                           Name                           |  FF | LUT| Bits| Const Bits|
+    +----------------------------------------------------------+-----+----+-----+-----------+
+    |AB_load_10_reg_740                                        |  512|   0|  512|          0|
+    |AB_load_11_reg_745                                        |  512|   0|  512|          0|
+    |AB_load_12_reg_761                                        |  512|   0|  512|          0|
+    |AB_load_13_reg_766                                        |  512|   0|  512|          0|
+    |AB_load_14_reg_771                                        |  512|   0|  512|          0|
+    |AB_load_15_reg_776                                        |  512|   0|  512|          0|
+    |AB_load_1_reg_640                                         |  512|   0|  512|          0|
+    |AB_load_2_reg_656                                         |  512|   0|  512|          0|
+    |AB_load_3_reg_661                                         |  512|   0|  512|          0|
+    |AB_load_4_reg_677                                         |  512|   0|  512|          0|
+    |AB_load_5_reg_682                                         |  512|   0|  512|          0|
+    |AB_load_6_reg_698                                         |  512|   0|  512|          0|
+    |AB_load_7_reg_703                                         |  512|   0|  512|          0|
+    |AB_load_8_reg_719                                         |  512|   0|  512|          0|
+    |AB_load_9_reg_724                                         |  512|   0|  512|          0|
+    |AB_load_reg_635                                           |  512|   0|  512|          0|
+    |ap_CS_fsm                                                 |   21|   0|   21|          0|
+    |ap_done_reg                                               |    1|   0|    1|          0|
+    |grp_Loop_1_proc1_Pipeline_1_fu_323_ap_start_reg           |    1|   0|    1|          0|
+    |grp_Loop_1_proc1_Pipeline_loadA_fu_329_ap_start_reg       |    1|   0|    1|          0|
+    |grp_Loop_1_proc1_Pipeline_partialsum_fu_367_ap_start_reg  |    1|   0|    1|          0|
+    +----------------------------------------------------------+-----+----+-----+-----------+
+    |Total                                                     | 8217|   0| 8217|          0|
+    +----------------------------------------------------------+-----+----+-----+-----------+
+
+
+
+================================================================
+== Interface
+================================================================
+* Summary: 
++---------------+-----+-----+------------+--------------+--------------+
+|   RTL Ports   | Dir | Bits|  Protocol  | Source Object|    C Type    |
++---------------+-----+-----+------------+--------------+--------------+
+|ap_clk         |   in|    1|  ap_ctrl_hs|  Loop_1_proc1|  return value|
+|ap_rst         |   in|    1|  ap_ctrl_hs|  Loop_1_proc1|  return value|
+|ap_start       |   in|    1|  ap_ctrl_hs|  Loop_1_proc1|  return value|
+|ap_done        |  out|    1|  ap_ctrl_hs|  Loop_1_proc1|  return value|
+|ap_continue    |   in|    1|  ap_ctrl_hs|  Loop_1_proc1|  return value|
+|ap_idle        |  out|    1|  ap_ctrl_hs|  Loop_1_proc1|  return value|
+|ap_ready       |  out|    1|  ap_ctrl_hs|  Loop_1_proc1|  return value|
+|AB_address0    |  out|    4|   ap_memory|            AB|         array|
+|AB_ce0         |  out|    1|   ap_memory|            AB|         array|
+|AB_we0         |  out|   64|   ap_memory|            AB|         array|
+|AB_d0          |  out|  512|   ap_memory|            AB|         array|
+|AB_q0          |   in|  512|   ap_memory|            AB|         array|
+|AB_address1    |  out|    4|   ap_memory|            AB|         array|
+|AB_ce1         |  out|    1|   ap_memory|            AB|         array|
+|AB_we1         |  out|   64|   ap_memory|            AB|         array|
+|AB_d1          |  out|  512|   ap_memory|            AB|         array|
+|AB_q1          |   in|  512|   ap_memory|            AB|         array|
+|it             |   in|   32|     ap_none|            it|        scalar|
+|Arows_dout     |   in|  512|     ap_fifo|         Arows|       pointer|
+|Arows_empty_n  |   in|    1|     ap_fifo|         Arows|       pointer|
+|Arows_read     |  out|    1|     ap_fifo|         Arows|       pointer|
+|Bcols_dout     |   in|  512|     ap_fifo|         Bcols|       pointer|
+|Bcols_empty_n  |   in|    1|     ap_fifo|         Bcols|       pointer|
+|Bcols_read     |  out|    1|     ap_fifo|         Bcols|       pointer|
++---------------+-----+-----+------------+--------------+--------------+
+

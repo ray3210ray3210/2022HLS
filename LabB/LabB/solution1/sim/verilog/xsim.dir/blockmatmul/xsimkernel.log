@@ -1,0 +1,7 @@
+Running: xsim.dir/blockmatmul/xsimk.exe -simmode gui -wdb blockmatmul.wdb -simrunnum 0 -socket 5349
+Design successfully loaded
+Design Loading Memory Usage: 7908 KB (Peak: 7908 KB)
+Design Loading CPU Usage: 31 ms
+Simulation completed
+Simulation Memory Usage: 20108 KB (Peak: 20108 KB)
+Simulation CPU Usage: 7265 ms

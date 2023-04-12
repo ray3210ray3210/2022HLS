@@ -1,0 +1,7 @@
+   Build using "D:/tool/Xilinx/Vitis_HLS/2022.1/tps/win64/msys64/mingw64/bin/g++"
+   Compiling apatb_blockmatmul_util.cpp
+   Compiling BlockBatrix_testbench.cpp_pre.cpp.tb.cpp
+   Compiling apatb_blockmatmul.cpp
+   Compiling BlockMatrix_design.cpp_pre.cpp.tb.cpp
+   Compiling apatb_blockmatmul_ir.ll
+   Generating cosim.tv.exe

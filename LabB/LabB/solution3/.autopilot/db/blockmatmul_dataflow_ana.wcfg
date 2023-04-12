@@ -1,0 +1,642 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="blockmatmul.wdb" id="1">
+         <top_modules>
+            <top_module name="apa_blockmatmul_top" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="0ns"></ZoomStartTime>
+      <ZoomEndTime time="2000ns"></ZoomEndTime>
+      <Cursor1Time time="0ns"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="257"></NameColumnWidth>
+      <ValueColumnWidth column_width="84"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="2" />
+   <wvobject type="group" fp_name="HLS Process Summary Group">
+      <obj_property name="label">HLS Process Summary</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject type="group" fp_name="/apatb_blockmatmul_top/AESL_inst_blockmatmul//AESL_inst_blockmatmul_activity">
+         <obj_property name="label">AESL_inst_blockmatmul_activity</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <obj_property name="UseFullPath">true</obj_property>
+         <obj_property name="ElementShortName">AESL_inst_blockmatmul_activity</obj_property>
+         <obj_property name="ObjectShortName">AESL_inst_blockmatmul_activity</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+         <obj_property name="WaveformStyle">STYLE_ENUM_TRANSACTION</obj_property>
+         <obj_property name="EnumTransactionColorTable">0=blank ffff=blank 0bad=#FF0000</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+         <obj_property name="CustomSignalColor">turquoise</obj_property>
+         <obj_property name="EnumTransactionValueTable">65535=blank</obj_property>
+         <obj_property name="Render_Data">/apatb_blockmatmul_top/AESL_inst_blockmatmul//AESL_inst_blockmatmul_activity.dataflowTxWaveData.Cycles</obj_property>
+         <obj_property name="Value_Data">/apatb_blockmatmul_top/AESL_inst_blockmatmul//AESL_inst_blockmatmul_activity.dataflowTxWaveData.OutStanding</obj_property>
+         <obj_property name="Detail_Data">/apatb_blockmatmul_top/AESL_inst_blockmatmul//AESL_inst_blockmatmul_activity.dataflowTxTooltipData</obj_property>
+         <wvobject type="group" fp_name="/apatb_blockmatmul_top/AESL_inst_blockmatmul/Loop_1_proc1_U0/Loop_1_proc1_U0_activity">
+            <obj_property name="label">Loop_1_proc1_U0_activity</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <obj_property name="UseFullPath">true</obj_property>
+            <obj_property name="ElementShortName">Loop_1_proc1_U0_activity</obj_property>
+            <obj_property name="ObjectShortName">Loop_1_proc1_U0_activity</obj_property>
+            <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+            <obj_property name="WaveformStyle">STYLE_ENUM_TRANSACTION</obj_property>
+            <obj_property name="EnumTransactionColorTable">0=blank ffff=blank 0bad=#FF0000</obj_property>
+            <obj_property name="UseCustomSignalColor">true</obj_property>
+            <obj_property name="CustomSignalColor">turquoise</obj_property>
+            <obj_property name="EnumTransactionValueTable">65535=blank</obj_property>
+            <obj_property name="Render_Data">/apatb_blockmatmul_top/AESL_inst_blockmatmul/Loop_1_proc1_U0/Loop_1_proc1_U0_activity.dataflowTxWaveData.Cycles</obj_property>
+            <obj_property name="Value_Data">/apatb_blockmatmul_top/AESL_inst_blockmatmul/Loop_1_proc1_U0/Loop_1_proc1_U0_activity.dataflowTxWaveData.OutStanding</obj_property>
+            <obj_property name="Detail_Data">/apatb_blockmatmul_top/AESL_inst_blockmatmul/Loop_1_proc1_U0/Loop_1_proc1_U0_activity.dataflowTxTooltipData</obj_property>
+            <wvobject type="group" fp_name="/apatb_blockmatmul_top/AESL_inst_blockmatmul/Loop_1_proc1_U0/grp_Loop_1_proc1_Pipeline_1_fu_158/grp_Loop_1_proc1_Pipeline_1_fu_158_activity">
+               <obj_property name="label">grp_Loop_1_proc1_Pipeline_1_fu_158_activity</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <obj_property name="UseFullPath">true</obj_property>
+               <obj_property name="ElementShortName">grp_Loop_1_proc1_Pipeline_1_fu_158_activity</obj_property>
+               <obj_property name="ObjectShortName">grp_Loop_1_proc1_Pipeline_1_fu_158_activity</obj_property>
+               <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+               <obj_property name="WaveformStyle">STYLE_ENUM_TRANSACTION</obj_property>
+               <obj_property name="EnumTransactionColorTable">0=blank ffff=blank 0bad=#FF0000</obj_property>
+               <obj_property name="UseCustomSignalColor">true</obj_property>
+               <obj_property name="CustomSignalColor">turquoise</obj_property>
+               <obj_property name="EnumTransactionValueTable">65535=blank</obj_property>
+               <obj_property name="Render_Data">/apatb_blockmatmul_top/AESL_inst_blockmatmul/Loop_1_proc1_U0/grp_Loop_1_proc1_Pipeline_1_fu_158/grp_Loop_1_proc1_Pipeline_1_fu_158_activity.dataflowTxWaveData.Cycles</obj_property>
+               <obj_property name="Value_Data">/apatb_blockmatmul_top/AESL_inst_blockmatmul/Loop_1_proc1_U0/grp_Loop_1_proc1_Pipeline_1_fu_158/grp_Loop_1_proc1_Pipeline_1_fu_158_activity.dataflowTxWaveData.OutStanding</obj_property>
+               <obj_property name="Detail_Data">/apatb_blockmatmul_top/AESL_inst_blockmatmul/Loop_1_proc1_U0/grp_Loop_1_proc1_Pipeline_1_fu_158/grp_Loop_1_proc1_Pipeline_1_fu_158_activity.dataflowTxTooltipData</obj_property>
+            </wvobject>
+            <wvobject type="group" fp_name="/apatb_blockmatmul_top/AESL_inst_blockmatmul/Loop_1_proc1_U0/grp_Loop_1_proc1_Pipeline_loadA_fu_194/grp_Loop_1_proc1_Pipeline_loadA_fu_194_activity">
+               <obj_property name="label">grp_Loop_1_proc1_Pipeline_loadA_fu_194_activity</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <obj_property name="UseFullPath">true</obj_property>
+               <obj_property name="ElementShortName">grp_Loop_1_proc1_Pipeline_loadA_fu_194_activity</obj_property>
+               <obj_property name="ObjectShortName">grp_Loop_1_proc1_Pipeline_loadA_fu_194_activity</obj_property>
+               <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+               <obj_property name="WaveformStyle">STYLE_ENUM_TRANSACTION</obj_property>
+               <obj_property name="EnumTransactionColorTable">0=blank ffff=blank 0bad=#FF0000</obj_property>
+               <obj_property name="UseCustomSignalColor">true</obj_property>
+               <obj_property name="CustomSignalColor">turquoise</obj_property>
+               <obj_property name="EnumTransactionValueTable">65535=blank</obj_property>
+               <obj_property name="Render_Data">/apatb_blockmatmul_top/AESL_inst_blockmatmul/Loop_1_proc1_U0/grp_Loop_1_proc1_Pipeline_loadA_fu_194/grp_Loop_1_proc1_Pipeline_loadA_fu_194_activity.dataflowTxWaveData.Cycles</obj_property>
+               <obj_property name="Value_Data">/apatb_blockmatmul_top/AESL_inst_blockmatmul/Loop_1_proc1_U0/grp_Loop_1_proc1_Pipeline_loadA_fu_194/grp_Loop_1_proc1_Pipeline_loadA_fu_194_activity.dataflowTxWaveData.OutStanding</obj_property>
+               <obj_property name="Detail_Data">/apatb_blockmatmul_top/AESL_inst_blockmatmul/Loop_1_proc1_U0/grp_Loop_1_proc1_Pipeline_loadA_fu_194/grp_Loop_1_proc1_Pipeline_loadA_fu_194_activity.dataflowTxTooltipData</obj_property>
+            </wvobject>
+            <wvobject type="group" fp_name="/apatb_blockmatmul_top/AESL_inst_blockmatmul/Loop_1_proc1_U0/grp_Loop_1_proc1_Pipeline_ps_i_fu_202/grp_Loop_1_proc1_Pipeline_ps_i_fu_202_activity">
+               <obj_property name="label">grp_Loop_1_proc1_Pipeline_ps_i_fu_202_activity</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <obj_property name="UseFullPath">true</obj_property>
+               <obj_property name="ElementShortName">grp_Loop_1_proc1_Pipeline_ps_i_fu_202_activity</obj_property>
+               <obj_property name="ObjectShortName">grp_Loop_1_proc1_Pipeline_ps_i_fu_202_activity</obj_property>
+               <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+               <obj_property name="WaveformStyle">STYLE_ENUM_TRANSACTION</obj_property>
+               <obj_property name="EnumTransactionColorTable">0=blank ffff=blank 0bad=#FF0000</obj_property>
+               <obj_property name="UseCustomSignalColor">true</obj_property>
+               <obj_property name="CustomSignalColor">turquoise</obj_property>
+               <obj_property name="EnumTransactionValueTable">65535=blank</obj_property>
+               <obj_property name="Render_Data">/apatb_blockmatmul_top/AESL_inst_blockmatmul/Loop_1_proc1_U0/grp_Loop_1_proc1_Pipeline_ps_i_fu_202/grp_Loop_1_proc1_Pipeline_ps_i_fu_202_activity.dataflowTxWaveData.Cycles</obj_property>
+               <obj_property name="Value_Data">/apatb_blockmatmul_top/AESL_inst_blockmatmul/Loop_1_proc1_U0/grp_Loop_1_proc1_Pipeline_ps_i_fu_202/grp_Loop_1_proc1_Pipeline_ps_i_fu_202_activity.dataflowTxWaveData.OutStanding</obj_property>
+               <obj_property name="Detail_Data">/apatb_blockmatmul_top/AESL_inst_blockmatmul/Loop_1_proc1_U0/grp_Loop_1_proc1_Pipeline_ps_i_fu_202/grp_Loop_1_proc1_Pipeline_ps_i_fu_202_activity.dataflowTxTooltipData</obj_property>
+            </wvobject>
+         </wvobject>
+         <wvobject type="group" fp_name="/apatb_blockmatmul_top/AESL_inst_blockmatmul/Loop_writeoutput_proc_U0/Loop_writeoutput_proc_U0_activity">
+            <obj_property name="label">Loop_writeoutput_proc_U0_activity</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <obj_property name="UseFullPath">true</obj_property>
+            <obj_property name="ElementShortName">Loop_writeoutput_proc_U0_activity</obj_property>
+            <obj_property name="ObjectShortName">Loop_writeoutput_proc_U0_activity</obj_property>
+            <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+            <obj_property name="WaveformStyle">STYLE_ENUM_TRANSACTION</obj_property>
+            <obj_property name="EnumTransactionColorTable">0=blank ffff=blank 0bad=#FF0000</obj_property>
+            <obj_property name="UseCustomSignalColor">true</obj_property>
+            <obj_property name="CustomSignalColor">turquoise</obj_property>
+            <obj_property name="EnumTransactionValueTable">65535=blank</obj_property>
+            <obj_property name="Render_Data">/apatb_blockmatmul_top/AESL_inst_blockmatmul/Loop_writeoutput_proc_U0/Loop_writeoutput_proc_U0_activity.dataflowTxWaveData.Cycles</obj_property>
+            <obj_property name="Value_Data">/apatb_blockmatmul_top/AESL_inst_blockmatmul/Loop_writeoutput_proc_U0/Loop_writeoutput_proc_U0_activity.dataflowTxWaveData.OutStanding</obj_property>
+            <obj_property name="Detail_Data">/apatb_blockmatmul_top/AESL_inst_blockmatmul/Loop_writeoutput_proc_U0/Loop_writeoutput_proc_U0_activity.dataflowTxTooltipData</obj_property>
+         </wvobject>
+      </wvobject>
+   </wvobject>
+   <wvobject type="protoinst" fp_name="/apatb_blockmatmul_top/AESL_inst_blockmatmul//AESL_inst_blockmatmul_activity">
+      <obj_property name="ElementShortName">AESL_inst_blockmatmul_activity</obj_property>
+      <obj_property name="ObjectShortName">AESL_inst_blockmatmul_activity</obj_property>
+   </wvobject>
+   <wvobject type="group" fp_name="AESL_inst_blockmatmul_group">
+      <obj_property name="label">AESL_inst_blockmatmul</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject type="protoinst" fp_name="/apatb_blockmatmul_top/AESL_inst_blockmatmul/Loop_1_proc1_U0/Loop_1_proc1_U0_activity">
+         <obj_property name="ElementShortName">Loop_1_proc1_U0_activity</obj_property>
+         <obj_property name="ObjectShortName">Loop_1_proc1_U0_activity</obj_property>
+      </wvobject>
+      <wvobject type="protoinst" fp_name="/apatb_blockmatmul_top/AESL_inst_blockmatmul/Loop_writeoutput_proc_U0/Loop_writeoutput_proc_U0_activity">
+         <obj_property name="ElementShortName">Loop_writeoutput_proc_U0_activity</obj_property>
+         <obj_property name="ObjectShortName">Loop_writeoutput_proc_U0_activity</obj_property>
+      </wvobject>
+      <wvobject type="group" fp_name="AESL_inst_blockmatmul_Handshake_group">
+         <obj_property name="label">Block-level handshake</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <wvobject type="logic" fp_name="/apatb_blockmatmul_top/AESL_inst_blockmatmul/ap_start">
+            <obj_property name="ElementShortName">ap_start</obj_property>
+            <obj_property name="ObjectShortName">ap_start</obj_property>
+         </wvobject>
+         <wvobject type="logic" fp_name="/apatb_blockmatmul_top/AESL_inst_blockmatmul/ap_ready">
+            <obj_property name="ElementShortName">ap_ready</obj_property>
+            <obj_property name="ObjectShortName">ap_ready</obj_property>
+         </wvobject>
+         <wvobject type="logic" fp_name="/apatb_blockmatmul_top/AESL_inst_blockmatmul/ap_done">
+            <obj_property name="ElementShortName">ap_done</obj_property>
+            <obj_property name="ObjectShortName">ap_done</obj_property>
+         </wvobject>
+      </wvobject>
+      <wvobject type="group" fp_name="Loop_1_proc1_U0_group">
+         <obj_property name="label">Loop_1_proc1_U0</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <wvobject type="protoinst" fp_name="/apatb_blockmatmul_top/AESL_inst_blockmatmul/Loop_1_proc1_U0/grp_Loop_1_proc1_Pipeline_1_fu_158/grp_Loop_1_proc1_Pipeline_1_fu_158_activity">
+            <obj_property name="ElementShortName">grp_Loop_1_proc1_Pipeline_1_fu_158_activity</obj_property>
+            <obj_property name="ObjectShortName">grp_Loop_1_proc1_Pipeline_1_fu_158_activity</obj_property>
+         </wvobject>
+         <wvobject type="protoinst" fp_name="/apatb_blockmatmul_top/AESL_inst_blockmatmul/Loop_1_proc1_U0/grp_Loop_1_proc1_Pipeline_loadA_fu_194/grp_Loop_1_proc1_Pipeline_loadA_fu_194_activity">
+            <obj_property name="ElementShortName">grp_Loop_1_proc1_Pipeline_loadA_fu_194_activity</obj_property>
+            <obj_property name="ObjectShortName">grp_Loop_1_proc1_Pipeline_loadA_fu_194_activity</obj_property>
+         </wvobject>
+         <wvobject type="protoinst" fp_name="/apatb_blockmatmul_top/AESL_inst_blockmatmul/Loop_1_proc1_U0/grp_Loop_1_proc1_Pipeline_ps_i_fu_202/grp_Loop_1_proc1_Pipeline_ps_i_fu_202_activity">
+            <obj_property name="ElementShortName">grp_Loop_1_proc1_Pipeline_ps_i_fu_202_activity</obj_property>
+            <obj_property name="ObjectShortName">grp_Loop_1_proc1_Pipeline_ps_i_fu_202_activity</obj_property>
+         </wvobject>
+         <wvobject type="group" fp_name="Loop_1_proc1_U0_Input_group">
+            <obj_property name="label">Input Channels</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject type="group" fp_name="Arows_group">
+               <obj_property name="label">Arows(FIFO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_blockmatmul_top/AESL_inst_blockmatmul/Loop_1_proc1_U0/Arows_dout">
+                  <obj_property name="ElementShortName">Arows_dout[511:0]</obj_property>
+                  <obj_property name="ObjectShortName">Arows_dout[511:0]</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_blockmatmul_top/AESL_inst_blockmatmul/Loop_1_proc1_U0/Arows_empty_n">
+                  <obj_property name="ElementShortName">Arows_empty_n</obj_property>
+                  <obj_property name="ObjectShortName">Arows_empty_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_blockmatmul_top/AESL_inst_blockmatmul/Loop_1_proc1_U0/Arows_read">
+                  <obj_property name="ElementShortName">Arows_read</obj_property>
+                  <obj_property name="ObjectShortName">Arows_read</obj_property>
+               </wvobject>
+            </wvobject>
+            <wvobject type="group" fp_name="Bcols_group">
+               <obj_property name="label">Bcols(FIFO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_blockmatmul_top/AESL_inst_blockmatmul/Loop_1_proc1_U0/Bcols_blk_n">
+                  <obj_property name="ElementShortName">Bcols_blk_n</obj_property>
+                  <obj_property name="ObjectShortName">Bcols_blk_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_blockmatmul_top/AESL_inst_blockmatmul/Loop_1_proc1_U0/Bcols_dout">
+                  <obj_property name="ElementShortName">Bcols_dout[511:0]</obj_property>
+                  <obj_property name="ObjectShortName">Bcols_dout[511:0]</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_blockmatmul_top/AESL_inst_blockmatmul/Loop_1_proc1_U0/Bcols_empty_n">
+                  <obj_property name="ElementShortName">Bcols_empty_n</obj_property>
+                  <obj_property name="ObjectShortName">Bcols_empty_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_blockmatmul_top/AESL_inst_blockmatmul/Loop_1_proc1_U0/Bcols_read">
+                  <obj_property name="ElementShortName">Bcols_read</obj_property>
+                  <obj_property name="ObjectShortName">Bcols_read</obj_property>
+               </wvobject>
+            </wvobject>
+         </wvobject>
+         <wvobject type="group" fp_name="Loop_1_proc1_U0_Handshake_group">
+            <obj_property name="label">Block-level handshake</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject type="logic" fp_name="/apatb_blockmatmul_top/AESL_inst_blockmatmul/Loop_1_proc1_U0/ap_start">
+               <obj_property name="ElementShortName">ap_start</obj_property>
+               <obj_property name="ObjectShortName">ap_start</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_blockmatmul_top/AESL_inst_blockmatmul/Loop_1_proc1_U0/ap_ready">
+               <obj_property name="ElementShortName">ap_ready</obj_property>
+               <obj_property name="ObjectShortName">ap_ready</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_blockmatmul_top/AESL_inst_blockmatmul/Loop_1_proc1_U0/ap_done">
+               <obj_property name="ElementShortName">ap_done</obj_property>
+               <obj_property name="ObjectShortName">ap_done</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_blockmatmul_top/AESL_inst_blockmatmul/Loop_1_proc1_U0/ap_continue">
+               <obj_property name="ElementShortName">ap_continue</obj_property>
+               <obj_property name="ObjectShortName">ap_continue</obj_property>
+            </wvobject>
+         </wvobject>
+         <wvobject type="group" fp_name="Loop_1_proc1_U0_Output_group">
+            <obj_property name="label">Output Channels</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+         </wvobject>
+         <wvobject type="group" fp_name="grp_Loop_1_proc1_Pipeline_1_fu_158_group">
+            <obj_property name="label">grp_Loop_1_proc1_Pipeline_1_fu_158</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject type="group" fp_name="grp_Loop_1_proc1_Pipeline_1_fu_158_Handshake_group">
+               <obj_property name="label">Block-level handshake</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_blockmatmul_top/AESL_inst_blockmatmul/Loop_1_proc1_U0/grp_Loop_1_proc1_Pipeline_1_fu_158/ap_start">
+                  <obj_property name="ElementShortName">ap_start</obj_property>
+                  <obj_property name="ObjectShortName">ap_start</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_blockmatmul_top/AESL_inst_blockmatmul/Loop_1_proc1_U0/grp_Loop_1_proc1_Pipeline_1_fu_158/ap_ready">
+                  <obj_property name="ElementShortName">ap_ready</obj_property>
+                  <obj_property name="ObjectShortName">ap_ready</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_blockmatmul_top/AESL_inst_blockmatmul/Loop_1_proc1_U0/grp_Loop_1_proc1_Pipeline_1_fu_158/ap_done">
+                  <obj_property name="ElementShortName">ap_done</obj_property>
+                  <obj_property name="ObjectShortName">ap_done</obj_property>
+               </wvobject>
+            </wvobject>
+         </wvobject>
+         <wvobject type="group" fp_name="grp_Loop_1_proc1_Pipeline_loadA_fu_194_group">
+            <obj_property name="label">grp_Loop_1_proc1_Pipeline_loadA_fu_194</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject type="group" fp_name="grp_Loop_1_proc1_Pipeline_loadA_fu_194_Handshake_group">
+               <obj_property name="label">Block-level handshake</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_blockmatmul_top/AESL_inst_blockmatmul/Loop_1_proc1_U0/grp_Loop_1_proc1_Pipeline_loadA_fu_194/ap_start">
+                  <obj_property name="ElementShortName">ap_start</obj_property>
+                  <obj_property name="ObjectShortName">ap_start</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_blockmatmul_top/AESL_inst_blockmatmul/Loop_1_proc1_U0/grp_Loop_1_proc1_Pipeline_loadA_fu_194/ap_ready">
+                  <obj_property name="ElementShortName">ap_ready</obj_property>
+                  <obj_property name="ObjectShortName">ap_ready</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_blockmatmul_top/AESL_inst_blockmatmul/Loop_1_proc1_U0/grp_Loop_1_proc1_Pipeline_loadA_fu_194/ap_done">
+                  <obj_property name="ElementShortName">ap_done</obj_property>
+                  <obj_property name="ObjectShortName">ap_done</obj_property>
+               </wvobject>
+            </wvobject>
+         </wvobject>
+         <wvobject type="group" fp_name="grp_Loop_1_proc1_Pipeline_ps_i_fu_202_group">
+            <obj_property name="label">grp_Loop_1_proc1_Pipeline_ps_i_fu_202</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject type="group" fp_name="grp_Loop_1_proc1_Pipeline_ps_i_fu_202_Handshake_group">
+               <obj_property name="label">Block-level handshake</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_blockmatmul_top/AESL_inst_blockmatmul/Loop_1_proc1_U0/grp_Loop_1_proc1_Pipeline_ps_i_fu_202/ap_start">
+                  <obj_property name="ElementShortName">ap_start</obj_property>
+                  <obj_property name="ObjectShortName">ap_start</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_blockmatmul_top/AESL_inst_blockmatmul/Loop_1_proc1_U0/grp_Loop_1_proc1_Pipeline_ps_i_fu_202/ap_ready">
+                  <obj_property name="ElementShortName">ap_ready</obj_property>
+                  <obj_property name="ObjectShortName">ap_ready</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_blockmatmul_top/AESL_inst_blockmatmul/Loop_1_proc1_U0/grp_Loop_1_proc1_Pipeline_ps_i_fu_202/ap_done">
+                  <obj_property name="ElementShortName">ap_done</obj_property>
+                  <obj_property name="ObjectShortName">ap_done</obj_property>
+               </wvobject>
+            </wvobject>
+         </wvobject>
+      </wvobject>
+      <wvobject type="group" fp_name="Loop_writeoutput_proc_U0_group">
+         <obj_property name="label">Loop_writeoutput_proc_U0</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <wvobject type="group" fp_name="Loop_writeoutput_proc_U0_Input_group">
+            <obj_property name="label">Input Channels</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject type="group" fp_name="AB_group">
+               <obj_property name="label">AB(AB_U, PIPO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_blockmatmul_top/AESL_inst_blockmatmul/Loop_writeoutput_proc_U0/AB_address0">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_blockmatmul_top/AESL_inst_blockmatmul/Loop_writeoutput_proc_U0/AB_q0">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_blockmatmul_top/AESL_inst_blockmatmul/Loop_writeoutput_proc_U0/AB_ce0">
+                  <obj_property name="ElementShortName">AB_ce0</obj_property>
+                  <obj_property name="ObjectShortName">AB_ce0</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_blockmatmul_top/AESL_inst_blockmatmul/Loop_writeoutput_proc_U0/ap_ready">
+                  <obj_property name="ElementShortName">ap_ready</obj_property>
+                  <obj_property name="ObjectShortName">ap_ready</obj_property>
+                  <obj_property name="label">ap_ready(t_read)</obj_property>
+                  <obj_property name="DisplayName">label</obj_property>
+               </wvobject>
+            </wvobject>
+            <wvobject type="group" fp_name="AB_1_group">
+               <obj_property name="label">AB_1(AB_1_U, PIPO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_blockmatmul_top/AESL_inst_blockmatmul/Loop_writeoutput_proc_U0/AB_1_address0">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_blockmatmul_top/AESL_inst_blockmatmul/Loop_writeoutput_proc_U0/AB_1_q0">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_blockmatmul_top/AESL_inst_blockmatmul/Loop_writeoutput_proc_U0/AB_1_ce0">
+                  <obj_property name="ElementShortName">AB_1_ce0</obj_property>
+                  <obj_property name="ObjectShortName">AB_1_ce0</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_blockmatmul_top/AESL_inst_blockmatmul/Loop_writeoutput_proc_U0/ap_ready">
+                  <obj_property name="ElementShortName">ap_ready</obj_property>
+                  <obj_property name="ObjectShortName">ap_ready</obj_property>
+                  <obj_property name="label">ap_ready(t_read)</obj_property>
+                  <obj_property name="DisplayName">label</obj_property>
+               </wvobject>
+            </wvobject>
+            <wvobject type="group" fp_name="AB_2_group">
+               <obj_property name="label">AB_2(AB_2_U, PIPO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_blockmatmul_top/AESL_inst_blockmatmul/Loop_writeoutput_proc_U0/AB_2_address0">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_blockmatmul_top/AESL_inst_blockmatmul/Loop_writeoutput_proc_U0/AB_2_q0">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_blockmatmul_top/AESL_inst_blockmatmul/Loop_writeoutput_proc_U0/AB_2_ce0">
+                  <obj_property name="ElementShortName">AB_2_ce0</obj_property>
+                  <obj_property name="ObjectShortName">AB_2_ce0</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_blockmatmul_top/AESL_inst_blockmatmul/Loop_writeoutput_proc_U0/ap_ready">
+                  <obj_property name="ElementShortName">ap_ready</obj_property>
+                  <obj_property name="ObjectShortName">ap_ready</obj_property>
+                  <obj_property name="label">ap_ready(t_read)</obj_property>
+                  <obj_property name="DisplayName">label</obj_property>
+               </wvobject>
+            </wvobject>
+            <wvobject type="group" fp_name="AB_3_group">
+               <obj_property name="label">AB_3(AB_3_U, PIPO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_blockmatmul_top/AESL_inst_blockmatmul/Loop_writeoutput_proc_U0/AB_3_address0">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_blockmatmul_top/AESL_inst_blockmatmul/Loop_writeoutput_proc_U0/AB_3_q0">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_blockmatmul_top/AESL_inst_blockmatmul/Loop_writeoutput_proc_U0/AB_3_ce0">
+                  <obj_property name="ElementShortName">AB_3_ce0</obj_property>
+                  <obj_property name="ObjectShortName">AB_3_ce0</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_blockmatmul_top/AESL_inst_blockmatmul/Loop_writeoutput_proc_U0/ap_ready">
+                  <obj_property name="ElementShortName">ap_ready</obj_property>
+                  <obj_property name="ObjectShortName">ap_ready</obj_property>
+                  <obj_property name="label">ap_ready(t_read)</obj_property>
+                  <obj_property name="DisplayName">label</obj_property>
+               </wvobject>
+            </wvobject>
+            <wvobject type="group" fp_name="AB_4_group">
+               <obj_property name="label">AB_4(AB_4_U, PIPO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_blockmatmul_top/AESL_inst_blockmatmul/Loop_writeoutput_proc_U0/AB_4_address0">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_blockmatmul_top/AESL_inst_blockmatmul/Loop_writeoutput_proc_U0/AB_4_q0">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_blockmatmul_top/AESL_inst_blockmatmul/Loop_writeoutput_proc_U0/AB_4_ce0">
+                  <obj_property name="ElementShortName">AB_4_ce0</obj_property>
+                  <obj_property name="ObjectShortName">AB_4_ce0</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_blockmatmul_top/AESL_inst_blockmatmul/Loop_writeoutput_proc_U0/ap_ready">
+                  <obj_property name="ElementShortName">ap_ready</obj_property>
+                  <obj_property name="ObjectShortName">ap_ready</obj_property>
+                  <obj_property name="label">ap_ready(t_read)</obj_property>
+                  <obj_property name="DisplayName">label</obj_property>
+               </wvobject>
+            </wvobject>
+            <wvobject type="group" fp_name="AB_5_group">
+               <obj_property name="label">AB_5(AB_5_U, PIPO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_blockmatmul_top/AESL_inst_blockmatmul/Loop_writeoutput_proc_U0/AB_5_address0">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_blockmatmul_top/AESL_inst_blockmatmul/Loop_writeoutput_proc_U0/AB_5_q0">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_blockmatmul_top/AESL_inst_blockmatmul/Loop_writeoutput_proc_U0/AB_5_ce0">
+                  <obj_property name="ElementShortName">AB_5_ce0</obj_property>
+                  <obj_property name="ObjectShortName">AB_5_ce0</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_blockmatmul_top/AESL_inst_blockmatmul/Loop_writeoutput_proc_U0/ap_ready">
+                  <obj_property name="ElementShortName">ap_ready</obj_property>
+                  <obj_property name="ObjectShortName">ap_ready</obj_property>
+                  <obj_property name="label">ap_ready(t_read)</obj_property>
+                  <obj_property name="DisplayName">label</obj_property>
+               </wvobject>
+            </wvobject>
+            <wvobject type="group" fp_name="AB_6_group">
+               <obj_property name="label">AB_6(AB_6_U, PIPO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_blockmatmul_top/AESL_inst_blockmatmul/Loop_writeoutput_proc_U0/AB_6_address0">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_blockmatmul_top/AESL_inst_blockmatmul/Loop_writeoutput_proc_U0/AB_6_q0">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_blockmatmul_top/AESL_inst_blockmatmul/Loop_writeoutput_proc_U0/AB_6_ce0">
+                  <obj_property name="ElementShortName">AB_6_ce0</obj_property>
+                  <obj_property name="ObjectShortName">AB_6_ce0</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_blockmatmul_top/AESL_inst_blockmatmul/Loop_writeoutput_proc_U0/ap_ready">
+                  <obj_property name="ElementShortName">ap_ready</obj_property>
+                  <obj_property name="ObjectShortName">ap_ready</obj_property>
+                  <obj_property name="label">ap_ready(t_read)</obj_property>
+                  <obj_property name="DisplayName">label</obj_property>
+               </wvobject>
+            </wvobject>
+            <wvobject type="group" fp_name="AB_7_group">
+               <obj_property name="label">AB_7(AB_7_U, PIPO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_blockmatmul_top/AESL_inst_blockmatmul/Loop_writeoutput_proc_U0/AB_7_address0">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_blockmatmul_top/AESL_inst_blockmatmul/Loop_writeoutput_proc_U0/AB_7_q0">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_blockmatmul_top/AESL_inst_blockmatmul/Loop_writeoutput_proc_U0/AB_7_ce0">
+                  <obj_property name="ElementShortName">AB_7_ce0</obj_property>
+                  <obj_property name="ObjectShortName">AB_7_ce0</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_blockmatmul_top/AESL_inst_blockmatmul/Loop_writeoutput_proc_U0/ap_ready">
+                  <obj_property name="ElementShortName">ap_ready</obj_property>
+                  <obj_property name="ObjectShortName">ap_ready</obj_property>
+                  <obj_property name="label">ap_ready(t_read)</obj_property>
+                  <obj_property name="DisplayName">label</obj_property>
+               </wvobject>
+            </wvobject>
+            <wvobject type="group" fp_name="AB_8_group">
+               <obj_property name="label">AB_8(AB_8_U, PIPO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_blockmatmul_top/AESL_inst_blockmatmul/Loop_writeoutput_proc_U0/AB_8_address0">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_blockmatmul_top/AESL_inst_blockmatmul/Loop_writeoutput_proc_U0/AB_8_q0">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_blockmatmul_top/AESL_inst_blockmatmul/Loop_writeoutput_proc_U0/AB_8_ce0">
+                  <obj_property name="ElementShortName">AB_8_ce0</obj_property>
+                  <obj_property name="ObjectShortName">AB_8_ce0</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_blockmatmul_top/AESL_inst_blockmatmul/Loop_writeoutput_proc_U0/ap_ready">
+                  <obj_property name="ElementShortName">ap_ready</obj_property>
+                  <obj_property name="ObjectShortName">ap_ready</obj_property>
+                  <obj_property name="label">ap_ready(t_read)</obj_property>
+                  <obj_property name="DisplayName">label</obj_property>
+               </wvobject>
+            </wvobject>
+            <wvobject type="group" fp_name="AB_9_group">
+               <obj_property name="label">AB_9(AB_9_U, PIPO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_blockmatmul_top/AESL_inst_blockmatmul/Loop_writeoutput_proc_U0/AB_9_address0">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_blockmatmul_top/AESL_inst_blockmatmul/Loop_writeoutput_proc_U0/AB_9_q0">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_blockmatmul_top/AESL_inst_blockmatmul/Loop_writeoutput_proc_U0/AB_9_ce0">
+                  <obj_property name="ElementShortName">AB_9_ce0</obj_property>
+                  <obj_property name="ObjectShortName">AB_9_ce0</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_blockmatmul_top/AESL_inst_blockmatmul/Loop_writeoutput_proc_U0/ap_ready">
+                  <obj_property name="ElementShortName">ap_ready</obj_property>
+                  <obj_property name="ObjectShortName">ap_ready</obj_property>
+                  <obj_property name="label">ap_ready(t_read)</obj_property>
+                  <obj_property name="DisplayName">label</obj_property>
+               </wvobject>
+            </wvobject>
+            <wvobject type="group" fp_name="AB_10_group">
+               <obj_property name="label">AB_10(AB_10_U, PIPO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_blockmatmul_top/AESL_inst_blockmatmul/Loop_writeoutput_proc_U0/AB_10_address0">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_blockmatmul_top/AESL_inst_blockmatmul/Loop_writeoutput_proc_U0/AB_10_q0">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_blockmatmul_top/AESL_inst_blockmatmul/Loop_writeoutput_proc_U0/AB_10_ce0">
+                  <obj_property name="ElementShortName">AB_10_ce0</obj_property>
+                  <obj_property name="ObjectShortName">AB_10_ce0</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_blockmatmul_top/AESL_inst_blockmatmul/Loop_writeoutput_proc_U0/ap_ready">
+                  <obj_property name="ElementShortName">ap_ready</obj_property>
+                  <obj_property name="ObjectShortName">ap_ready</obj_property>
+                  <obj_property name="label">ap_ready(t_read)</obj_property>
+                  <obj_property name="DisplayName">label</obj_property>
+               </wvobject>
+            </wvobject>
+            <wvobject type="group" fp_name="AB_11_group">
+               <obj_property name="label">AB_11(AB_11_U, PIPO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_blockmatmul_top/AESL_inst_blockmatmul/Loop_writeoutput_proc_U0/AB_11_address0">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_blockmatmul_top/AESL_inst_blockmatmul/Loop_writeoutput_proc_U0/AB_11_q0">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_blockmatmul_top/AESL_inst_blockmatmul/Loop_writeoutput_proc_U0/AB_11_ce0">
+                  <obj_property name="ElementShortName">AB_11_ce0</obj_property>
+                  <obj_property name="ObjectShortName">AB_11_ce0</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_blockmatmul_top/AESL_inst_blockmatmul/Loop_writeoutput_proc_U0/ap_ready">
+                  <obj_property name="ElementShortName">ap_ready</obj_property>
+                  <obj_property name="ObjectShortName">ap_ready</obj_property>
+                  <obj_property name="label">ap_ready(t_read)</obj_property>
+                  <obj_property name="DisplayName">label</obj_property>
+               </wvobject>
+            </wvobject>
+            <wvobject type="group" fp_name="AB_12_group">
+               <obj_property name="label">AB_12(AB_12_U, PIPO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_blockmatmul_top/AESL_inst_blockmatmul/Loop_writeoutput_proc_U0/AB_12_address0">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_blockmatmul_top/AESL_inst_blockmatmul/Loop_writeoutput_proc_U0/AB_12_q0">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_blockmatmul_top/AESL_inst_blockmatmul/Loop_writeoutput_proc_U0/AB_12_ce0">
+                  <obj_property name="ElementShortName">AB_12_ce0</obj_property>
+                  <obj_property name="ObjectShortName">AB_12_ce0</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_blockmatmul_top/AESL_inst_blockmatmul/Loop_writeoutput_proc_U0/ap_ready">
+                  <obj_property name="ElementShortName">ap_ready</obj_property>
+                  <obj_property name="ObjectShortName">ap_ready</obj_property>
+                  <obj_property name="label">ap_ready(t_read)</obj_property>
+                  <obj_property name="DisplayName">label</obj_property>
+               </wvobject>
+            </wvobject>
+            <wvobject type="group" fp_name="AB_13_group">
+               <obj_property name="label">AB_13(AB_13_U, PIPO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_blockmatmul_top/AESL_inst_blockmatmul/Loop_writeoutput_proc_U0/AB_13_address0">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_blockmatmul_top/AESL_inst_blockmatmul/Loop_writeoutput_proc_U0/AB_13_q0">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_blockmatmul_top/AESL_inst_blockmatmul/Loop_writeoutput_proc_U0/AB_13_ce0">
+                  <obj_property name="ElementShortName">AB_13_ce0</obj_property>
+                  <obj_property name="ObjectShortName">AB_13_ce0</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_blockmatmul_top/AESL_inst_blockmatmul/Loop_writeoutput_proc_U0/ap_ready">
+                  <obj_property name="ElementShortName">ap_ready</obj_property>
+                  <obj_property name="ObjectShortName">ap_ready</obj_property>
+                  <obj_property name="label">ap_ready(t_read)</obj_property>
+                  <obj_property name="DisplayName">label</obj_property>
+               </wvobject>
+            </wvobject>
+            <wvobject type="group" fp_name="AB_14_group">
+               <obj_property name="label">AB_14(AB_14_U, PIPO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_blockmatmul_top/AESL_inst_blockmatmul/Loop_writeoutput_proc_U0/AB_14_address0">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_blockmatmul_top/AESL_inst_blockmatmul/Loop_writeoutput_proc_U0/AB_14_q0">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_blockmatmul_top/AESL_inst_blockmatmul/Loop_writeoutput_proc_U0/AB_14_ce0">
+                  <obj_property name="ElementShortName">AB_14_ce0</obj_property>
+                  <obj_property name="ObjectShortName">AB_14_ce0</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_blockmatmul_top/AESL_inst_blockmatmul/Loop_writeoutput_proc_U0/ap_ready">
+                  <obj_property name="ElementShortName">ap_ready</obj_property>
+                  <obj_property name="ObjectShortName">ap_ready</obj_property>
+                  <obj_property name="label">ap_ready(t_read)</obj_property>
+                  <obj_property name="DisplayName">label</obj_property>
+               </wvobject>
+            </wvobject>
+            <wvobject type="group" fp_name="AB_15_group">
+               <obj_property name="label">AB_15(AB_15_U, PIPO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_blockmatmul_top/AESL_inst_blockmatmul/Loop_writeoutput_proc_U0/AB_15_address0">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_blockmatmul_top/AESL_inst_blockmatmul/Loop_writeoutput_proc_U0/AB_15_q0">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_blockmatmul_top/AESL_inst_blockmatmul/Loop_writeoutput_proc_U0/AB_15_ce0">
+                  <obj_property name="ElementShortName">AB_15_ce0</obj_property>
+                  <obj_property name="ObjectShortName">AB_15_ce0</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_blockmatmul_top/AESL_inst_blockmatmul/Loop_writeoutput_proc_U0/ap_ready">
+                  <obj_property name="ElementShortName">ap_ready</obj_property>
+                  <obj_property name="ObjectShortName">ap_ready</obj_property>
+                  <obj_property name="label">ap_ready(t_read)</obj_property>
+                  <obj_property name="DisplayName">label</obj_property>
+               </wvobject>
+            </wvobject>
+         </wvobject>
+         <wvobject type="group" fp_name="Loop_writeoutput_proc_U0_Handshake_group">
+            <obj_property name="label">Block-level handshake</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject type="logic" fp_name="/apatb_blockmatmul_top/AESL_inst_blockmatmul/Loop_writeoutput_proc_U0/ap_start">
+               <obj_property name="ElementShortName">ap_start</obj_property>
+               <obj_property name="ObjectShortName">ap_start</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_blockmatmul_top/AESL_inst_blockmatmul/Loop_writeoutput_proc_U0/ap_ready">
+               <obj_property name="ElementShortName">ap_ready</obj_property>
+               <obj_property name="ObjectShortName">ap_ready</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_blockmatmul_top/AESL_inst_blockmatmul/Loop_writeoutput_proc_U0/ap_done">
+               <obj_property name="ElementShortName">ap_done</obj_property>
+               <obj_property name="ObjectShortName">ap_done</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_blockmatmul_top/AESL_inst_blockmatmul/Loop_writeoutput_proc_U0/ap_continue">
+               <obj_property name="ElementShortName">ap_continue</obj_property>
+               <obj_property name="ObjectShortName">ap_continue</obj_property>
+            </wvobject>
+         </wvobject>
+         <wvobject type="group" fp_name="Loop_writeoutput_proc_U0_Output_group">
+            <obj_property name="label">Output Channels</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject type="group" fp_name="ABpartial_group">
+               <obj_property name="label">ABpartial(PIPO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_blockmatmul_top/AESL_inst_blockmatmul/Loop_writeoutput_proc_U0/ABpartial_address0">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_blockmatmul_top/AESL_inst_blockmatmul/Loop_writeoutput_proc_U0/ABpartial_d0">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_blockmatmul_top/AESL_inst_blockmatmul/Loop_writeoutput_proc_U0/ABpartial_ce0">
+                  <obj_property name="ElementShortName">ABpartial_ce0</obj_property>
+                  <obj_property name="ObjectShortName">ABpartial_ce0</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_blockmatmul_top/AESL_inst_blockmatmul/Loop_writeoutput_proc_U0/ABpartial_we0">
+                  <obj_property name="ElementShortName">ABpartial_we0</obj_property>
+                  <obj_property name="ObjectShortName">ABpartial_we0</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_blockmatmul_top/AESL_inst_blockmatmul/Loop_writeoutput_proc_U0/ap_done">
+                  <obj_property name="ElementShortName">ap_done</obj_property>
+                  <obj_property name="ObjectShortName">ap_done</obj_property>
+                  <obj_property name="label">ap_done(i_write)</obj_property>
+                  <obj_property name="DisplayName">label</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_blockmatmul_top/AESL_inst_blockmatmul/Loop_writeoutput_proc_U0/ap_continue">
+                  <obj_property name="ElementShortName">ap_continue</obj_property>
+                  <obj_property name="ObjectShortName">ap_continue</obj_property>
+                  <obj_property name="label">ap_continue(i_full_n)</obj_property>
+                  <obj_property name="DisplayName">label</obj_property>
+               </wvobject>
+            </wvobject>
+         </wvobject>
+      </wvobject>
+   </wvobject>
+</wave_config>

@@ -1,0 +1,50 @@
+{"sourceFile": [{
+      "name": "",
+      "directive": [
+        {
+          "functionName": "blockmatmul",
+          "label": "",
+          "functionLabel": "",
+          "id": "1",
+          "sourceFile": "E:\/Xilinx\/Vitis\/LabB\/solution2\/directives.tcl",
+          "sourceLine": "6",
+          "pragma": {
+            "name": "TOP",
+            "option": [{
+                "name": "name",
+                "value": "blockmatmul"
+              }]
+          }
+        },
+        {
+          "functionName": "blockmatmul",
+          "label": "ps_i",
+          "functionLabel": "",
+          "id": "2",
+          "sourceFile": "E:\/Xilinx\/Vitis\/LabB\/solution2\/directives.tcl",
+          "sourceLine": "7",
+          "pragma": {
+            "name": "PIPELINE",
+            "option": [{
+                "name": "II",
+                "value": "1"
+              }]
+          }
+        },
+        {
+          "functionName": "blockmatmul",
+          "label": "",
+          "functionLabel": "",
+          "id": "3",
+          "sourceFile": "E:\/Xilinx\/Vitis\/LabB\/solution2\/csynth.tcl",
+          "sourceLine": "15",
+          "pragma": {
+            "name": "TOP",
+            "option": [{
+                "name": "name",
+                "value": "blockmatmul"
+              }]
+          }
+        }
+      ]
+    }]}

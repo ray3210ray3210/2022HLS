@@ -1,0 +1,158 @@
+
+
+================================================================
+== Vitis HLS Report for 'blockmatmul_Pipeline_writeoutput_VITIS_LOOP_34_2'
+================================================================
+* Date:           Wed Apr 12 06:50:51 2023
+
+* Version:        2022.1 (Build 3526262 on Mon Apr 18 15:48:16 MDT 2022)
+* Project:        LabB
+* Solution:       solution1 (Vivado IP Flow Target)
+* Product family: zynq
+* Target device:  xc7z020-clg400-1
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+----------+----------+------------+
+    |  Clock |  Target  | Estimated| Uncertainty|
+    +--------+----------+----------+------------+
+    |ap_clk  |  10.00 ns|  6.508 ns|     2.70 ns|
+    +--------+----------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+----------+----------+-----+-----+---------+
+    |  Latency (cycles) |  Latency (absolute) |  Interval | Pipeline|
+    |   min   |   max   |    min   |    max   | min | max |   Type  |
+    +---------+---------+----------+----------+-----+-----+---------+
+    |      259|      259|  2.590 us|  2.590 us|  259|  259|       no|
+    +---------+---------+----------+----------+-----+-----+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        +-------------------------------+---------+---------+----------+-----------+-----------+------+----------+
+        |                               |  Latency (cycles) | Iteration|  Initiation Interval  | Trip |          |
+        |           Loop Name           |   min   |   max   |  Latency |  achieved |   target  | Count| Pipelined|
+        +-------------------------------+---------+---------+----------+-----------+-----------+------+----------+
+        |- writeoutput_VITIS_LOOP_34_2  |      257|      257|         3|          1|          1|   256|       yes|
+        +-------------------------------+---------+---------+----------+-----------+-----------+------+----------+
+
+
+
+================================================================
+== Utilization Estimates
+================================================================
+* Summary: 
++-----------------+---------+-----+--------+-------+-----+
+|       Name      | BRAM_18K| DSP |   FF   |  LUT  | URAM|
++-----------------+---------+-----+--------+-------+-----+
+|DSP              |        -|    -|       -|      -|    -|
+|Expression       |        -|    -|       0|     88|    -|
+|FIFO             |        -|    -|       -|      -|    -|
+|Instance         |        -|    -|       -|      -|    -|
+|Memory           |        -|    -|       -|      -|    -|
+|Multiplexer      |        -|    -|       -|     72|    -|
+|Register         |        -|    -|      40|      -|    -|
++-----------------+---------+-----+--------+-------+-----+
+|Total            |        0|    0|      40|    160|    0|
++-----------------+---------+-----+--------+-------+-----+
+|Available        |      280|  220|  106400|  53200|    0|
++-----------------+---------+-----+--------+-------+-----+
+|Utilization (%)  |        0|    0|      ~0|     ~0|    0|
++-----------------+---------+-----+--------+-------+-----+
+
++ Detail: 
+    * Instance: 
+    N/A
+
+    * DSP: 
+    N/A
+
+    * Memory: 
+    N/A
+
+    * FIFO: 
+    N/A
+
+    * Expression: 
+    +-------------------------+----------+----+---+----+------------+------------+
+    |      Variable Name      | Operation| DSP| FF| LUT| Bitwidth P0| Bitwidth P1|
+    +-------------------------+----------+----+---+----+------------+------------+
+    |add_ln33_1_fu_111_p2     |         +|   0|  0|  14|           9|           1|
+    |add_ln33_fu_123_p2       |         +|   0|  0|  13|           5|           1|
+    |add_ln34_fu_173_p2       |         +|   0|  0|  13|           5|           1|
+    |add_ln35_fu_167_p2       |         +|   0|  0|  15|           8|           8|
+    |icmp_ln33_fu_105_p2      |      icmp|   0|  0|  11|           9|          10|
+    |icmp_ln34_fu_129_p2      |      icmp|   0|  0|  10|           5|           6|
+    |select_ln33_1_fu_143_p3  |    select|   0|  0|   5|           1|           5|
+    |select_ln33_fu_135_p3    |    select|   0|  0|   5|           1|           1|
+    |ap_enable_pp0            |       xor|   0|  0|   2|           1|           2|
+    +-------------------------+----------+----+---+----+------------+------------+
+    |Total                    |          |   0|  0|  88|          44|          35|
+    +-------------------------+----------+----+---+----+------------+------------+
+
+    * Multiplexer: 
+    +--------------------------------------+----+-----------+-----+-----------+
+    |                 Name                 | LUT| Input Size| Bits| Total Bits|
+    +--------------------------------------+----+-----------+-----+-----------+
+    |ap_done_int                           |   9|          2|    1|          2|
+    |ap_enable_reg_pp0_iter1               |   9|          2|    1|          2|
+    |ap_sig_allocacmp_i_load               |   9|          2|    5|         10|
+    |ap_sig_allocacmp_indvar_flatten_load  |   9|          2|    9|         18|
+    |ap_sig_allocacmp_j_load               |   9|          2|    5|         10|
+    |i_fu_52                               |   9|          2|    5|         10|
+    |indvar_flatten_fu_56                  |   9|          2|    9|         18|
+    |j_fu_48                               |   9|          2|    5|         10|
+    +--------------------------------------+----+-----------+-----+-----------+
+    |Total                                 |  72|         16|   40|         80|
+    +--------------------------------------+----+-----------+-----+-----------+
+
+    * Register: 
+    +----------------------------------+---+----+-----+-----------+
+    |               Name               | FF| LUT| Bits| Const Bits|
+    +----------------------------------+---+----+-----+-----------+
+    |add_ln35_reg_223                  |  8|   0|    8|          0|
+    |ap_CS_fsm                         |  1|   0|    1|          0|
+    |ap_done_reg                       |  1|   0|    1|          0|
+    |ap_enable_reg_pp0_iter1           |  1|   0|    1|          0|
+    |ap_enable_reg_pp0_iter2           |  1|   0|    1|          0|
+    |ap_loop_exit_ready_pp0_iter1_reg  |  1|   0|    1|          0|
+    |i_fu_52                           |  5|   0|    5|          0|
+    |indvar_flatten_fu_56              |  9|   0|    9|          0|
+    |j_fu_48                           |  5|   0|    5|          0|
+    |zext_ln35_1_reg_228               |  8|   0|   64|         56|
+    +----------------------------------+---+----+-----+-----------+
+    |Total                             | 40|   0|   96|         56|
+    +----------------------------------+---+----+-----+-----------+
+
+
+
+================================================================
+== Interface
+================================================================
+* Summary: 
++--------------------+-----+-----+------------+--------------------------------------------------+--------------+
+|      RTL Ports     | Dir | Bits|  Protocol  |                   Source Object                  |    C Type    |
++--------------------+-----+-----+------------+--------------------------------------------------+--------------+
+|ap_clk              |   in|    1|  ap_ctrl_hs|  blockmatmul_Pipeline_writeoutput_VITIS_LOOP_34_2|  return value|
+|ap_rst              |   in|    1|  ap_ctrl_hs|  blockmatmul_Pipeline_writeoutput_VITIS_LOOP_34_2|  return value|
+|ap_start            |   in|    1|  ap_ctrl_hs|  blockmatmul_Pipeline_writeoutput_VITIS_LOOP_34_2|  return value|
+|ap_done             |  out|    1|  ap_ctrl_hs|  blockmatmul_Pipeline_writeoutput_VITIS_LOOP_34_2|  return value|
+|ap_idle             |  out|    1|  ap_ctrl_hs|  blockmatmul_Pipeline_writeoutput_VITIS_LOOP_34_2|  return value|
+|ap_ready            |  out|    1|  ap_ctrl_hs|  blockmatmul_Pipeline_writeoutput_VITIS_LOOP_34_2|  return value|
+|ABpartial_address0  |  out|    8|   ap_memory|                                         ABpartial|         array|
+|ABpartial_ce0       |  out|    1|   ap_memory|                                         ABpartial|         array|
+|ABpartial_we0       |  out|    1|   ap_memory|                                         ABpartial|         array|
+|ABpartial_d0        |  out|   32|   ap_memory|                                         ABpartial|         array|
+|AB_address0         |  out|    8|   ap_memory|                                                AB|         array|
+|AB_ce0              |  out|    1|   ap_memory|                                                AB|         array|
+|AB_q0               |   in|   32|   ap_memory|                                                AB|         array|
++--------------------+-----+-----+------------+--------------------------------------------------+--------------+
+

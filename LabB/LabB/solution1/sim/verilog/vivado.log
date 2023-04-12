@@ -1,0 +1,35 @@
+#-----------------------------------------------------------
+# Vivado v2022.1 (64-bit)
+# SW Build 3526262 on Mon Apr 18 15:48:16 MDT 2022
+# IP Build 3524634 on Mon Apr 18 20:55:01 MDT 2022
+# Start of session at: Wed Apr 12 06:13:48 2023
+# Process ID: 28232
+# Current directory: E:/Xilinx/Vitis/LabB/solution1/sim/verilog
+# Command line: vivado.exe -source open_wave.tcl
+# Log file: E:/Xilinx/Vitis/LabB/solution1/sim/verilog/vivado.log
+# Journal file: E:/Xilinx/Vitis/LabB/solution1/sim/verilog\vivado.jou
+# Running On: DESKTOP-O0BJBLC, OS: Windows, CPU Frequency: 3000 MHz, CPU Physical cores: 6, Host memory: 42866 MB
+#-----------------------------------------------------------
+start_gui
+source open_wave.tcl
+# current_fileset
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk120_es:part0:1.2 available at D:/tool/Xilinx/Vivado/2022.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vpk120/es/1.2/board.xml as part xcvp1202-vsva2785-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk120_es_revb:part0:1.0 available at D:/tool/Xilinx/Vivado/2022.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vpk120_revb/es/1.0/board.xml as part xcvp1202-vsva2785-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu208ld:part0:2.0 available at D:/tool/Xilinx/Vivado/2022.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu208ld/production/2.0/board.xml as part xczu58dr-fsvg1517-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu216ld:part0:2.0 available at D:/tool/Xilinx/Vivado/2022.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu216ld/production/2.0/board.xml as part xczu59dr-ffvf1760-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu670:part0:2.0 available at D:/tool/Xilinx/Vivado/2022.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu670/2.0/board.xml as part xczu67dr-fsve1156-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu670ld:part0:1.0 available at D:/tool/Xilinx/Vivado/2022.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu670ld/1.0/board.xml as part xczu57dr-fsve1156-2-i specified in board_part file is either invalid or not available
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/tool/Xilinx/Vivado/2022.1/data/ip'.
+# open_wave_database blockmatmul.wdb
+INFO: [Wavedata 42-564]   Found protocol instance at /apatb_blockmatmul_top/AESL_inst_blockmatmul/AESL_inst_blockmatmul_activity
+INFO: [Wavedata 42-564]   Found protocol instance at /apatb_blockmatmul_top/AESL_inst_blockmatmul/grp_blockmatmul_Pipeline_1_fu_146/grp_blockmatmul_Pipeline_1_fu_146_activity
+INFO: [Wavedata 42-564]   Found protocol instance at /apatb_blockmatmul_top/AESL_inst_blockmatmul/grp_blockmatmul_Pipeline_loadA_fu_152/grp_blockmatmul_Pipeline_loadA_fu_152_activity
+INFO: [Wavedata 42-564]   Found protocol instance at /apatb_blockmatmul_top/AESL_inst_blockmatmul/grp_blockmatmul_Pipeline_ps_i_fu_167/grp_blockmatmul_Pipeline_ps_i_fu_167_activity
+INFO: [Wavedata 42-564]   Found protocol instance at /apatb_blockmatmul_top/AESL_inst_blockmatmul/grp_blockmatmul_Pipeline_writeoutput_VITIS_LOOP_34_2_fu_160/grp_blockmatmul_Pipeline_writeoutput_VITIS_LOOP_34_2_fu_160_activity
+open_wave_config E:/Xilinx/Vitis/LabB/solution1/sim/verilog/blockmatmul.wcfg
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+exit
+INFO: [Common 17-206] Exiting Vivado at Wed Apr 12 07:19:30 2023...

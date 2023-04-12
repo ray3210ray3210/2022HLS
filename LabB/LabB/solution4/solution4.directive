@@ -1,0 +1,30 @@
+<AutoPilot:ProjectResources xmlns:AutoPilot="com.autoesl.autopilot.ui.directiveView">
+    <sourceFile name="">
+        <directive functionName="blockmatmul" label="" functionLabel="">
+            <pragma name="TOP">
+                <option name="name" value="blockmatmul"/>
+            </pragma>
+        </directive>
+        <directive functionName="blockmatmul" label="ps_i" functionLabel="">
+            <pragma name="PIPELINE">
+                <option name="II" value="1"/>
+            </pragma>
+        </directive>
+        <directive functionName="blockmatmul" label="" functionLabel="">
+            <pragma name="DATAFLOW"/>
+        </directive>
+        <directive functionName="blockmatmul" label="" functionLabel="">
+            <pragma name="ARRAY_RESHAPE">
+                <option name="variable" positionalBoolean="4" value="AB"/>
+                <option name="complete" value="" positionalBoolean="type"/>
+                <option name="dim" value="2"/>
+            </pragma>
+        </directive>
+        <directive functionName="blockmatmul" label="" functionLabel="">
+            <pragma name="TOP">
+                <option name="name" value="blockmatmul"/>
+            </pragma>
+        </directive>
+    </sourceFile>
+</AutoPilot:ProjectResources>
+

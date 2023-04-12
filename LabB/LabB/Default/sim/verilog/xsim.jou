@@ -1,0 +1,15 @@
+#-----------------------------------------------------------
+# xsim v2022.1 (64-bit)
+# SW Build 3526262 on Mon Apr 18 15:48:16 MDT 2022
+# IP Build 3524634 on Mon Apr 18 20:55:01 MDT 2022
+# Start of session at: Tue Apr 11 15:25:57 2023
+# Process ID: 16504
+# Current directory: E:/Xilinx/Vitis/LabB/solution1/sim/verilog
+# Command line: xsim.exe -mode tcl -source {xsim.dir/blockmatmul/xsim_script.tcl}
+# Log file: E:/Xilinx/Vitis/LabB/solution1/sim/verilog/xsim.log
+# Journal file: E:/Xilinx/Vitis/LabB/solution1/sim/verilog\xsim.jou
+# Running On: DESKTOP-O0BJBLC, OS: Windows, CPU Frequency: 3000 MHz, CPU Physical cores: 6, Host memory: 42866 MB
+#-----------------------------------------------------------
+source xsim.dir/blockmatmul/xsim_script.tcl
+open_wave_config blockmatmul_dataflow_ana.wcfg
+source blockmatmul.tcl

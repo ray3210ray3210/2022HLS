@@ -1,0 +1,963 @@
+INFO-FLOW: Workspace E:/Xilinx/Vitis/LabB/solution1 opened at Wed Apr 12 06:50:30 +0800 2023
+Execute     ap_set_clock -name default -period 10 -default=false 
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+Execute     set_part xc7z020-clg400-1 
+Execute       create_platform xc7z020-clg400-1 -board  
+DBG:HLSDevice: Trying to load device library: D:/tool/Xilinx/Vitis_HLS/2022.1\lib\win64.o\librdi_hlsvwrap.dll
+DBG:HLSDevice: first parts/arch.xml in RDI_DATADIR: D:/tool/Xilinx/Vivado/2022.1/data/parts/arch.xml
+DBG:HLSDevice: init success
+INFO: [HLS 200-1611] Setting target device to 'xc7z020-clg400-1'
+Command       create_platform done; 2.714 sec.
+Execute       source D:/tool/Xilinx/Vitis_HLS/2022.1/common/technology/xilinx/common/xilinx.gen 
+Execute         source D:/tool/Xilinx/Vitis_HLS/2022.1/common/technology/xilinx/interface/plb46.gen 
+Execute         source D:/tool/Xilinx/Vitis_HLS/2022.1/common/technology/xilinx/interface/axi4.gen 
+Execute         source D:/tool/Xilinx/Vitis_HLS/2022.1/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute           source D:/tool/Xilinx/Vitis_HLS/2022.1/common/technology/xilinx/interface/saxilite.gen 
+Execute         source D:/tool/Xilinx/Vitis_HLS/2022.1/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute         source D:/tool/Xilinx/Vitis_HLS/2022.1/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute         source D:/tool/Xilinx/Vitis_HLS/2022.1/common/technology/xilinx/ip/dds_compiler.gen 
+Execute         source D:/tool/Xilinx/Vitis_HLS/2022.1/common/technology/xilinx/ip/util.gen 
+Execute         source D:/tool/Xilinx/Vitis_HLS/2022.1/common/technology/xilinx/ip/xfft.gen 
+Execute         source D:/tool/Xilinx/Vitis_HLS/2022.1/common/technology/xilinx/ip/xfir.gen 
+Execute         source D:/tool/Xilinx/Vitis_HLS/2022.1/common/technology/xilinx/DSP48/dsp48.gen 
+Command       ap_source done; 0.115 sec.
+Execute       ap_part_info -name xc7z020-clg400-1 -data info 
+Execute       config_compile -quiet -complex-mul-dsp=0 
+Command     set_part done; 2.877 sec.
+Execute     send_msg_by_id INFO @200-1505@%s%s  vivado 
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+Execute     get_config_interface -m_axi_latency 
+Execute     get_config_interface -m_axi_alignment_byte_size 
+Execute     get_config_interface -m_axi_max_widen_bitwidth 
+Execute     get_config_interface -default_interface 
+Execute     get_config_rtl -register_reset_num 
+Command   open_solution done; 2.898 sec.
+Execute   set_part xc7z020clg400-1 
+INFO: [HLS 200-1510] Running: set_part xc7z020clg400-1 
+Execute     create_platform xc7z020clg400-1 -board  
+Execute     source D:/tool/Xilinx/Vitis_HLS/2022.1/common/technology/xilinx/common/xilinx.gen 
+Execute       source D:/tool/Xilinx/Vitis_HLS/2022.1/common/technology/xilinx/interface/plb46.gen 
+Execute       source D:/tool/Xilinx/Vitis_HLS/2022.1/common/technology/xilinx/interface/axi4.gen 
+Execute       source D:/tool/Xilinx/Vitis_HLS/2022.1/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute         source D:/tool/Xilinx/Vitis_HLS/2022.1/common/technology/xilinx/interface/saxilite.gen 
+Execute       source D:/tool/Xilinx/Vitis_HLS/2022.1/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute       source D:/tool/Xilinx/Vitis_HLS/2022.1/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute       source D:/tool/Xilinx/Vitis_HLS/2022.1/common/technology/xilinx/ip/dds_compiler.gen 
+Execute       source D:/tool/Xilinx/Vitis_HLS/2022.1/common/technology/xilinx/ip/util.gen 
+Execute       source D:/tool/Xilinx/Vitis_HLS/2022.1/common/technology/xilinx/ip/xfft.gen 
+Execute       source D:/tool/Xilinx/Vitis_HLS/2022.1/common/technology/xilinx/ip/xfir.gen 
+Execute       source D:/tool/Xilinx/Vitis_HLS/2022.1/common/technology/xilinx/DSP48/dsp48.gen 
+Command     ap_source done; 0.114 sec.
+Execute     ap_part_info -name xc7z020-clg400-1 -data info 
+Execute     config_compile -quiet -complex-mul-dsp=0 
+Command   set_part done; 0.204 sec.
+Execute   create_clock -period 10 -name default 
+INFO: [HLS 200-1510] Running: create_clock -period 10 -name default 
+Execute   source ./LabB/solution1/directives.tcl 
+INFO: [HLS 200-1510] Running: source ./LabB/solution1/directives.tcl
+Execute   csynth_design 
+INFO: [HLS 200-1510] Running: csynth_design 
+Execute     get_config_compile -effort 
+Execute     get_config_compile -enable_clang39 
+Execute     get_config_compile -g 
+Execute     get_config_compile -hw_syn 
+Execute     get_config_compile -ng 
+Execute     get_config_compile -opt_fp 
+Execute     get_config_compile -skip_cdt 
+Execute     get_config_compile -skip_syncheck 
+Execute     get_config_compile -skip_transform 
+Execute     get_config_compile -pre_tcl 
+Execute     get_config_compile -keep_printf 
+Execute     elaborate -effort=medium -skip_syncheck=0 -keep_printf=0 -skip_cdt=0 -skip_transform=0 -ng=0 -g=0 -opt_fp=0 -from_csynth_design=1 
+INFO: [HLS 200-111] Finished File checks and directory preparation: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.018 seconds; current allocated memory: 1.390 GB.
+INFO: [HLS 200-10] Analyzing design file 'LabB/BlockMatrix_design.cpp' ... 
+INFO-FLOW: Compiling one TU...
+Execute       get_config_compile -pragma_strict_mode 
+INFO-FLOW: Handling LabB/BlockMatrix_design.cpp as C++
+Execute       ap_part_info -name xc7z020-clg400-1 -data info 
+INFO-FLOW: Running: GCC PP 39
+INFO-FLOW: Source preprocessing
+Execute       ap_eval exec -ignorestderr D:/tool/Xilinx/Vitis_HLS/2022.1/win64/tools/clang-3.9-csynth/bin/clang LabB/BlockMatrix_design.cpp -foptimization-record-file=E:/Xilinx/Vitis/LabB/solution1/.autopilot/db/BlockMatrix_design.cpp.clang.diag.yml -mllvm -pass-remarks-missed=reflow|pasta|unroll -mllvm -pass-remarks=reflow|pasta|unroll|inline -fno-limit-debug-info --sysroot D:/tool/Xilinx/Vitis_HLS/2022.1/tps/mingw/8.3.0/win64.o/nt -fhls -fno-exceptions -E -fno-math-errno -c -emit-llvm -mllvm -disable-llvm-optzns -Werror=implicit-function-declaration -Werror=implicit-hls-streams -Werror=return-type -Wpragmas -Wunused-parameter -Wdump-hls-pragmas -fno-threadsafe-statics -fno-use-cxa-atexit -std=gnu++14 -target fpga64-xilinx-mingw32 -fno-threadsafe-statics -fno-use-cxa-atexit -D__VITIS_HLS__ -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I D:/tool/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot -I D:/tool/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot/ap_sysc -include etc/autopilot_ssdm_op.h -D__DSP48E1__ -I /usr/include/x86_64-linux-gnu -o E:/Xilinx/Vitis/LabB/solution1/.autopilot/db/BlockMatrix_design.pp.0.cpp -hls-platform-db-name=D:/tool/Xilinx/Vitis_HLS/2022.1/common/technology/xilinx/common/platform.db -hls-platform-name=zynq_slow -device-resource-info=BRAM_280.000000_DSP_220.000000_FF_106400.000000_LUT_53200.000000_SLICE_13300.000000_URAM_0.000000 > E:/Xilinx/Vitis/LabB/solution1/.autopilot/db/BlockMatrix_design.cpp.clang.out.log 2> E:/Xilinx/Vitis/LabB/solution1/.autopilot/db/BlockMatrix_design.cpp.clang.err.log 
+Command       ap_eval done; 1.377 sec.
+INFO-FLOW: Done: GCC PP 39 time: 1.4 seconds per iteration
+Execute       set_directive_top blockmatmul -name=blockmatmul 
+Execute       source D:/tool/Xilinx/Vitis_HLS/2022.1/tps/tcl/tcllib1.11.1/yaml/huddle.tcl 
+Execute       source D:/tool/Xilinx/Vitis_HLS/2022.1/tps/tcl/tcllib1.11.1/yaml/json2huddle.tcl 
+INFO-FLOW: Source syntax check for synthesis
+Execute       ap_eval exec -ignorestderr D:/tool/Xilinx/Vitis_HLS/2022.1/win64/tools/clang-3.9-csynth/bin/clang -foptimization-record-file=E:/Xilinx/Vitis/LabB/solution1/.autopilot/db/clang.diag.yml -mllvm -pass-remarks-missed=reflow|pasta|unroll -mllvm -pass-remarks=reflow|pasta|unroll|inline -fsyntax-only -fhls -target fpga64-xilinx-linux-gnu E:/Xilinx/Vitis/LabB/solution1/.autopilot/db/BlockMatrix_design.pp.0.cpp -hls-platform-db-name=D:/tool/Xilinx/Vitis_HLS/2022.1/common/technology/xilinx/common/platform.db -hls-platform-name=zynq_slow -device-resource-info=BRAM_280.000000_DSP_220.000000_FF_106400.000000_LUT_53200.000000_SLICE_13300.000000_URAM_0.000000 > E:/Xilinx/Vitis/LabB/solution1/.autopilot/db/clang.out.log 2> E:/Xilinx/Vitis/LabB/solution1/.autopilot/db/clang.err.log 
+Command       ap_eval done; 1.348 sec.
+Execute       clang_tidy xilinx-systemc-detector -desc systemc-detector E:/Xilinx/Vitis/LabB/solution1/.autopilot/db/BlockMatrix_design.pp.0.cpp std=gnu++14 -target fpga  -directive=E:/Xilinx/Vitis/LabB/solution1/.autopilot/db/.systemc_flag 
+INFO-FLOW: exec D:/tool/Xilinx/Vitis_HLS/2022.1/win64/tools/clang-3.9-csynth/bin/clang-tidy -header-filter=.* --checks=-*,xilinx-systemc-detector -import-directive=E:/Xilinx/Vitis/LabB/solution1/.autopilot/db/.systemc_flag -fix-errors E:/Xilinx/Vitis/LabB/solution1/.autopilot/db/BlockMatrix_design.pp.0.cpp -- -std=gnu++14 -target fpga -fhls -ferror-limit=0
+Command       clang_tidy done; 0.602 sec.
+INFO-FLOW: Running: clang-tidy CDT preprocess 39
+Execute       clang_tidy xilinx-directive2pragma -desc directive2pragma E:/Xilinx/Vitis/LabB/solution1/.autopilot/db/BlockMatrix_design.pp.0.cpp std=gnu++14 -target fpga  -directive=E:/Xilinx/Vitis/LabB/solution1/.autopilot/db/all.directive.json 
+INFO-FLOW: exec D:/tool/Xilinx/Vitis_HLS/2022.1/win64/tools/clang-3.9-csynth/bin/clang-tidy -header-filter=.* --checks=-*,xilinx-directive2pragma -import-directive=E:/Xilinx/Vitis/LabB/solution1/.autopilot/db/all.directive.json -fix-errors E:/Xilinx/Vitis/LabB/solution1/.autopilot/db/BlockMatrix_design.pp.0.cpp -- -std=gnu++14 -target fpga -fhls -ferror-limit=0
+Command       clang_tidy done; 0.838 sec.
+Execute       clang_tidy xilinx-remove-assert -desc remove-assert E:/Xilinx/Vitis/LabB/solution1/.autopilot/db/BlockMatrix_design.pp.0.cpp std=gnu++14 -target fpga  
+INFO-FLOW: exec D:/tool/Xilinx/Vitis_HLS/2022.1/win64/tools/clang-3.9-csynth/bin/clang-tidy -header-filter=.* --checks=-*,xilinx-remove-assert -fix-errors E:/Xilinx/Vitis/LabB/solution1/.autopilot/db/BlockMatrix_design.pp.0.cpp -- -std=gnu++14 -target fpga -fhls -ferror-limit=0
+Command       clang_tidy done; 0.627 sec.
+INFO-FLOW: Done: clang-tidy CDT preprocess 39 time: 1.5 seconds per iteration
+INFO-FLOW: Calling xilinx-label-all-loops ... 
+INFO-FLOW: Calling xilinx-aggregate-on-hls-vector ... 
+Execute       clang_tidy -errorcheck -desc loop-label xilinx-label-all-loops,xilinx-aggregate-on-hls-vector,,xilinx-warn-mayneed-no-ctor-attribute E:/Xilinx/Vitis/LabB/solution1/.autopilot/db/BlockMatrix_design.pp.0.cpp std=gnu++14 -target fpga  
+Execute         ap_eval exec -ignorestderr D:/tool/Xilinx/Vitis_HLS/2022.1/win64/tools/clang-3.9-csynth/bin/clang-tidy -export-fixes=E:/Xilinx/Vitis/LabB/solution1/.autopilot/db/BlockMatrix_design.pp.0.cpp.clang-tidy.loop-label.diag.yml -header-filter=.* --checks=-*,xilinx-label-all-loops,xilinx-aggregate-on-hls-vector,,xilinx-warn-mayneed-no-ctor-attribute -fix-errors E:/Xilinx/Vitis/LabB/solution1/.autopilot/db/BlockMatrix_design.pp.0.cpp -- -std=gnu++14 -target fpga -fhls -ferror-limit=0 > E:/Xilinx/Vitis/LabB/solution1/.autopilot/db/BlockMatrix_design.pp.0.cpp.clang-tidy.loop-label.out.log 2> E:/Xilinx/Vitis/LabB/solution1/.autopilot/db/BlockMatrix_design.pp.0.cpp.clang-tidy.loop-label.err.log 
+Command         ap_eval done; 0.932 sec.
+Execute         source D:/tool/Xilinx/Vitis_HLS/2022.1/tps/tcl/tcllib1.11.1/yaml/yaml.tcl 
+Command       clang_tidy done; 0.953 sec.
+Execute       get_config_dataflow -strict_mode 
+Execute       ap_eval exec -ignorestderr D:/tool/Xilinx/Vitis_HLS/2022.1/win64/tools/clang-3.9-csynth/bin/xilinx-dataflow-lawyer -export-fixes=E:/Xilinx/Vitis/LabB/solution1/.autopilot/db/BlockMatrix_design.pp.0.cpp.xilinx-dataflow-lawyer.diag.yml E:/Xilinx/Vitis/LabB/solution1/.autopilot/db/BlockMatrix_design.pp.0.cpp -- -std=gnu++14 -target fpga -fhls -ferror-limit=0 -fstrict-dataflow > E:/Xilinx/Vitis/LabB/solution1/.autopilot/db/BlockMatrix_design.pp.0.cpp.xilinx-dataflow-lawyer.out.log 2> E:/Xilinx/Vitis/LabB/solution1/.autopilot/db/BlockMatrix_design.pp.0.cpp.xilinx-dataflow-lawyer.err.log 
+Command       ap_eval done; 0.654 sec.
+Execute       ap_part_info -name xc7z020-clg400-1 -data info 
+INFO-FLOW: compiling source code to llvm bc
+Execute       ap_eval exec -ignorestderr D:/tool/Xilinx/Vitis_HLS/2022.1/win64/tools/clang-3.9-csynth/bin/clang -foptimization-record-file=E:/Xilinx/Vitis/LabB/solution1/.autopilot/db/BlockMatrix_design.pp.0.cpp.clang.diag.yml -mllvm -pass-remarks-missed=reflow|pasta|unroll -mllvm -pass-remarks=reflow|pasta|unroll|inline -fno-limit-debug-info -fhls -flto -fno-exceptions -Wno-error=c++11-narrowing E:/Xilinx/Vitis/LabB/solution1/.autopilot/db/BlockMatrix_design.pp.0.cpp -fno-math-errno -c -emit-llvm -mllvm -disable-llvm-optzns -Werror=implicit-function-declaration -Werror=implicit-hls-streams -Werror=return-type -Wpragmas -Wunused-parameter -Wdump-hls-pragmas -fno-threadsafe-statics -fno-use-cxa-atexit -std=gnu++14 -target fpga64-xilinx-linux-gnu -D__VITIS_HLS__ -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I D:/tool/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot -I D:/tool/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot/ap_sysc -include etc/autopilot_ssdm_op.h -D__DSP48E1__ -g -o E:/Xilinx/Vitis/LabB/solution1/.autopilot/db/BlockMatrix_design.bc -hls-platform-db-name=D:/tool/Xilinx/Vitis_HLS/2022.1/common/technology/xilinx/common/platform.db -hls-platform-name=zynq_slow -device-resource-info=BRAM_280.000000_DSP_220.000000_FF_106400.000000_LUT_53200.000000_SLICE_13300.000000_URAM_0.000000 > E:/Xilinx/Vitis/LabB/solution1/.autopilot/db/BlockMatrix_design.pp.0.cpp.clang.out.log 2> E:/Xilinx/Vitis/LabB/solution1/.autopilot/db/BlockMatrix_design.pp.0.cpp.clang.err.log 
+Command       ap_eval done; 1.553 sec.
+INFO: [HLS 200-111] Finished Source Code Analysis and Preprocessing: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 8.103 seconds; current allocated memory: 1.390 GB.
+INFO-FLOW: Linking Debug ...
+INFO-FLOW: Linking dut bc code.
+Execute       run_link_or_opt -out E:/Xilinx/Vitis/LabB/solution1/.autopilot/db/a.g.ld.0.bc -args  "E:/Xilinx/Vitis/LabB/solution1/.autopilot/db/BlockMatrix_design.g.bc"  
+Execute         ap_eval exec -ignorestderr D:/tool/Xilinx/Vitis_HLS/2022.1/win64/tools/clang-3.9-csynth/bin/llvm-link E:/Xilinx/Vitis/LabB/solution1/.autopilot/db/BlockMatrix_design.g.bc -o E:/Xilinx/Vitis/LabB/solution1/.autopilot/db/a.g.ld.0.bc > E:/Xilinx/Vitis/LabB/solution1/.autopilot/db/a.g.ld.0.bc.llvm-link.out.log 2> E:/Xilinx/Vitis/LabB/solution1/.autopilot/db/a.g.ld.0.bc.llvm-link.err.log 
+INFO-FLOW: 
+Execute       run_link_or_opt -opt -out E:/Xilinx/Vitis/LabB/solution1/.autopilot/db/a.g.ld.1.lower.bc -args E:/Xilinx/Vitis/LabB/solution1/.autopilot/db/a.g.ld.0.bc -reflow-lower-math-intrinsics 
+Execute         ap_eval exec -ignorestderr D:/tool/Xilinx/Vitis_HLS/2022.1/win64/tools/clang-3.9-csynth/bin/opt -pass-remarks-missed=reflow|pasta|unroll -pass-remarks=reflow|pasta|unroll|inline -pass-remarks-output=E:/Xilinx/Vitis/LabB/solution1/.autopilot/db/a.g.ld.1.lower.bc.opt.diag.yml E:/Xilinx/Vitis/LabB/solution1/.autopilot/db/a.g.ld.0.bc -reflow-lower-math-intrinsics -o E:/Xilinx/Vitis/LabB/solution1/.autopilot/db/a.g.ld.1.lower.bc > E:/Xilinx/Vitis/LabB/solution1/.autopilot/db/a.g.ld.1.lower.bc.opt.out.log 2> E:/Xilinx/Vitis/LabB/solution1/.autopilot/db/a.g.ld.1.lower.bc.opt.err.log 
+Command         ap_eval done; 0.286 sec.
+INFO-FLOW: 
+Command       run_link_or_opt done; 0.29 sec.
+INFO-FLOW: Linking math bc lib
+Execute       run_link_or_opt -out E:/Xilinx/Vitis/LabB/solution1/.autopilot/db/a.g.ld.2.m1.bc -args E:/Xilinx/Vitis/LabB/solution1/.autopilot/db/a.g.ld.1.lower.bc -only-needed D:/tool/Xilinx/Vitis_HLS/2022.1/win64/lib/libhlsm_39.bc D:/tool/Xilinx/Vitis_HLS/2022.1/win64/lib/libhlsmc++_39.bc 
+Execute         ap_eval exec -ignorestderr D:/tool/Xilinx/Vitis_HLS/2022.1/win64/tools/clang-3.9-csynth/bin/llvm-link E:/Xilinx/Vitis/LabB/solution1/.autopilot/db/a.g.ld.1.lower.bc -only-needed D:/tool/Xilinx/Vitis_HLS/2022.1/win64/lib/libhlsm_39.bc D:/tool/Xilinx/Vitis_HLS/2022.1/win64/lib/libhlsmc++_39.bc -o E:/Xilinx/Vitis/LabB/solution1/.autopilot/db/a.g.ld.2.m1.bc > E:/Xilinx/Vitis/LabB/solution1/.autopilot/db/a.g.ld.2.m1.bc.llvm-link.out.log 2> E:/Xilinx/Vitis/LabB/solution1/.autopilot/db/a.g.ld.2.m1.bc.llvm-link.err.log 
+Command         ap_eval done; 2.85 sec.
+INFO-FLOW: 
+Command       run_link_or_opt done; 2.852 sec.
+Execute       run_link_or_opt -opt -out E:/Xilinx/Vitis/LabB/solution1/.autopilot/db/a.g.ld.3.fpc.bc -args E:/Xilinx/Vitis/LabB/solution1/.autopilot/db/a.g.ld.2.m1.bc -reflow-globaldce -hls-top-function-name=blockmatmul -reflow-float-conversion 
+Execute         ap_eval exec -ignorestderr D:/tool/Xilinx/Vitis_HLS/2022.1/win64/tools/clang-3.9-csynth/bin/opt -pass-remarks-missed=reflow|pasta|unroll -pass-remarks=reflow|pasta|unroll|inline -pass-remarks-output=E:/Xilinx/Vitis/LabB/solution1/.autopilot/db/a.g.ld.3.fpc.bc.opt.diag.yml E:/Xilinx/Vitis/LabB/solution1/.autopilot/db/a.g.ld.2.m1.bc -reflow-globaldce -hls-top-function-name=blockmatmul -reflow-float-conversion -o E:/Xilinx/Vitis/LabB/solution1/.autopilot/db/a.g.ld.3.fpc.bc > E:/Xilinx/Vitis/LabB/solution1/.autopilot/db/a.g.ld.3.fpc.bc.opt.out.log 2> E:/Xilinx/Vitis/LabB/solution1/.autopilot/db/a.g.ld.3.fpc.bc.opt.err.log 
+Command         ap_eval done; 1.396 sec.
+INFO-FLOW: 
+Command       run_link_or_opt done; 1.4 sec.
+Execute       run_link_or_opt -out E:/Xilinx/Vitis/LabB/solution1/.autopilot/db/a.g.ld.4.m2.bc -args E:/Xilinx/Vitis/LabB/solution1/.autopilot/db/a.g.ld.3.fpc.bc -only-needed D:/tool/Xilinx/Vitis_HLS/2022.1/win64/lib/libfloatconversion_39.bc 
+Execute         ap_eval exec -ignorestderr D:/tool/Xilinx/Vitis_HLS/2022.1/win64/tools/clang-3.9-csynth/bin/llvm-link E:/Xilinx/Vitis/LabB/solution1/.autopilot/db/a.g.ld.3.fpc.bc -only-needed D:/tool/Xilinx/Vitis_HLS/2022.1/win64/lib/libfloatconversion_39.bc -o E:/Xilinx/Vitis/LabB/solution1/.autopilot/db/a.g.ld.4.m2.bc > E:/Xilinx/Vitis/LabB/solution1/.autopilot/db/a.g.ld.4.m2.bc.llvm-link.out.log 2> E:/Xilinx/Vitis/LabB/solution1/.autopilot/db/a.g.ld.4.m2.bc.llvm-link.err.log 
+Command         ap_eval done; 0.134 sec.
+INFO-FLOW: 
+Command       run_link_or_opt done; 0.136 sec.
+Execute       run_link_or_opt -opt -out E:/Xilinx/Vitis/LabB/solution1/.autopilot/db/a.g.ld.5.gdce.bc -args E:/Xilinx/Vitis/LabB/solution1/.autopilot/db/a.g.ld.4.m2.bc -reflow-globaldce -hls-top-function-name=blockmatmul 
+Execute         ap_eval exec -ignorestderr D:/tool/Xilinx/Vitis_HLS/2022.1/win64/tools/clang-3.9-csynth/bin/opt -pass-remarks-missed=reflow|pasta|unroll -pass-remarks=reflow|pasta|unroll|inline -pass-remarks-output=E:/Xilinx/Vitis/LabB/solution1/.autopilot/db/a.g.ld.5.gdce.bc.opt.diag.yml E:/Xilinx/Vitis/LabB/solution1/.autopilot/db/a.g.ld.4.m2.bc -reflow-globaldce -hls-top-function-name=blockmatmul -o E:/Xilinx/Vitis/LabB/solution1/.autopilot/db/a.g.ld.5.gdce.bc > E:/Xilinx/Vitis/LabB/solution1/.autopilot/db/a.g.ld.5.gdce.bc.opt.out.log 2> E:/Xilinx/Vitis/LabB/solution1/.autopilot/db/a.g.ld.5.gdce.bc.opt.err.log 
+Command         ap_eval done; 0.289 sec.
+INFO-FLOW: 
+Command       run_link_or_opt done; 0.294 sec.
+Execute       get_solution -flow_target 
+Execute       get_config_export -xo 
+Execute       get_config_export -format 
+Execute       get_config_rtl -module_prefix 
+Execute       get_config_interface -default_slave_interface 
+Execute       get_solution -flow_target 
+Execute       get_config_export -xo 
+Execute       get_config_export -format 
+Execute       get_config_interface -m_axi_offset 
+Execute       get_config_interface -m_axi_latency 
+Execute       get_config_interface -m_axi_alignment_byte_size 
+Execute       get_config_interface -m_axi_min_bitwidth 
+Execute       get_config_interface -m_axi_max_bitwidth 
+Execute       get_config_interface -m_axi_max_widen_bitwidth 
+Execute       get_config_interface -m_axi_num_read_outstanding 
+Execute       get_config_interface -m_axi_num_write_outstanding 
+Execute       get_config_interface -m_axi_max_read_burst_length 
+Execute       get_config_interface -m_axi_max_write_burst_length 
+Execute       get_config_interface -m_axi_min_bitwidth 
+Execute       get_config_interface -m_axi_max_bitwidth 
+Execute       get_config_interface -m_axi_latency 
+Execute       get_config_interface -m_axi_min_bitwidth 
+Execute       get_config_interface -m_axi_max_bitwidth 
+Execute       get_config_interface -m_axi_max_widen_bitwidth 
+Execute       get_config_interface -m_axi_auto_max_ports 
+Execute       get_config_interface -m_axi_num_read_outstanding 
+Execute       get_config_interface -m_axi_num_write_outstanding 
+Execute       get_config_interface -m_axi_max_read_burst_length 
+Execute       get_config_interface -m_axi_max_write_burst_length 
+Execute       get_config_interface -s_axilite_data64 
+Execute       get_config_compile -instruction_warning_threshold 
+Execute       get_config_compile -pipeline_loops 
+Execute       get_config_interface -m_axi_alignment_byte_size 
+Execute       get_config_compile -pragma_strict_mode 
+Execute       get_config_compile -pipeline_style 
+Execute       get_config_dataflow -strict_mode 
+Execute       get_config_array_partition -throughput_driven 
+Execute       send_msg_by_id INFO @200-777@%s Vivado 
+INFO: [HLS 200-777] Using interface defaults for 'Vivado' flow target.
+Execute       is_m_axi_addr64 
+Execute       get_clock_period -ns -default 
+INFO-FLOW: Doing LTO.
+Execute       ap_eval exec -ignorestderr D:/tool/Xilinx/Vitis_HLS/2022.1/win64/tools/clang-3.9-csynth/bin/clang -foptimization-record-file=E:/Xilinx/Vitis/LabB/solution1/.autopilot/db/a.g.ld.0.bc.clang.diag.yml -mllvm -pass-remarks-missed=reflow|pasta|unroll -mllvm -pass-remarks=reflow|pasta|unroll|inline -fhls -mllvm -hls-top-function-name=blockmatmul -mllvm -hls-db-dir -mllvm E:/Xilinx/Vitis/LabB/solution1/.autopilot/db -emit-llvm -c -target fpga64-xilinx-none -mllvm -xcl-xmlinfo=E:/Xilinx/Vitis/LabB/solution1/.autopilot/db/kernel.internal.xml -mllvm -top-io-mapping-info=E:/Xilinx/Vitis/LabB/solution1/.autopilot/db/top-io-fe.xml -mllvm -hls-bitcode-version=3.1 -mllvm -reflow-enable-slave-interface-default-setting=true -mllvm -gen-kernel-xml=false -mllvm -default-maxi-offset=slave -mllvm -maxi-latency=0 -mllvm -hls-maxi-data-size-in-bits=8 -mllvm -hls-maxi-max-data-size-in-bits=1024 -mllvm -hls-max-widen-size-in-bits=0 -mllvm -xcl-kernel-max-mem-ports=0 -mllvm -maxi-read-trans=16 -mllvm -maxi-write-trans=16 -mllvm -maxi-read-burst-len=16 -mllvm -maxi-write-burst-len=16 -mllvm -reflow-enable-saxi-64bits=0 -mllvm -reflow-basic-block-instr-threshold=200000 -mllvm -reflow-auto-pipeline-threshold=64 -mllvm -assume-maxi-align=0 -mllvm -no-unaligned-maxi-accesses -mllvm -reflow-pipeline-style-llvm-setting=2 -mllvm -reflow-enable-dataflow-strict-mode-checking=1 -mllvm -reflow-auto-array-partition-mode=default -mllvm -reflow-enable-auto-array-partition=true -mllvm -reflow-enable-auto-parallel-performance-driven=true -mllvm -reflow-enable-partition-for-automation=true -mllvm -reflow-aggregate-bitwidth-threshold=4096 -mllvm -hls -mllvm -disable-inlined-alloca-merging=true -x ir E:/Xilinx/Vitis/LabB/solution1/.autopilot/db/a.g.ld.5.gdce.bc -o E:/Xilinx/Vitis/LabB/solution1/.autopilot/db/a.g.lto.bc -hls-platform-db-name=D:/tool/Xilinx/Vitis_HLS/2022.1/common/technology/xilinx/common/platform.db -hls-platform-name=zynq_slow -device-resource-info=BRAM_280.000000_DSP_220.000000_FF_106400.000000_LUT_53200.000000_SLICE_13300.000000_URAM_0.000000 > E:/Xilinx/Vitis/LabB/solution1/.autopilot/db/a.g.ld.0.bc.clang.out.log 2> E:/Xilinx/Vitis/LabB/solution1/.autopilot/db/a.g.ld.0.bc.clang.err.log 
+Command       ap_eval done; 1.626 sec.
+INFO: [HLS 214-210] Disaggregating variable 'ABpartial' (LabB/BlockMatrix_design.cpp:5:0)
+INFO: [HLS 214-241] Aggregating fifo (hls::stream) variable 'Bcols' with compact=bit mode in 512-bits (LabB/BlockMatrix_design.cpp:5:0)
+INFO: [HLS 214-241] Aggregating fifo (hls::stream) variable 'Arows' with compact=bit mode in 512-bits (LabB/BlockMatrix_design.cpp:5:0)
+INFO: [HLS 214-131] Inlining function '_llvm.fpga.pack.none.i512.a16i32' into '_llvm.fpga.unpack.bits.s_struct.blockvecs.i512.1'
+INFO: [HLS 214-131] Inlining function '_llvm.fpga.unpack.bits.s_struct.blockvecs.i512.1' into 'blockmatmul(hls::stream<blockvec, 0>&, hls::stream<blockvec, 0>&, blockmat&, int)' (D:/tool/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot/hls_stream_39.h:145:9)
+INFO-FLOW: DBG:PUTS: copy_raw_kernel_xml ap_link_39: kernel.xml not generated: E:/Xilinx/Vitis/LabB/solution1/.autopilot/db/kernel.internal.xml
+INFO: [HLS 200-111] Finished Compiling Optimization and Transform: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 6.76 seconds; current allocated memory: 1.390 GB.
+INFO: [HLS 200-111] Finished Checking Pragmas: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.002 seconds; current allocated memory: 1.390 GB.
+Execute       opt_and_import_c a -opt_level=2 -skip_syncheck=0 -ng=0 -keep_printf=0 
+Execute         cleanup_all_models 
+INFO: [HLS 200-10] Starting code transformations ...
+INFO-FLOW: Running Standard Transforms...
+Execute         transform -hls -share-std-xform -demangle-name -inline-byval-memcpy -always-inline -promote-dbg-pointer -interface-preproc -mem2reg -scalarrepl -mem2reg -keep-read-access -instcombine -dce -promote-dbg-pointer -bitop-raise -loop-simplify -indvarspre -indvars -loop-simplify -xunroll -constprop -instcombine -simplifycfg -indvars -simplifycfg -dce -globaldce -basicaa -simplifycfg -mem2reg -globalopt -global-constprop -deadargelim -instcombine -simplifycfg -scalarrepl -instcombine -reassociate -licm -simplifycfg -loop-simplify -indvars -instcombine -simplifycfg -mem2reg -loop-simplify -indvars -instcombine -gvn -gvn -instcombine -adce -break-crit-edges -simplifycfg -loop-delete -global-array-opt -dce -dse -adce -find-syn-modules -top blockmatmul -deadargelim -mem2reg -instcombine -dce -presyn-prepare -auto-rom-infer -interface-preproc -syn-check -check-rec-only -find-region -simplifycfg -func-extr -function-inline -globaldce -mem2reg -instcombine -dce -gvn -globaldce -adce -adse -constprop -instcombine -bit-constprop -instcombine -dce -simplifycfg -bitop-raise -simplifycfg -dce -loop-delete -reassociate -globalopt -global-privatize -mem2reg -dce -global-constprop -pointer-simplify -constprop -dce -func-inst -deadargelim -auto-shift-reg-idiom -promote-dbg-pointer -norm-name E:/Xilinx/Vitis/LabB/solution1/.autopilot/db/a.g.0.bc -o E:/Xilinx/Vitis/LabB/solution1/.autopilot/db/a.g.1.bc -f -phase std-opt 
+INFO: [HLS 200-111] Finished Standard Transforms: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.058 seconds; current allocated memory: 1.390 GB.
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO-FLOW: Checking Synthesizability 1/2..
+Execute         transform -hls -syn-check -check-rec-only -scalarrepl -norm-name -dce -mem2reg -instcombine -function-uniquify -directive-preproc -mem2reg -dse -dce -auto-rom-infer -dce -pag -array-normalize -instcombine -dce -array-seg-normalize -instcombine -dce -data-pack -instcombine -dce -inst-simplify -array-flatten -instcombine -dce -array-burst -dce -deadargelim -promote-global-argument -simplifycfg -mem2reg -globaldce -dce -deadargelim -dce -instcombine -function-inline -globaldce -dce -doublePtrSimplify -doublePtrElim -dce -doublePtrSimplify -promote-dbg-pointer -dce -scalarrepl -dse -adse -instcombine -ptrLegalization -simplifycfg -dce -instcombine -pointer-simplify -ptrArgReplace -dce -instcombine -resolve-double-ptr -scalarrepl -norm-name -dce -mem2reg -instcombine -ptrLegalization -simplifycfg -deadargelim -instcombine -dce -inst-simplify -function-uniquify -directive-preproc -mem2reg -dse -dce -globaldce E:/Xilinx/Vitis/LabB/solution1/.autopilot/db/a.g.1.bc -o E:/Xilinx/Vitis/LabB/solution1/.autopilot/db/a.g.2.prechk.bc -f 
+INFO-FLOW: Checking Synthesizability 2/2..
+Execute         transform -syn-check E:/Xilinx/Vitis/LabB/solution1/.autopilot/db/a.g.2.prechk.bc -o E:/Xilinx/Vitis/LabB/solution1/.autopilot/db/a.g.2.bc -f -phase syn-check 
+INFO: [HLS 200-111] Finished Checking Synthesizability: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.056 seconds; current allocated memory: 1.390 GB.
+INFO-FLOW: Compiler optimizing ...
+INFO-FLOW: Share syncheck's 1.bc for syn flow: copy E:/Xilinx/Vitis/LabB/solution1/.autopilot/db/a.g.1.bc to E:/Xilinx/Vitis/LabB/solution1/.autopilot/db/a.o.1.bc
+INFO-FLOW: Presyn 1...
+Execute         transform -hls -tmp E:/Xilinx/Vitis/LabB/solution1/.autopilot/db -interface-port-rename -function-uniquify -directive-preproc -mem2reg -dse -dce -scalarrepl -norm-name -deadargelim -mem2reg -instcombine -dce -simplifycfg -auto-rom-infer -dce -function-uniquify -resource-proc -clib-intrinsic-prepare -dce -func-buffer -dce -pag -array-normalize -func-legal -instcombine -gvn -constprop -dce -simplifycfg -mem2reg -globaldce -resolve-double-ptr -dce -deadargelim -dce -instcombine -ptrArgReplace -mem2reg -dce -array-seg-normalize -deadargelim -instcombine -dce -function-uniquify -directive-preproc -mem2reg -dse -dce -pointer-simplify -dce -port-alignment -dce -interface-preproc -data-pack -instcombine -dce -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -gvn -gvn -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -dse -adse -adce -loop-simplify -indvars -instcombine -gvn -loop-simplify -mem2reg -dce -find-region -instcombine -auto-loop-pipeline -inst-simplify -interface-preproc -cfgopt -instcombine -indvars -auto-loop-unroll -loop-simplify -loop-bound -xunroll -constprop -instcombine -simplifycfg -indvars -simplifycfg -dce -globaldce -clean-region -attach-range -gvn -inst-simplify -constprop -simplifycfg -dce -pointer-simplify -dce -globalopt -constprop -dce -array-promote -scalar-auto-dep-elim -constprop -dce -ptrArgReplace -mem2reg -simplifycfg -dce -instcombine -dce -array-transform-check -array-reshape -instcombine -simplifycfg -dce -ptrArgReplace -deadargelim -mem2reg -instcombine -simplifycfg -dce -indvars -loop-simplify -loop-bound -xunroll -constprop -instcombine -simplifycfg -indvars -simplifycfg -dce -globaldce -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -dse -duplicate-dataflow-processes -globaldce -instcombine -array-partition -prepare-dynamic-array-partition -instcombine -simplifycfg -dce -ptrArgReplace -global-constprop -deadargelim -mem2reg -func-legal -dce -global-constprop -deadargelim -mem2reg -simplifycfg -dce -merge-param -deadargelim -globalopt -constprop -dce -array-promote -scalar-auto-dep-elim -constprop -dce -ptrArgReplace -mem2reg -simplifycfg -dce -mem-intrinsic-preproc -dce -global-internalize -global-privatize -mem2reg -globaldce -promote-global-argument -ptrArgReplace -mem2reg -dce -globalopt -mergereturn -simplify-global-access -mem2reg -dce -pointer-simplify -dce -functionattrs -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -gvn -gvn -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -dse -adse -adce -dce -norm-name -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -accesses-merge -function-inline -complex-op-raise -inst-simplify -globaldce -func-inst -constprop -instcombine -simplifycfg -dce -func-legal -dce -loop-bound -arraycheck -bitwidthmin2 -bitwidthmin2 -on-by-dataflow -loop-delete -instcombine -simplifycfg -globaldce -dce -gvn -deadargelim -dce -loop-simplify -clean-region -simplifycfg -propagate-stable-arguments -loop-stream -instcombine -simplifycfg -dce -globaldce -duplicate-dataflow-processes -stream-intrinsic-preproc -dce -check-ap-stream -loop-simplify -eliminate-keepreads -extract-dataflow-in-loop -loop-simplify -dce -gvn -deadargelim -dse -duplicate-dataflow-processes -check-dataflow-syntax -legalize-stream-variable -legalize-global -extract-subproc -dce -dead-channel-elimination -canonicalize-gep -globaldce -dce -gvn -hls-dead-arg-elim -deadargelim -directive-preproc -annotate-dataflow-channels -canonicalize-dataflow -dce -globaldce -scalar-preprocessing -scalar-propagation2 -deadargelim -globaldce -mem2reg -check-dataflow-channels -function-stream -dce -globaldce -prop-fifo-spec -internal-stream-gen -canonicalize-gep -globaldce -dce -gvn -deadargelim -mergereturn -indvars -loop-simplify -instcombine -array-stream -array-seg-normalize -array-partition -func-legal -instcombine -simplifycfg -dce -bundle-memfifo-ops -deadargelim -function-uniquify -directive-preproc -mem2reg -dse -dce -group-axi-access -licm -simplifycfg -dce -loop-delete -hls-display -norm-name E:/Xilinx/Vitis/LabB/solution1/.autopilot/db/a.o.1.bc -o E:/Xilinx/Vitis/LabB/solution1/.autopilot/db/a.o.1.tmp.bc -f 
+INFO: [XFORM 203-510] Pipelining loop 'Loop-2' in function 'blockmatmul' automatically.
+INFO: [XFORM 203-510] Pipelining loop 'loadA' (LabB/BlockMatrix_design.cpp:15) in function 'blockmatmul' automatically.
+INFO: [XFORM 203-510] Pipelining loop 'ps_i' (LabB/BlockMatrix_design.cpp:26) in function 'blockmatmul' automatically.
+INFO: [XFORM 203-510] Pipelining loop 'VITIS_LOOP_34_2' (LabB/BlockMatrix_design.cpp:34) in function 'blockmatmul' automatically.
+INFO: [XFORM 203-502] Unrolling all sub-loops inside loop 'loadA' (LabB/BlockMatrix_design.cpp:15) in function 'blockmatmul' for pipelining.
+INFO: [XFORM 203-502] Unrolling all sub-loops inside loop 'ps_i' (LabB/BlockMatrix_design.cpp:26) in function 'blockmatmul' for pipelining.
+INFO: [HLS 200-489] Unrolling loop 'VITIS_LOOP_16_1' (LabB/BlockMatrix_design.cpp:16) in function 'blockmatmul' completely with a factor of 16.
+INFO: [HLS 200-489] Unrolling loop 'ps_j' (LabB/BlockMatrix_design.cpp:27) in function 'blockmatmul' completely with a factor of 16.
+INFO: [XFORM 203-102] Partitioning array 'tempA.a' (LabB/BlockMatrix_design.cpp:15) automatically.
+INFO: [XFORM 203-102] Partitioning array 'tempB.a' (LabB/BlockMatrix_design.cpp:24) automatically.
+Command         transform done; 0.125 sec.
+INFO-FLOW: Presyn 2...
+Execute         transform -hls -keep-callgraph -scalarrepl -mem2reg -port-alignment -attach-range -dce -pipe-mux-gen -indvars -loop-bound -inst-simplify -instcombine -dce -merge-array-access -mem2reg -dce -clean-region -mergereturn -if-conv -instcombine -dce -constprop -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -gvn -gvn -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -dse -adse -adce -scalarrepl -mem2reg -global-constprop -deadargelim -deadargelim -instcombine -dce -simplifycfg -ptrArgReplace -mem2reg -function-inline -globaldce -mem2reg -instcombine -dce -expr-balance -instcombine -dce -bitwidthmin2 -bitwidthmin2 -interface-preproc -directive-preproc -inst-rectify -instcombine -dce -functionattrs -constprop -instcombine -bit-constprop -simplify-global-access -globalopt -globaldce -inst-simplify -instcombine -elimdeaddata -dce -loop-delete -simplifycfg -loop-simplify -auto-burst -barrier -norm-name E:/Xilinx/Vitis/LabB/solution1/.autopilot/db/a.o.1.tmp.bc -o E:/Xilinx/Vitis/LabB/solution1/.autopilot/db/a.o.2.bc -f -phase presyn 
+INFO: [XFORM 203-11] Balancing expressions in function 'blockmatmul' (LabB/BlockMatrix_design.cpp:5:26)...50 expression(s) balanced.
+INFO: [HLS 200-111] Finished Loop, function and other optimizations: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.189 seconds; current allocated memory: 1.390 GB.
+Execute         get_config_compile -enable_auto_rewind 
+Execute         get_config_compile -enable_loop_extract 
+INFO-FLOW: Building ssdm...
+Execute         transform -hls -function-uniquify -auto-function-inline -globaldce -ptrArgReplace -mem2reg -dce -reset-lda -loop-simplify -indvars -aggr-aa -licm -loop-dep -loop-bound -licm -loop-simplify -loop-sink-hoist -flattenloopnest -array-flatten -gvn -instcombine -dce -array-map -dce -func-legal -gvn -adce -instcombine -cfgopt -simplifycfg -loop-simplify -array-burst -promote-global-argument -dce -array-seg-normalize -basicaa -aggrmodref-aa -globalsmodref-aa -aggr-aa -gvn -gvn -basicaa -aggrmodref-aa -globalsmodref-aa -aggr-aa -dse -adse -adce -licm -inst-simplify -dce -globaldce -instcombine -array-stream -eliminate-keepreads -instcombine -dce -deadargelim -doublePtrSimplify -doublePtrElim -dce -doublePtrSimplify -promote-dbg-pointer -dce -scalarrepl -mem2reg -norm-name -mem2reg -instcombine -dse -adse -adce -ptrLegalization -dce -auto-rom-infer -array-flatten -dce -instcombine -check-doubleptr -loop-rot -constprop -cfgopt -simplifycfg -loop-simplify -indvars -pointer-simplify -dce -loop-bound -loop-simplify -loop-preproc -constprop -global-constprop -gvn -mem2reg -instcombine -dce -loop-bound -loop-merge -dce -deadargelim -dce -canonicalize-dataflow -dce -deadargelim -globaldce -mem2reg -bram-byte-enable -load-elim -read-loop-dep -loop-simplify -loop-extract-inner -directive-preproc -bitwidthmin2 -bitwidthmin2 -read-loop-dep -interface-preproc -directive-preproc -interface-gen -bram-byte-enable-spec-prop -deadargelim -inst-simplify -dce -gvn -mem2reg -instcombine -dce -adse -loop-bound -instcombine -cfgopt -simplifycfg -loop-simplify -clean-region -io-protocol -find-region -mem2reg -bitop-raise -complex-op-raise -inst-simplify -inst-rectify -instcombine -adce -deadargelim -float-op-raise -loop-simplify -phi-opt -bitop-raise -cfgopt -simplifycfg -strip-dead-prototypes -interface-lower -bitop-lower -intrinsic-lower -auto-function-inline -basicaa -aggrmodref-aa -globalsmodref-aa -aggr-aa -inst-simplify -simplifycfg -loop-simplify -mergereturn -inst-simplify -inst-rectify -dce -load-elim -bitop-lower -float-op-raise -fma-raise -loop-rewind -pointer-simplify -dce -cfgopt -dce -loop-bound -loop-dep -read-loop-dep -dce -dyn-mem-reuse -dce -recurrence-min -dce -share-scalar-alloca -deadargelim -dce -check-stream -norm-name -legalize -validate-dataflow -inst-clarity -bitwidth -dump-loop-dep-to-ir -check-all-ssdm -cdfg-build E:/Xilinx/Vitis/LabB/solution1/.autopilot/db/a.o.2.bc -o E:/Xilinx/Vitis/LabB/solution1/.autopilot/db/a.o.3.bc -f -phase build-ssdm 
+WARNING: [HLS 200-960] Cannot flatten loop 'partialsum' (LabB/BlockMatrix_design.cpp:24:18) in function 'blockmatmul' the outer loop is not a perfect loop.
+INFO: [XFORM 203-541] Flattening a loop nest 'writeoutput' (LabB/BlockMatrix_design.cpp:33:26) in function 'blockmatmul'.
+INFO: [HLS 200-472] Inferring partial write operation for 'AB' 
+INFO: [HLS 200-472] Inferring partial write operation for 'A' (LabB/BlockMatrix_design.cpp:18:25)
+INFO: [HLS 200-472] Inferring partial write operation for 'AB' (LabB/BlockMatrix_design.cpp:28:26)
+Command         transform done; 0.15 sec.
+INFO: [HLS 200-111] Finished Architecture Synthesis: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.155 seconds; current allocated memory: 1.390 GB.
+INFO-FLOW: Finish building internal data model.
+Command       opt_and_import_c done; 0.464 sec.
+Command     elaborate done; 15.339 sec.
+Execute     ap_eval exec zip -j E:/Xilinx/Vitis/LabB/solution1/.autopilot/db/dut.hcp $dbDir/a.o.3.bc $dbDir/${topname}.rtl_wrap.cfg.tcl $dbDir/apatb_${topname}.cpp $dbDir/apatb_${topname}_util.cpp $dbDir/apatb_${topname}_ir.ll $dbDir/mapper_${topname}.cpp $dbDir/top-io-fe.xml $dbDir/kernel.internal.xml $workdir/../hls.app 
+Execute     autosyn -from_csynth_design=1 
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO-FLOW: Synthesizing C/C++ design ...
+INFO: [HLS 200-10] Synthesizing 'blockmatmul' ...
+Execute       ap_set_top_model blockmatmul 
+Execute       get_model_list blockmatmul -filter all-wo-channel -topdown 
+Execute       preproc_iomode -model blockmatmul 
+Execute       preproc_iomode -model blockmatmul_Pipeline_writeoutput_VITIS_LOOP_34_2 
+Execute       preproc_iomode -model blockmatmul_Pipeline_ps_i 
+Execute       preproc_iomode -model blockmatmul_Pipeline_loadA 
+Execute       preproc_iomode -model blockmatmul_Pipeline_1 
+Execute       get_model_list blockmatmul -filter all-wo-channel 
+INFO-FLOW: Model list for configure: blockmatmul_Pipeline_1 blockmatmul_Pipeline_loadA blockmatmul_Pipeline_ps_i blockmatmul_Pipeline_writeoutput_VITIS_LOOP_34_2 blockmatmul
+INFO-FLOW: Configuring Module : blockmatmul_Pipeline_1 ...
+Execute       set_default_model blockmatmul_Pipeline_1 
+Execute       apply_spec_resource_limit blockmatmul_Pipeline_1 
+INFO-FLOW: Configuring Module : blockmatmul_Pipeline_loadA ...
+Execute       set_default_model blockmatmul_Pipeline_loadA 
+Execute       apply_spec_resource_limit blockmatmul_Pipeline_loadA 
+INFO-FLOW: Configuring Module : blockmatmul_Pipeline_ps_i ...
+Execute       set_default_model blockmatmul_Pipeline_ps_i 
+Execute       apply_spec_resource_limit blockmatmul_Pipeline_ps_i 
+INFO-FLOW: Configuring Module : blockmatmul_Pipeline_writeoutput_VITIS_LOOP_34_2 ...
+Execute       set_default_model blockmatmul_Pipeline_writeoutput_VITIS_LOOP_34_2 
+Execute       apply_spec_resource_limit blockmatmul_Pipeline_writeoutput_VITIS_LOOP_34_2 
+INFO-FLOW: Configuring Module : blockmatmul ...
+Execute       set_default_model blockmatmul 
+Execute       apply_spec_resource_limit blockmatmul 
+INFO-FLOW: Model list for preprocess: blockmatmul_Pipeline_1 blockmatmul_Pipeline_loadA blockmatmul_Pipeline_ps_i blockmatmul_Pipeline_writeoutput_VITIS_LOOP_34_2 blockmatmul
+INFO-FLOW: Preprocessing Module: blockmatmul_Pipeline_1 ...
+Execute       set_default_model blockmatmul_Pipeline_1 
+Execute       cdfg_preprocess -model blockmatmul_Pipeline_1 
+Execute       rtl_gen_preprocess blockmatmul_Pipeline_1 
+INFO-FLOW: Preprocessing Module: blockmatmul_Pipeline_loadA ...
+Execute       set_default_model blockmatmul_Pipeline_loadA 
+Execute       cdfg_preprocess -model blockmatmul_Pipeline_loadA 
+Execute       rtl_gen_preprocess blockmatmul_Pipeline_loadA 
+INFO-FLOW: Preprocessing Module: blockmatmul_Pipeline_ps_i ...
+Execute       set_default_model blockmatmul_Pipeline_ps_i 
+Execute       cdfg_preprocess -model blockmatmul_Pipeline_ps_i 
+Execute       rtl_gen_preprocess blockmatmul_Pipeline_ps_i 
+INFO-FLOW: Preprocessing Module: blockmatmul_Pipeline_writeoutput_VITIS_LOOP_34_2 ...
+Execute       set_default_model blockmatmul_Pipeline_writeoutput_VITIS_LOOP_34_2 
+Execute       cdfg_preprocess -model blockmatmul_Pipeline_writeoutput_VITIS_LOOP_34_2 
+Execute       rtl_gen_preprocess blockmatmul_Pipeline_writeoutput_VITIS_LOOP_34_2 
+INFO-FLOW: Preprocessing Module: blockmatmul ...
+Execute       set_default_model blockmatmul 
+Execute       cdfg_preprocess -model blockmatmul 
+Execute       rtl_gen_preprocess blockmatmul 
+INFO-FLOW: Model list for synthesis: blockmatmul_Pipeline_1 blockmatmul_Pipeline_loadA blockmatmul_Pipeline_ps_i blockmatmul_Pipeline_writeoutput_VITIS_LOOP_34_2 blockmatmul
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'blockmatmul_Pipeline_1' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+Execute       set_default_model blockmatmul_Pipeline_1 
+Execute       schedule -model blockmatmul_Pipeline_1 
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'Loop 1'.
+INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 1, Depth = 1, loop 'Loop 1'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.127 seconds; current allocated memory: 1.390 GB.
+Execute       syn_report -verbosereport -o E:/Xilinx/Vitis/LabB/solution1/.autopilot/db/blockmatmul_Pipeline_1.verbose.sched.rpt 
+Execute         AP::get_flow_target_display_name
+Execute           get_solution -flow_target 
+Execute       db_write -o E:/Xilinx/Vitis/LabB/solution1/.autopilot/db/blockmatmul_Pipeline_1.sched.adb -f 
+INFO-FLOW: Finish scheduling blockmatmul_Pipeline_1.
+Execute       set_default_model blockmatmul_Pipeline_1 
+Execute       bind -model blockmatmul_Pipeline_1 
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.02 seconds; current allocated memory: 1.390 GB.
+Execute       syn_report -verbosereport -o E:/Xilinx/Vitis/LabB/solution1/.autopilot/db/blockmatmul_Pipeline_1.verbose.bind.rpt 
+Execute         AP::get_flow_target_display_name
+Execute           get_solution -flow_target 
+Execute       db_write -o E:/Xilinx/Vitis/LabB/solution1/.autopilot/db/blockmatmul_Pipeline_1.bind.adb -f 
+INFO-FLOW: Finish binding blockmatmul_Pipeline_1.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'blockmatmul_Pipeline_loadA' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+Execute       set_default_model blockmatmul_Pipeline_loadA 
+Execute       schedule -model blockmatmul_Pipeline_loadA 
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'loadA'.
+WARNING: [HLS 200-885] The II Violation in module 'blockmatmul_Pipeline_loadA' (loop 'loadA'): Unable to schedule 'store' operation ('A_addr_1_write_ln18', LabB/BlockMatrix_design.cpp:18) of variable 'tmp', D:/tool/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot/hls_stream_39.h:145 on array 'A' due to limited memory ports (II = 1). Please consider using a memory core with more ports or partitioning the array 'A'.
+WARNING: [HLS 200-885] The II Violation in module 'blockmatmul_Pipeline_loadA' (loop 'loadA'): Unable to schedule 'store' operation ('A_addr_3_write_ln18', LabB/BlockMatrix_design.cpp:18) of variable 'tmp_2', D:/tool/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot/hls_stream_39.h:145 on array 'A' due to limited memory ports (II = 2). Please consider using a memory core with more ports or partitioning the array 'A'.
+WARNING: [HLS 200-885] The II Violation in module 'blockmatmul_Pipeline_loadA' (loop 'loadA'): Unable to schedule 'store' operation ('A_addr_5_write_ln18', LabB/BlockMatrix_design.cpp:18) of variable 'tmp_4', D:/tool/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot/hls_stream_39.h:145 on array 'A' due to limited memory ports (II = 3). Please consider using a memory core with more ports or partitioning the array 'A'.
+WARNING: [HLS 200-885] The II Violation in module 'blockmatmul_Pipeline_loadA' (loop 'loadA'): Unable to schedule 'store' operation ('A_addr_7_write_ln18', LabB/BlockMatrix_design.cpp:18) of variable 'tmp_6', D:/tool/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot/hls_stream_39.h:145 on array 'A' due to limited memory ports (II = 4). Please consider using a memory core with more ports or partitioning the array 'A'.
+WARNING: [HLS 200-885] The II Violation in module 'blockmatmul_Pipeline_loadA' (loop 'loadA'): Unable to schedule 'store' operation ('A_addr_13_write_ln18', LabB/BlockMatrix_design.cpp:18) of variable 'tmp_11', D:/tool/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot/hls_stream_39.h:145 on array 'A' due to limited memory ports (II = 7). Please consider using a memory core with more ports or partitioning the array 'A'.
+INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 8, Depth = 9, loop 'loadA'
+INFO: [SCHED 204-11] Finished scheduling.
+Command       schedule done; 0.121 sec.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.139 seconds; current allocated memory: 1.390 GB.
+Execute       syn_report -verbosereport -o E:/Xilinx/Vitis/LabB/solution1/.autopilot/db/blockmatmul_Pipeline_loadA.verbose.sched.rpt 
+Execute         AP::get_flow_target_display_name
+Execute           get_solution -flow_target 
+Execute       db_write -o E:/Xilinx/Vitis/LabB/solution1/.autopilot/db/blockmatmul_Pipeline_loadA.sched.adb -f 
+INFO-FLOW: Finish scheduling blockmatmul_Pipeline_loadA.
+Execute       set_default_model blockmatmul_Pipeline_loadA 
+Execute       bind -model blockmatmul_Pipeline_loadA 
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.079 seconds; current allocated memory: 1.390 GB.
+Execute       syn_report -verbosereport -o E:/Xilinx/Vitis/LabB/solution1/.autopilot/db/blockmatmul_Pipeline_loadA.verbose.bind.rpt 
+Execute         AP::get_flow_target_display_name
+Execute           get_solution -flow_target 
+Execute       db_write -o E:/Xilinx/Vitis/LabB/solution1/.autopilot/db/blockmatmul_Pipeline_loadA.bind.adb -f 
+INFO-FLOW: Finish binding blockmatmul_Pipeline_loadA.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'blockmatmul_Pipeline_ps_i' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+Execute       set_default_model blockmatmul_Pipeline_ps_i 
+Execute       schedule -model blockmatmul_Pipeline_ps_i 
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'ps_i'.
+WARNING: [HLS 200-885] The II Violation in module 'blockmatmul_Pipeline_ps_i' (loop 'ps_i'): Unable to schedule 'load' operation ('AB_load_1', LabB/BlockMatrix_design.cpp:28) on array 'AB' due to limited memory ports (II = 1). Please consider using a memory core with more ports or partitioning the array 'AB'.
+WARNING: [HLS 200-885] The II Violation in module 'blockmatmul_Pipeline_ps_i' (loop 'ps_i'): Unable to schedule 'load' operation ('AB_load_3', LabB/BlockMatrix_design.cpp:28) on array 'AB' due to limited memory ports (II = 2). Please consider using a memory core with more ports or partitioning the array 'AB'.
+WARNING: [HLS 200-885] The II Violation in module 'blockmatmul_Pipeline_ps_i' (loop 'ps_i'): Unable to schedule 'load' operation ('AB_load_5', LabB/BlockMatrix_design.cpp:28) on array 'AB' due to limited memory ports (II = 3). Please consider using a memory core with more ports or partitioning the array 'AB'.
+WARNING: [HLS 200-885] The II Violation in module 'blockmatmul_Pipeline_ps_i' (loop 'ps_i'): Unable to schedule 'load' operation ('AB_load_7', LabB/BlockMatrix_design.cpp:28) on array 'AB' due to limited memory ports (II = 4). Please consider using a memory core with more ports or partitioning the array 'AB'.
+WARNING: [HLS 200-885] The II Violation in module 'blockmatmul_Pipeline_ps_i' (loop 'ps_i'): Unable to schedule 'store' operation ('AB_addr_5_write_ln28', LabB/BlockMatrix_design.cpp:28) of variable 'add_ln28_5', LabB/BlockMatrix_design.cpp:28 on array 'AB' due to limited memory ports (II = 11). Please consider using a memory core with more ports or partitioning the array 'AB'.
+WARNING: [HLS 200-885] The II Violation in module 'blockmatmul_Pipeline_ps_i' (loop 'ps_i'): Unable to schedule 'store' operation ('AB_addr_13_write_ln28', LabB/BlockMatrix_design.cpp:28) of variable 'add_ln28_13', LabB/BlockMatrix_design.cpp:28 on array 'AB' due to limited memory ports (II = 15). Please consider using a memory core with more ports or partitioning the array 'AB'.
+INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 16, Depth = 32, loop 'ps_i'
+INFO: [SCHED 204-11] Finished scheduling.
+Command       schedule done; 0.411 sec.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 0.468 seconds; current allocated memory: 1.390 GB.
+Execute       syn_report -verbosereport -o E:/Xilinx/Vitis/LabB/solution1/.autopilot/db/blockmatmul_Pipeline_ps_i.verbose.sched.rpt 
+Execute         AP::get_flow_target_display_name
+Execute           get_solution -flow_target 
+Command       syn_report done; 0.115 sec.
+Execute       db_write -o E:/Xilinx/Vitis/LabB/solution1/.autopilot/db/blockmatmul_Pipeline_ps_i.sched.adb -f 
+INFO-FLOW: Finish scheduling blockmatmul_Pipeline_ps_i.
+Execute       set_default_model blockmatmul_Pipeline_ps_i 
+Execute       bind -model blockmatmul_Pipeline_ps_i 
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.218 seconds; current allocated memory: 1.390 GB.
+Execute       syn_report -verbosereport -o E:/Xilinx/Vitis/LabB/solution1/.autopilot/db/blockmatmul_Pipeline_ps_i.verbose.bind.rpt 
+Execute         AP::get_flow_target_display_name
+Execute           get_solution -flow_target 
+Command       syn_report done; 0.135 sec.
+Execute       db_write -o E:/Xilinx/Vitis/LabB/solution1/.autopilot/db/blockmatmul_Pipeline_ps_i.bind.adb -f 
+INFO-FLOW: Finish binding blockmatmul_Pipeline_ps_i.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'blockmatmul_Pipeline_writeoutput_VITIS_LOOP_34_2' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+Execute       set_default_model blockmatmul_Pipeline_writeoutput_VITIS_LOOP_34_2 
+Execute       schedule -model blockmatmul_Pipeline_writeoutput_VITIS_LOOP_34_2 
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'writeoutput_VITIS_LOOP_34_2'.
+INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 1, Depth = 3, loop 'writeoutput_VITIS_LOOP_34_2'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.2 seconds; current allocated memory: 1.390 GB.
+Execute       syn_report -verbosereport -o E:/Xilinx/Vitis/LabB/solution1/.autopilot/db/blockmatmul_Pipeline_writeoutput_VITIS_LOOP_34_2.verbose.sched.rpt 
+Execute         AP::get_flow_target_display_name
+Execute           get_solution -flow_target 
+Execute       db_write -o E:/Xilinx/Vitis/LabB/solution1/.autopilot/db/blockmatmul_Pipeline_writeoutput_VITIS_LOOP_34_2.sched.adb -f 
+INFO-FLOW: Finish scheduling blockmatmul_Pipeline_writeoutput_VITIS_LOOP_34_2.
+Execute       set_default_model blockmatmul_Pipeline_writeoutput_VITIS_LOOP_34_2 
+Execute       bind -model blockmatmul_Pipeline_writeoutput_VITIS_LOOP_34_2 
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.042 seconds; current allocated memory: 1.390 GB.
+Execute       syn_report -verbosereport -o E:/Xilinx/Vitis/LabB/solution1/.autopilot/db/blockmatmul_Pipeline_writeoutput_VITIS_LOOP_34_2.verbose.bind.rpt 
+Execute         AP::get_flow_target_display_name
+Execute           get_solution -flow_target 
+Execute       db_write -o E:/Xilinx/Vitis/LabB/solution1/.autopilot/db/blockmatmul_Pipeline_writeoutput_VITIS_LOOP_34_2.bind.adb -f 
+INFO-FLOW: Finish binding blockmatmul_Pipeline_writeoutput_VITIS_LOOP_34_2.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'blockmatmul' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+Execute       set_default_model blockmatmul 
+Execute       schedule -model blockmatmul 
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.076 seconds; current allocated memory: 1.390 GB.
+Execute       syn_report -verbosereport -o E:/Xilinx/Vitis/LabB/solution1/.autopilot/db/blockmatmul.verbose.sched.rpt 
+Execute         AP::get_flow_target_display_name
+Execute           get_solution -flow_target 
+Execute       db_write -o E:/Xilinx/Vitis/LabB/solution1/.autopilot/db/blockmatmul.sched.adb -f 
+INFO-FLOW: Finish scheduling blockmatmul.
+Execute       set_default_model blockmatmul 
+Execute       bind -model blockmatmul 
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.102 seconds; current allocated memory: 1.390 GB.
+Execute       syn_report -verbosereport -o E:/Xilinx/Vitis/LabB/solution1/.autopilot/db/blockmatmul.verbose.bind.rpt 
+Execute         AP::get_flow_target_display_name
+Execute           get_solution -flow_target 
+Command       syn_report done; 0.139 sec.
+Execute       db_write -o E:/Xilinx/Vitis/LabB/solution1/.autopilot/db/blockmatmul.bind.adb -f 
+INFO-FLOW: Finish binding blockmatmul.
+Execute       get_model_list blockmatmul -filter all-wo-channel 
+INFO-FLOW: Preprocessing for RTLGen ...
+Execute       rtl_gen_preprocess blockmatmul_Pipeline_1 
+Execute       rtl_gen_preprocess blockmatmul_Pipeline_loadA 
+Execute       rtl_gen_preprocess blockmatmul_Pipeline_ps_i 
+Execute       rtl_gen_preprocess blockmatmul_Pipeline_writeoutput_VITIS_LOOP_34_2 
+Execute       rtl_gen_preprocess blockmatmul 
+INFO-FLOW: Model list for RTL generation: blockmatmul_Pipeline_1 blockmatmul_Pipeline_loadA blockmatmul_Pipeline_ps_i blockmatmul_Pipeline_writeoutput_VITIS_LOOP_34_2 blockmatmul
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'blockmatmul_Pipeline_1' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+Execute       get_config_rtl -module_prefix 
+Execute       get_config_rtl -module_auto_prefix 
+Execute       get_config_rtl -module_prefix 
+Execute       get_config_rtl -module_auto_prefix 
+Execute       create_rtl_model blockmatmul_Pipeline_1 -top_prefix blockmatmul_ -sub_prefix blockmatmul_ -mg_file E:/Xilinx/Vitis/LabB/solution1/.autopilot/db/blockmatmul_Pipeline_1.compgen.tcl 
+INFO: [RTGEN 206-100] Finished creating RTL model for 'blockmatmul_Pipeline_1'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 0.17 seconds; current allocated memory: 1.390 GB.
+Execute       source E:/Xilinx/Vitis/LabB/solution1/.autopilot/db/blockmatmul.rtl_wrap.cfg.tcl 
+Execute       gen_rtl blockmatmul_Pipeline_1 -style xilinx -f -lang vhdl -o E:/Xilinx/Vitis/LabB/solution1/syn/vhdl/blockmatmul_blockmatmul_Pipeline_1 
+Execute       gen_rtl blockmatmul_Pipeline_1 -style xilinx -f -lang vlog -o E:/Xilinx/Vitis/LabB/solution1/syn/verilog/blockmatmul_blockmatmul_Pipeline_1 
+Execute       syn_report -csynth -model blockmatmul_Pipeline_1 -o E:/Xilinx/Vitis/LabB/solution1/syn/report/blockmatmul_Pipeline_1_csynth.rpt 
+Execute         AP::get_flow_target_display_name
+Execute           get_solution -flow_target 
+Execute       syn_report -rtlxml -model blockmatmul_Pipeline_1 -o E:/Xilinx/Vitis/LabB/solution1/syn/report/blockmatmul_Pipeline_1_csynth.xml 
+Execute         get_solution -flow_target
+Execute           get_solution -flow_target 
+Execute       syn_report -verbosereport -model blockmatmul_Pipeline_1 -o E:/Xilinx/Vitis/LabB/solution1/.autopilot/db/blockmatmul_Pipeline_1.verbose.rpt 
+Execute         AP::get_flow_target_display_name
+Execute           get_solution -flow_target 
+Execute       db_write -model blockmatmul_Pipeline_1 -f -o E:/Xilinx/Vitis/LabB/solution1/.autopilot/db/blockmatmul_Pipeline_1.adb 
+Execute       db_write -model blockmatmul_Pipeline_1 -bindview -o E:/Xilinx/Vitis/LabB/solution1/.autopilot/db/design.bindinfo.xml 
+Execute       gen_tb_info blockmatmul_Pipeline_1 -p E:/Xilinx/Vitis/LabB/solution1/.autopilot/db -o E:/Xilinx/Vitis/LabB/solution1/.autopilot/db/blockmatmul_Pipeline_1 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'blockmatmul_Pipeline_loadA' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+Execute       get_config_rtl -module_prefix 
+Execute       get_config_rtl -module_auto_prefix 
+Execute       get_config_rtl -module_prefix 
+Execute       get_config_rtl -module_auto_prefix 
+Execute       create_rtl_model blockmatmul_Pipeline_loadA -top_prefix blockmatmul_ -sub_prefix blockmatmul_ -mg_file E:/Xilinx/Vitis/LabB/solution1/.autopilot/db/blockmatmul_Pipeline_loadA.compgen.tcl 
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'blockmatmul_Pipeline_loadA' pipeline 'loadA' pipeline type 'loop pipeline'
+INFO: [RTGEN 206-100] Finished creating RTL model for 'blockmatmul_Pipeline_loadA'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.085 seconds; current allocated memory: 1.390 GB.
+Execute       source E:/Xilinx/Vitis/LabB/solution1/.autopilot/db/blockmatmul.rtl_wrap.cfg.tcl 
+Execute       gen_rtl blockmatmul_Pipeline_loadA -style xilinx -f -lang vhdl -o E:/Xilinx/Vitis/LabB/solution1/syn/vhdl/blockmatmul_blockmatmul_Pipeline_loadA 
+Execute       gen_rtl blockmatmul_Pipeline_loadA -style xilinx -f -lang vlog -o E:/Xilinx/Vitis/LabB/solution1/syn/verilog/blockmatmul_blockmatmul_Pipeline_loadA 
+Execute       syn_report -csynth -model blockmatmul_Pipeline_loadA -o E:/Xilinx/Vitis/LabB/solution1/syn/report/blockmatmul_Pipeline_loadA_csynth.rpt 
+Execute         AP::get_flow_target_display_name
+Execute           get_solution -flow_target 
+Execute       syn_report -rtlxml -model blockmatmul_Pipeline_loadA -o E:/Xilinx/Vitis/LabB/solution1/syn/report/blockmatmul_Pipeline_loadA_csynth.xml 
+Execute         get_solution -flow_target
+Execute           get_solution -flow_target 
+Execute       syn_report -verbosereport -model blockmatmul_Pipeline_loadA -o E:/Xilinx/Vitis/LabB/solution1/.autopilot/db/blockmatmul_Pipeline_loadA.verbose.rpt 
+Execute         AP::get_flow_target_display_name
+Execute           get_solution -flow_target 
+Execute       db_write -model blockmatmul_Pipeline_loadA -f -o E:/Xilinx/Vitis/LabB/solution1/.autopilot/db/blockmatmul_Pipeline_loadA.adb 
+Execute       db_write -model blockmatmul_Pipeline_loadA -bindview -o E:/Xilinx/Vitis/LabB/solution1/.autopilot/db/design.bindinfo.xml 
+Execute       gen_tb_info blockmatmul_Pipeline_loadA -p E:/Xilinx/Vitis/LabB/solution1/.autopilot/db -o E:/Xilinx/Vitis/LabB/solution1/.autopilot/db/blockmatmul_Pipeline_loadA 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'blockmatmul_Pipeline_ps_i' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+Execute       get_config_rtl -module_prefix 
+Execute       get_config_rtl -module_auto_prefix 
+Execute       get_config_rtl -module_prefix 
+Execute       get_config_rtl -module_auto_prefix 
+Execute       create_rtl_model blockmatmul_Pipeline_ps_i -top_prefix blockmatmul_ -sub_prefix blockmatmul_ -mg_file E:/Xilinx/Vitis/LabB/solution1/.autopilot/db/blockmatmul_Pipeline_ps_i.compgen.tcl 
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'blockmatmul_Pipeline_ps_i' pipeline 'ps_i' pipeline type 'loop pipeline'
+INFO: [RTGEN 206-100] Generating core module 'mul_32s_32s_32_2_1': 16 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'blockmatmul_Pipeline_ps_i'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 1 seconds. Elapsed time: 0.245 seconds; current allocated memory: 1.390 GB.
+Execute       source E:/Xilinx/Vitis/LabB/solution1/.autopilot/db/blockmatmul.rtl_wrap.cfg.tcl 
+Execute       gen_rtl blockmatmul_Pipeline_ps_i -style xilinx -f -lang vhdl -o E:/Xilinx/Vitis/LabB/solution1/syn/vhdl/blockmatmul_blockmatmul_Pipeline_ps_i 
+Execute       gen_rtl blockmatmul_Pipeline_ps_i -style xilinx -f -lang vlog -o E:/Xilinx/Vitis/LabB/solution1/syn/verilog/blockmatmul_blockmatmul_Pipeline_ps_i 
+Execute       syn_report -csynth -model blockmatmul_Pipeline_ps_i -o E:/Xilinx/Vitis/LabB/solution1/syn/report/blockmatmul_Pipeline_ps_i_csynth.rpt 
+Execute         AP::get_flow_target_display_name
+Execute           get_solution -flow_target 
+Execute       syn_report -rtlxml -model blockmatmul_Pipeline_ps_i -o E:/Xilinx/Vitis/LabB/solution1/syn/report/blockmatmul_Pipeline_ps_i_csynth.xml 
+Execute         get_solution -flow_target
+Execute           get_solution -flow_target 
+Execute       syn_report -verbosereport -model blockmatmul_Pipeline_ps_i -o E:/Xilinx/Vitis/LabB/solution1/.autopilot/db/blockmatmul_Pipeline_ps_i.verbose.rpt 
+Execute         AP::get_flow_target_display_name
+Execute           get_solution -flow_target 
+Command       syn_report done; 0.169 sec.
+Execute       db_write -model blockmatmul_Pipeline_ps_i -f -o E:/Xilinx/Vitis/LabB/solution1/.autopilot/db/blockmatmul_Pipeline_ps_i.adb 
+Execute       db_write -model blockmatmul_Pipeline_ps_i -bindview -o E:/Xilinx/Vitis/LabB/solution1/.autopilot/db/design.bindinfo.xml 
+Execute       gen_tb_info blockmatmul_Pipeline_ps_i -p E:/Xilinx/Vitis/LabB/solution1/.autopilot/db -o E:/Xilinx/Vitis/LabB/solution1/.autopilot/db/blockmatmul_Pipeline_ps_i 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'blockmatmul_Pipeline_writeoutput_VITIS_LOOP_34_2' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+Execute       get_config_rtl -module_prefix 
+Execute       get_config_rtl -module_auto_prefix 
+Execute       get_config_rtl -module_prefix 
+Execute       get_config_rtl -module_auto_prefix 
+Execute       create_rtl_model blockmatmul_Pipeline_writeoutput_VITIS_LOOP_34_2 -top_prefix blockmatmul_ -sub_prefix blockmatmul_ -mg_file E:/Xilinx/Vitis/LabB/solution1/.autopilot/db/blockmatmul_Pipeline_writeoutput_VITIS_LOOP_34_2.compgen.tcl 
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'blockmatmul_Pipeline_writeoutput_VITIS_LOOP_34_2' pipeline 'writeoutput_VITIS_LOOP_34_2' pipeline type 'loop pipeline'
+INFO: [RTGEN 206-100] Finished creating RTL model for 'blockmatmul_Pipeline_writeoutput_VITIS_LOOP_34_2'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.506 seconds; current allocated memory: 1.390 GB.
+Execute       source E:/Xilinx/Vitis/LabB/solution1/.autopilot/db/blockmatmul.rtl_wrap.cfg.tcl 
+Execute       gen_rtl blockmatmul_Pipeline_writeoutput_VITIS_LOOP_34_2 -style xilinx -f -lang vhdl -o E:/Xilinx/Vitis/LabB/solution1/syn/vhdl/blockmatmul_blockmatmul_Pipeline_writeoutput_VITIS_LOOP_34_2 
+Execute       gen_rtl blockmatmul_Pipeline_writeoutput_VITIS_LOOP_34_2 -style xilinx -f -lang vlog -o E:/Xilinx/Vitis/LabB/solution1/syn/verilog/blockmatmul_blockmatmul_Pipeline_writeoutput_VITIS_LOOP_34_2 
+Execute       syn_report -csynth -model blockmatmul_Pipeline_writeoutput_VITIS_LOOP_34_2 -o E:/Xilinx/Vitis/LabB/solution1/syn/report/blockmatmul_Pipeline_writeoutput_VITIS_LOOP_34_2_csynth.rpt 
+Execute         AP::get_flow_target_display_name
+Execute           get_solution -flow_target 
+Execute       syn_report -rtlxml -model blockmatmul_Pipeline_writeoutput_VITIS_LOOP_34_2 -o E:/Xilinx/Vitis/LabB/solution1/syn/report/blockmatmul_Pipeline_writeoutput_VITIS_LOOP_34_2_csynth.xml 
+Execute         get_solution -flow_target
+Execute           get_solution -flow_target 
+Execute       syn_report -verbosereport -model blockmatmul_Pipeline_writeoutput_VITIS_LOOP_34_2 -o E:/Xilinx/Vitis/LabB/solution1/.autopilot/db/blockmatmul_Pipeline_writeoutput_VITIS_LOOP_34_2.verbose.rpt 
+Execute         AP::get_flow_target_display_name
+Execute           get_solution -flow_target 
+Execute       db_write -model blockmatmul_Pipeline_writeoutput_VITIS_LOOP_34_2 -f -o E:/Xilinx/Vitis/LabB/solution1/.autopilot/db/blockmatmul_Pipeline_writeoutput_VITIS_LOOP_34_2.adb 
+Execute       db_write -model blockmatmul_Pipeline_writeoutput_VITIS_LOOP_34_2 -bindview -o E:/Xilinx/Vitis/LabB/solution1/.autopilot/db/design.bindinfo.xml 
+Execute       gen_tb_info blockmatmul_Pipeline_writeoutput_VITIS_LOOP_34_2 -p E:/Xilinx/Vitis/LabB/solution1/.autopilot/db -o E:/Xilinx/Vitis/LabB/solution1/.autopilot/db/blockmatmul_Pipeline_writeoutput_VITIS_LOOP_34_2 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'blockmatmul' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+Execute       get_config_rtl -module_prefix 
+Execute       get_config_rtl -module_prefix 
+Execute       get_config_rtl -module_auto_prefix 
+Execute       create_rtl_model blockmatmul -top_prefix  -sub_prefix blockmatmul_ -mg_file E:/Xilinx/Vitis/LabB/solution1/.autopilot/db/blockmatmul.compgen.tcl 
+INFO: [RTGEN 206-500] Setting interface mode on port 'blockmatmul/Arows' to 'ap_fifo'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'blockmatmul/Bcols' to 'ap_fifo'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'blockmatmul/ABpartial' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'blockmatmul/it' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on function 'blockmatmul' to 'ap_ctrl_hs'.
+INFO: [RTGEN 206-100] Finished creating RTL model for 'blockmatmul'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.172 seconds; current allocated memory: 1.390 GB.
+Execute       source E:/Xilinx/Vitis/LabB/solution1/.autopilot/db/blockmatmul.rtl_wrap.cfg.tcl 
+Execute       gen_rtl blockmatmul -istop -style xilinx -f -lang vhdl -o E:/Xilinx/Vitis/LabB/solution1/syn/vhdl/blockmatmul 
+Execute       gen_rtl blockmatmul -istop -style xilinx -f -lang vlog -o E:/Xilinx/Vitis/LabB/solution1/syn/verilog/blockmatmul 
+Execute       syn_report -csynth -model blockmatmul -o E:/Xilinx/Vitis/LabB/solution1/syn/report/blockmatmul_csynth.rpt 
+Execute         AP::get_flow_target_display_name
+Execute           get_solution -flow_target 
+Execute       syn_report -rtlxml -model blockmatmul -o E:/Xilinx/Vitis/LabB/solution1/syn/report/blockmatmul_csynth.xml 
+Execute         get_solution -flow_target
+Execute           get_solution -flow_target 
+Execute       syn_report -verbosereport -model blockmatmul -o E:/Xilinx/Vitis/LabB/solution1/.autopilot/db/blockmatmul.verbose.rpt 
+Execute         AP::get_flow_target_display_name
+Execute           get_solution -flow_target 
+Command       syn_report done; 0.163 sec.
+Execute       db_write -model blockmatmul -f -o E:/Xilinx/Vitis/LabB/solution1/.autopilot/db/blockmatmul.adb 
+Execute       db_write -model blockmatmul -bindview -o E:/Xilinx/Vitis/LabB/solution1/.autopilot/db/design.bindinfo.xml 
+Execute       gen_tb_info blockmatmul -p E:/Xilinx/Vitis/LabB/solution1/.autopilot/db -o E:/Xilinx/Vitis/LabB/solution1/.autopilot/db/blockmatmul 
+Execute       export_constraint_db -f -tool general -o E:/Xilinx/Vitis/LabB/solution1/.autopilot/db/blockmatmul.constraint.tcl 
+Execute       syn_report -designview -model blockmatmul -o E:/Xilinx/Vitis/LabB/solution1/.autopilot/db/blockmatmul.design.xml 
+Command       syn_report done; 0.118 sec.
+Execute       syn_report -csynthDesign -model blockmatmul -o E:/Xilinx/Vitis/LabB/solution1/syn/report/csynth.rpt 
+Execute         AP::get_flow_target_display_name
+Execute           get_solution -flow_target 
+Execute       get_config_rtl -disable_wave_debug 
+Execute       syn_report -wcfg -model blockmatmul -o E:/Xilinx/Vitis/LabB/solution1/.autopilot/db/blockmatmul_dataflow_ana.wcfg 
+Execute       syn_report -protoinst -model blockmatmul -o E:/Xilinx/Vitis/LabB/solution1/.autopilot/db/blockmatmul.protoinst 
+Execute       get_config_debug -directory 
+Execute       sc_get_clocks blockmatmul 
+Execute       get_config_export -vivado_clock 
+Execute       get_config_rtl -module_prefix 
+Execute       get_config_rtl -module_prefix 
+Execute       get_config_rtl -module_auto_prefix 
+Execute       sc_get_portdomain blockmatmul 
+INFO-FLOW: Model list for RTL component generation: blockmatmul_Pipeline_1 blockmatmul_Pipeline_loadA blockmatmul_Pipeline_ps_i blockmatmul_Pipeline_writeoutput_VITIS_LOOP_34_2 blockmatmul
+INFO-FLOW: Handling components in module [blockmatmul_Pipeline_1] ... 
+Execute       source E:/Xilinx/Vitis/LabB/solution1/.autopilot/db/blockmatmul_Pipeline_1.compgen.tcl 
+INFO-FLOW: Found component blockmatmul_flow_control_loop_pipe_sequential_init.
+INFO-FLOW: Append model blockmatmul_flow_control_loop_pipe_sequential_init
+INFO-FLOW: Handling components in module [blockmatmul_Pipeline_loadA] ... 
+Execute       source E:/Xilinx/Vitis/LabB/solution1/.autopilot/db/blockmatmul_Pipeline_loadA.compgen.tcl 
+INFO-FLOW: Found component blockmatmul_flow_control_loop_pipe_sequential_init.
+INFO-FLOW: Append model blockmatmul_flow_control_loop_pipe_sequential_init
+INFO-FLOW: Handling components in module [blockmatmul_Pipeline_ps_i] ... 
+Execute       source E:/Xilinx/Vitis/LabB/solution1/.autopilot/db/blockmatmul_Pipeline_ps_i.compgen.tcl 
+INFO-FLOW: Found component blockmatmul_mul_32s_32s_32_2_1.
+INFO-FLOW: Append model blockmatmul_mul_32s_32s_32_2_1
+INFO-FLOW: Found component blockmatmul_flow_control_loop_pipe_sequential_init.
+INFO-FLOW: Append model blockmatmul_flow_control_loop_pipe_sequential_init
+INFO-FLOW: Handling components in module [blockmatmul_Pipeline_writeoutput_VITIS_LOOP_34_2] ... 
+Execute       source E:/Xilinx/Vitis/LabB/solution1/.autopilot/db/blockmatmul_Pipeline_writeoutput_VITIS_LOOP_34_2.compgen.tcl 
+INFO-FLOW: Found component blockmatmul_flow_control_loop_pipe_sequential_init.
+INFO-FLOW: Append model blockmatmul_flow_control_loop_pipe_sequential_init
+INFO-FLOW: Handling components in module [blockmatmul] ... 
+Execute       source E:/Xilinx/Vitis/LabB/solution1/.autopilot/db/blockmatmul.compgen.tcl 
+INFO-FLOW: Found component blockmatmul_A_RAM_AUTO_1R1W.
+INFO-FLOW: Append model blockmatmul_A_RAM_AUTO_1R1W
+INFO-FLOW: Found component blockmatmul_AB_RAM_AUTO_1R1W.
+INFO-FLOW: Append model blockmatmul_AB_RAM_AUTO_1R1W
+INFO-FLOW: Append model blockmatmul_Pipeline_1
+INFO-FLOW: Append model blockmatmul_Pipeline_loadA
+INFO-FLOW: Append model blockmatmul_Pipeline_ps_i
+INFO-FLOW: Append model blockmatmul_Pipeline_writeoutput_VITIS_LOOP_34_2
+INFO-FLOW: Append model blockmatmul
+INFO-FLOW: Generating RTL model list ...
+INFO-FLOW: All models in this session: blockmatmul_flow_control_loop_pipe_sequential_init blockmatmul_flow_control_loop_pipe_sequential_init blockmatmul_mul_32s_32s_32_2_1 blockmatmul_flow_control_loop_pipe_sequential_init blockmatmul_flow_control_loop_pipe_sequential_init blockmatmul_A_RAM_AUTO_1R1W blockmatmul_AB_RAM_AUTO_1R1W blockmatmul_Pipeline_1 blockmatmul_Pipeline_loadA blockmatmul_Pipeline_ps_i blockmatmul_Pipeline_writeoutput_VITIS_LOOP_34_2 blockmatmul
+INFO-FLOW: Generating E:/Xilinx/Vitis/LabB/solution1/.autopilot/db/autopilot.rtl.models.txt file...
+INFO-FLOW: To file: write model blockmatmul_flow_control_loop_pipe_sequential_init
+INFO-FLOW: To file: write model blockmatmul_flow_control_loop_pipe_sequential_init
+INFO-FLOW: To file: write model blockmatmul_mul_32s_32s_32_2_1
+INFO-FLOW: To file: write model blockmatmul_flow_control_loop_pipe_sequential_init
+INFO-FLOW: To file: write model blockmatmul_flow_control_loop_pipe_sequential_init
+INFO-FLOW: To file: write model blockmatmul_A_RAM_AUTO_1R1W
+INFO-FLOW: To file: write model blockmatmul_AB_RAM_AUTO_1R1W
+INFO-FLOW: To file: write model blockmatmul_Pipeline_1
+INFO-FLOW: To file: write model blockmatmul_Pipeline_loadA
+INFO-FLOW: To file: write model blockmatmul_Pipeline_ps_i
+INFO-FLOW: To file: write model blockmatmul_Pipeline_writeoutput_VITIS_LOOP_34_2
+INFO-FLOW: To file: write model blockmatmul
+INFO-FLOW: Generating E:/Xilinx/Vitis/LabB/solution1/.autopilot/db/autopilot.rtl.models.tcl file...
+INFO-FLOW: Finished generating RTL model list.
+
+
+INFO-FLOW: RTL Generation done.
+INFO-FLOW: CAS Generation done.
+INFO-FLOW: CBC Generation done.
+INFO-FLOW: DBG:PROC: ::AESL_AUTOMG::auto_generate_csynth_design
+Execute       get_top 
+Execute       get_config_export -ipname 
+Execute       get_config_export -xo 
+Execute       get_config_export -format 
+Execute       get_config_rtl -module_auto_prefix 
+INFO-FLOW: DBG:PUTS: read_platform_lib E:/Xilinx/Vitis/LabB/solution1/.autopilot/db/global.setting.tcl
+Execute       source D:/tool/Xilinx/Vitis_HLS/2022.1/common/technology/generic/autopilot/common.gen 
+Execute         source D:/tool/Xilinx/Vitis_HLS/2022.1/common/technology/generic/autopilot/APCoreGen.gen 
+Execute       source D:/tool/Xilinx/Vitis_HLS/2022.1/common/technology/generic/autopilot/op.gen 
+Execute       source D:/tool/Xilinx/Vitis_HLS/2022.1/common/technology/generic/autopilot/op_simcore.gen 
+Execute       source D:/tool/Xilinx/Vitis_HLS/2022.1/common/technology/generic/autopilot/interface.gen 
+Execute       source E:/Xilinx/Vitis/LabB/solution1/.autopilot/db/global.setting.tcl 
+Execute       source D:/tool/Xilinx/Vitis_HLS/2022.1/common/technology/xilinx/common/xilinx.gen 
+Execute         source D:/tool/Xilinx/Vitis_HLS/2022.1/common/technology/xilinx/interface/plb46.gen 
+Execute         source D:/tool/Xilinx/Vitis_HLS/2022.1/common/technology/xilinx/interface/axi4.gen 
+Execute         source D:/tool/Xilinx/Vitis_HLS/2022.1/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute           source D:/tool/Xilinx/Vitis_HLS/2022.1/common/technology/xilinx/interface/saxilite.gen 
+Execute         source D:/tool/Xilinx/Vitis_HLS/2022.1/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute         source D:/tool/Xilinx/Vitis_HLS/2022.1/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute         source D:/tool/Xilinx/Vitis_HLS/2022.1/common/technology/xilinx/ip/dds_compiler.gen 
+Execute         source D:/tool/Xilinx/Vitis_HLS/2022.1/common/technology/xilinx/ip/util.gen 
+Execute         source D:/tool/Xilinx/Vitis_HLS/2022.1/common/technology/xilinx/ip/xfft.gen 
+Execute         source D:/tool/Xilinx/Vitis_HLS/2022.1/common/technology/xilinx/ip/xfir.gen 
+Execute         source D:/tool/Xilinx/Vitis_HLS/2022.1/common/technology/xilinx/DSP48/dsp48.gen 
+Command       ap_source done; 0.105 sec.
+INFO-FLOW: DBG:PUTS:   using AESL_AUTOCG::g_clock_period=10.000 (was NA)
+INFO-FLOW: DBG:PROC: ::AESL_AUTOMG::generate_ip_cores gen_sim_model='1' gen_fp_models='0' gen_for_export='0' dstSCDir='' dstVhdlDir='E:/Xilinx/Vitis/LabB/solution1/.autopilot/db/vhdl' dstVlogDir='E:/Xilinx/Vitis/LabB/solution1/.autopilot/db/vlog' tclDir='E:/Xilinx/Vitis/LabB/solution1/.autopilot/db' modelList='blockmatmul_flow_control_loop_pipe_sequential_init
+blockmatmul_flow_control_loop_pipe_sequential_init
+blockmatmul_mul_32s_32s_32_2_1
+blockmatmul_flow_control_loop_pipe_sequential_init
+blockmatmul_flow_control_loop_pipe_sequential_init
+blockmatmul_A_RAM_AUTO_1R1W
+blockmatmul_AB_RAM_AUTO_1R1W
+blockmatmul_Pipeline_1
+blockmatmul_Pipeline_loadA
+blockmatmul_Pipeline_ps_i
+blockmatmul_Pipeline_writeoutput_VITIS_LOOP_34_2
+blockmatmul
+' expOnly='0'
+Execute       source E:/Xilinx/Vitis/LabB/solution1/.autopilot/db/global.setting.tcl 
+Execute       ap_part_info -name xc7z020-clg400-1 -data names -quiet 
+Execute       ap_part_info -name xc7z020-clg400-1 -data info -quiet 
+Execute       source E:/Xilinx/Vitis/LabB/solution1/.autopilot/db/global.setting.tcl 
+Execute       source E:/Xilinx/Vitis/LabB/solution1/.autopilot/db/global.setting.tcl 
+Execute       source E:/Xilinx/Vitis/LabB/solution1/.autopilot/db/blockmatmul_Pipeline_1.compgen.tcl 
+Execute       source E:/Xilinx/Vitis/LabB/solution1/.autopilot/db/blockmatmul_Pipeline_loadA.compgen.tcl 
+Execute       source E:/Xilinx/Vitis/LabB/solution1/.autopilot/db/blockmatmul_Pipeline_ps_i.compgen.tcl 
+Execute       source E:/Xilinx/Vitis/LabB/solution1/.autopilot/db/blockmatmul_Pipeline_writeoutput_VITIS_LOOP_34_2.compgen.tcl 
+Execute       source E:/Xilinx/Vitis/LabB/solution1/.autopilot/db/blockmatmul.compgen.tcl 
+INFO: [RTMG 210-278] Implementing memory 'blockmatmul_A_RAM_AUTO_1R1W_ram (RAM)' using auto RAMs with power-on initialization.
+Execute         ap_part_info -name xc7z020-clg400-1 -data names -quiet 
+Execute         ap_part_info -name xc7z020-clg400-1 -data info -quiet 
+INFO: [RTMG 210-278] Implementing memory 'blockmatmul_AB_RAM_AUTO_1R1W_ram (RAM)' using auto RAMs.
+Execute         ap_part_info -name xc7z020-clg400-1 -data names -quiet 
+Execute         ap_part_info -name xc7z020-clg400-1 -data info -quiet 
+Command       ap_source done; 0.123 sec.
+INFO: [HLS 200-111] Finished Generating all RTL models: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 0.762 seconds; current allocated memory: 1.390 GB.
+INFO-FLOW: DBG:PROC: ::HLSREPORTS::create_csynth_xml bind_info_var='bind_info' RtlSubPrefix='blockmatmul_' outfile=''
+INFO-FLOW: Running: create_csynth_xml read xml data
+INFO-FLOW: Done: create_csynth_xml read xml data time: 0 seconds per iteration
+INFO-FLOW: Running: create_csynth_xml bind info
+INFO-FLOW: Done: create_csynth_xml bind info time: 0 seconds per iteration
+INFO-FLOW: Running: create_csynth_xml config info
+Execute       get_config_op mul -impl 
+Execute       get_config_op mul -latency 
+Execute       get_config_op mul -precision 
+Execute       get_config_op add -impl 
+Execute       get_config_op add -latency 
+Execute       get_config_op add -precision 
+Execute       get_config_op sub -impl 
+Execute       get_config_op sub -latency 
+Execute       get_config_op sub -precision 
+Execute       get_config_op fadd -impl 
+Execute       get_config_op fadd -latency 
+Execute       get_config_op fadd -precision 
+Execute       get_config_op fsub -impl 
+Execute       get_config_op fsub -latency 
+Execute       get_config_op fsub -precision 
+Execute       get_config_op fdiv -impl 
+Execute       get_config_op fdiv -latency 
+Execute       get_config_op fdiv -precision 
+Execute       get_config_op fexp -impl 
+Execute       get_config_op fexp -latency 
+Execute       get_config_op fexp -precision 
+Execute       get_config_op flog -impl 
+Execute       get_config_op flog -latency 
+Execute       get_config_op flog -precision 
+Execute       get_config_op fmul -impl 
+Execute       get_config_op fmul -latency 
+Execute       get_config_op fmul -precision 
+Execute       get_config_op frsqrt -impl 
+Execute       get_config_op frsqrt -latency 
+Execute       get_config_op frsqrt -precision 
+Execute       get_config_op frecip -impl 
+Execute       get_config_op frecip -latency 
+Execute       get_config_op frecip -precision 
+Execute       get_config_op fsqrt -impl 
+Execute       get_config_op fsqrt -latency 
+Execute       get_config_op fsqrt -precision 
+Execute       get_config_op dadd -impl 
+Execute       get_config_op dadd -latency 
+Execute       get_config_op dadd -precision 
+Execute       get_config_op dsub -impl 
+Execute       get_config_op dsub -latency 
+Execute       get_config_op dsub -precision 
+Execute       get_config_op ddiv -impl 
+Execute       get_config_op ddiv -latency 
+Execute       get_config_op ddiv -precision 
+Execute       get_config_op dexp -impl 
+Execute       get_config_op dexp -latency 
+Execute       get_config_op dexp -precision 
+Execute       get_config_op dlog -impl 
+Execute       get_config_op dlog -latency 
+Execute       get_config_op dlog -precision 
+Execute       get_config_op dmul -impl 
+Execute       get_config_op dmul -latency 
+Execute       get_config_op dmul -precision 
+Execute       get_config_op drsqrt -impl 
+Execute       get_config_op drsqrt -latency 
+Execute       get_config_op drsqrt -precision 
+Execute       get_config_op drecip -impl 
+Execute       get_config_op drecip -latency 
+Execute       get_config_op drecip -precision 
+Execute       get_config_op dsqrt -impl 
+Execute       get_config_op dsqrt -latency 
+Execute       get_config_op dsqrt -precision 
+Execute       get_config_op hadd -impl 
+Execute       get_config_op hadd -latency 
+Execute       get_config_op hadd -precision 
+Execute       get_config_op hsub -impl 
+Execute       get_config_op hsub -latency 
+Execute       get_config_op hsub -precision 
+Execute       get_config_op hdiv -impl 
+Execute       get_config_op hdiv -latency 
+Execute       get_config_op hdiv -precision 
+Execute       get_config_op hmul -impl 
+Execute       get_config_op hmul -latency 
+Execute       get_config_op hmul -precision 
+Execute       get_config_op hsqrt -impl 
+Execute       get_config_op hsqrt -latency 
+Execute       get_config_op hsqrt -precision 
+Execute       get_config_op facc -impl 
+Execute       get_config_op facc -latency 
+Execute       get_config_op facc -precision 
+Execute       get_config_op fmacc -impl 
+Execute       get_config_op fmacc -latency 
+Execute       get_config_op fmacc -precision 
+Execute       get_config_op fmadd -impl 
+Execute       get_config_op fmadd -latency 
+Execute       get_config_op fmadd -precision 
+Execute       get_config_storage fifo -auto_srl_max_bits 
+Execute       get_config_storage fifo -auto_srl_max_depth 
+Execute       get_config_storage fifo -impl 
+Execute       get_solution -flow_target 
+Execute       get_config_array_partition -complete_threshold 
+Execute       get_config_array_partition -throughput_driven 
+Execute       get_config_compile -enable_auto_rewind 
+Execute       get_config_compile -ignore_long_run_time 
+Execute       get_config_compile -name_max_length 
+Execute       get_config_compile -no_signed_zeros 
+Execute       get_config_compile -pipeline_loops 
+Execute       get_config_compile -pipeline_style 
+Execute       get_config_compile -pragma_strict_mode 
+Execute       get_config_compile -pre_tcl 
+Execute       get_config_compile -unsafe_math_optimizations 
+Execute       get_config_dataflow -default_channel 
+Execute       get_config_dataflow -disable_fifo_sizing_opt 
+Execute       get_config_dataflow -fifo_depth 
+Execute       get_config_dataflow -override_user_fifo_depth 
+Execute       get_config_dataflow -scalar_fifo_depth 
+Execute       get_config_dataflow -start_fifo_depth 
+Execute       get_config_dataflow -strict_mode 
+Execute       get_config_dataflow -strict_stable_sync 
+Execute       get_config_dataflow -task_level_fifo_depth 
+Execute       get_config_debug -directory 
+Execute       get_config_debug -enable 
+Execute       get_config_export -description 
+Execute       get_config_export -display_name 
+Execute       get_config_export -format 
+Execute       get_config_export -ip_xdc_file 
+Execute       get_config_export -ip_xdc_ooc_file 
+Execute       get_config_export -ipname 
+Execute       get_config_export -library 
+Execute       get_config_export -output 
+Execute       get_config_export -rtl 
+Execute       get_config_export -taxonomy 
+Execute       get_config_export -vendor 
+Execute       get_config_export -version 
+Execute       get_config_export -vivado_clock 
+Execute       get_config_export -vivado_impl_strategy 
+Execute       get_config_export -vivado_max_timing_paths 
+Execute       get_config_export -vivado_optimization_level 
+Execute       get_config_export -vivado_pblock 
+Execute       get_config_export -vivado_phys_opt 
+Execute       get_config_export -vivado_report_level 
+Execute       get_config_export -vivado_synth_design_args 
+Execute       get_config_export -vivado_synth_strategy 
+Execute       get_config_interface -clock_enable 
+Execute       get_config_interface -default_slave_interface 
+Execute       get_config_interface -m_axi_addr64 
+Execute       get_config_interface -m_axi_alignment_byte_size 
+Execute       get_config_interface -m_axi_auto_max_ports 
+Execute       get_config_interface -m_axi_buffer_impl 
+Execute       get_config_interface -m_axi_conservative_mode 
+Execute       get_config_interface -m_axi_flush_mode 
+Execute       get_config_interface -m_axi_latency 
+Execute       get_config_interface -m_axi_max_bitwidth 
+Execute       get_config_interface -m_axi_max_read_burst_length 
+Execute       get_config_interface -m_axi_max_widen_bitwidth 
+Execute       get_config_interface -m_axi_max_write_burst_length 
+Execute       get_config_interface -m_axi_min_bitwidth 
+Execute       get_config_interface -m_axi_num_read_outstanding 
+Execute       get_config_interface -m_axi_num_write_outstanding 
+Execute       get_config_interface -m_axi_offset 
+Execute       get_config_interface -register_io 
+Execute       get_config_interface -s_axilite_auto_restart_counter 
+Execute       get_config_interface -s_axilite_data64 
+Execute       get_config_interface -s_axilite_interrupt_mode 
+Execute       get_config_interface -s_axilite_mailbox 
+Execute       get_config_interface -s_axilite_status_regs 
+Execute       get_config_interface -s_axilite_sw_reset 
+Execute       get_config_rtl -deadlock_detection 
+Execute       get_config_rtl -header 
+Execute       get_config_rtl -kernel_profile 
+Execute       get_config_rtl -module_auto_prefix 
+Execute       get_config_rtl -module_prefix 
+Execute       get_config_rtl -mult_keep_attribute 
+Execute       get_config_rtl -register_all_io 
+Execute       get_config_rtl -register_reset_num 
+Execute       get_config_rtl -reset 
+Execute       get_config_rtl -reset_async 
+Execute       get_config_rtl -reset_level 
+Execute       get_config_schedule -enable_dsp_full_reg 
+Execute       get_config_unroll -tripcount_threshold 
+INFO-FLOW: Done: create_csynth_xml config info time: 0.1 seconds per iteration
+INFO-FLOW: Running: create_csynth_xml write xml
+INFO-FLOW: Done: create_csynth_xml write xml time: 0 seconds per iteration
+INFO-FLOW: DBG:PUTS:      create_csynth_xml wrote csynth_xml=E:/Xilinx/Vitis/LabB/solution1/syn/report/csynth.xml
+INFO-FLOW: DBG:PROC: ::AP::DESIGN_DATA::generate_json generate_bd_files='0' generate_xo_files='0' modelList='blockmatmul_flow_control_loop_pipe_sequential_init
+blockmatmul_flow_control_loop_pipe_sequential_init
+blockmatmul_mul_32s_32s_32_2_1
+blockmatmul_flow_control_loop_pipe_sequential_init
+blockmatmul_flow_control_loop_pipe_sequential_init
+blockmatmul_A_RAM_AUTO_1R1W
+blockmatmul_AB_RAM_AUTO_1R1W
+blockmatmul_Pipeline_1
+blockmatmul_Pipeline_loadA
+blockmatmul_Pipeline_ps_i
+blockmatmul_Pipeline_writeoutput_VITIS_LOOP_34_2
+blockmatmul
+' rtl_lang='both' bootstrap_tcl='false' outdir='' outfilename=''
+Execute       source E:/Xilinx/Vitis/LabB/solution1/.autopilot/db/global.setting.tcl 
+Execute       source E:/Xilinx/Vitis/LabB/solution1/.autopilot/db/global.setting.tcl 
+Execute       get_solution -flow_target 
+Execute       get_config_export -xo 
+Execute       get_config_export -format 
+Execute       source E:/Xilinx/Vitis/LabB/solution1/.autopilot/db/top-io-be.tcl 
+Execute       source E:/Xilinx/Vitis/LabB/solution1/.autopilot/db/blockmatmul.tbgen.tcl 
+Execute       source E:/Xilinx/Vitis/LabB/solution1/.autopilot/db/blockmatmul.rtl_wrap.cfg.tcl 
+Execute       source E:/Xilinx/Vitis/LabB/solution1/.autopilot/db/blockmatmul.compgen.dataonly.tcl 
+Execute       get_config_export -format 
+Execute       get_config_export -vendor 
+Execute       get_config_export -library 
+Execute       get_config_export -version 
+Execute       get_config_export -ipname 
+Execute       get_config_export -taxonomy 
+Execute       get_config_export -description 
+Execute       get_config_export -display_name 
+Execute       source E:/Xilinx/Vitis/LabB/solution1/.autopilot/db/blockmatmul_Pipeline_1.tbgen.tcl 
+Execute       source E:/Xilinx/Vitis/LabB/solution1/.autopilot/db/blockmatmul_Pipeline_loadA.tbgen.tcl 
+Execute       source E:/Xilinx/Vitis/LabB/solution1/.autopilot/db/blockmatmul_Pipeline_ps_i.tbgen.tcl 
+Execute       source E:/Xilinx/Vitis/LabB/solution1/.autopilot/db/blockmatmul_Pipeline_writeoutput_VITIS_LOOP_34_2.tbgen.tcl 
+Execute       source E:/Xilinx/Vitis/LabB/solution1/.autopilot/db/blockmatmul.tbgen.tcl 
+Execute       source E:/Xilinx/Vitis/LabB/solution1/.autopilot/db/global.setting.tcl 
+Execute       ap_part_info -name xc7z020-clg400-1 -data names -quiet 
+Execute       ap_part_info -name xc7z020-clg400-1 -data info -quiet 
+Execute       get_solution -flow_target 
+Execute       get_config_rtl -kernel_profile 
+Execute       get_config_rtl -kernel_profile 
+Execute       get_config_rtl -stall_sig_gen 
+Execute       get_config_rtl -profile 
+Execute       source E:/Xilinx/Vitis/LabB/solution1/.autopilot/db/blockmatmul.constraint.tcl 
+Execute       sc_get_clocks blockmatmul 
+Execute       source E:/Xilinx/Vitis/LabB/solution1/.autopilot/db/global.setting.tcl 
+Execute       get_config_export -ip_xdc_file 
+Execute       get_config_export -ip_xdc_ooc_file 
+Execute       get_config_debug -directory 
+INFO-FLOW: DBG:PROC: ::HLSREPORTS::add_csynth_report_sections bind_info_dict='adapter_nodes {} report_dict {TOPINST blockmatmul MODULE2INSTS {blockmatmul blockmatmul blockmatmul_Pipeline_1 grp_blockmatmul_Pipeline_1_fu_146 blockmatmul_Pipeline_loadA grp_blockmatmul_Pipeline_loadA_fu_152 blockmatmul_Pipeline_writeoutput_VITIS_LOOP_34_2 grp_blockmatmul_Pipeline_writeoutput_VITIS_LOOP_34_2_fu_160 blockmatmul_Pipeline_ps_i grp_blockmatmul_Pipeline_ps_i_fu_167} INST2MODULE {blockmatmul blockmatmul grp_blockmatmul_Pipeline_1_fu_146 blockmatmul_Pipeline_1 grp_blockmatmul_Pipeline_loadA_fu_152 blockmatmul_Pipeline_loadA grp_blockmatmul_Pipeline_writeoutput_VITIS_LOOP_34_2_fu_160 blockmatmul_Pipeline_writeoutput_VITIS_LOOP_34_2 grp_blockmatmul_Pipeline_ps_i_fu_167 blockmatmul_Pipeline_ps_i} INSTDATA {blockmatmul {DEPTH 1 CHILDREN {grp_blockmatmul_Pipeline_1_fu_146 grp_blockmatmul_Pipeline_loadA_fu_152 grp_blockmatmul_Pipeline_writeoutput_VITIS_LOOP_34_2_fu_160 grp_blockmatmul_Pipeline_ps_i_fu_167}} grp_blockmatmul_Pipeline_1_fu_146 {DEPTH 2 CHILDREN {}} grp_blockmatmul_Pipeline_loadA_fu_152 {DEPTH 2 CHILDREN {}} grp_blockmatmul_Pipeline_writeoutput_VITIS_LOOP_34_2_fu_160 {DEPTH 2 CHILDREN {}} grp_blockmatmul_Pipeline_ps_i_fu_167 {DEPTH 2 CHILDREN {}}} MODULEDATA {blockmatmul_Pipeline_1 {BINDINFO {{BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME empty_15_fu_56_p2 SOURCE {} VARIABLE empty_15 LOOP {Loop 1} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op add}}} AREA {DSP 0 BRAM 0 URAM 0}} blockmatmul_Pipeline_loadA {BINDINFO {{BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME add_ln14_fu_539_p2 SOURCE LabB/BlockMatrix_design.cpp:14 VARIABLE add_ln14 LOOP loadA BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME add_ln18_fu_486_p2 SOURCE LabB/BlockMatrix_design.cpp:18 VARIABLE add_ln18 LOOP loadA BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME add_ln18_1_fu_528_p2 SOURCE LabB/BlockMatrix_design.cpp:18 VARIABLE add_ln18_1 LOOP loadA BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME add_ln18_2_fu_556_p2 SOURCE LabB/BlockMatrix_design.cpp:18 VARIABLE add_ln18_2 LOOP loadA BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op add}}} AREA {DSP 0 BRAM 0 URAM 0}} blockmatmul_Pipeline_ps_i {BINDINFO {{BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME add_ln26_fu_391_p2 SOURCE LabB/BlockMatrix_design.cpp:26 VARIABLE add_ln26 LOOP ps_i BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL auto LATENCY 1 OPTYPE mul PRAGMA {} RTLNAME mul_32s_32s_32_2_1_U4 SOURCE LabB/BlockMatrix_design.cpp:28 VARIABLE mul_ln28 LOOP ps_i BUNDLEDNAME {} DSP 3 BRAM 0 URAM 0 DISPNAME {bind_op mul}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME add_ln28_fu_527_p2 SOURCE LabB/BlockMatrix_design.cpp:28 VARIABLE add_ln28 LOOP ps_i BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL auto LATENCY 1 OPTYPE mul PRAGMA {} RTLNAME mul_32s_32s_32_2_1_U5 SOURCE LabB/BlockMatrix_design.cpp:28 VARIABLE mul_ln28_1 LOOP ps_i BUNDLEDNAME {} DSP 3 BRAM 0 URAM 0 DISPNAME {bind_op mul}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME add_ln28_1_fu_556_p2 SOURCE LabB/BlockMatrix_design.cpp:28 VARIABLE add_ln28_1 LOOP ps_i BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL auto LATENCY 1 OPTYPE mul PRAGMA {} RTLNAME mul_32s_32s_32_2_1_U6 SOURCE LabB/BlockMatrix_design.cpp:28 VARIABLE mul_ln28_2 LOOP ps_i BUNDLEDNAME {} DSP 3 BRAM 0 URAM 0 DISPNAME {bind_op mul}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME add_ln28_2_fu_565_p2 SOURCE LabB/BlockMatrix_design.cpp:28 VARIABLE add_ln28_2 LOOP ps_i BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL auto LATENCY 1 OPTYPE mul PRAGMA {} RTLNAME mul_32s_32s_32_2_1_U7 SOURCE LabB/BlockMatrix_design.cpp:28 VARIABLE mul_ln28_3 LOOP ps_i BUNDLEDNAME {} DSP 3 BRAM 0 URAM 0 DISPNAME {bind_op mul}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME add_ln28_3_fu_574_p2 SOURCE LabB/BlockMatrix_design.cpp:28 VARIABLE add_ln28_3 LOOP ps_i BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL auto LATENCY 1 OPTYPE mul PRAGMA {} RTLNAME mul_32s_32s_32_2_1_U8 SOURCE LabB/BlockMatrix_design.cpp:28 VARIABLE mul_ln28_4 LOOP ps_i BUNDLEDNAME {} DSP 3 BRAM 0 URAM 0 DISPNAME {bind_op mul}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME add_ln28_4_fu_582_p2 SOURCE LabB/BlockMatrix_design.cpp:28 VARIABLE add_ln28_4 LOOP ps_i BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL auto LATENCY 1 OPTYPE mul PRAGMA {} RTLNAME mul_32s_32s_32_2_1_U9 SOURCE LabB/BlockMatrix_design.cpp:28 VARIABLE mul_ln28_5 LOOP ps_i BUNDLEDNAME {} DSP 3 BRAM 0 URAM 0 DISPNAME {bind_op mul}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME add_ln28_5_fu_590_p2 SOURCE LabB/BlockMatrix_design.cpp:28 VARIABLE add_ln28_5 LOOP ps_i BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL auto LATENCY 1 OPTYPE mul PRAGMA {} RTLNAME mul_32s_32s_32_2_1_U10 SOURCE LabB/BlockMatrix_design.cpp:28 VARIABLE mul_ln28_6 LOOP ps_i BUNDLEDNAME {} DSP 3 BRAM 0 URAM 0 DISPNAME {bind_op mul}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME add_ln28_6_fu_598_p2 SOURCE LabB/BlockMatrix_design.cpp:28 VARIABLE add_ln28_6 LOOP ps_i BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL auto LATENCY 1 OPTYPE mul PRAGMA {} RTLNAME mul_32s_32s_32_2_1_U11 SOURCE LabB/BlockMatrix_design.cpp:28 VARIABLE mul_ln28_7 LOOP ps_i BUNDLEDNAME {} DSP 3 BRAM 0 URAM 0 DISPNAME {bind_op mul}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME add_ln28_7_fu_607_p2 SOURCE LabB/BlockMatrix_design.cpp:28 VARIABLE add_ln28_7 LOOP ps_i BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL auto LATENCY 1 OPTYPE mul PRAGMA {} RTLNAME mul_32s_32s_32_2_1_U12 SOURCE LabB/BlockMatrix_design.cpp:28 VARIABLE mul_ln28_8 LOOP ps_i BUNDLEDNAME {} DSP 3 BRAM 0 URAM 0 DISPNAME {bind_op mul}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME add_ln28_8_fu_616_p2 SOURCE LabB/BlockMatrix_design.cpp:28 VARIABLE add_ln28_8 LOOP ps_i BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL auto LATENCY 1 OPTYPE mul PRAGMA {} RTLNAME mul_32s_32s_32_2_1_U13 SOURCE LabB/BlockMatrix_design.cpp:28 VARIABLE mul_ln28_9 LOOP ps_i BUNDLEDNAME {} DSP 3 BRAM 0 URAM 0 DISPNAME {bind_op mul}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME add_ln28_9_fu_626_p2 SOURCE LabB/BlockMatrix_design.cpp:28 VARIABLE add_ln28_9 LOOP ps_i BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL auto LATENCY 1 OPTYPE mul PRAGMA {} RTLNAME mul_32s_32s_32_2_1_U14 SOURCE LabB/BlockMatrix_design.cpp:28 VARIABLE mul_ln28_10 LOOP ps_i BUNDLEDNAME {} DSP 3 BRAM 0 URAM 0 DISPNAME {bind_op mul}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME add_ln28_10_fu_635_p2 SOURCE LabB/BlockMatrix_design.cpp:28 VARIABLE add_ln28_10 LOOP ps_i BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL auto LATENCY 1 OPTYPE mul PRAGMA {} RTLNAME mul_32s_32s_32_2_1_U15 SOURCE LabB/BlockMatrix_design.cpp:28 VARIABLE mul_ln28_11 LOOP ps_i BUNDLEDNAME {} DSP 3 BRAM 0 URAM 0 DISPNAME {bind_op mul}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME add_ln28_11_fu_645_p2 SOURCE LabB/BlockMatrix_design.cpp:28 VARIABLE add_ln28_11 LOOP ps_i BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL auto LATENCY 1 OPTYPE mul PRAGMA {} RTLNAME mul_32s_32s_32_2_1_U16 SOURCE LabB/BlockMatrix_design.cpp:28 VARIABLE mul_ln28_12 LOOP ps_i BUNDLEDNAME {} DSP 3 BRAM 0 URAM 0 DISPNAME {bind_op mul}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME add_ln28_12_fu_702_p2 SOURCE LabB/BlockMatrix_design.cpp:28 VARIABLE add_ln28_12 LOOP ps_i BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL auto LATENCY 1 OPTYPE mul PRAGMA {} RTLNAME mul_32s_32s_32_2_1_U17 SOURCE LabB/BlockMatrix_design.cpp:28 VARIABLE mul_ln28_13 LOOP ps_i BUNDLEDNAME {} DSP 3 BRAM 0 URAM 0 DISPNAME {bind_op mul}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME add_ln28_13_fu_707_p2 SOURCE LabB/BlockMatrix_design.cpp:28 VARIABLE add_ln28_13 LOOP ps_i BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL auto LATENCY 1 OPTYPE mul PRAGMA {} RTLNAME mul_32s_32s_32_2_1_U18 SOURCE LabB/BlockMatrix_design.cpp:28 VARIABLE mul_ln28_14 LOOP ps_i BUNDLEDNAME {} DSP 3 BRAM 0 URAM 0 DISPNAME {bind_op mul}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME add_ln28_14_fu_712_p2 SOURCE LabB/BlockMatrix_design.cpp:28 VARIABLE add_ln28_14 LOOP ps_i BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL auto LATENCY 1 OPTYPE mul PRAGMA {} RTLNAME mul_32s_32s_32_2_1_U19 SOURCE LabB/BlockMatrix_design.cpp:28 VARIABLE mul_ln28_15 LOOP ps_i BUNDLEDNAME {} DSP 3 BRAM 0 URAM 0 DISPNAME {bind_op mul}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME add_ln28_15_fu_717_p2 SOURCE LabB/BlockMatrix_design.cpp:28 VARIABLE add_ln28_15 LOOP ps_i BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op add}}} AREA {DSP 48 BRAM 0 URAM 0}} blockmatmul_Pipeline_writeoutput_VITIS_LOOP_34_2 {BINDINFO {{BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME add_ln33_1_fu_111_p2 SOURCE LabB/BlockMatrix_design.cpp:33 VARIABLE add_ln33_1 LOOP writeoutput_VITIS_LOOP_34_2 BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME add_ln33_fu_123_p2 SOURCE LabB/BlockMatrix_design.cpp:33 VARIABLE add_ln33 LOOP writeoutput_VITIS_LOOP_34_2 BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME add_ln35_fu_167_p2 SOURCE LabB/BlockMatrix_design.cpp:35 VARIABLE add_ln35 LOOP writeoutput_VITIS_LOOP_34_2 BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME add_ln34_fu_173_p2 SOURCE LabB/BlockMatrix_design.cpp:34 VARIABLE add_ln34 LOOP writeoutput_VITIS_LOOP_34_2 BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op add}}} AREA {DSP 0 BRAM 0 URAM 0}} blockmatmul {BINDINFO {{BINDTYPE storage ID {} IMPL auto LATENCY 1 OPTYPE ram_t2p PRAGMA {} RTLNAME AB_U SOURCE LabB/BlockMatrix_design.cpp:7 VARIABLE AB LOOP {} BUNDLEDNAME {} DSP 0 BRAM 2 URAM 0 DISPNAME {bind_storage ram_t2p}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME add_ln23_fu_215_p2 SOURCE LabB/BlockMatrix_design.cpp:23 VARIABLE add_ln23 LOOP partialsum BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op add}} {BINDTYPE storage ID {} IMPL auto LATENCY 1 OPTYPE ram_t2p PRAGMA {} RTLNAME A_U SOURCE {} VARIABLE A LOOP {} BUNDLEDNAME {} DSP 0 BRAM 2 URAM 0 DISPNAME {bind_storage ram_t2p}}} AREA {DSP 48 BRAM 4 URAM 0}}}}'
+INFO-FLOW: DBG:PUTS:      update_csynth_reports json2rpt_hw_sw_interfaces
+INFO-FLOW: Running: gen_csynth_sec_pragma
+INFO-FLOW: Done: gen_csynth_sec_pragma time: 0 seconds per iteration
+INFO-FLOW: DBG:PUTS:      update_csynth_reports wrote xml
+INFO-FLOW: DBG:PUTS:      update_csynth_reports appended to csynth rpt file
+INFO: [HLS 200-111] Finished Updating report files: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.462 seconds; current allocated memory: 1.390 GB.
+INFO: [VHDL 208-304] Generating VHDL RTL for blockmatmul.
+INFO: [VLOG 209-307] Generating Verilog RTL for blockmatmul.
+Execute       syn_report -model blockmatmul -printsummary 
+INFO: [HLS 200-790] **** Loop Constraint Status: All loop constraints were NOT satisfied.
+INFO: [HLS 200-789] **** Estimated Fmax: 144.68 MHz
+Command     autosyn done; 3.836 sec.
+Command   csynth_design done; 19.272 sec.
+INFO: [HLS 200-111] Finished Command csynth_design CPU user time: 4 seconds. CPU system time: 1 seconds. Elapsed time: 19.272 seconds; current allocated memory: 0.000 MB.
+Command ap_source done; 22.411 sec.
+Execute cleanup_all 

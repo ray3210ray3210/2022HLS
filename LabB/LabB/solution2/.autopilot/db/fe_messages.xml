@@ -1,0 +1,39 @@
+<xilinx:hls_fe_msgs>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="E:/Xilinx/Vitis/LabB/solution2/csynth.tcl:15:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="directive" ARG_PragmaFunction="blockmatmul" ARG_PragmaIsValid="1" ARG_PragmaOptions="name=blockmatmul" ARG_PragmaType="top" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="E:/Xilinx/Vitis/LabB/solution2/directives.tcl:6:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="directive" ARG_PragmaFunction="blockmatmul" ARG_PragmaIsValid="1" ARG_PragmaOptions="name=blockmatmul" ARG_PragmaType="top" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="E:/Xilinx/Vitis/LabB/solution2/directives.tcl:7:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="directive" ARG_PragmaFunction="blockmatmul" ARG_PragmaIsValid="1" ARG_PragmaOptions="II=1" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_DISAGGREGATE" msg_id="214-210" msg_severity="INFO" msg_loc="LabB/BlockMatrix_design.cpp:5:0" msg_body="Disaggregating variable 'ABpartial'">
+        <args Name="ABpartial"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="LabB/BlockMatrix_design.cpp:27:18" msg_body="Loop 'ps_j' is marked as complete unroll implied by the pipeline pragma">
+        <args LoopName="ps_j"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="LabB/BlockMatrix_design.cpp:5:0" msg_body="Unrolling loop 'ps_j' (LabB/BlockMatrix_design.cpp:27:18) in function 'blockmatmul' completely with a factor of 16">
+        <args Factor="16" LoopLoc="LabB/BlockMatrix_design.cpp:27:18" LoopName="ps_j"/>
+    </msg>
+    <msg msg_groups="PRAGMA_AGGREGATE" msg_id="214-241" msg_severity="INFO" msg_loc="LabB/BlockMatrix_design.cpp:5:0" msg_body="Aggregating fifo (hls::stream) variable 'Bcols' with compact=bit mode in 512-bits">
+        <args AggregateTypeName="compact=bit" Bitwidth="512" HwTyName="fifo (hls::stream)" Name="Bcols"/>
+    </msg>
+    <msg msg_groups="PRAGMA_AGGREGATE" msg_id="214-241" msg_severity="INFO" msg_loc="LabB/BlockMatrix_design.cpp:5:0" msg_body="Aggregating fifo (hls::stream) variable 'Arows' with compact=bit mode in 512-bits">
+        <args AggregateTypeName="compact=bit" Bitwidth="512" HwTyName="fifo (hls::stream)" Name="Arows"/>
+    </msg>
+    <msg msg_groups="AUTOMATION_VERBOSE_PASSED" msg_id="214-335" msg_severity="INFO" msg_loc="LabB/BlockMatrix_design.cpp:0:1" msg_body="array_partition dim=2 type=complete  variable=AB 1 blockmatmul LabB/BlockMatrix_design.cpp:7:11 E:/Xilinx/Vitis/LabB/solution2/directives.tcl:7:9AB">
+        <args PragmaFunction="blockmatmul" PragmaIsAuto="1" PragmaOptions="dim=2 type=complete  variable=AB" PragmaSrcLoc="E:/Xilinx/Vitis/LabB/solution2/directives.tcl:7:9" PragmaType="array_partition" VarName="AB" varLoc="LabB/BlockMatrix_design.cpp:7:11"/>
+    </msg>
+    <msg msg_groups="AUTOMATION PRAGMA_MISC" msg_id="214-270" msg_severity="INFO" msg_loc="E:/Xilinx/Vitis/LabB/solution2/directives.tcl:7:9" msg_body="Inferring pragma 'array_partition type=complete dim=2' for array 'AB' due to pipeline pragma">
+        <args Dim="2" Mode="complete" Name="AB" PragmaType="array_partition"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="LabB/BlockMatrix_design.cpp:7:11" msg_body="Applying array_partition to 'AB': Complete partitioning on dimension 2.">
+        <args Dim="2" Mode="Complete" UOName="AB"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="D:/tool/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot/hls_stream_39.h:145:9" msg_body="Inlining function '_llvm.fpga.unpack.bits.s_struct.blockvecs.i512.1' into 'blockmatmul(hls::stream&lt;blockvec, 0&gt;&amp;, hls::stream&lt;blockvec, 0&gt;&amp;, blockmat&amp;, int)'">
+        <args Callee="_llvm.fpga.unpack.bits.s_struct.blockvecs.i512.1" Caller="blockmatmul(hls::stream&lt;blockvec, 0&gt;&amp;, hls::stream&lt;blockvec, 0&gt;&amp;, blockmat&amp;, int)"/>
+    </msg>
+</xilinx:hls_fe_msgs>
+

@@ -1,0 +1,84 @@
+{"sourceFile": [{
+      "name": "",
+      "directive": [
+        {
+          "functionName": "blockmatmul",
+          "label": "",
+          "functionLabel": "",
+          "id": "1",
+          "sourceFile": "E:\/Xilinx\/Vitis\/LabB\/solution4\/directives.tcl",
+          "sourceLine": "6",
+          "pragma": {
+            "name": "TOP",
+            "option": [{
+                "name": "name",
+                "value": "blockmatmul"
+              }]
+          }
+        },
+        {
+          "functionName": "blockmatmul",
+          "label": "ps_i",
+          "functionLabel": "",
+          "id": "2",
+          "sourceFile": "E:\/Xilinx\/Vitis\/LabB\/solution4\/directives.tcl",
+          "sourceLine": "7",
+          "pragma": {
+            "name": "PIPELINE",
+            "option": [{
+                "name": "II",
+                "value": "1"
+              }]
+          }
+        },
+        {
+          "functionName": "blockmatmul",
+          "label": "",
+          "functionLabel": "",
+          "id": "3",
+          "sourceFile": "E:\/Xilinx\/Vitis\/LabB\/solution4\/directives.tcl",
+          "sourceLine": "8",
+          "pragma": {"name": "DATAFLOW"}
+        },
+        {
+          "functionName": "blockmatmul",
+          "label": "",
+          "functionLabel": "",
+          "id": "4",
+          "sourceFile": "E:\/Xilinx\/Vitis\/LabB\/solution4\/directives.tcl",
+          "sourceLine": "9",
+          "pragma": {
+            "name": "ARRAY_RESHAPE",
+            "option": [
+              {
+                "name": "variable",
+                "value": "AB"
+              },
+              {
+                "name": "complete",
+                "value": ""
+              },
+              {
+                "name": "dim",
+                "value": "2"
+              }
+            ]
+          }
+        },
+        {
+          "functionName": "blockmatmul",
+          "label": "",
+          "functionLabel": "",
+          "id": "5",
+          "sourceFile": "E:\/Xilinx\/Vitis\/LabB\/solution4\/csynth.tcl",
+          "sourceLine": "15",
+          "pragma": {
+            "name": "TOP",
+            "option": [{
+                "name": "name",
+                "value": "blockmatmul"
+              }]
+          }
+        }
+      ]
+    }]}

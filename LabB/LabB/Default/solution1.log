@@ -1,0 +1,626 @@
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2022.1 (64-bit)
+Tool Version Limit: 2022.04
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-1611] Setting target device to 'xc7z020-clg400-1'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [HLS 200-1510] Running: set_part xc7z020clg400-1 
+INFO: [HLS 200-1510] Running: create_clock -period 10 -name default 
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-1510] Running: csim_design -quiet 
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+INFO: [SIM 211-1] CSim done with 0 errors.
+INFO: [SIM 211-3] *************** CSIM finish ***************
+INFO: [HLS 200-111] Finished Command csim_design CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 13.59 seconds; current allocated memory: 0.000 MB.
+INFO: [HLS 200-112] Total CPU user time: 4 seconds. Total CPU system time: 1 seconds. Total elapsed time: 17.321 seconds; peak allocated memory: 1.376 GB.
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2022.1 (64-bit)
+Tool Version Limit: 2022.04
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-1611] Setting target device to 'xc7z020-clg400-1'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [HLS 200-1510] Running: set_part xc7z020clg400-1 
+INFO: [HLS 200-1510] Running: create_clock -period 10 -name default 
+INFO: [HLS 200-1510] Running: csynth_design 
+INFO: [HLS 200-111] Finished File checks and directory preparation: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.022 seconds; current allocated memory: 1.412 GB.
+INFO: [HLS 200-10] Analyzing design file 'LabB/BlockMatrix_design.cpp' ... 
+WARNING: [HLS 214-111] Static scalars and arrays declared inside a dataflow region will be treated like local variables (LabB/BlockMatrix_design.cpp:11:18)
+WARNING: [HLS 214-114] Since the only kind of statements allowed in a canonical dataflow region are variable declarations and function calls, the compiler may not be able to correctly handle the region (LabB/BlockMatrix_design.cpp:9:9)
+WARNING: [HLS 200-471] Dataflow form checks found 2 issue(s) in file LabB/BlockMatrix_design.cpp
+INFO: [HLS 200-111] Finished Source Code Analysis and Preprocessing: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 9.105 seconds; current allocated memory: 1.412 GB.
+INFO: [HLS 200-777] Using interface defaults for 'Vivado' flow target.
+INFO: [HLS 214-291] Loop 'ps_i' is marked as complete unroll implied by the pipeline pragma (LabB/BlockMatrix_design.cpp:25:7)
+INFO: [HLS 214-291] Loop 'ps_j' is marked as complete unroll implied by the pipeline pragma (LabB/BlockMatrix_design.cpp:26:18)
+INFO: [HLS 214-186] Unrolling loop 'ps_i' (LabB/BlockMatrix_design.cpp:25:7) in function 'blockmatmul' completely with a factor of 4 (LabB/BlockMatrix_design.cpp:5:0)
+INFO: [HLS 214-186] Unrolling loop 'ps_j' (LabB/BlockMatrix_design.cpp:26:18) in function 'blockmatmul' completely with a factor of 4 (LabB/BlockMatrix_design.cpp:5:0)
+INFO: [HLS 214-241] Aggregating scalar variable 'ABpartial' with compact=bit mode in 512-bits (LabB/BlockMatrix_design.cpp:5:0)
+INFO: [HLS 214-241] Aggregating fifo (hls::stream) variable 'Bcols' with compact=bit mode in 128-bits (LabB/BlockMatrix_design.cpp:5:0)
+INFO: [HLS 214-241] Aggregating fifo (hls::stream) variable 'Arows' with compact=bit mode in 128-bits (LabB/BlockMatrix_design.cpp:5:0)
+INFO: [HLS 214-270] Inferring pragma 'array_partition type=complete dim=1' for array 'blockmatmul(hls::stream<blockvec, 0>&, hls::stream<blockvec, 0>&, blockmat&, int)::A' due to pipeline pragma (LabB/BlockMatrix_design.cpp:24:9)
+INFO: [HLS 214-248] Applying array_partition to '_ZZ11blockmatmulRN3hls6streamI8blockvecLi0EEES3_R8blockmatiE1A': Complete partitioning on dimension 1. (LabB/BlockMatrix_design.cpp:11:0)
+INFO: [HLS 214-131] Inlining function '_llvm.fpga.pack.none.i128.a4i32' into '_llvm.fpga.unpack.bits.s_struct.blockvecs.i128.1'
+INFO: [HLS 214-131] Inlining function '_llvm.fpga.unpack.bits.s_struct.blockvecs.i128.1' into 'blockmatmul(hls::stream<blockvec, 0>&, hls::stream<blockvec, 0>&, blockmat&, int)' (D:/tool/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot/hls_stream_39.h:145:9)
+INFO: [HLS 200-111] Finished Compiling Optimization and Transform: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 6.997 seconds; current allocated memory: 1.412 GB.
+INFO: [HLS 200-111] Finished Checking Pragmas: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.002 seconds; current allocated memory: 1.412 GB.
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.037 seconds; current allocated memory: 1.412 GB.
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [HLS 200-111] Finished Checking Synthesizability: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.035 seconds; current allocated memory: 1.412 GB.
+INFO: [XFORM 203-510] Pipelining loop 'Loop-2' in function 'blockmatmul' automatically.
+INFO: [XFORM 203-510] Pipelining loop 'writeoutput' (LabB/BlockMatrix_design.cpp:33) in function 'blockmatmul' automatically.
+INFO: [XFORM 203-502] Unrolling all sub-loops inside loop 'writeoutput' (LabB/BlockMatrix_design.cpp:33) in function 'blockmatmul' for pipelining.
+INFO: [HLS 200-489] Unrolling loop 'VITIS_LOOP_33_2' (LabB/BlockMatrix_design.cpp:33) in function 'blockmatmul' completely with a factor of 4.
+INFO: [XFORM 203-721] Changing loop 'Loop_writeoutput_proc' (LabB/BlockMatrix_design.cpp:33) to a process function for dataflow in function 'blockmatmul'.
+WARNING: [HLS 200-786] Detected dataflow-on-top in function  'blockmatmul' (LabB/BlockMatrix_design.cpp:5:1)  with default interface mode 'ap_ctrl_hs'. Overlapped execution of successive kernel calls will not happen unless interface mode 'ap_ctrl_chain' is used (or 'ap_ctrl_none' for a purely data-driven design).
+INFO: [XFORM 203-712] Applying dataflow to function 'blockmatmul' (LabB/BlockMatrix_design.cpp:5:1), detected/extracted 2 process function(s): 
+	 'Loop_1_proc1'
+	 'Loop_writeoutput_proc'.
+INFO: [HLS 200-111] Finished Loop, function and other optimizations: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.145 seconds; current allocated memory: 1.412 GB.
+WARNING: [HLS 200-960] Cannot flatten loop 'loadA' (LabB/BlockMatrix_design.cpp:14:22) in function 'Loop_1_proc1' the outer loop is not a perfect loop.
+INFO: [HLS 200-472] Inferring partial write operation for 'AB' 
+INFO: [HLS 200-472] Inferring partial write operation for 'tmp.a' (D:/tool/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot/hls_stream_39.h:145:9)
+INFO: [HLS 200-472] Inferring partial write operation for 'blockmatmul(stream<blockvec, 0>&, stream<blockvec, 0>&, blockmat&, int)A.3' (LabB/BlockMatrix_design.cpp:17:10)
+INFO: [HLS 200-472] Inferring partial write operation for 'AB' (LabB/BlockMatrix_design.cpp:27:26)
+WARNING: [HLS 200-1449] Process Loop_writeoutput_proc has both a predecessor and reads an input from its caller (see the GUI dataflow viewer). This may lead to lower throughput. Consider copying this input via a predecessor process.
+INFO: [HLS 200-111] Finished Architecture Synthesis: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.132 seconds; current allocated memory: 1.412 GB.
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'blockmatmul' ...
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'Loop_1_proc1_Pipeline_1' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'Loop 1'.
+INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 1, Depth = 1, loop 'Loop 1'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.164 seconds; current allocated memory: 1.412 GB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.021 seconds; current allocated memory: 1.412 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'Loop_1_proc1_Pipeline_VITIS_LOOP_15_1' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_15_1'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 2, loop 'VITIS_LOOP_15_1'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.04 seconds; current allocated memory: 1.412 GB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.03 seconds; current allocated memory: 1.412 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'Loop_1_proc1_Pipeline_partialsum' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'partialsum'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 5, loop 'partialsum'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.15 seconds; current allocated memory: 1.412 GB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.122 seconds; current allocated memory: 1.412 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'Loop_1_proc1' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 1 seconds. CPU system time: 1 seconds. Elapsed time: 0.252 seconds; current allocated memory: 1.412 GB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.179 seconds; current allocated memory: 1.412 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'Loop_writeoutput_proc' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'writeoutput'.
+WARNING: [HLS 200-880] The II Violation in module 'Loop_writeoutput_proc' (loop 'writeoutput'): Unable to enforce a carried dependence constraint (II = 1, distance = 1, offset = 1) between wire write operation ('ABpartial_write_ln34', LabB/BlockMatrix_design.cpp:34) on port 'ABpartial' (LabB/BlockMatrix_design.cpp:34) and wire read operation ('ABpartial_read', LabB/BlockMatrix_design.cpp:34) on port 'ABpartial' (LabB/BlockMatrix_design.cpp:34).
+WARNING: [HLS 200-880] The II Violation in module 'Loop_writeoutput_proc' (loop 'writeoutput'): Unable to enforce a carried dependence constraint (II = 2, distance = 1, offset = 1) between wire write operation ('ABpartial_write_ln34', LabB/BlockMatrix_design.cpp:34) on port 'ABpartial' (LabB/BlockMatrix_design.cpp:34) and wire read operation ('ABpartial_read', LabB/BlockMatrix_design.cpp:34) on port 'ABpartial' (LabB/BlockMatrix_design.cpp:34).
+INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 3, Depth = 4, loop 'writeoutput'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.203 seconds; current allocated memory: 1.412 GB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.079 seconds; current allocated memory: 1.412 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'blockmatmul' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.116 seconds; current allocated memory: 1.412 GB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.109 seconds; current allocated memory: 1.412 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'Loop_1_proc1_Pipeline_1' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'Loop_1_proc1_Pipeline_1'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.199 seconds; current allocated memory: 1.412 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'Loop_1_proc1_Pipeline_VITIS_LOOP_15_1' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'Loop_1_proc1_Pipeline_VITIS_LOOP_15_1' pipeline 'VITIS_LOOP_15_1' pipeline type 'loop pipeline'
+INFO: [RTGEN 206-100] Finished creating RTL model for 'Loop_1_proc1_Pipeline_VITIS_LOOP_15_1'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.068 seconds; current allocated memory: 1.412 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'Loop_1_proc1_Pipeline_partialsum' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'Loop_1_proc1_Pipeline_partialsum' pipeline 'partialsum' pipeline type 'loop pipeline'
+INFO: [RTGEN 206-100] Generating core module 'mul_32s_32s_32_2_1': 16 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'Loop_1_proc1_Pipeline_partialsum'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 0.139 seconds; current allocated memory: 1.412 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'Loop_1_proc1' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SYN 201-210] Renamed object name 'Loop_1_proc1_blockmatmul_stream_blockvec_0_stream_blockvec_0_blockmat_int_A_RAM_AUTO_1R1W' to 'Loop_1_proc1_blockmatmul_stream_blockvec_0_stream_blockvec_0_blockmat_int_A_Rbkb' due to the length limit 80
+INFO: [SYN 201-210] Renamed object name 'Loop_1_proc1_blockmatmul_stream_blockvec_0_stream_blockvec_0_blockmat_int_A_1_RAM_AUTO_1R1W' to 'Loop_1_proc1_blockmatmul_stream_blockvec_0_stream_blockvec_0_blockmat_int_A_1cud' due to the length limit 80
+INFO: [SYN 201-210] Renamed object name 'Loop_1_proc1_blockmatmul_stream_blockvec_0_stream_blockvec_0_blockmat_int_A_2_RAM_AUTO_1R1W' to 'Loop_1_proc1_blockmatmul_stream_blockvec_0_stream_blockvec_0_blockmat_int_A_2dEe' due to the length limit 80
+INFO: [SYN 201-210] Renamed object name 'Loop_1_proc1_blockmatmul_stream_blockvec_0_stream_blockvec_0_blockmat_int_A_3_RAM_AUTO_1R1W' to 'Loop_1_proc1_blockmatmul_stream_blockvec_0_stream_blockvec_0_blockmat_int_A_3eOg' due to the length limit 80
+INFO: [RTGEN 206-100] Finished creating RTL model for 'Loop_1_proc1'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.5 seconds; current allocated memory: 1.412 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'Loop_writeoutput_proc' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'Loop_writeoutput_proc' pipeline 'writeoutput' pipeline type 'loop pipeline'
+INFO: [RTGEN 206-100] Finished creating RTL model for 'Loop_writeoutput_proc'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.357 seconds; current allocated memory: 1.412 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'blockmatmul' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-500] Setting interface mode on port 'blockmatmul/Arows' to 'ap_fifo'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'blockmatmul/Bcols' to 'ap_fifo'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'blockmatmul/ABpartial' to 'ap_ovld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'blockmatmul/it' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on function 'blockmatmul' to 'ap_ctrl_hs'.
+INFO: [RTGEN 206-100] Finished creating RTL model for 'blockmatmul'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 0.358 seconds; current allocated memory: 1.412 GB.
+INFO: [RTMG 210-278] Implementing memory 'blockmatmul_Loop_1_proc1_blockmatmul_stream_blockvec_0_stream_blockvec_0_blockmat_int_A_Rbkb_ram (RAM)' using auto RAMs with power-on initialization.
+INFO: [RTMG 210-278] Implementing memory 'blockmatmul_Loop_1_proc1_tmp_a_RAM_AUTO_1R1W_ram (RAM)' using auto RAMs.
+INFO: [HLS 200-740] Implementing PIPO blockmatmul_AB_RAM_AUTO_1R1W_memcore using a separate memory for each block
+INFO: [RTMG 210-278] Implementing memory 'blockmatmul_AB_RAM_AUTO_1R1W_memcore_ram (RAM)' using auto RAMs.
+INFO: [HLS 200-111] Finished Generating all RTL models: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 1.202 seconds; current allocated memory: 1.412 GB.
+INFO: [HLS 200-111] Finished Updating report files: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 0.622 seconds; current allocated memory: 1.412 GB.
+INFO: [VHDL 208-304] Generating VHDL RTL for blockmatmul.
+INFO: [VLOG 209-307] Generating Verilog RTL for blockmatmul.
+INFO: [HLS 200-790] **** Loop Constraint Status: All loop constraints were NOT satisfied.
+INFO: [HLS 200-789] **** Estimated Fmax: 144.68 MHz
+INFO: [HLS 200-111] Finished Command csynth_design CPU user time: 5 seconds. CPU system time: 1 seconds. Elapsed time: 21.453 seconds; current allocated memory: 0.000 MB.
+INFO: [HLS 200-112] Total CPU user time: 9 seconds. Total CPU system time: 2 seconds. Total elapsed time: 24.801 seconds; peak allocated memory: 1.412 GB.
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2022.1 (64-bit)
+Tool Version Limit: 2022.04
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-1611] Setting target device to 'xc7z020-clg400-1'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [HLS 200-1510] Running: set_part xc7z020clg400-1 
+INFO: [HLS 200-1510] Running: create_clock -period 10 -name default 
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-1510] Running: cosim_design -trace_level all 
+WARNING: [HLS 200-626] This design is unable to schedule all read ports in the first II cycle. The RTL testbench may treat the design as non-pipelined
+INFO: [COSIM 212-47] Using XSIM for RTL simulation.
+INFO: [COSIM 212-14] Instrumenting C test bench ...
+INFO: [COSIM 212-302] Starting C TB testing ... 
+INFO: [COSIM 212-333] Generating C post check test bench ...
+INFO: [COSIM 212-12] Generating RTL test bench ...
+INFO: [COSIM 212-1] *** C/RTL co-simulation file generation completed. ***
+INFO: [COSIM 212-323] Starting verilog simulation. 
+INFO: [COSIM 212-15] Starting XSIM ...
+INFO: [COSIM 212-316] Starting C post checking ...
+INFO: [COSIM 212-1000] *** C/RTL co-simulation finished: PASS ***
+INFO: [HLS 200-111] Finished Command cosim_design CPU user time: 2 seconds. CPU system time: 1 seconds. Elapsed time: 64.913 seconds; current allocated memory: 0.000 MB.
+INFO: [HLS 200-112] Total CPU user time: 6 seconds. Total CPU system time: 2 seconds. Total elapsed time: 68.625 seconds; peak allocated memory: 1.391 GB.
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2022.1 (64-bit)
+Tool Version Limit: 2022.04
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-1611] Setting target device to 'xc7z020-clg400-1'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [HLS 200-1510] Running: set_part xc7z020clg400-1 
+INFO: [HLS 200-1510] Running: create_clock -period 10 -name default 
+INFO: [HLS 200-1510] Running: csim_design -quiet 
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+INFO: [SIM 211-1] CSim done with 0 errors.
+INFO: [SIM 211-3] *************** CSIM finish ***************
+INFO: [HLS 200-111] Finished Command csim_design CPU user time: 0 seconds. CPU system time: 1 seconds. Elapsed time: 13.743 seconds; current allocated memory: 0.000 MB.
+INFO: [HLS 200-112] Total CPU user time: 4 seconds. Total CPU system time: 2 seconds. Total elapsed time: 16.97 seconds; peak allocated memory: 1.415 GB.
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2022.1 (64-bit)
+Tool Version Limit: 2022.04
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-1611] Setting target device to 'xc7z020-clg400-1'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [HLS 200-1510] Running: set_part xc7z020clg400-1 
+INFO: [HLS 200-1510] Running: create_clock -period 10 -name default 
+INFO: [HLS 200-1510] Running: csynth_design 
+INFO: [HLS 200-111] Finished File checks and directory preparation: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.017 seconds; current allocated memory: 1.416 GB.
+INFO: [HLS 200-10] Analyzing design file 'LabB/BlockMatrix_design.cpp' ... 
+WARNING: [HLS 214-111] Static scalars and arrays declared inside a dataflow region will be treated like local variables (LabB/BlockMatrix_design.cpp:12:18)
+WARNING: [HLS 214-114] Since the only kind of statements allowed in a canonical dataflow region are variable declarations and function calls, the compiler may not be able to correctly handle the region (LabB/BlockMatrix_design.cpp:9:9)
+WARNING: [HLS 200-471] Dataflow form checks found 2 issue(s) in file LabB/BlockMatrix_design.cpp
+INFO: [HLS 200-111] Finished Source Code Analysis and Preprocessing: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 7.923 seconds; current allocated memory: 1.416 GB.
+INFO: [HLS 200-777] Using interface defaults for 'Vivado' flow target.
+INFO: [HLS 214-291] Loop 'ps_i' is marked as complete unroll implied by the pipeline pragma (LabB/BlockMatrix_design.cpp:26:7)
+INFO: [HLS 214-291] Loop 'ps_j' is marked as complete unroll implied by the pipeline pragma (LabB/BlockMatrix_design.cpp:27:18)
+INFO: [HLS 214-186] Unrolling loop 'ps_i' (LabB/BlockMatrix_design.cpp:26:7) in function 'blockmatmul' completely with a factor of 4 (LabB/BlockMatrix_design.cpp:5:0)
+INFO: [HLS 214-186] Unrolling loop 'ps_j' (LabB/BlockMatrix_design.cpp:27:18) in function 'blockmatmul' completely with a factor of 4 (LabB/BlockMatrix_design.cpp:5:0)
+INFO: [HLS 214-241] Aggregating scalar variable 'ABpartial' with compact=bit mode in 512-bits (LabB/BlockMatrix_design.cpp:5:0)
+INFO: [HLS 214-241] Aggregating fifo (hls::stream) variable 'Bcols' with compact=bit mode in 128-bits (LabB/BlockMatrix_design.cpp:5:0)
+INFO: [HLS 214-241] Aggregating fifo (hls::stream) variable 'Arows' with compact=bit mode in 128-bits (LabB/BlockMatrix_design.cpp:5:0)
+INFO: [HLS 214-270] Inferring pragma 'array_partition type=complete dim=1' for array 'blockmatmul(hls::stream<blockvec, 0>&, hls::stream<blockvec, 0>&, blockmat&, int)::A' due to pipeline pragma (LabB/BlockMatrix_design.cpp:25:9)
+INFO: [HLS 214-248] Applying array_partition to '_ZZ11blockmatmulRN3hls6streamI8blockvecLi0EEES3_R8blockmatiE1A': Complete partitioning on dimension 1. (LabB/BlockMatrix_design.cpp:12:0)
+INFO: [HLS 214-131] Inlining function '_llvm.fpga.pack.none.i128.a4i32' into '_llvm.fpga.unpack.bits.s_struct.blockvecs.i128.1'
+INFO: [HLS 214-131] Inlining function '_llvm.fpga.unpack.bits.s_struct.blockvecs.i128.1' into 'blockmatmul(hls::stream<blockvec, 0>&, hls::stream<blockvec, 0>&, blockmat&, int)' (D:/tool/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot/hls_stream_39.h:145:9)
+INFO: [HLS 200-111] Finished Compiling Optimization and Transform: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 6.765 seconds; current allocated memory: 1.416 GB.
+INFO: [HLS 200-111] Finished Checking Pragmas: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.001 seconds; current allocated memory: 1.416 GB.
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.036 seconds; current allocated memory: 1.416 GB.
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [HLS 200-111] Finished Checking Synthesizability: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.034 seconds; current allocated memory: 1.416 GB.
+INFO: [XFORM 203-510] Pipelining loop 'Loop-2' in function 'blockmatmul' automatically.
+INFO: [XFORM 203-510] Pipelining loop 'writeoutput' (LabB/BlockMatrix_design.cpp:34) in function 'blockmatmul' automatically.
+INFO: [XFORM 203-502] Unrolling all sub-loops inside loop 'writeoutput' (LabB/BlockMatrix_design.cpp:34) in function 'blockmatmul' for pipelining.
+INFO: [HLS 200-489] Unrolling loop 'VITIS_LOOP_34_2' (LabB/BlockMatrix_design.cpp:34) in function 'blockmatmul' completely with a factor of 4.
+INFO: [XFORM 203-721] Changing loop 'Loop_writeoutput_proc' (LabB/BlockMatrix_design.cpp:34) to a process function for dataflow in function 'blockmatmul'.
+WARNING: [HLS 200-786] Detected dataflow-on-top in function  'blockmatmul' (LabB/BlockMatrix_design.cpp:5:1)  with default interface mode 'ap_ctrl_hs'. Overlapped execution of successive kernel calls will not happen unless interface mode 'ap_ctrl_chain' is used (or 'ap_ctrl_none' for a purely data-driven design).
+INFO: [XFORM 203-712] Applying dataflow to function 'blockmatmul' (LabB/BlockMatrix_design.cpp:5:1), detected/extracted 2 process function(s): 
+	 'Loop_1_proc1'
+	 'Loop_writeoutput_proc'.
+INFO: [HLS 200-111] Finished Loop, function and other optimizations: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.159 seconds; current allocated memory: 1.416 GB.
+WARNING: [HLS 200-960] Cannot flatten loop 'loadA' (LabB/BlockMatrix_design.cpp:15:22) in function 'Loop_1_proc1' the outer loop is not a perfect loop.
+INFO: [HLS 200-472] Inferring partial write operation for 'AB' 
+INFO: [HLS 200-472] Inferring partial write operation for 'tmp.a' (D:/tool/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot/hls_stream_39.h:145:9)
+INFO: [HLS 200-472] Inferring partial write operation for 'blockmatmul(stream<blockvec, 0>&, stream<blockvec, 0>&, blockmat&, int)A.3' (LabB/BlockMatrix_design.cpp:18:10)
+INFO: [HLS 200-472] Inferring partial write operation for 'AB' (LabB/BlockMatrix_design.cpp:28:26)
+WARNING: [HLS 200-1449] Process Loop_writeoutput_proc has both a predecessor and reads an input from its caller (see the GUI dataflow viewer). This may lead to lower throughput. Consider copying this input via a predecessor process.
+INFO: [HLS 200-111] Finished Architecture Synthesis: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 0.135 seconds; current allocated memory: 1.416 GB.
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'blockmatmul' ...
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'Loop_1_proc1_Pipeline_1' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'Loop 1'.
+INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 1, Depth = 1, loop 'Loop 1'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.156 seconds; current allocated memory: 1.416 GB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.02 seconds; current allocated memory: 1.416 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'Loop_1_proc1_Pipeline_VITIS_LOOP_16_1' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_16_1'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 2, loop 'VITIS_LOOP_16_1'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.049 seconds; current allocated memory: 1.416 GB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.03 seconds; current allocated memory: 1.416 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'Loop_1_proc1_Pipeline_partialsum' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'partialsum'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 5, loop 'partialsum'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.146 seconds; current allocated memory: 1.416 GB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.12 seconds; current allocated memory: 1.416 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'Loop_1_proc1' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.24 seconds; current allocated memory: 1.416 GB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.165 seconds; current allocated memory: 1.416 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'Loop_writeoutput_proc' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'writeoutput'.
+WARNING: [HLS 200-880] The II Violation in module 'Loop_writeoutput_proc' (loop 'writeoutput'): Unable to enforce a carried dependence constraint (II = 1, distance = 1, offset = 1) between wire write operation ('ABpartial_write_ln35', LabB/BlockMatrix_design.cpp:35) on port 'ABpartial' (LabB/BlockMatrix_design.cpp:35) and wire read operation ('ABpartial_read', LabB/BlockMatrix_design.cpp:35) on port 'ABpartial' (LabB/BlockMatrix_design.cpp:35).
+WARNING: [HLS 200-880] The II Violation in module 'Loop_writeoutput_proc' (loop 'writeoutput'): Unable to enforce a carried dependence constraint (II = 2, distance = 1, offset = 1) between wire write operation ('ABpartial_write_ln35', LabB/BlockMatrix_design.cpp:35) on port 'ABpartial' (LabB/BlockMatrix_design.cpp:35) and wire read operation ('ABpartial_read', LabB/BlockMatrix_design.cpp:35) on port 'ABpartial' (LabB/BlockMatrix_design.cpp:35).
+INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 3, Depth = 4, loop 'writeoutput'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 0.207 seconds; current allocated memory: 1.416 GB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.084 seconds; current allocated memory: 1.416 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'blockmatmul' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.108 seconds; current allocated memory: 1.416 GB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.088 seconds; current allocated memory: 1.416 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'Loop_1_proc1_Pipeline_1' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'Loop_1_proc1_Pipeline_1'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.185 seconds; current allocated memory: 1.416 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'Loop_1_proc1_Pipeline_VITIS_LOOP_16_1' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'Loop_1_proc1_Pipeline_VITIS_LOOP_16_1' pipeline 'VITIS_LOOP_16_1' pipeline type 'loop pipeline'
+INFO: [RTGEN 206-100] Finished creating RTL model for 'Loop_1_proc1_Pipeline_VITIS_LOOP_16_1'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.061 seconds; current allocated memory: 1.416 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'Loop_1_proc1_Pipeline_partialsum' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'Loop_1_proc1_Pipeline_partialsum' pipeline 'partialsum' pipeline type 'loop pipeline'
+INFO: [RTGEN 206-100] Generating core module 'mul_32s_32s_32_2_1': 16 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'Loop_1_proc1_Pipeline_partialsum'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.121 seconds; current allocated memory: 1.416 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'Loop_1_proc1' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SYN 201-210] Renamed object name 'Loop_1_proc1_blockmatmul_stream_blockvec_0_stream_blockvec_0_blockmat_int_A_RAM_AUTO_1R1W' to 'Loop_1_proc1_blockmatmul_stream_blockvec_0_stream_blockvec_0_blockmat_int_A_Rbkb' due to the length limit 80
+INFO: [SYN 201-210] Renamed object name 'Loop_1_proc1_blockmatmul_stream_blockvec_0_stream_blockvec_0_blockmat_int_A_1_RAM_AUTO_1R1W' to 'Loop_1_proc1_blockmatmul_stream_blockvec_0_stream_blockvec_0_blockmat_int_A_1cud' due to the length limit 80
+INFO: [SYN 201-210] Renamed object name 'Loop_1_proc1_blockmatmul_stream_blockvec_0_stream_blockvec_0_blockmat_int_A_2_RAM_AUTO_1R1W' to 'Loop_1_proc1_blockmatmul_stream_blockvec_0_stream_blockvec_0_blockmat_int_A_2dEe' due to the length limit 80
+INFO: [SYN 201-210] Renamed object name 'Loop_1_proc1_blockmatmul_stream_blockvec_0_stream_blockvec_0_blockmat_int_A_3_RAM_AUTO_1R1W' to 'Loop_1_proc1_blockmatmul_stream_blockvec_0_stream_blockvec_0_blockmat_int_A_3eOg' due to the length limit 80
+INFO: [RTGEN 206-100] Finished creating RTL model for 'Loop_1_proc1'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 1 seconds. CPU system time: 1 seconds. Elapsed time: 0.467 seconds; current allocated memory: 1.416 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'Loop_writeoutput_proc' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'Loop_writeoutput_proc' pipeline 'writeoutput' pipeline type 'loop pipeline'
+INFO: [RTGEN 206-100] Finished creating RTL model for 'Loop_writeoutput_proc'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.329 seconds; current allocated memory: 1.416 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'blockmatmul' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-500] Setting interface mode on port 'blockmatmul/Arows' to 'ap_fifo'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'blockmatmul/Bcols' to 'ap_fifo'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'blockmatmul/ABpartial' to 'ap_ovld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'blockmatmul/it' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on function 'blockmatmul' to 'ap_ctrl_hs'.
+INFO: [RTGEN 206-100] Finished creating RTL model for 'blockmatmul'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.333 seconds; current allocated memory: 1.416 GB.
+INFO: [RTMG 210-278] Implementing memory 'blockmatmul_Loop_1_proc1_blockmatmul_stream_blockvec_0_stream_blockvec_0_blockmat_int_A_Rbkb_ram (RAM)' using auto RAMs with power-on initialization.
+INFO: [RTMG 210-278] Implementing memory 'blockmatmul_Loop_1_proc1_tmp_a_RAM_AUTO_1R1W_ram (RAM)' using auto RAMs.
+INFO: [HLS 200-740] Implementing PIPO blockmatmul_AB_RAM_AUTO_1R1W_memcore using a separate memory for each block
+INFO: [RTMG 210-278] Implementing memory 'blockmatmul_AB_RAM_AUTO_1R1W_memcore_ram (RAM)' using auto RAMs.
+INFO: [HLS 200-111] Finished Generating all RTL models: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 0.868 seconds; current allocated memory: 1.416 GB.
+INFO: [HLS 200-111] Finished Updating report files: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.478 seconds; current allocated memory: 1.416 GB.
+INFO: [VHDL 208-304] Generating VHDL RTL for blockmatmul.
+INFO: [VLOG 209-307] Generating Verilog RTL for blockmatmul.
+INFO: [HLS 200-790] **** Loop Constraint Status: All loop constraints were NOT satisfied.
+INFO: [HLS 200-789] **** Estimated Fmax: 144.68 MHz
+INFO: [HLS 200-111] Finished Command csynth_design CPU user time: 4 seconds. CPU system time: 1 seconds. Elapsed time: 19.396 seconds; current allocated memory: 0.000 MB.
+INFO: [HLS 200-112] Total CPU user time: 8 seconds. Total CPU system time: 2 seconds. Total elapsed time: 22.579 seconds; peak allocated memory: 1.416 GB.
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2022.1 (64-bit)
+Tool Version Limit: 2022.04
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-1611] Setting target device to 'xc7z020-clg400-1'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [HLS 200-1510] Running: set_part xc7z020clg400-1 
+INFO: [HLS 200-1510] Running: create_clock -period 10 -name default 
+INFO: [HLS 200-1510] Running: source ./LabB/solution1/directives.tcl
+INFO: [HLS 200-1510] Running: set_directive_top -name blockmatmul blockmatmul 
+INFO: [HLS 200-1510] Running: csim_design -quiet 
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+INFO: [SIM 211-1] CSim done with 0 errors.
+INFO: [SIM 211-3] *************** CSIM finish ***************
+INFO: [HLS 200-111] Finished Command csim_design CPU user time: 0 seconds. CPU system time: 1 seconds. Elapsed time: 12.095 seconds; current allocated memory: 0.000 MB.
+INFO: [HLS 200-112] Total CPU user time: 4 seconds. Total CPU system time: 2 seconds. Total elapsed time: 15.19 seconds; peak allocated memory: 1.431 GB.
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2022.1 (64-bit)
+Tool Version Limit: 2022.04
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-1611] Setting target device to 'xc7z020-clg400-1'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [HLS 200-1510] Running: set_part xc7z020clg400-1 
+INFO: [HLS 200-1510] Running: create_clock -period 10 -name default 
+INFO: [HLS 200-1510] Running: source ./LabB/solution1/directives.tcl
+INFO: [HLS 200-1510] Running: set_directive_top -name blockmatmul blockmatmul 
+INFO: [HLS 200-1510] Running: csynth_design 
+INFO: [HLS 200-111] Finished File checks and directory preparation: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.032 seconds; current allocated memory: 1.387 GB.
+INFO: [HLS 200-10] Analyzing design file 'LabB/BlockMatrix_design.cpp' ... 
+INFO: [HLS 200-111] Finished Source Code Analysis and Preprocessing: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 8.915 seconds; current allocated memory: 1.387 GB.
+INFO: [HLS 200-777] Using interface defaults for 'Vivado' flow target.
+INFO: [HLS 214-241] Aggregating scalar variable 'ABpartial' with compact=bit mode in 512-bits (LabB/BlockMatrix_design.cpp:5:0)
+INFO: [HLS 214-241] Aggregating fifo (hls::stream) variable 'Bcols' with compact=bit mode in 128-bits (LabB/BlockMatrix_design.cpp:5:0)
+INFO: [HLS 214-241] Aggregating fifo (hls::stream) variable 'Arows' with compact=bit mode in 128-bits (LabB/BlockMatrix_design.cpp:5:0)
+INFO: [HLS 214-131] Inlining function '_llvm.fpga.pack.none.i128.a4i32' into '_llvm.fpga.unpack.bits.s_struct.blockvecs.i128.1'
+INFO: [HLS 214-131] Inlining function '_llvm.fpga.unpack.bits.s_struct.blockvecs.i128.1' into 'blockmatmul(hls::stream<blockvec, 0>&, hls::stream<blockvec, 0>&, blockmat&, int)' (D:/tool/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot/hls_stream_39.h:145:9)
+INFO: [HLS 200-111] Finished Compiling Optimization and Transform: CPU user time: 0 seconds. CPU system time: 1 seconds. Elapsed time: 6.79 seconds; current allocated memory: 1.387 GB.
+INFO: [HLS 200-111] Finished Checking Pragmas: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.002 seconds; current allocated memory: 1.387 GB.
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.029 seconds; current allocated memory: 1.387 GB.
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [HLS 200-111] Finished Checking Synthesizability: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.031 seconds; current allocated memory: 1.387 GB.
+INFO: [XFORM 203-510] Pipelining loop 'Loop-2' in function 'blockmatmul' automatically.
+INFO: [XFORM 203-510] Pipelining loop 'loadA' (LabB/BlockMatrix_design.cpp:15) in function 'blockmatmul' automatically.
+INFO: [XFORM 203-510] Pipelining loop 'partialsum' (LabB/BlockMatrix_design.cpp:24) in function 'blockmatmul' automatically.
+INFO: [XFORM 203-510] Pipelining loop 'VITIS_LOOP_34_2' (LabB/BlockMatrix_design.cpp:34) in function 'blockmatmul' automatically.
+INFO: [XFORM 203-502] Unrolling all sub-loops inside loop 'loadA' (LabB/BlockMatrix_design.cpp:15) in function 'blockmatmul' for pipelining.
+INFO: [XFORM 203-502] Unrolling all sub-loops inside loop 'partialsum' (LabB/BlockMatrix_design.cpp:24) in function 'blockmatmul' for pipelining.
+INFO: [HLS 200-489] Unrolling loop 'VITIS_LOOP_16_1' (LabB/BlockMatrix_design.cpp:16) in function 'blockmatmul' completely with a factor of 4.
+INFO: [HLS 200-489] Unrolling loop 'ps_i' (LabB/BlockMatrix_design.cpp:26) in function 'blockmatmul' completely with a factor of 4.
+INFO: [HLS 200-489] Unrolling loop 'ps_j' (LabB/BlockMatrix_design.cpp:27) in function 'blockmatmul' completely with a factor of 4.
+INFO: [XFORM 203-102] Partitioning array 'tempA.a' (LabB/BlockMatrix_design.cpp:15) automatically.
+INFO: [XFORM 203-102] Partitioning array 'tempB.a' (LabB/BlockMatrix_design.cpp:24) automatically.
+INFO: [XFORM 203-102] Partitioning array 'A' in dimension 1 automatically.
+INFO: [HLS 200-111] Finished Loop, function and other optimizations: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.127 seconds; current allocated memory: 1.387 GB.
+INFO: [XFORM 203-541] Flattening a loop nest 'writeoutput' (LabB/BlockMatrix_design.cpp:33:26) in function 'blockmatmul'.
+INFO: [HLS 200-472] Inferring partial write operation for 'AB' 
+INFO: [HLS 200-472] Inferring partial write operation for 'A.0' (LabB/BlockMatrix_design.cpp:18:25)
+INFO: [HLS 200-472] Inferring partial write operation for 'AB' (LabB/BlockMatrix_design.cpp:28:26)
+INFO: [HLS 200-111] Finished Architecture Synthesis: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.118 seconds; current allocated memory: 1.387 GB.
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'blockmatmul' ...
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'blockmatmul_Pipeline_1' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'Loop 1'.
+INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 1, Depth = 1, loop 'Loop 1'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.163 seconds; current allocated memory: 1.387 GB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.023 seconds; current allocated memory: 1.387 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'blockmatmul_Pipeline_loadA' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'loadA'.
+INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 1, Depth = 2, loop 'loadA'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.042 seconds; current allocated memory: 1.387 GB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.032 seconds; current allocated memory: 1.387 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'blockmatmul_Pipeline_partialsum' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'partialsum'.
+WARNING: [HLS 200-880] The II Violation in module 'blockmatmul_Pipeline_partialsum' (loop 'partialsum'): Unable to enforce a carried dependence constraint (II = 1, distance = 1, offset = 1) between 'store' operation ('AB_addr_write_ln28', LabB/BlockMatrix_design.cpp:28) of variable 'add_ln28_15', LabB/BlockMatrix_design.cpp:28 on array 'AB' and 'load' operation ('AB_load_15', LabB/BlockMatrix_design.cpp:28) on array 'AB'.
+WARNING: [HLS 200-885] The II Violation in module 'blockmatmul_Pipeline_partialsum' (loop 'partialsum'): Unable to schedule 'load' operation ('AB_load_3', LabB/BlockMatrix_design.cpp:28) on array 'AB' due to limited memory ports (II = 2). Please consider using a memory core with more ports or partitioning the array 'AB'.
+WARNING: [HLS 200-885] The II Violation in module 'blockmatmul_Pipeline_partialsum' (loop 'partialsum'): Unable to schedule 'load' operation ('AB_load_5', LabB/BlockMatrix_design.cpp:28) on array 'AB' due to limited memory ports (II = 3). Please consider using a memory core with more ports or partitioning the array 'AB'.
+WARNING: [HLS 200-885] The II Violation in module 'blockmatmul_Pipeline_partialsum' (loop 'partialsum'): Unable to schedule 'load' operation ('AB_load_7', LabB/BlockMatrix_design.cpp:28) on array 'AB' due to limited memory ports (II = 4). Please consider using a memory core with more ports or partitioning the array 'AB'.
+WARNING: [HLS 200-885] The II Violation in module 'blockmatmul_Pipeline_partialsum' (loop 'partialsum'): Unable to schedule 'store' operation ('AB_addr_10_write_ln28', LabB/BlockMatrix_design.cpp:28) of variable 'add_ln28_5', LabB/BlockMatrix_design.cpp:28 on array 'AB' due to limited memory ports (II = 11). Please consider using a memory core with more ports or partitioning the array 'AB'.
+WARNING: [HLS 200-885] The II Violation in module 'blockmatmul_Pipeline_partialsum' (loop 'partialsum'): Unable to schedule 'store' operation ('AB_addr_2_write_ln28', LabB/BlockMatrix_design.cpp:28) of variable 'add_ln28_13', LabB/BlockMatrix_design.cpp:28 on array 'AB' due to limited memory ports (II = 15). Please consider using a memory core with more ports or partitioning the array 'AB'.
+INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 16, Depth = 16, loop 'partialsum'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.445 seconds; current allocated memory: 1.387 GB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 0.19 seconds; current allocated memory: 1.387 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'blockmatmul_Pipeline_writeoutput_VITIS_LOOP_34_2' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'writeoutput_VITIS_LOOP_34_2'.
+INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 1, Depth = 3, loop 'writeoutput_VITIS_LOOP_34_2'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.245 seconds; current allocated memory: 1.387 GB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.052 seconds; current allocated memory: 1.387 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'blockmatmul' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.084 seconds; current allocated memory: 1.387 GB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.095 seconds; current allocated memory: 1.387 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'blockmatmul_Pipeline_1' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'blockmatmul_Pipeline_1'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.15 seconds; current allocated memory: 1.387 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'blockmatmul_Pipeline_loadA' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'blockmatmul_Pipeline_loadA' pipeline 'loadA' pipeline type 'loop pipeline'
+INFO: [RTGEN 206-100] Finished creating RTL model for 'blockmatmul_Pipeline_loadA'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.067 seconds; current allocated memory: 1.387 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'blockmatmul_Pipeline_partialsum' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Generating core module 'mul_32s_32s_32_2_1': 16 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'blockmatmul_Pipeline_partialsum'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.115 seconds; current allocated memory: 1.387 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'blockmatmul_Pipeline_writeoutput_VITIS_LOOP_34_2' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'blockmatmul_Pipeline_writeoutput_VITIS_LOOP_34_2' pipeline 'writeoutput_VITIS_LOOP_34_2' pipeline type 'loop pipeline'
+INFO: [RTGEN 206-100] Finished creating RTL model for 'blockmatmul_Pipeline_writeoutput_VITIS_LOOP_34_2'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 0.454 seconds; current allocated memory: 1.387 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'blockmatmul' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-500] Setting interface mode on port 'blockmatmul/Arows' to 'ap_fifo'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'blockmatmul/Bcols' to 'ap_fifo'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'blockmatmul/ABpartial' to 'ap_ovld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'blockmatmul/it' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on function 'blockmatmul' to 'ap_ctrl_hs'.
+INFO: [RTGEN 206-100] Finished creating RTL model for 'blockmatmul'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.198 seconds; current allocated memory: 1.387 GB.
+INFO: [RTMG 210-278] Implementing memory 'blockmatmul_A_0_RAM_AUTO_1R1W_ram (RAM)' using auto RAMs with power-on initialization.
+INFO: [RTMG 210-278] Implementing memory 'blockmatmul_AB_RAM_AUTO_1R1W_ram (RAM)' using auto RAMs.
+INFO: [HLS 200-111] Finished Generating all RTL models: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.781 seconds; current allocated memory: 1.387 GB.
+INFO: [HLS 200-111] Finished Updating report files: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 0.524 seconds; current allocated memory: 1.387 GB.
+INFO: [VHDL 208-304] Generating VHDL RTL for blockmatmul.
+INFO: [VLOG 209-307] Generating Verilog RTL for blockmatmul.
+INFO: [HLS 200-790] **** Loop Constraint Status: All loop constraints were NOT satisfied.
+INFO: [HLS 200-789] **** Estimated Fmax: 144.68 MHz
+INFO: [HLS 200-111] Finished Command csynth_design CPU user time: 4 seconds. CPU system time: 1 seconds. Elapsed time: 19.769 seconds; current allocated memory: 0.000 MB.
+INFO: [HLS 200-112] Total CPU user time: 8 seconds. Total CPU system time: 2 seconds. Total elapsed time: 23.439 seconds; peak allocated memory: 1.387 GB.

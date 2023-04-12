@@ -1,0 +1,460 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cdfg:DBCdfg xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:cdfg="http://www.autoesl.com/DBCdfg" timeStamp="1681253451492">
+  <ports id="1" name="ABpartial" type="PortType" coreName="RAM" coreId="0" bitwidth="32" direction="DirOut" iftype="IfTypeRegister" arraysize="256">
+    <dataInputObjs>getelementptr</dataInputObjs>
+  </ports>
+  <ports id="2" name="AB" type="PortType" coreName="RAM" coreId="0" bitwidth="32" iftype="IfTypeRegister" arraysize="256">
+    <dataOutputObjs>getelementptr</dataOutputObjs>
+  </ports>
+  <edges id="51" source_obj="//@blocks.0/@node_objs.2" sink_obj="//@blocks.0/@node_objs.3"/>
+  <edges id="54" source_obj="//@blocks.0/@node_objs.1" sink_obj="//@blocks.0/@node_objs.4"/>
+  <edges id="56" source_obj="//@blocks.0/@node_objs.0" sink_obj="//@blocks.0/@node_objs.5"/>
+  <edges id="57" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.0" sink_obj="//@blocks.0/@node_objs.6"/>
+  <edges id="58" source_obj="//@blocks.0/@node_objs.2" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.0"/>
+  <edges id="59" source_obj="//@regions.0/@basic_blocks.0/@node_objs.0" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.1"/>
+  <edges id="62" source_obj="//@regions.0/@basic_blocks.0/@node_objs.0" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.2"/>
+  <edges id="65" source_obj="//@regions.0/@basic_blocks.0/@node_objs.1" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.3"/>
+  <edges id="66" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.1" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.3"/>
+  <edges id="67" edge_type="CtrlEdge" source_obj="//@blocks.1" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.3"/>
+  <edges id="68" source_obj="//@blocks.0/@node_objs.0" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.0"/>
+  <edges id="69" source_obj="//@blocks.0/@node_objs.1" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.1"/>
+  <edges id="70" source_obj="//@regions.0/@basic_blocks.1/@node_objs.1" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.2"/>
+  <edges id="73" source_obj="//@regions.0/@basic_blocks.1/@node_objs.0" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.3"/>
+  <edges id="76" source_obj="//@regions.0/@basic_blocks.1/@node_objs.3" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.4"/>
+  <edges id="78" source_obj="//@regions.0/@basic_blocks.1/@node_objs.0" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.4"/>
+  <edges id="79" source_obj="//@regions.0/@basic_blocks.1/@node_objs.3" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.5"/>
+  <edges id="80" source_obj="//@regions.0/@basic_blocks.1/@node_objs.2" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.5"/>
+  <edges id="81" source_obj="//@regions.0/@basic_blocks.1/@node_objs.1" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.5"/>
+  <edges id="82" source_obj="//@regions.0/@basic_blocks.1/@node_objs.5" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.6"/>
+  <edges id="85" source_obj="//@regions.0/@basic_blocks.1/@node_objs.6" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.7"/>
+  <edges id="88" source_obj="//@regions.0/@basic_blocks.1/@node_objs.4" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.8"/>
+  <edges id="89" source_obj="//@regions.0/@basic_blocks.1/@node_objs.7" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.9"/>
+  <edges id="90" source_obj="//@regions.0/@basic_blocks.1/@node_objs.8" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.9"/>
+  <edges id="91" source_obj="//@regions.0/@basic_blocks.1/@node_objs.9" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.10"/>
+  <edges id="92" source_obj="//@regions.0/@basic_blocks.1/@node_objs.11" sink_obj="//@ports.0"/>
+  <edges id="95" source_obj="//@regions.0/@basic_blocks.1/@node_objs.10" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.11"/>
+  <edges id="96" source_obj="//@ports.1" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.12"/>
+  <edges id="98" source_obj="//@regions.0/@basic_blocks.1/@node_objs.10" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.12"/>
+  <edges id="99" source_obj="//@regions.0/@basic_blocks.1/@node_objs.12" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.13"/>
+  <edges id="100" source_obj="//@regions.0/@basic_blocks.1/@node_objs.13" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.14"/>
+  <edges id="101" source_obj="//@regions.0/@basic_blocks.1/@node_objs.11" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.14"/>
+  <edges id="102" source_obj="//@regions.0/@basic_blocks.1/@node_objs.4" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.15"/>
+  <edges id="104" source_obj="//@regions.0/@basic_blocks.0/@node_objs.2" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.16"/>
+  <edges id="105" source_obj="//@blocks.0/@node_objs.2" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.16"/>
+  <edges id="106" source_obj="//@regions.0/@basic_blocks.1/@node_objs.5" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.17"/>
+  <edges id="107" source_obj="//@blocks.0/@node_objs.1" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.17"/>
+  <edges id="108" source_obj="//@regions.0/@basic_blocks.1/@node_objs.15" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.18"/>
+  <edges id="109" source_obj="//@blocks.0/@node_objs.0" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.18"/>
+  <edges id="110" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.0" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.19"/>
+  <edges id="162" edge_type="CtrlEdge" source_obj="//@blocks.0" sink_obj="//@regions.0/@basic_blocks.0"/>
+  <edges id="163" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.0" sink_obj="//@blocks.1"/>
+  <edges id="164" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.0" sink_obj="//@regions.0/@basic_blocks.1"/>
+  <edges id="165" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.1" sink_obj="//@regions.0/@basic_blocks.0" is_back_edge="1"/>
+  <edges id="166" edge_type="VirtEdge" source_obj="//@regions.0/@basic_blocks.1/@node_objs.1" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.17"/>
+  <edges id="167" edge_type="VirtEdge" source_obj="//@regions.0/@basic_blocks.1/@node_objs.0" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.18"/>
+  <edges id="168" edge_type="VirtEdge" source_obj="//@blocks.0/@node_objs.3" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.0"/>
+  <edges id="169" edge_type="VirtEdge" source_obj="//@blocks.0/@node_objs.3" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.16"/>
+  <edges id="170" edge_type="VirtEdge" source_obj="//@blocks.0/@node_objs.4" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.1"/>
+  <edges id="171" edge_type="VirtEdge" source_obj="//@blocks.0/@node_objs.4" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.17"/>
+  <edges id="172" edge_type="VirtEdge" source_obj="//@blocks.0/@node_objs.5" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.0"/>
+  <edges id="173" edge_type="VirtEdge" source_obj="//@blocks.0/@node_objs.5" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.18"/>
+  <edges id="174" edge_type="VirtEdge" source_obj="//@regions.0/@basic_blocks.0/@node_objs.0" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.16"/>
+  <blocks id="11" name="newFuncRoot" type="BlockType">
+    <controlOutputObjs>for.inc69</controlOutputObjs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="3" name="j" originalName="j" coreId="470" bitwidth="5" opcode="alloca" m_display="0" m_topoIndex="1" m_clusterGroupNumber="-1">
+      <dataOutputObjs>store</dataOutputObjs>
+      <dataOutputObjs>load</dataOutputObjs>
+      <dataOutputObjs>store</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="4" name="i" originalName="i" coreId="0" bitwidth="5" opcode="alloca" m_display="0" m_topoIndex="2" m_clusterGroupNumber="-1">
+      <dataOutputObjs>store</dataOutputObjs>
+      <dataOutputObjs>load</dataOutputObjs>
+      <dataOutputObjs>store</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="5" name="indvar_flatten" coreId="0" bitwidth="9" opcode="alloca" m_display="0" m_topoIndex="3" m_clusterGroupNumber="-1">
+      <dataOutputObjs>store</dataOutputObjs>
+      <dataOutputObjs>load</dataOutputObjs>
+      <dataOutputObjs>store</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="7" name="indvar_flatten_write_ln0" coreId="0" opcode="store" m_display="0" m_delay="1.58" m_topoIndex="4" m_clusterGroupNumber="-1">
+      <dataInputObjs>alloca</dataInputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="8" name="i_write_ln0" coreId="0" opcode="store" m_display="0" m_delay="1.58" m_topoIndex="5" m_clusterGroupNumber="-1">
+      <dataInputObjs>alloca</dataInputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="9" name="j_write_ln0" coreId="0" opcode="store" m_display="0" m_delay="1.58" m_topoIndex="6" m_clusterGroupNumber="-1">
+      <dataInputObjs>alloca</dataInputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="10" name="br_ln0" coreId="0" opcode="br" m_display="0" m_topoIndex="7" m_clusterGroupNumber="-1">
+      <controlInputObjs>for.inc69</controlInputObjs>
+    </node_objs>
+  </blocks>
+  <blocks id="44" name="for.end74.exitStub" type="BlockType">
+    <controlInputObjs>for.inc69</controlInputObjs>
+    <controlOutputObjs>br</controlOutputObjs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="43" name="_ln0" coreId="0" opcode="ret" nodeLabel="1.0" m_display="0" m_topoIndex="29" m_clusterGroupNumber="-1"/>
+  </blocks>
+  <regions anchor_node="-1" region_type="8" interval="1" typeName="Pipeline" iiViolation="" id="166" pipe_depth="3" RegionName="writeoutput_VITIS_LOOP_34_2">
+    <basic_blocks id="17" name="for.inc69" type="BlockType">
+      <controlInputObjs>newFuncRoot</controlInputObjs>
+      <controlInputObjs>for.inc72</controlInputObjs>
+      <controlOutputObjs>br</controlOutputObjs>
+      <controlOutputObjs>br</controlOutputObjs>
+      <controlOutputObjs>for.end74.exitStub</controlOutputObjs>
+      <controlOutputObjs>for.inc72</controlOutputObjs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="12" name="indvar_flatten_load" lineNumber="33" fileName="LabB/BlockMatrix_design.cpp" fileDirectory=".." coreId="0" contextFuncName="blockmatmul" bitwidth="9" opcode="load" m_display="0" m_topoIndex="8" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="LabB/BlockMatrix_design.cpp" linenumber="33" fileDirectory="E:\Xilinx\Vitis" functionName="blockmatmul"/>
+        <dataInputObjs>alloca</dataInputObjs>
+        <dataOutputObjs>icmp</dataOutputObjs>
+        <dataOutputObjs>add</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="14" name="icmp_ln33" lineNumber="33" fileName="LabB/BlockMatrix_design.cpp" fileDirectory=".." rtlName="icmp_ln33_fu_105_p2" coreName="Cmp" implIndex="auto" control="no" opType="icmp" coreId="9" contextFuncName="blockmatmul" bitwidth="1" opcode="icmp" m_display="0" m_delay="1.66" m_topoIndex="9" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="LabB/BlockMatrix_design.cpp" linenumber="33" fileDirectory="E:\Xilinx\Vitis" functionName="blockmatmul"/>
+        <dataInputObjs>load</dataInputObjs>
+        <dataOutputObjs>br</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="15" name="add_ln33_1" lineNumber="33" fileName="LabB/BlockMatrix_design.cpp" fileDirectory=".." rtlName="add_ln33_1_fu_111_p2" coreName="Adder" implIndex="fabric" control="no" opType="add" coreId="1" contextFuncName="blockmatmul" bitwidth="9" opcode="add" m_display="0" m_delay="1.82" m_topoIndex="10" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="LabB/BlockMatrix_design.cpp" linenumber="33" fileDirectory="E:\Xilinx\Vitis" functionName="blockmatmul"/>
+        <dataInputObjs>load</dataInputObjs>
+        <dataOutputObjs>store</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="16" name="br_ln33" lineNumber="33" fileName="LabB/BlockMatrix_design.cpp" fileDirectory=".." coreId="0" contextFuncName="blockmatmul" opcode="br" m_display="0" m_topoIndex="11" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="LabB/BlockMatrix_design.cpp" linenumber="33" fileDirectory="E:\Xilinx\Vitis" functionName="blockmatmul"/>
+        <dataInputObjs>icmp</dataInputObjs>
+        <controlInputObjs>for.inc72</controlInputObjs>
+        <controlInputObjs>for.end74.exitStub</controlInputObjs>
+      </node_objs>
+      <fileValidLineNumbers fileName="LabB/BlockMatrix_design.cpp">
+        <validLinenumbers>33</validLinenumbers>
+      </fileValidLineNumbers>
+    </basic_blocks>
+    <basic_blocks id="42" name="for.inc72" type="BlockType">
+      <controlInputObjs>for.inc69</controlInputObjs>
+      <controlOutputObjs>br</controlOutputObjs>
+      <controlOutputObjs>for.inc69</controlOutputObjs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="18" name="j_load" lineNumber="34" fileName="LabB/BlockMatrix_design.cpp" fileDirectory=".." coreId="55" contextFuncName="blockmatmul" bitwidth="5" opcode="load" m_display="0" m_topoIndex="12" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="LabB/BlockMatrix_design.cpp" linenumber="34" fileDirectory="E:\Xilinx\Vitis" functionName="blockmatmul"/>
+        <dataInputObjs>alloca</dataInputObjs>
+        <dataOutputObjs>icmp</dataOutputObjs>
+        <dataOutputObjs>select</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="19" name="i_load" lineNumber="33" fileName="LabB/BlockMatrix_design.cpp" fileDirectory=".." coreId="0" contextFuncName="blockmatmul" bitwidth="5" opcode="load" m_display="0" m_topoIndex="13" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="LabB/BlockMatrix_design.cpp" linenumber="33" fileDirectory="E:\Xilinx\Vitis" functionName="blockmatmul"/>
+        <dataInputObjs>alloca</dataInputObjs>
+        <dataOutputObjs>add</dataOutputObjs>
+        <dataOutputObjs>select</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="20" name="add_ln33" lineNumber="33" fileName="LabB/BlockMatrix_design.cpp" fileDirectory=".." rtlName="add_ln33_fu_123_p2" coreName="Adder" implIndex="fabric" control="no" opType="add" coreId="1" contextFuncName="blockmatmul" bitwidth="5" opcode="add" m_display="0" m_delay="1.78" m_topoIndex="14" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="LabB/BlockMatrix_design.cpp" linenumber="33" fileDirectory="E:\Xilinx\Vitis" functionName="blockmatmul"/>
+        <dataInputObjs>load</dataInputObjs>
+        <dataOutputObjs>select</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="23" name="icmp_ln34" lineNumber="34" fileName="LabB/BlockMatrix_design.cpp" fileDirectory=".." rtlName="icmp_ln34_fu_129_p2" coreName="Cmp" implIndex="auto" control="no" opType="icmp" coreId="9" contextFuncName="blockmatmul" bitwidth="1" opcode="icmp" m_display="0" m_delay="1.36" m_topoIndex="15" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="LabB/BlockMatrix_design.cpp" linenumber="34" fileDirectory="E:\Xilinx\Vitis" functionName="blockmatmul"/>
+        <dataInputObjs>load</dataInputObjs>
+        <dataOutputObjs>select</dataOutputObjs>
+        <dataOutputObjs>select</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="24" name="select_ln33" lineNumber="33" fileName="LabB/BlockMatrix_design.cpp" fileDirectory=".." rtlName="select_ln33_fu_135_p3" coreName="Sel" implIndex="auto_sel" control="no" opType="select" coreId="73" contextFuncName="blockmatmul" bitwidth="5" opcode="select" m_display="0" m_delay="1.21" m_topoIndex="16" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="LabB/BlockMatrix_design.cpp" linenumber="33" fileDirectory="E:\Xilinx\Vitis" functionName="blockmatmul"/>
+        <dataInputObjs>icmp</dataInputObjs>
+        <dataInputObjs>load</dataInputObjs>
+        <dataOutputObjs>zext</dataOutputObjs>
+        <dataOutputObjs>add</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="25" name="select_ln33_1" lineNumber="33" fileName="LabB/BlockMatrix_design.cpp" fileDirectory=".." rtlName="select_ln33_1_fu_143_p3" coreName="Sel" implIndex="auto_sel" control="no" opType="select" coreId="73" contextFuncName="blockmatmul" bitwidth="5" opcode="select" m_display="0" m_delay="1.21" m_topoIndex="17" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="LabB/BlockMatrix_design.cpp" linenumber="33" fileDirectory="E:\Xilinx\Vitis" functionName="blockmatmul"/>
+        <dataInputObjs>icmp</dataInputObjs>
+        <dataInputObjs>add</dataInputObjs>
+        <dataInputObjs>load</dataInputObjs>
+        <dataOutputObjs>trunc</dataOutputObjs>
+        <dataOutputObjs>store</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="26" name="trunc_ln35" lineNumber="35" fileName="LabB/BlockMatrix_design.cpp" fileDirectory=".." rtlName="trunc_ln35_fu_151_p1" coreId="545" contextFuncName="blockmatmul" bitwidth="4" opcode="trunc" m_display="0" m_topoIndex="18" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="LabB/BlockMatrix_design.cpp" linenumber="35" fileDirectory="E:\Xilinx\Vitis" functionName="blockmatmul"/>
+        <dataInputObjs>select</dataInputObjs>
+        <dataOutputObjs>bitconcatenate</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="27" name="tmp_s" lineNumber="35" fileName="LabB/BlockMatrix_design.cpp" fileDirectory=".." rtlName="tmp_s_fu_155_p3" coreId="0" contextFuncName="blockmatmul" bitwidth="8" opcode="bitconcatenate" m_display="0" m_topoIndex="19" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="LabB/BlockMatrix_design.cpp" linenumber="35" fileDirectory="E:\Xilinx\Vitis" functionName="blockmatmul"/>
+        <dataInputObjs>trunc</dataInputObjs>
+        <dataOutputObjs>add</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="29" name="zext_ln35" lineNumber="35" fileName="LabB/BlockMatrix_design.cpp" fileDirectory=".." rtlName="zext_ln35_fu_163_p1" coreId="279139680" contextFuncName="blockmatmul" bitwidth="8" opcode="zext" m_display="0" m_topoIndex="20" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="LabB/BlockMatrix_design.cpp" linenumber="35" fileDirectory="E:\Xilinx\Vitis" functionName="blockmatmul"/>
+        <dataInputObjs>select</dataInputObjs>
+        <dataOutputObjs>add</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="30" name="add_ln35" lineNumber="35" fileName="LabB/BlockMatrix_design.cpp" fileDirectory=".." rtlName="add_ln35_fu_167_p2" coreName="Adder" implIndex="fabric" control="no" opType="add" coreId="1" contextFuncName="blockmatmul" bitwidth="8" opcode="add" m_display="0" m_delay="1.91" m_topoIndex="21" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="LabB/BlockMatrix_design.cpp" linenumber="35" fileDirectory="E:\Xilinx\Vitis" functionName="blockmatmul"/>
+        <dataInputObjs>bitconcatenate</dataInputObjs>
+        <dataInputObjs>zext</dataInputObjs>
+        <dataOutputObjs>zext</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="31" name="zext_ln35_1" lineNumber="35" fileName="LabB/BlockMatrix_design.cpp" fileDirectory=".." rtlName="zext_ln35_1_fu_194_p1" coreId="99" contextFuncName="blockmatmul" bitwidth="64" opcode="zext" nodeLabel="1.0" m_display="0" m_topoIndex="26" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="LabB/BlockMatrix_design.cpp" linenumber="35" fileDirectory="E:\Xilinx\Vitis" functionName="blockmatmul"/>
+        <dataInputObjs>add</dataInputObjs>
+        <dataOutputObjs>getelementptr</dataOutputObjs>
+        <dataOutputObjs>getelementptr</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="32" name="ABpartial_addr" lineNumber="35" fileName="LabB/BlockMatrix_design.cpp" fileDirectory=".." coreId="0" contextFuncName="blockmatmul" bitwidth="8" opcode="getelementptr" nodeLabel="2.0" m_display="0" m_topoIndex="30" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="LabB/BlockMatrix_design.cpp" linenumber="35" fileDirectory="E:\Xilinx\Vitis" functionName="blockmatmul"/>
+        <dataInputObjs>zext</dataInputObjs>
+        <dataOutputObjs>ABpartial</dataOutputObjs>
+        <dataOutputObjs>store</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="33" name="AB_addr" lineNumber="35" fileName="LabB/BlockMatrix_design.cpp" fileDirectory=".." coreId="0" contextFuncName="blockmatmul" bitwidth="8" opcode="getelementptr" nodeLabel="1.0" m_display="0" m_topoIndex="27" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="LabB/BlockMatrix_design.cpp" linenumber="35" fileDirectory="E:\Xilinx\Vitis" functionName="blockmatmul"/>
+        <dataInputObjs>AB</dataInputObjs>
+        <dataInputObjs>zext</dataInputObjs>
+        <dataOutputObjs>load</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="35" name="AB_load" lineNumber="35" fileName="LabB/BlockMatrix_design.cpp" fileDirectory=".." coreName="RAM" implIndex="auto" control="no" opType="ram" coreId="82" contextFuncName="blockmatmul" bitwidth="32" opcode="load" nodeLabel="1.0" nodeLatency="1" m_display="0" m_delay="3.25" m_topoIndex="28" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="LabB/BlockMatrix_design.cpp" linenumber="35" fileDirectory="E:\Xilinx\Vitis" functionName="blockmatmul"/>
+        <dataInputObjs>getelementptr</dataInputObjs>
+        <dataOutputObjs>store</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="36" name="ABpartial_addr_write_ln35" lineNumber="35" fileName="LabB/BlockMatrix_design.cpp" fileDirectory=".." coreName="RAM" implIndex="auto" control="no" opType="ram" coreId="82" contextFuncName="blockmatmul" opcode="store" nodeLabel="2.0" m_display="0" m_delay="3.25" m_topoIndex="31" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="LabB/BlockMatrix_design.cpp" linenumber="35" fileDirectory="E:\Xilinx\Vitis" functionName="blockmatmul"/>
+        <dataInputObjs>load</dataInputObjs>
+        <dataInputObjs>getelementptr</dataInputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="37" name="add_ln34" lineNumber="34" fileName="LabB/BlockMatrix_design.cpp" fileDirectory=".." rtlName="add_ln34_fu_173_p2" coreName="Adder" implIndex="fabric" control="no" opType="add" coreId="1" contextFuncName="blockmatmul" bitwidth="5" opcode="add" m_display="0" m_delay="1.78" m_topoIndex="22" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="LabB/BlockMatrix_design.cpp" linenumber="34" fileDirectory="E:\Xilinx\Vitis" functionName="blockmatmul"/>
+        <dataInputObjs>select</dataInputObjs>
+        <dataOutputObjs>store</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="38" name="indvar_flatten_write_ln34" lineNumber="34" fileName="LabB/BlockMatrix_design.cpp" fileDirectory=".." coreId="302" contextFuncName="blockmatmul" opcode="store" m_display="0" m_delay="1.58" m_topoIndex="23" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="LabB/BlockMatrix_design.cpp" linenumber="34" fileDirectory="E:\Xilinx\Vitis" functionName="blockmatmul"/>
+        <dataInputObjs>add</dataInputObjs>
+        <dataInputObjs>alloca</dataInputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="39" name="i_write_ln34" lineNumber="34" fileName="LabB/BlockMatrix_design.cpp" fileDirectory=".." coreId="0" contextFuncName="blockmatmul" opcode="store" m_display="0" m_delay="1.58" m_topoIndex="24" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="LabB/BlockMatrix_design.cpp" linenumber="34" fileDirectory="E:\Xilinx\Vitis" functionName="blockmatmul"/>
+        <dataInputObjs>select</dataInputObjs>
+        <dataInputObjs>alloca</dataInputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="40" name="j_write_ln34" lineNumber="34" fileName="LabB/BlockMatrix_design.cpp" fileDirectory=".." coreId="398" contextFuncName="blockmatmul" opcode="store" m_display="0" m_delay="1.58" m_topoIndex="25" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="LabB/BlockMatrix_design.cpp" linenumber="34" fileDirectory="E:\Xilinx\Vitis" functionName="blockmatmul"/>
+        <dataInputObjs>add</dataInputObjs>
+        <dataInputObjs>alloca</dataInputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="41" name="br_ln34" lineNumber="34" fileName="LabB/BlockMatrix_design.cpp" fileDirectory=".." coreId="0" contextFuncName="blockmatmul" opcode="br" nodeLabel="2.0" m_display="0" m_topoIndex="32" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="LabB/BlockMatrix_design.cpp" linenumber="34" fileDirectory="E:\Xilinx\Vitis" functionName="blockmatmul"/>
+        <controlInputObjs>for.inc69</controlInputObjs>
+      </node_objs>
+      <fileValidLineNumbers fileName="LabB/BlockMatrix_design.cpp">
+        <validLinenumbers>34</validLinenumbers>
+        <validLinenumbers>33</validLinenumbers>
+        <validLinenumbers>35</validLinenumbers>
+      </fileValidLineNumbers>
+    </basic_blocks>
+  </regions>
+  <ScheduleInfo time="0"/>
+  <ScheduleInfo time="1"/>
+  <ScheduleInfo time="2"/>
+  <regnodes realName="j_reg_198">
+    <nodeIds>3</nodeIds>
+  </regnodes>
+  <regnodes realName="add_ln35_reg_223">
+    <nodeIds>30</nodeIds>
+  </regnodes>
+  <regnodes realName="icmp_ln33_reg_219">
+    <nodeIds>14</nodeIds>
+  </regnodes>
+  <regnodes realName="indvar_flatten_reg_212">
+    <nodeIds>5</nodeIds>
+  </regnodes>
+  <regnodes realName="zext_ln35_1_reg_228">
+    <nodeIds>31</nodeIds>
+  </regnodes>
+  <regnodes realName="AB_addr_reg_233">
+    <nodeIds>33</nodeIds>
+  </regnodes>
+  <regnodes realName="i_reg_205">
+    <nodeIds>4</nodeIds>
+  </regnodes>
+  <expressionNodes realName="ABpartial_addr_gep_fu_73">
+    <nodeIds>32</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="add_ln33_fu_123">
+    <nodeIds>20</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="icmp_ln34_fu_129">
+    <nodeIds>23</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="select_ln33_fu_135">
+    <nodeIds>24</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="i_fu_52">
+    <nodeIds>4</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="AB_addr_gep_fu_60">
+    <nodeIds>33</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="indvar_flatten_fu_56">
+    <nodeIds>5</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="select_ln33_1_fu_143">
+    <nodeIds>25</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="add_ln33_1_fu_111">
+    <nodeIds>15</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="zext_ln35_1_fu_194">
+    <nodeIds>31</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="tmp_s_fu_155">
+    <nodeIds>27</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="add_ln35_fu_167">
+    <nodeIds>30</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="zext_ln35_fu_163">
+    <nodeIds>29</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="j_fu_48">
+    <nodeIds>3</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="trunc_ln35_fu_151">
+    <nodeIds>26</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="add_ln34_fu_173">
+    <nodeIds>37</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="icmp_ln33_fu_105">
+    <nodeIds>14</nodeIds>
+  </expressionNodes>
+  <ioNodes realName="indvar_flatten_load_load_fu_102">
+    <nodeIds>12</nodeIds>
+  </ioNodes>
+  <ioNodes realName="store_ln0_store_fu_92">
+    <nodeIds>8</nodeIds>
+  </ioNodes>
+  <ioNodes realName="store_ln34_store_fu_184">
+    <nodeIds>39</nodeIds>
+  </ioNodes>
+  <ioNodes realName="store_ln34_store_fu_189">
+    <nodeIds>40</nodeIds>
+  </ioNodes>
+  <ioNodes realName="store_ln34_store_fu_179">
+    <nodeIds>38</nodeIds>
+  </ioNodes>
+  <ioNodes realName="i_load_load_fu_120">
+    <nodeIds>19</nodeIds>
+  </ioNodes>
+  <ioNodes realName="j_load_load_fu_117">
+    <nodeIds>18</nodeIds>
+  </ioNodes>
+  <ioNodes realName="store_ln0_store_fu_87">
+    <nodeIds>7</nodeIds>
+  </ioNodes>
+  <ioNodes realName="store_ln0_store_fu_97">
+    <nodeIds>9</nodeIds>
+  </ioNodes>
+  <memoryPorts dataString="AB">
+    <nodeIds>35</nodeIds>
+  </memoryPorts>
+  <memoryPorts dataString="ABpartial">
+    <nodeIds>36</nodeIds>
+  </memoryPorts>
+  <ioPorts name="AB(p0)">
+    <contents name="load">
+      <nodeIds>35</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="ABpartial(p0)">
+    <contents name="store">
+      <nodeIds>36</nodeIds>
+    </contents>
+  </ioPorts>
+  <fsm>
+    <states id="1">
+      <operations id="3" stage="1" latency="1"/>
+      <operations id="4" stage="1" latency="1"/>
+      <operations id="5" stage="1" latency="1"/>
+      <operations id="6" stage="1" latency="1"/>
+      <operations id="7" stage="1" latency="1"/>
+      <operations id="8" stage="1" latency="1"/>
+      <operations id="9" stage="1" latency="1"/>
+      <operations id="10" stage="1" latency="1"/>
+      <operations id="12" stage="1" latency="1"/>
+      <operations id="13" stage="1" latency="1"/>
+      <operations id="14" stage="1" latency="1"/>
+      <operations id="15" stage="1" latency="1"/>
+      <operations id="16" stage="1" latency="1"/>
+      <operations id="18" stage="1" latency="1"/>
+      <operations id="19" stage="1" latency="1"/>
+      <operations id="20" stage="1" latency="1"/>
+      <operations id="23" stage="1" latency="1"/>
+      <operations id="24" stage="1" latency="1"/>
+      <operations id="25" stage="1" latency="1"/>
+      <operations id="26" stage="1" latency="1"/>
+      <operations id="27" stage="1" latency="1"/>
+      <operations id="29" stage="1" latency="1"/>
+      <operations id="30" stage="1" latency="1"/>
+      <operations id="37" stage="1" latency="1"/>
+      <operations id="38" stage="1" latency="1"/>
+      <operations id="39" stage="1" latency="1"/>
+      <operations id="40" stage="1" latency="1"/>
+    </states>
+    <states id="2">
+      <operations id="31" stage="1" latency="1"/>
+      <operations id="33" stage="1" latency="1"/>
+      <operations id="35" stage="2" latency="2"/>
+      <operations id="43" stage="1" latency="1"/>
+    </states>
+    <states id="3">
+      <operations id="21" stage="1" latency="1"/>
+      <operations id="22" stage="1" latency="1"/>
+      <operations id="28" stage="1" latency="1"/>
+      <operations id="32" stage="1" latency="1"/>
+      <operations id="34" stage="1" latency="1"/>
+      <operations id="35" stage="1" latency="2"/>
+      <operations id="36" stage="1" latency="1"/>
+      <operations id="41" stage="1" latency="1"/>
+    </states>
+    <transitions inState="2" outState="3">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="1" outState="2">
+      <condition id="-1"/>
+    </transitions>
+  </fsm>
+  <CFGRegionsRoot>
+    <cfgRegions mId="1" mTag="blockmatmul_Pipeline_writeoutput_VITIS_LOOP_34_2" mII="-1" mDepth="-1" mMinTripCount="-1" mMaxTripCount="-1" mMinLatency="259" mMaxLatency="259">
+      <subRegions>2</subRegions>
+      <subRegions>3</subRegions>
+      <subRegions>4</subRegions>
+      <mDfPipe/>
+    </cfgRegions>
+    <cfgRegions mId="2" mTag="Entry" mII="-1" mDepth="-1" mMinTripCount="-1" mMaxTripCount="-1">
+      <basicBlocks>11</basicBlocks>
+      <mDfPipe/>
+    </cfgRegions>
+    <cfgRegions mId="3" mTag="writeoutput_VITIS_LOOP_34_2" mII="1" mDepth="3" mMinTripCount="256" mMaxTripCount="256" mMinLatency="257" mMaxLatency="257" mType="1">
+      <basicBlocks>17</basicBlocks>
+      <basicBlocks>42</basicBlocks>
+      <mDfPipe/>
+    </cfgRegions>
+    <cfgRegions mId="4" mTag="Return" mII="-1" mDepth="-1" mMinTripCount="-1" mMaxTripCount="-1">
+      <basicBlocks>44</basicBlocks>
+      <mDfPipe/>
+    </cfgRegions>
+  </CFGRegionsRoot>
+</cdfg:DBCdfg>

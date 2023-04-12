@@ -1,0 +1,21 @@
+<xilinx:hls_fe_msgs>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="E:/Xilinx/Vitis/LabB/solution1/csynth.tcl:15:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="directive" ARG_PragmaFunction="blockmatmul" ARG_PragmaIsValid="1" ARG_PragmaOptions="name=blockmatmul" ARG_PragmaType="top" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="E:/Xilinx/Vitis/LabB/solution1/directives.tcl:6:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="directive" ARG_PragmaFunction="blockmatmul" ARG_PragmaIsValid="1" ARG_PragmaOptions="name=blockmatmul" ARG_PragmaType="top" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_AGGREGATE" msg_id="214-241" msg_severity="INFO" msg_loc="LabB/BlockMatrix_design.cpp:5:0" msg_body="Aggregating scalar variable 'ABpartial' with compact=bit mode in 512-bits">
+        <args AggregateTypeName="compact=bit" Bitwidth="512" HwTyName="scalar" Name="ABpartial"/>
+    </msg>
+    <msg msg_groups="PRAGMA_AGGREGATE" msg_id="214-241" msg_severity="INFO" msg_loc="LabB/BlockMatrix_design.cpp:5:0" msg_body="Aggregating fifo (hls::stream) variable 'Bcols' with compact=bit mode in 128-bits">
+        <args AggregateTypeName="compact=bit" Bitwidth="128" HwTyName="fifo (hls::stream)" Name="Bcols"/>
+    </msg>
+    <msg msg_groups="PRAGMA_AGGREGATE" msg_id="214-241" msg_severity="INFO" msg_loc="LabB/BlockMatrix_design.cpp:5:0" msg_body="Aggregating fifo (hls::stream) variable 'Arows' with compact=bit mode in 128-bits">
+        <args AggregateTypeName="compact=bit" Bitwidth="128" HwTyName="fifo (hls::stream)" Name="Arows"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="D:/tool/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot/hls_stream_39.h:145:9" msg_body="Inlining function '_llvm.fpga.unpack.bits.s_struct.blockvecs.i128.1' into 'blockmatmul(hls::stream&lt;blockvec, 0&gt;&amp;, hls::stream&lt;blockvec, 0&gt;&amp;, blockmat&amp;, int)'">
+        <args Callee="_llvm.fpga.unpack.bits.s_struct.blockvecs.i128.1" Caller="blockmatmul(hls::stream&lt;blockvec, 0&gt;&amp;, hls::stream&lt;blockvec, 0&gt;&amp;, blockmat&amp;, int)"/>
+    </msg>
+</xilinx:hls_fe_msgs>
+

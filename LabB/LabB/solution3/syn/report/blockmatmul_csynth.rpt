@@ -1,0 +1,237 @@
+
+
+================================================================
+== Vitis HLS Report for 'blockmatmul'
+================================================================
+* Date:           Wed Apr 12 06:48:25 2023
+
+* Version:        2022.1 (Build 3526262 on Mon Apr 18 15:48:16 MDT 2022)
+* Project:        LabB
+* Solution:       solution3 (Vivado IP Flow Target)
+* Product family: zynq
+* Target device:  xc7z020-clg400-1
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+----------+----------+------------+
+    |  Clock |  Target  | Estimated| Uncertainty|
+    +--------+----------+----------+------------+
+    |ap_clk  |  10.00 ns|  7.196 ns|     2.70 ns|
+    +--------+----------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+-----------+-----------+------+------+----------+
+    |  Latency (cycles) |   Latency (absolute)  |   Interval  | Pipeline |
+    |   min   |   max   |    min    |    max    |  min |  max |   Type   |
+    +---------+---------+-----------+-----------+------+------+----------+
+    |     1797|     2318|  17.970 us|  23.180 us|  1798|  2319|  dataflow|
+    +---------+---------+-----------+-----------+------+------+----------+
+
+    + Detail: 
+        * Instance: 
+        +--------------------------+-----------------------+---------+---------+-----------+-----------+------+------+---------+
+        |                          |                       |  Latency (cycles) |   Latency (absolute)  |   Interval  | Pipeline|
+        |         Instance         |         Module        |   min   |   max   |    min    |    max    |  min |  max |   Type  |
+        +--------------------------+-----------------------+---------+---------+-----------+-----------+------+------+---------+
+        |Loop_1_proc1_U0           |Loop_1_proc1           |     1797|     2318|  17.970 us|  23.180 us|  1797|  2318|       no|
+        |Loop_writeoutput_proc_U0  |Loop_writeoutput_proc  |      259|      259|   2.590 us|   2.590 us|   259|   259|       no|
+        +--------------------------+-----------------------+---------+---------+-----------+-----------+------+------+---------+
+
+        * Loop: 
+        N/A
+
+
+
+================================================================
+== Utilization Estimates
+================================================================
+* Summary: 
++-----------------+---------+-----+--------+-------+-----+
+|       Name      | BRAM_18K| DSP |   FF   |  LUT  | URAM|
++-----------------+---------+-----+--------+-------+-----+
+|DSP              |        -|    -|       -|      -|    -|
+|Expression       |        -|    -|       0|     70|    -|
+|FIFO             |        -|    -|       -|      -|    -|
+|Instance         |        2|   48|    4462|   3392|    0|
+|Memory           |        0|    -|    2048|    256|    0|
+|Multiplexer      |        -|    -|       -|    144|    -|
+|Register         |        -|    -|      16|      -|    -|
++-----------------+---------+-----+--------+-------+-----+
+|Total            |        2|   48|    6526|   3862|    0|
++-----------------+---------+-----+--------+-------+-----+
+|Available        |      280|  220|  106400|  53200|    0|
++-----------------+---------+-----+--------+-------+-----+
+|Utilization (%)  |       ~0|   21|       6|      7|    0|
++-----------------+---------+-----+--------+-------+-----+
+
++ Detail: 
+    * Instance: 
+    +--------------------------+-----------------------+---------+----+------+------+-----+
+    |         Instance         |         Module        | BRAM_18K| DSP|  FF  |  LUT | URAM|
+    +--------------------------+-----------------------+---------+----+------+------+-----+
+    |Loop_1_proc1_U0           |Loop_1_proc1           |        2|  48|  4389|  3159|    0|
+    |Loop_writeoutput_proc_U0  |Loop_writeoutput_proc  |        0|   0|    73|   233|    0|
+    +--------------------------+-----------------------+---------+----+------+------+-----+
+    |Total                     |                       |        2|  48|  4462|  3392|    0|
+    +--------------------------+-----------------------+---------+----+------+------+-----+
+
+    * DSP: 
+    N/A
+
+    * Memory: 
+    +---------+------------------+---------+-----+----+-----+------+-----+------+-------------+
+    |  Memory |      Module      | BRAM_18K|  FF | LUT| URAM| Words| Bits| Banks| W*Bits*Banks|
+    +---------+------------------+---------+-----+----+-----+------+-----+------+-------------+
+    |AB_U     |AB_RAM_AUTO_1R1W  |        0|  128|  16|    0|    16|   32|     1|          512|
+    |AB_1_U   |AB_RAM_AUTO_1R1W  |        0|  128|  16|    0|    16|   32|     1|          512|
+    |AB_2_U   |AB_RAM_AUTO_1R1W  |        0|  128|  16|    0|    16|   32|     1|          512|
+    |AB_3_U   |AB_RAM_AUTO_1R1W  |        0|  128|  16|    0|    16|   32|     1|          512|
+    |AB_4_U   |AB_RAM_AUTO_1R1W  |        0|  128|  16|    0|    16|   32|     1|          512|
+    |AB_5_U   |AB_RAM_AUTO_1R1W  |        0|  128|  16|    0|    16|   32|     1|          512|
+    |AB_6_U   |AB_RAM_AUTO_1R1W  |        0|  128|  16|    0|    16|   32|     1|          512|
+    |AB_7_U   |AB_RAM_AUTO_1R1W  |        0|  128|  16|    0|    16|   32|     1|          512|
+    |AB_8_U   |AB_RAM_AUTO_1R1W  |        0|  128|  16|    0|    16|   32|     1|          512|
+    |AB_9_U   |AB_RAM_AUTO_1R1W  |        0|  128|  16|    0|    16|   32|     1|          512|
+    |AB_10_U  |AB_RAM_AUTO_1R1W  |        0|  128|  16|    0|    16|   32|     1|          512|
+    |AB_11_U  |AB_RAM_AUTO_1R1W  |        0|  128|  16|    0|    16|   32|     1|          512|
+    |AB_12_U  |AB_RAM_AUTO_1R1W  |        0|  128|  16|    0|    16|   32|     1|          512|
+    |AB_13_U  |AB_RAM_AUTO_1R1W  |        0|  128|  16|    0|    16|   32|     1|          512|
+    |AB_14_U  |AB_RAM_AUTO_1R1W  |        0|  128|  16|    0|    16|   32|     1|          512|
+    |AB_15_U  |AB_RAM_AUTO_1R1W  |        0|  128|  16|    0|    16|   32|     1|          512|
+    +---------+------------------+---------+-----+----+-----+------+-----+------+-------------+
+    |Total    |                  |        0| 2048| 256|    0|   256|  512|    16|         8192|
+    +---------+------------------+---------+-----+----+-----+------+-----+------+-------------+
+
+    * FIFO: 
+    N/A
+
+    * Expression: 
+    +-----------------------------------+----------+----+---+----+------------+------------+
+    |           Variable Name           | Operation| DSP| FF| LUT| Bitwidth P0| Bitwidth P1|
+    +-----------------------------------+----------+----+---+----+------------+------------+
+    |Loop_1_proc1_U0_ap_continue        |       and|   0|  0|   2|           1|           1|
+    |Loop_writeoutput_proc_U0_ap_start  |       and|   0|  0|   2|           1|           1|
+    |ap_channel_done_AB                 |       and|   0|  0|   2|           1|           1|
+    |ap_channel_done_AB_1               |       and|   0|  0|   2|           1|           1|
+    |ap_channel_done_AB_10              |       and|   0|  0|   2|           1|           1|
+    |ap_channel_done_AB_11              |       and|   0|  0|   2|           1|           1|
+    |ap_channel_done_AB_12              |       and|   0|  0|   2|           1|           1|
+    |ap_channel_done_AB_13              |       and|   0|  0|   2|           1|           1|
+    |ap_channel_done_AB_14              |       and|   0|  0|   2|           1|           1|
+    |ap_channel_done_AB_15              |       and|   0|  0|   2|           1|           1|
+    |ap_channel_done_AB_2               |       and|   0|  0|   2|           1|           1|
+    |ap_channel_done_AB_3               |       and|   0|  0|   2|           1|           1|
+    |ap_channel_done_AB_4               |       and|   0|  0|   2|           1|           1|
+    |ap_channel_done_AB_5               |       and|   0|  0|   2|           1|           1|
+    |ap_channel_done_AB_6               |       and|   0|  0|   2|           1|           1|
+    |ap_channel_done_AB_7               |       and|   0|  0|   2|           1|           1|
+    |ap_channel_done_AB_8               |       and|   0|  0|   2|           1|           1|
+    |ap_channel_done_AB_9               |       and|   0|  0|   2|           1|           1|
+    |ap_idle                            |       and|   0|  0|   2|           1|           1|
+    |ap_sync_channel_write_AB           |        or|   0|  0|   2|           1|           1|
+    |ap_sync_channel_write_AB_1         |        or|   0|  0|   2|           1|           1|
+    |ap_sync_channel_write_AB_10        |        or|   0|  0|   2|           1|           1|
+    |ap_sync_channel_write_AB_11        |        or|   0|  0|   2|           1|           1|
+    |ap_sync_channel_write_AB_12        |        or|   0|  0|   2|           1|           1|
+    |ap_sync_channel_write_AB_13        |        or|   0|  0|   2|           1|           1|
+    |ap_sync_channel_write_AB_14        |        or|   0|  0|   2|           1|           1|
+    |ap_sync_channel_write_AB_15        |        or|   0|  0|   2|           1|           1|
+    |ap_sync_channel_write_AB_2         |        or|   0|  0|   2|           1|           1|
+    |ap_sync_channel_write_AB_3         |        or|   0|  0|   2|           1|           1|
+    |ap_sync_channel_write_AB_4         |        or|   0|  0|   2|           1|           1|
+    |ap_sync_channel_write_AB_5         |        or|   0|  0|   2|           1|           1|
+    |ap_sync_channel_write_AB_6         |        or|   0|  0|   2|           1|           1|
+    |ap_sync_channel_write_AB_7         |        or|   0|  0|   2|           1|           1|
+    |ap_sync_channel_write_AB_8         |        or|   0|  0|   2|           1|           1|
+    |ap_sync_channel_write_AB_9         |        or|   0|  0|   2|           1|           1|
+    +-----------------------------------+----------+----+---+----+------------+------------+
+    |Total                              |          |   0|  0|  70|          35|          35|
+    +-----------------------------------+----------+----+---+----+------------+------------+
+
+    * Multiplexer: 
+    +---------------------------------+----+-----------+-----+-----------+
+    |               Name              | LUT| Input Size| Bits| Total Bits|
+    +---------------------------------+----+-----------+-----+-----------+
+    |ap_sync_reg_channel_write_AB     |   9|          2|    1|          2|
+    |ap_sync_reg_channel_write_AB_1   |   9|          2|    1|          2|
+    |ap_sync_reg_channel_write_AB_10  |   9|          2|    1|          2|
+    |ap_sync_reg_channel_write_AB_11  |   9|          2|    1|          2|
+    |ap_sync_reg_channel_write_AB_12  |   9|          2|    1|          2|
+    |ap_sync_reg_channel_write_AB_13  |   9|          2|    1|          2|
+    |ap_sync_reg_channel_write_AB_14  |   9|          2|    1|          2|
+    |ap_sync_reg_channel_write_AB_15  |   9|          2|    1|          2|
+    |ap_sync_reg_channel_write_AB_2   |   9|          2|    1|          2|
+    |ap_sync_reg_channel_write_AB_3   |   9|          2|    1|          2|
+    |ap_sync_reg_channel_write_AB_4   |   9|          2|    1|          2|
+    |ap_sync_reg_channel_write_AB_5   |   9|          2|    1|          2|
+    |ap_sync_reg_channel_write_AB_6   |   9|          2|    1|          2|
+    |ap_sync_reg_channel_write_AB_7   |   9|          2|    1|          2|
+    |ap_sync_reg_channel_write_AB_8   |   9|          2|    1|          2|
+    |ap_sync_reg_channel_write_AB_9   |   9|          2|    1|          2|
+    +---------------------------------+----+-----------+-----+-----------+
+    |Total                            | 144|         32|   16|         32|
+    +---------------------------------+----+-----------+-----+-----------+
+
+    * Register: 
+    +---------------------------------+---+----+-----+-----------+
+    |               Name              | FF| LUT| Bits| Const Bits|
+    +---------------------------------+---+----+-----+-----------+
+    |ap_sync_reg_channel_write_AB     |  1|   0|    1|          0|
+    |ap_sync_reg_channel_write_AB_1   |  1|   0|    1|          0|
+    |ap_sync_reg_channel_write_AB_10  |  1|   0|    1|          0|
+    |ap_sync_reg_channel_write_AB_11  |  1|   0|    1|          0|
+    |ap_sync_reg_channel_write_AB_12  |  1|   0|    1|          0|
+    |ap_sync_reg_channel_write_AB_13  |  1|   0|    1|          0|
+    |ap_sync_reg_channel_write_AB_14  |  1|   0|    1|          0|
+    |ap_sync_reg_channel_write_AB_15  |  1|   0|    1|          0|
+    |ap_sync_reg_channel_write_AB_2   |  1|   0|    1|          0|
+    |ap_sync_reg_channel_write_AB_3   |  1|   0|    1|          0|
+    |ap_sync_reg_channel_write_AB_4   |  1|   0|    1|          0|
+    |ap_sync_reg_channel_write_AB_5   |  1|   0|    1|          0|
+    |ap_sync_reg_channel_write_AB_6   |  1|   0|    1|          0|
+    |ap_sync_reg_channel_write_AB_7   |  1|   0|    1|          0|
+    |ap_sync_reg_channel_write_AB_8   |  1|   0|    1|          0|
+    |ap_sync_reg_channel_write_AB_9   |  1|   0|    1|          0|
+    +---------------------------------+---+----+-----+-----------+
+    |Total                            | 16|   0|   16|          0|
+    +---------------------------------+---+----+-----+-----------+
+
+
+
+================================================================
+== Interface
+================================================================
+* Summary: 
++--------------------+-----+-----+------------+--------------+--------------+
+|      RTL Ports     | Dir | Bits|  Protocol  | Source Object|    C Type    |
++--------------------+-----+-----+------------+--------------+--------------+
+|ap_clk              |   in|    1|  ap_ctrl_hs|   blockmatmul|  return value|
+|ap_rst              |   in|    1|  ap_ctrl_hs|   blockmatmul|  return value|
+|ap_start            |   in|    1|  ap_ctrl_hs|   blockmatmul|  return value|
+|ap_done             |  out|    1|  ap_ctrl_hs|   blockmatmul|  return value|
+|ap_ready            |  out|    1|  ap_ctrl_hs|   blockmatmul|  return value|
+|ap_idle             |  out|    1|  ap_ctrl_hs|   blockmatmul|  return value|
+|Arows_dout          |   in|  512|     ap_fifo|         Arows|       pointer|
+|Arows_empty_n       |   in|    1|     ap_fifo|         Arows|       pointer|
+|Arows_read          |  out|    1|     ap_fifo|         Arows|       pointer|
+|Bcols_dout          |   in|  512|     ap_fifo|         Bcols|       pointer|
+|Bcols_empty_n       |   in|    1|     ap_fifo|         Bcols|       pointer|
+|Bcols_read          |  out|    1|     ap_fifo|         Bcols|       pointer|
+|ABpartial_address0  |  out|    8|   ap_memory|     ABpartial|         array|
+|ABpartial_ce0       |  out|    1|   ap_memory|     ABpartial|         array|
+|ABpartial_d0        |  out|   32|   ap_memory|     ABpartial|         array|
+|ABpartial_q0        |   in|   32|   ap_memory|     ABpartial|         array|
+|ABpartial_we0       |  out|    1|   ap_memory|     ABpartial|         array|
+|ABpartial_address1  |  out|    8|   ap_memory|     ABpartial|         array|
+|ABpartial_ce1       |  out|    1|   ap_memory|     ABpartial|         array|
+|ABpartial_d1        |  out|   32|   ap_memory|     ABpartial|         array|
+|ABpartial_q1        |   in|   32|   ap_memory|     ABpartial|         array|
+|ABpartial_we1       |  out|    1|   ap_memory|     ABpartial|         array|
+|it                  |   in|   32|     ap_none|            it|        scalar|
++--------------------+-----+-----+------------+--------------+--------------+
+

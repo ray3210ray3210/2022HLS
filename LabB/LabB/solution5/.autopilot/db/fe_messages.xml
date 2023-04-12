@@ -1,0 +1,54 @@
+<xilinx:hls_fe_msgs>
+    <msg msg_groups="PRAGMA_DATAFLOW" msg_id="214-111" msg_severity="WARNING" msg_loc="LabB/BlockMatrix_design.cpp:12:18" msg_body="Static scalars and arrays declared inside a dataflow region will be treated like local variables"/>
+    <msg msg_groups="PRAGMA_DATAFLOW" msg_id="214-114" msg_severity="WARNING" msg_loc="E:/Xilinx/Vitis/LabB/solution5/directives.tcl:7:9" msg_body="Since the only kind of statements allowed in a canonical dataflow region are variable declarations and function calls, the compiler may not be able to correctly handle the region"/>
+    <msg msg_groups="PRAGMA_DATAFLOW" msg_id="214-169" msg_severity="WARNING" msg_loc="E:/Xilinx/Vitis/LabB/solution5/directives.tcl:7:9" msg_body="There are a total of 4 such instances of non-canonical statements in the dataflow region"/>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="E:/Xilinx/Vitis/LabB/solution5/csynth.tcl:15:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="directive" ARG_PragmaFunction="blockmatmul" ARG_PragmaIsValid="1" ARG_PragmaOptions="name=blockmatmul" ARG_PragmaType="top" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="E:/Xilinx/Vitis/LabB/solution5/directives.tcl:6:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="directive" ARG_PragmaFunction="blockmatmul" ARG_PragmaIsValid="1" ARG_PragmaOptions="name=blockmatmul" ARG_PragmaType="top" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="E:/Xilinx/Vitis/LabB/solution5/directives.tcl:7:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="directive" ARG_PragmaFunction="blockmatmul" ARG_PragmaIsValid="1" ARG_PragmaType="dataflow" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="E:/Xilinx/Vitis/LabB/solution5/directives.tcl:8:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="directive" ARG_PragmaFunction="blockmatmul" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=AB complete dim=2" ARG_PragmaType="array_reshape" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="E:/Xilinx/Vitis/LabB/solution5/directives.tcl:9:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="directive" ARG_PragmaFunction="blockmatmul" ARG_PragmaIsValid="1" ARG_PragmaOptions="II=1" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_DISAGGREGATE" msg_id="214-210" msg_severity="INFO" msg_loc="LabB/BlockMatrix_design.cpp:5:0" msg_body="Disaggregating variable 'ABpartial'">
+        <args Name="ABpartial"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="LabB/BlockMatrix_design.cpp:26:14" msg_body="Loop 'ps_i' is marked as complete unroll implied by the pipeline pragma">
+        <args LoopName="ps_i"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="LabB/BlockMatrix_design.cpp:27:18" msg_body="Loop 'ps_j' is marked as complete unroll implied by the pipeline pragma">
+        <args LoopName="ps_j"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="LabB/BlockMatrix_design.cpp:5:0" msg_body="Unrolling loop 'ps_i' (LabB/BlockMatrix_design.cpp:26:14) in function 'blockmatmul' completely with a factor of 16">
+        <args Factor="16" LoopLoc="LabB/BlockMatrix_design.cpp:26:14" LoopName="ps_i"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="LabB/BlockMatrix_design.cpp:5:0" msg_body="Unrolling loop 'ps_j' (LabB/BlockMatrix_design.cpp:27:18) in function 'blockmatmul' completely with a factor of 16">
+        <args Factor="16" LoopLoc="LabB/BlockMatrix_design.cpp:27:18" LoopName="ps_j"/>
+    </msg>
+    <msg msg_groups="PRAGMA_AGGREGATE" msg_id="214-241" msg_severity="INFO" msg_loc="LabB/BlockMatrix_design.cpp:5:0" msg_body="Aggregating fifo (hls::stream) variable 'Bcols' with compact=bit mode in 512-bits">
+        <args AggregateTypeName="compact=bit" Bitwidth="512" HwTyName="fifo (hls::stream)" Name="Bcols"/>
+    </msg>
+    <msg msg_groups="PRAGMA_AGGREGATE" msg_id="214-241" msg_severity="INFO" msg_loc="LabB/BlockMatrix_design.cpp:5:0" msg_body="Aggregating fifo (hls::stream) variable 'Arows' with compact=bit mode in 512-bits">
+        <args AggregateTypeName="compact=bit" Bitwidth="512" HwTyName="fifo (hls::stream)" Name="Arows"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="LabB/BlockMatrix_design.cpp:7:11" msg_body="Applying array_reshape to 'AB': Complete reshaping on dimension 2.">
+        <args Dim="2" Mode="Complete" UOName="AB"/>
+    </msg>
+    <msg msg_groups="AUTOMATION PRAGMA_MISC" msg_id="214-270" msg_severity="INFO" msg_loc="E:/Xilinx/Vitis/LabB/solution5/directives.tcl:9:9" msg_body="Inferring pragma 'array_partition type=complete dim=1' for array 'blockmatmul(hls::stream&lt;blockvec, 0&gt;&amp;, hls::stream&lt;blockvec, 0&gt;&amp;, blockmat&amp;, int)::A' due to pipeline pragma">
+        <args Dim="1" Mode="complete" Name="blockmatmul(hls::stream&lt;blockvec, 0&gt;&amp;, hls::stream&lt;blockvec, 0&gt;&amp;, blockmat&amp;, int)::A" PragmaType="array_partition"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="LabB/BlockMatrix_design.cpp:12:0" msg_body="Applying array_partition to '_ZZ11blockmatmulRN3hls6streamI8blockvecLi0EEES3_R8blockmatiE1A': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="_ZZ11blockmatmulRN3hls6streamI8blockvecLi0EEES3_R8blockmatiE1A"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="D:/tool/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot/hls_stream_39.h:145:9" msg_body="Inlining function '_llvm.fpga.unpack.bits.s_struct.blockvecs.i512.1' into 'blockmatmul(hls::stream&lt;blockvec, 0&gt;&amp;, hls::stream&lt;blockvec, 0&gt;&amp;, blockmat&amp;, int)'">
+        <args Callee="_llvm.fpga.unpack.bits.s_struct.blockvecs.i512.1" Caller="blockmatmul(hls::stream&lt;blockvec, 0&gt;&amp;, hls::stream&lt;blockvec, 0&gt;&amp;, blockmat&amp;, int)"/>
+    </msg>
+</xilinx:hls_fe_msgs>
+

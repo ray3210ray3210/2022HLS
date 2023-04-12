@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<autopilotfilemapping:AutoPilotFileMapping xmlns:autopilotfilemapping="www.autoesl.com/autopilotfilemapping">
+  <source>
+    <originFiles name="BlockMatrix_design.cpp" path="E:\Homework\NTHU\高階合成技術於應用加速\2022HLS\labB\LabB\BlockMatrix_design.cpp"/>
+    <originFiles name="BlockMatrix_design.h" path="E:\Homework\NTHU\高階合成技術於應用加速\2022HLS\labB\LabB\BlockMatrix_design.h"/>
+  </source>
+  <testbench>
+    <originFiles name="BlockMatrix_testbench.cpp" path="E:\Homework\NTHU\高階合成技術於應用加速\2022HLS\labB\LabB\BlockMatrix_testbench.cpp"/>
+  </testbench>
+</autopilotfilemapping:AutoPilotFileMapping>

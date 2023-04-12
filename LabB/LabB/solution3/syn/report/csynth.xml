@@ -1,0 +1,1052 @@
+<profile>
+    <ReportVersion>
+        <Version>2022.1</Version>
+    </ReportVersion>
+    <UserAssignments>
+        <unit>ns</unit>
+        <ProductFamily>zynq</ProductFamily>
+        <Part>xc7z020-clg400-1</Part>
+        <TopModelName>blockmatmul</TopModelName>
+        <TargetClockPeriod>10.00</TargetClockPeriod>
+        <ClockUncertainty>2.70</ClockUncertainty>
+        <FlowTarget>vivado</FlowTarget>
+    </UserAssignments>
+    <PerformanceEstimates>
+        <PipelineType>dataflow</PipelineType>
+        <SummaryOfTimingAnalysis>
+            <unit>ns</unit>
+            <EstimatedClockPeriod>7.196</EstimatedClockPeriod>
+        </SummaryOfTimingAnalysis>
+        <SummaryOfOverallLatency>
+            <unit>clock cycles</unit>
+            <Best-caseLatency>1797</Best-caseLatency>
+            <Average-caseLatency>2058</Average-caseLatency>
+            <Worst-caseLatency>2318</Worst-caseLatency>
+            <Best-caseRealTimeLatency>17.970 us</Best-caseRealTimeLatency>
+            <Average-caseRealTimeLatency>20.580 us</Average-caseRealTimeLatency>
+            <Worst-caseRealTimeLatency>23.180 us</Worst-caseRealTimeLatency>
+            <DataflowPipelineThroughput>
+                <range>
+                    <min>1798</min>
+                    <max>2319</max>
+                </range>
+            </DataflowPipelineThroughput>
+            <Interval-min>1798</Interval-min>
+            <Interval-max>2319</Interval-max>
+        </SummaryOfOverallLatency>
+    </PerformanceEstimates>
+    <AreaEstimates>
+        <Resources>
+            <BRAM_18K>2</BRAM_18K>
+            <DSP>48</DSP>
+            <FF>6526</FF>
+            <LUT>3862</LUT>
+            <URAM>0</URAM>
+        </Resources>
+        <AvailableResources>
+            <BRAM_18K>280</BRAM_18K>
+            <DSP>220</DSP>
+            <FF>106400</FF>
+            <LUT>53200</LUT>
+            <URAM>0</URAM>
+        </AvailableResources>
+    </AreaEstimates>
+    <InterfaceSummary>
+        <RtlPorts>
+            <name>ap_clk</name>
+            <Object>blockmatmul</Object>
+            <Type>return value</Type>
+            <Scope/>
+            <IOProtocol>ap_ctrl_hs</IOProtocol>
+            <IOConfig/>
+            <Dir>in</Dir>
+            <Bits>1</Bits>
+            <Attribute>control</Attribute>
+        </RtlPorts>
+        <RtlPorts>
+            <name>ap_rst</name>
+            <Object>blockmatmul</Object>
+            <Type>return value</Type>
+            <Scope/>
+            <IOProtocol>ap_ctrl_hs</IOProtocol>
+            <IOConfig/>
+            <Dir>in</Dir>
+            <Bits>1</Bits>
+            <Attribute>control</Attribute>
+        </RtlPorts>
+        <RtlPorts>
+            <name>ap_start</name>
+            <Object>blockmatmul</Object>
+            <Type>return value</Type>
+            <Scope/>
+            <IOProtocol>ap_ctrl_hs</IOProtocol>
+            <IOConfig/>
+            <Dir>in</Dir>
+            <Bits>1</Bits>
+            <Attribute>control</Attribute>
+        </RtlPorts>
+        <RtlPorts>
+            <name>ap_done</name>
+            <Object>blockmatmul</Object>
+            <Type>return value</Type>
+            <Scope/>
+            <IOProtocol>ap_ctrl_hs</IOProtocol>
+            <IOConfig/>
+            <Dir>out</Dir>
+            <Bits>1</Bits>
+            <Attribute>control</Attribute>
+        </RtlPorts>
+        <RtlPorts>
+            <name>ap_ready</name>
+            <Object>blockmatmul</Object>
+            <Type>return value</Type>
+            <Scope/>
+            <IOProtocol>ap_ctrl_hs</IOProtocol>
+            <IOConfig/>
+            <Dir>out</Dir>
+            <Bits>1</Bits>
+            <Attribute>control</Attribute>
+        </RtlPorts>
+        <RtlPorts>
+            <name>ap_idle</name>
+            <Object>blockmatmul</Object>
+            <Type>return value</Type>
+            <Scope/>
+            <IOProtocol>ap_ctrl_hs</IOProtocol>
+            <IOConfig/>
+            <Dir>out</Dir>
+            <Bits>1</Bits>
+            <Attribute>control</Attribute>
+        </RtlPorts>
+        <RtlPorts>
+            <name>Arows_dout</name>
+            <Object>Arows</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>ap_fifo</IOProtocol>
+            <IOConfig/>
+            <Dir>in</Dir>
+            <Bits>512</Bits>
+            <Attribute>control</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>Arows_empty_n</name>
+            <Object>Arows</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>ap_fifo</IOProtocol>
+            <IOConfig/>
+            <Dir>in</Dir>
+            <Bits>1</Bits>
+            <Attribute>control</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>Arows_read</name>
+            <Object>Arows</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>ap_fifo</IOProtocol>
+            <IOConfig/>
+            <Dir>out</Dir>
+            <Bits>1</Bits>
+            <Attribute>control</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>Bcols_dout</name>
+            <Object>Bcols</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>ap_fifo</IOProtocol>
+            <IOConfig/>
+            <Dir>in</Dir>
+            <Bits>512</Bits>
+            <Attribute>control</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>Bcols_empty_n</name>
+            <Object>Bcols</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>ap_fifo</IOProtocol>
+            <IOConfig/>
+            <Dir>in</Dir>
+            <Bits>1</Bits>
+            <Attribute>control</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>Bcols_read</name>
+            <Object>Bcols</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>ap_fifo</IOProtocol>
+            <IOConfig/>
+            <Dir>out</Dir>
+            <Bits>1</Bits>
+            <Attribute>control</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>ABpartial_address0</name>
+            <Object>ABpartial</Object>
+            <Type>array</Type>
+            <Scope/>
+            <IOProtocol>ap_memory</IOProtocol>
+            <IOConfig/>
+            <Dir>out</Dir>
+            <Bits>8</Bits>
+            <Attribute>address</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>ABpartial_ce0</name>
+            <Object>ABpartial</Object>
+            <Type>array</Type>
+            <Scope/>
+            <IOProtocol>ap_memory</IOProtocol>
+            <IOConfig/>
+            <Dir>out</Dir>
+            <Bits>1</Bits>
+            <Attribute>control</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>ABpartial_d0</name>
+            <Object>ABpartial</Object>
+            <Type>array</Type>
+            <Scope/>
+            <IOProtocol>ap_memory</IOProtocol>
+            <IOConfig/>
+            <Dir>out</Dir>
+            <Bits>32</Bits>
+            <Attribute>data</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>ABpartial_q0</name>
+            <Object>ABpartial</Object>
+            <Type>array</Type>
+            <Scope/>
+            <IOProtocol>ap_memory</IOProtocol>
+            <IOConfig/>
+            <Dir>in</Dir>
+            <Bits>32</Bits>
+            <Attribute>data</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>ABpartial_we0</name>
+            <Object>ABpartial</Object>
+            <Type>array</Type>
+            <Scope/>
+            <IOProtocol>ap_memory</IOProtocol>
+            <IOConfig/>
+            <Dir>out</Dir>
+            <Bits>1</Bits>
+            <Attribute>control</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>ABpartial_address1</name>
+            <Object>ABpartial</Object>
+            <Type>array</Type>
+            <Scope/>
+            <IOProtocol>ap_memory</IOProtocol>
+            <IOConfig/>
+            <Dir>out</Dir>
+            <Bits>8</Bits>
+            <Attribute>address</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>ABpartial_ce1</name>
+            <Object>ABpartial</Object>
+            <Type>array</Type>
+            <Scope/>
+            <IOProtocol>ap_memory</IOProtocol>
+            <IOConfig/>
+            <Dir>out</Dir>
+            <Bits>1</Bits>
+            <Attribute>control</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>ABpartial_d1</name>
+            <Object>ABpartial</Object>
+            <Type>array</Type>
+            <Scope/>
+            <IOProtocol>ap_memory</IOProtocol>
+            <IOConfig/>
+            <Dir>out</Dir>
+            <Bits>32</Bits>
+            <Attribute>data</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>ABpartial_q1</name>
+            <Object>ABpartial</Object>
+            <Type>array</Type>
+            <Scope/>
+            <IOProtocol>ap_memory</IOProtocol>
+            <IOConfig/>
+            <Dir>in</Dir>
+            <Bits>32</Bits>
+            <Attribute>data</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>ABpartial_we1</name>
+            <Object>ABpartial</Object>
+            <Type>array</Type>
+            <Scope/>
+            <IOProtocol>ap_memory</IOProtocol>
+            <IOConfig/>
+            <Dir>out</Dir>
+            <Bits>1</Bits>
+            <Attribute>control</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>it</name>
+            <Object>it</Object>
+            <Type>scalar</Type>
+            <Scope/>
+            <IOProtocol>ap_none</IOProtocol>
+            <IOConfig/>
+            <Dir>in</Dir>
+            <Bits>32</Bits>
+            <Attribute>data</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+    </InterfaceSummary>
+    <RTLDesignHierarchy>
+        <TopModule MAX_DEPTH="4">
+            <ModuleName>blockmatmul</ModuleName>
+            <InstancesList>
+                <Instance>
+                    <InstName>Loop_1_proc1_U0</InstName>
+                    <ModuleName>Loop_1_proc1</ModuleName>
+                    <IsCompInst>true</IsCompInst>
+                    <ID>110</ID>
+                    <InstancesList>
+                        <Instance>
+                            <InstName>grp_Loop_1_proc1_Pipeline_1_fu_158</InstName>
+                            <ModuleName>Loop_1_proc1_Pipeline_1</ModuleName>
+                            <IsCompInst>true</IsCompInst>
+                            <ID>158</ID>
+                            <BindInstances>empty_33_fu_332_p2</BindInstances>
+                        </Instance>
+                        <Instance>
+                            <InstName>grp_Loop_1_proc1_Pipeline_loadA_fu_194</InstName>
+                            <ModuleName>Loop_1_proc1_Pipeline_loadA</ModuleName>
+                            <IsCompInst>true</IsCompInst>
+                            <ID>194</ID>
+                            <BindInstances>add_ln14_fu_539_p2 add_ln18_fu_486_p2 add_ln18_1_fu_528_p2 add_ln18_2_fu_556_p2</BindInstances>
+                        </Instance>
+                        <Instance>
+                            <InstName>grp_Loop_1_proc1_Pipeline_ps_i_fu_202</InstName>
+                            <ModuleName>Loop_1_proc1_Pipeline_ps_i</ModuleName>
+                            <IsCompInst>true</IsCompInst>
+                            <ID>202</ID>
+                            <BindInstances>add_ln26_fu_507_p2 mul_32s_32s_32_2_1_U19 AB_d0 mul_32s_32s_32_2_1_U20 AB_1_d0 mul_32s_32s_32_2_1_U21 AB_2_d0 mul_32s_32s_32_2_1_U22 AB_3_d0 mul_32s_32s_32_2_1_U23 AB_4_d0 mul_32s_32s_32_2_1_U24 AB_5_d0 mul_32s_32s_32_2_1_U25 AB_6_d0 mul_32s_32s_32_2_1_U26 AB_7_d0 mul_32s_32s_32_2_1_U27 AB_8_d0 mul_32s_32s_32_2_1_U28 AB_9_d0 mul_32s_32s_32_2_1_U29 AB_10_d0 mul_32s_32s_32_2_1_U30 AB_11_d0 mul_32s_32s_32_2_1_U31 AB_12_d0 mul_32s_32s_32_2_1_U32 AB_13_d0 mul_32s_32s_32_2_1_U33 AB_14_d0 mul_32s_32s_32_2_1_U34 AB_15_d0</BindInstances>
+                        </Instance>
+                    </InstancesList>
+                    <BindInstances>add_ln23_fu_281_p2 A_U</BindInstances>
+                </Instance>
+                <Instance>
+                    <InstName>Loop_writeoutput_proc_U0</InstName>
+                    <ModuleName>Loop_writeoutput_proc</ModuleName>
+                    <IsCompInst>true</IsCompInst>
+                    <ID>154</ID>
+                    <BindInstances>add_ln33_1_fu_337_p2 add_ln33_fu_349_p2 add_ln35_fu_448_p2 add_ln34_fu_417_p2</BindInstances>
+                </Instance>
+            </InstancesList>
+            <BindInstances>AB_U AB_1_U AB_2_U AB_3_U AB_4_U AB_5_U AB_6_U AB_7_U AB_8_U AB_9_U AB_10_U AB_11_U AB_12_U AB_13_U AB_14_U AB_15_U</BindInstances>
+        </TopModule>
+    </RTLDesignHierarchy>
+    <ModuleInformation>
+        <Module>
+            <Name>Loop_1_proc1_Pipeline_1</Name>
+            <Loops>
+                <Loop1/>
+            </Loops>
+            <PerformanceEstimates>
+                <SummaryOfTimingAnalysis>
+                    <TargetClockPeriod>10.00</TargetClockPeriod>
+                    <ClockUncertainty>2.70</ClockUncertainty>
+                    <EstimatedClockPeriod>3.983</EstimatedClockPeriod>
+                </SummaryOfTimingAnalysis>
+                <SummaryOfOverallLatency>
+                    <Best-caseLatency>258</Best-caseLatency>
+                    <Average-caseLatency>258</Average-caseLatency>
+                    <Worst-caseLatency>258</Worst-caseLatency>
+                    <Best-caseRealTimeLatency>2.580 us</Best-caseRealTimeLatency>
+                    <Average-caseRealTimeLatency>2.580 us</Average-caseRealTimeLatency>
+                    <Worst-caseRealTimeLatency>2.580 us</Worst-caseRealTimeLatency>
+                    <PipelineInitiationInterval>258</PipelineInitiationInterval>
+                    <PipelineType>no</PipelineType>
+                </SummaryOfOverallLatency>
+                <SummaryOfLoopLatency>
+                    <Loop1>
+                        <Name>Loop 1</Name>
+                        <TripCount>256</TripCount>
+                        <Latency>256</Latency>
+                        <AbsoluteTimeLatency>2.560 us</AbsoluteTimeLatency>
+                        <PipelineII>1</PipelineII>
+                        <PipelineDepth>1</PipelineDepth>
+                        <PipelineType>yes</PipelineType>
+                        <InstanceList/>
+                    </Loop1>
+                </SummaryOfLoopLatency>
+            </PerformanceEstimates>
+            <AreaEstimates>
+                <Resources>
+                    <FF>11</FF>
+                    <AVAIL_FF>106400</AVAIL_FF>
+                    <UTIL_FF>~0</UTIL_FF>
+                    <LUT>52</LUT>
+                    <AVAIL_LUT>53200</AVAIL_LUT>
+                    <UTIL_LUT>~0</UTIL_LUT>
+                    <BRAM_18K>0</BRAM_18K>
+                    <AVAIL_BRAM>280</AVAIL_BRAM>
+                    <UTIL_BRAM>0</UTIL_BRAM>
+                    <DSP>0</DSP>
+                    <AVAIL_DSP>220</AVAIL_DSP>
+                    <UTIL_DSP>0</UTIL_DSP>
+                    <URAM>0</URAM>
+                    <AVAIL_URAM>0</AVAIL_URAM>
+                    <UTIL_URAM>0</UTIL_URAM>
+                </Resources>
+            </AreaEstimates>
+            <BindNodes>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="Loop 1" OPTYPE="add" PRAGMA="" RTLNAME="empty_33_fu_332_p2" SOURCE="" URAM="0" VARIABLE="empty_33"/>
+            </BindNodes>
+        </Module>
+        <Module>
+            <Name>Loop_1_proc1_Pipeline_loadA</Name>
+            <Loops>
+                <loadA/>
+            </Loops>
+            <PerformanceEstimates>
+                <SummaryOfTimingAnalysis>
+                    <TargetClockPeriod>10.00</TargetClockPeriod>
+                    <ClockUncertainty>2.70</ClockUncertainty>
+                    <EstimatedClockPeriod>6.731</EstimatedClockPeriod>
+                </SummaryOfTimingAnalysis>
+                <SummaryOfOverallLatency>
+                    <Best-caseLatency>520</Best-caseLatency>
+                    <Average-caseLatency>520</Average-caseLatency>
+                    <Worst-caseLatency>520</Worst-caseLatency>
+                    <Best-caseRealTimeLatency>5.200 us</Best-caseRealTimeLatency>
+                    <Average-caseRealTimeLatency>5.200 us</Average-caseRealTimeLatency>
+                    <Worst-caseRealTimeLatency>5.200 us</Worst-caseRealTimeLatency>
+                    <PipelineInitiationInterval>520</PipelineInitiationInterval>
+                    <PipelineType>no</PipelineType>
+                </SummaryOfOverallLatency>
+                <SummaryOfLoopLatency>
+                    <loadA>
+                        <Name>loadA</Name>
+                        <TripCount>64</TripCount>
+                        <Latency>518</Latency>
+                        <AbsoluteTimeLatency>5.180 us</AbsoluteTimeLatency>
+                        <PipelineII>8</PipelineII>
+                        <PipelineDepth>9</PipelineDepth>
+                        <PipelineType>yes</PipelineType>
+                        <InstanceList/>
+                    </loadA>
+                </SummaryOfLoopLatency>
+            </PerformanceEstimates>
+            <AreaEstimates>
+                <Resources>
+                    <FF>511</FF>
+                    <AVAIL_FF>106400</AVAIL_FF>
+                    <UTIL_FF>~0</UTIL_FF>
+                    <LUT>382</LUT>
+                    <AVAIL_LUT>53200</AVAIL_LUT>
+                    <UTIL_LUT>~0</UTIL_LUT>
+                    <BRAM_18K>0</BRAM_18K>
+                    <AVAIL_BRAM>280</AVAIL_BRAM>
+                    <UTIL_BRAM>0</UTIL_BRAM>
+                    <DSP>0</DSP>
+                    <AVAIL_DSP>220</AVAIL_DSP>
+                    <UTIL_DSP>0</UTIL_DSP>
+                    <URAM>0</URAM>
+                    <AVAIL_URAM>0</AVAIL_URAM>
+                    <UTIL_URAM>0</UTIL_URAM>
+                </Resources>
+            </AreaEstimates>
+            <BindNodes>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="loadA" OPTYPE="add" PRAGMA="" RTLNAME="add_ln14_fu_539_p2" SOURCE="LabB/BlockMatrix_design.cpp:14" URAM="0" VARIABLE="add_ln14"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="loadA" OPTYPE="add" PRAGMA="" RTLNAME="add_ln18_fu_486_p2" SOURCE="LabB/BlockMatrix_design.cpp:18" URAM="0" VARIABLE="add_ln18"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="loadA" OPTYPE="add" PRAGMA="" RTLNAME="add_ln18_1_fu_528_p2" SOURCE="LabB/BlockMatrix_design.cpp:18" URAM="0" VARIABLE="add_ln18_1"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="loadA" OPTYPE="add" PRAGMA="" RTLNAME="add_ln18_2_fu_556_p2" SOURCE="LabB/BlockMatrix_design.cpp:18" URAM="0" VARIABLE="add_ln18_2"/>
+            </BindNodes>
+        </Module>
+        <Module>
+            <Name>Loop_1_proc1_Pipeline_ps_i</Name>
+            <Loops>
+                <ps_i/>
+            </Loops>
+            <PerformanceEstimates>
+                <SummaryOfTimingAnalysis>
+                    <TargetClockPeriod>10.00</TargetClockPeriod>
+                    <ClockUncertainty>2.70</ClockUncertainty>
+                    <EstimatedClockPeriod>7.196</EstimatedClockPeriod>
+                </SummaryOfTimingAnalysis>
+                <SummaryOfOverallLatency>
+                    <Best-caseLatency>21</Best-caseLatency>
+                    <Average-caseLatency>21</Average-caseLatency>
+                    <Worst-caseLatency>21</Worst-caseLatency>
+                    <Best-caseRealTimeLatency>0.210 us</Best-caseRealTimeLatency>
+                    <Average-caseRealTimeLatency>0.210 us</Average-caseRealTimeLatency>
+                    <Worst-caseRealTimeLatency>0.210 us</Worst-caseRealTimeLatency>
+                    <PipelineInitiationInterval>21</PipelineInitiationInterval>
+                    <PipelineType>no</PipelineType>
+                </SummaryOfOverallLatency>
+                <SummaryOfLoopLatency>
+                    <ps_i>
+                        <Name>ps_i</Name>
+                        <TripCount>16</TripCount>
+                        <Latency>19</Latency>
+                        <AbsoluteTimeLatency>0.190 us</AbsoluteTimeLatency>
+                        <PipelineII>1</PipelineII>
+                        <PipelineDepth>5</PipelineDepth>
+                        <PipelineType>yes</PipelineType>
+                        <InstanceList/>
+                    </ps_i>
+                </SummaryOfLoopLatency>
+            </PerformanceEstimates>
+            <AreaEstimates>
+                <Resources>
+                    <DSP>48</DSP>
+                    <AVAIL_DSP>220</AVAIL_DSP>
+                    <UTIL_DSP>21</UTIL_DSP>
+                    <FF>3331</FF>
+                    <AVAIL_FF>106400</AVAIL_FF>
+                    <UTIL_FF>3</UTIL_FF>
+                    <LUT>1517</LUT>
+                    <AVAIL_LUT>53200</AVAIL_LUT>
+                    <UTIL_LUT>2</UTIL_LUT>
+                    <BRAM_18K>0</BRAM_18K>
+                    <AVAIL_BRAM>280</AVAIL_BRAM>
+                    <UTIL_BRAM>0</UTIL_BRAM>
+                    <URAM>0</URAM>
+                    <AVAIL_URAM>0</AVAIL_URAM>
+                    <UTIL_URAM>0</UTIL_URAM>
+                </Resources>
+            </AreaEstimates>
+            <BindNodes>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="ps_i" OPTYPE="add" PRAGMA="" RTLNAME="add_ln26_fu_507_p2" SOURCE="LabB/BlockMatrix_design.cpp:26" URAM="0" VARIABLE="add_ln26"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="3" ID="" IMPL="auto" LATENCY="1" LOOP="ps_i" OPTYPE="mul" PRAGMA="" RTLNAME="mul_32s_32s_32_2_1_U19" SOURCE="LabB/BlockMatrix_design.cpp:28" URAM="0" VARIABLE="mul_ln28"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="ps_i" OPTYPE="add" PRAGMA="" RTLNAME="AB_d0" SOURCE="LabB/BlockMatrix_design.cpp:28" URAM="0" VARIABLE="add_ln28"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="3" ID="" IMPL="auto" LATENCY="1" LOOP="ps_i" OPTYPE="mul" PRAGMA="" RTLNAME="mul_32s_32s_32_2_1_U20" SOURCE="LabB/BlockMatrix_design.cpp:28" URAM="0" VARIABLE="mul_ln28_1"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="ps_i" OPTYPE="add" PRAGMA="" RTLNAME="AB_1_d0" SOURCE="LabB/BlockMatrix_design.cpp:28" URAM="0" VARIABLE="add_ln28_1"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="3" ID="" IMPL="auto" LATENCY="1" LOOP="ps_i" OPTYPE="mul" PRAGMA="" RTLNAME="mul_32s_32s_32_2_1_U21" SOURCE="LabB/BlockMatrix_design.cpp:28" URAM="0" VARIABLE="mul_ln28_2"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="ps_i" OPTYPE="add" PRAGMA="" RTLNAME="AB_2_d0" SOURCE="LabB/BlockMatrix_design.cpp:28" URAM="0" VARIABLE="add_ln28_2"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="3" ID="" IMPL="auto" LATENCY="1" LOOP="ps_i" OPTYPE="mul" PRAGMA="" RTLNAME="mul_32s_32s_32_2_1_U22" SOURCE="LabB/BlockMatrix_design.cpp:28" URAM="0" VARIABLE="mul_ln28_3"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="ps_i" OPTYPE="add" PRAGMA="" RTLNAME="AB_3_d0" SOURCE="LabB/BlockMatrix_design.cpp:28" URAM="0" VARIABLE="add_ln28_3"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="3" ID="" IMPL="auto" LATENCY="1" LOOP="ps_i" OPTYPE="mul" PRAGMA="" RTLNAME="mul_32s_32s_32_2_1_U23" SOURCE="LabB/BlockMatrix_design.cpp:28" URAM="0" VARIABLE="mul_ln28_4"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="ps_i" OPTYPE="add" PRAGMA="" RTLNAME="AB_4_d0" SOURCE="LabB/BlockMatrix_design.cpp:28" URAM="0" VARIABLE="add_ln28_4"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="3" ID="" IMPL="auto" LATENCY="1" LOOP="ps_i" OPTYPE="mul" PRAGMA="" RTLNAME="mul_32s_32s_32_2_1_U24" SOURCE="LabB/BlockMatrix_design.cpp:28" URAM="0" VARIABLE="mul_ln28_5"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="ps_i" OPTYPE="add" PRAGMA="" RTLNAME="AB_5_d0" SOURCE="LabB/BlockMatrix_design.cpp:28" URAM="0" VARIABLE="add_ln28_5"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="3" ID="" IMPL="auto" LATENCY="1" LOOP="ps_i" OPTYPE="mul" PRAGMA="" RTLNAME="mul_32s_32s_32_2_1_U25" SOURCE="LabB/BlockMatrix_design.cpp:28" URAM="0" VARIABLE="mul_ln28_6"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="ps_i" OPTYPE="add" PRAGMA="" RTLNAME="AB_6_d0" SOURCE="LabB/BlockMatrix_design.cpp:28" URAM="0" VARIABLE="add_ln28_6"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="3" ID="" IMPL="auto" LATENCY="1" LOOP="ps_i" OPTYPE="mul" PRAGMA="" RTLNAME="mul_32s_32s_32_2_1_U26" SOURCE="LabB/BlockMatrix_design.cpp:28" URAM="0" VARIABLE="mul_ln28_7"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="ps_i" OPTYPE="add" PRAGMA="" RTLNAME="AB_7_d0" SOURCE="LabB/BlockMatrix_design.cpp:28" URAM="0" VARIABLE="add_ln28_7"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="3" ID="" IMPL="auto" LATENCY="1" LOOP="ps_i" OPTYPE="mul" PRAGMA="" RTLNAME="mul_32s_32s_32_2_1_U27" SOURCE="LabB/BlockMatrix_design.cpp:28" URAM="0" VARIABLE="mul_ln28_8"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="ps_i" OPTYPE="add" PRAGMA="" RTLNAME="AB_8_d0" SOURCE="LabB/BlockMatrix_design.cpp:28" URAM="0" VARIABLE="add_ln28_8"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="3" ID="" IMPL="auto" LATENCY="1" LOOP="ps_i" OPTYPE="mul" PRAGMA="" RTLNAME="mul_32s_32s_32_2_1_U28" SOURCE="LabB/BlockMatrix_design.cpp:28" URAM="0" VARIABLE="mul_ln28_9"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="ps_i" OPTYPE="add" PRAGMA="" RTLNAME="AB_9_d0" SOURCE="LabB/BlockMatrix_design.cpp:28" URAM="0" VARIABLE="add_ln28_9"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="3" ID="" IMPL="auto" LATENCY="1" LOOP="ps_i" OPTYPE="mul" PRAGMA="" RTLNAME="mul_32s_32s_32_2_1_U29" SOURCE="LabB/BlockMatrix_design.cpp:28" URAM="0" VARIABLE="mul_ln28_10"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="ps_i" OPTYPE="add" PRAGMA="" RTLNAME="AB_10_d0" SOURCE="LabB/BlockMatrix_design.cpp:28" URAM="0" VARIABLE="add_ln28_10"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="3" ID="" IMPL="auto" LATENCY="1" LOOP="ps_i" OPTYPE="mul" PRAGMA="" RTLNAME="mul_32s_32s_32_2_1_U30" SOURCE="LabB/BlockMatrix_design.cpp:28" URAM="0" VARIABLE="mul_ln28_11"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="ps_i" OPTYPE="add" PRAGMA="" RTLNAME="AB_11_d0" SOURCE="LabB/BlockMatrix_design.cpp:28" URAM="0" VARIABLE="add_ln28_11"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="3" ID="" IMPL="auto" LATENCY="1" LOOP="ps_i" OPTYPE="mul" PRAGMA="" RTLNAME="mul_32s_32s_32_2_1_U31" SOURCE="LabB/BlockMatrix_design.cpp:28" URAM="0" VARIABLE="mul_ln28_12"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="ps_i" OPTYPE="add" PRAGMA="" RTLNAME="AB_12_d0" SOURCE="LabB/BlockMatrix_design.cpp:28" URAM="0" VARIABLE="add_ln28_12"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="3" ID="" IMPL="auto" LATENCY="1" LOOP="ps_i" OPTYPE="mul" PRAGMA="" RTLNAME="mul_32s_32s_32_2_1_U32" SOURCE="LabB/BlockMatrix_design.cpp:28" URAM="0" VARIABLE="mul_ln28_13"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="ps_i" OPTYPE="add" PRAGMA="" RTLNAME="AB_13_d0" SOURCE="LabB/BlockMatrix_design.cpp:28" URAM="0" VARIABLE="add_ln28_13"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="3" ID="" IMPL="auto" LATENCY="1" LOOP="ps_i" OPTYPE="mul" PRAGMA="" RTLNAME="mul_32s_32s_32_2_1_U33" SOURCE="LabB/BlockMatrix_design.cpp:28" URAM="0" VARIABLE="mul_ln28_14"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="ps_i" OPTYPE="add" PRAGMA="" RTLNAME="AB_14_d0" SOURCE="LabB/BlockMatrix_design.cpp:28" URAM="0" VARIABLE="add_ln28_14"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="3" ID="" IMPL="auto" LATENCY="1" LOOP="ps_i" OPTYPE="mul" PRAGMA="" RTLNAME="mul_32s_32s_32_2_1_U34" SOURCE="LabB/BlockMatrix_design.cpp:28" URAM="0" VARIABLE="mul_ln28_15"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="ps_i" OPTYPE="add" PRAGMA="" RTLNAME="AB_15_d0" SOURCE="LabB/BlockMatrix_design.cpp:28" URAM="0" VARIABLE="add_ln28_15"/>
+            </BindNodes>
+        </Module>
+        <Module>
+            <Name>Loop_1_proc1</Name>
+            <Loops>
+                <partialsum/>
+            </Loops>
+            <PerformanceEstimates>
+                <SummaryOfTimingAnalysis>
+                    <TargetClockPeriod>10.00</TargetClockPeriod>
+                    <ClockUncertainty>2.70</ClockUncertainty>
+                    <EstimatedClockPeriod>7.196</EstimatedClockPeriod>
+                </SummaryOfTimingAnalysis>
+                <SummaryOfOverallLatency>
+                    <Best-caseLatency>1797</Best-caseLatency>
+                    <Average-caseLatency>2058</Average-caseLatency>
+                    <Worst-caseLatency>2318</Worst-caseLatency>
+                    <Best-caseRealTimeLatency>17.970 us</Best-caseRealTimeLatency>
+                    <Average-caseRealTimeLatency>20.580 us</Average-caseRealTimeLatency>
+                    <Worst-caseRealTimeLatency>23.180 us</Worst-caseRealTimeLatency>
+                    <PipelineInitiationInterval>1797 ~ 2318</PipelineInitiationInterval>
+                    <PipelineType>no</PipelineType>
+                </SummaryOfOverallLatency>
+                <SummaryOfLoopLatency>
+                    <partialsum>
+                        <Name>partialsum</Name>
+                        <TripCount>64</TripCount>
+                        <Latency>1536</Latency>
+                        <AbsoluteTimeLatency>15.360 us</AbsoluteTimeLatency>
+                        <IterationLatency>24</IterationLatency>
+                        <PipelineDepth>24</PipelineDepth>
+                        <PipelineType>no</PipelineType>
+                        <InstanceList>
+                            <Instance>grp_Loop_1_proc1_Pipeline_ps_i_fu_202</Instance>
+                        </InstanceList>
+                    </partialsum>
+                </SummaryOfLoopLatency>
+            </PerformanceEstimates>
+            <AreaEstimates>
+                <Resources>
+                    <BRAM_18K>2</BRAM_18K>
+                    <AVAIL_BRAM>280</AVAIL_BRAM>
+                    <UTIL_BRAM>~0</UTIL_BRAM>
+                    <DSP>48</DSP>
+                    <AVAIL_DSP>220</AVAIL_DSP>
+                    <UTIL_DSP>21</UTIL_DSP>
+                    <FF>4389</FF>
+                    <AVAIL_FF>106400</AVAIL_FF>
+                    <UTIL_FF>4</UTIL_FF>
+                    <LUT>3159</LUT>
+                    <AVAIL_LUT>53200</AVAIL_LUT>
+                    <UTIL_LUT>5</UTIL_LUT>
+                    <URAM>0</URAM>
+                    <AVAIL_URAM>0</AVAIL_URAM>
+                    <UTIL_URAM>0</UTIL_URAM>
+                </Resources>
+            </AreaEstimates>
+            <BindNodes>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="partialsum" OPTYPE="add" PRAGMA="" RTLNAME="add_ln23_fu_281_p2" SOURCE="LabB/BlockMatrix_design.cpp:23" URAM="0" VARIABLE="add_ln23"/>
+                <BindNode BINDTYPE="storage" BRAM="2" BUNDLEDNAME="" DISPNAME="bind_storage ram_t2p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_t2p" PRAGMA="" RTLNAME="A_U" SOURCE="" URAM="0" VARIABLE="A"/>
+            </BindNodes>
+        </Module>
+        <Module>
+            <Name>Loop_writeoutput_proc</Name>
+            <Loops>
+                <writeoutput_VITIS_LOOP_34_2/>
+            </Loops>
+            <PerformanceEstimates>
+                <SummaryOfTimingAnalysis>
+                    <TargetClockPeriod>10.00</TargetClockPeriod>
+                    <ClockUncertainty>2.70</ClockUncertainty>
+                    <EstimatedClockPeriod>5.947</EstimatedClockPeriod>
+                </SummaryOfTimingAnalysis>
+                <SummaryOfOverallLatency>
+                    <Best-caseLatency>259</Best-caseLatency>
+                    <Average-caseLatency>259</Average-caseLatency>
+                    <Worst-caseLatency>259</Worst-caseLatency>
+                    <Best-caseRealTimeLatency>2.590 us</Best-caseRealTimeLatency>
+                    <Average-caseRealTimeLatency>2.590 us</Average-caseRealTimeLatency>
+                    <Worst-caseRealTimeLatency>2.590 us</Worst-caseRealTimeLatency>
+                    <PipelineInitiationInterval>259</PipelineInitiationInterval>
+                    <PipelineType>no</PipelineType>
+                </SummaryOfOverallLatency>
+                <SummaryOfLoopLatency>
+                    <writeoutput_VITIS_LOOP_34_2>
+                        <Name>writeoutput_VITIS_LOOP_34_2</Name>
+                        <TripCount>256</TripCount>
+                        <Latency>257</Latency>
+                        <AbsoluteTimeLatency>2.570 us</AbsoluteTimeLatency>
+                        <PipelineII>1</PipelineII>
+                        <PipelineDepth>3</PipelineDepth>
+                        <PipelineType>yes</PipelineType>
+                        <InstanceList/>
+                    </writeoutput_VITIS_LOOP_34_2>
+                </SummaryOfLoopLatency>
+            </PerformanceEstimates>
+            <AreaEstimates>
+                <Resources>
+                    <FF>73</FF>
+                    <AVAIL_FF>106400</AVAIL_FF>
+                    <UTIL_FF>~0</UTIL_FF>
+                    <LUT>233</LUT>
+                    <AVAIL_LUT>53200</AVAIL_LUT>
+                    <UTIL_LUT>~0</UTIL_LUT>
+                    <BRAM_18K>0</BRAM_18K>
+                    <AVAIL_BRAM>280</AVAIL_BRAM>
+                    <UTIL_BRAM>0</UTIL_BRAM>
+                    <DSP>0</DSP>
+                    <AVAIL_DSP>220</AVAIL_DSP>
+                    <UTIL_DSP>0</UTIL_DSP>
+                    <URAM>0</URAM>
+                    <AVAIL_URAM>0</AVAIL_URAM>
+                    <UTIL_URAM>0</UTIL_URAM>
+                </Resources>
+            </AreaEstimates>
+            <BindNodes>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="writeoutput_VITIS_LOOP_34_2" OPTYPE="add" PRAGMA="" RTLNAME="add_ln33_1_fu_337_p2" SOURCE="LabB/BlockMatrix_design.cpp:33" URAM="0" VARIABLE="add_ln33_1"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="writeoutput_VITIS_LOOP_34_2" OPTYPE="add" PRAGMA="" RTLNAME="add_ln33_fu_349_p2" SOURCE="LabB/BlockMatrix_design.cpp:33" URAM="0" VARIABLE="add_ln33"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="writeoutput_VITIS_LOOP_34_2" OPTYPE="add" PRAGMA="" RTLNAME="add_ln35_fu_448_p2" SOURCE="LabB/BlockMatrix_design.cpp:35" URAM="0" VARIABLE="add_ln35"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="writeoutput_VITIS_LOOP_34_2" OPTYPE="add" PRAGMA="" RTLNAME="add_ln34_fu_417_p2" SOURCE="LabB/BlockMatrix_design.cpp:34" URAM="0" VARIABLE="add_ln34"/>
+            </BindNodes>
+        </Module>
+        <Module>
+            <Name>blockmatmul</Name>
+            <PerformanceEstimates>
+                <SummaryOfTimingAnalysis>
+                    <TargetClockPeriod>10.00</TargetClockPeriod>
+                    <ClockUncertainty>2.70</ClockUncertainty>
+                    <EstimatedClockPeriod>7.196</EstimatedClockPeriod>
+                </SummaryOfTimingAnalysis>
+                <SummaryOfOverallLatency>
+                    <Best-caseLatency>1797</Best-caseLatency>
+                    <Average-caseLatency>2058</Average-caseLatency>
+                    <Worst-caseLatency>2318</Worst-caseLatency>
+                    <Best-caseRealTimeLatency>17.970 us</Best-caseRealTimeLatency>
+                    <Average-caseRealTimeLatency>20.580 us</Average-caseRealTimeLatency>
+                    <Worst-caseRealTimeLatency>23.180 us</Worst-caseRealTimeLatency>
+                    <DataflowPipelineThroughput>
+                        <range>
+                            <min>1798</min>
+                            <max>2319</max>
+                        </range>
+                    </DataflowPipelineThroughput>
+                    <PipelineInitiationInterval>1798 ~ 2319</PipelineInitiationInterval>
+                    <PipelineType>dataflow</PipelineType>
+                </SummaryOfOverallLatency>
+            </PerformanceEstimates>
+            <AreaEstimates>
+                <Resources>
+                    <BRAM_18K>2</BRAM_18K>
+                    <AVAIL_BRAM>280</AVAIL_BRAM>
+                    <UTIL_BRAM>~0</UTIL_BRAM>
+                    <DSP>48</DSP>
+                    <AVAIL_DSP>220</AVAIL_DSP>
+                    <UTIL_DSP>21</UTIL_DSP>
+                    <FF>6526</FF>
+                    <AVAIL_FF>106400</AVAIL_FF>
+                    <UTIL_FF>6</UTIL_FF>
+                    <LUT>3862</LUT>
+                    <AVAIL_LUT>53200</AVAIL_LUT>
+                    <UTIL_LUT>7</UTIL_LUT>
+                    <URAM>0</URAM>
+                    <AVAIL_URAM>0</AVAIL_URAM>
+                    <UTIL_URAM>0</UTIL_URAM>
+                </Resources>
+            </AreaEstimates>
+            <BindNodes>
+                <BindNode BINDTYPE="storage" BRAM="2" BUNDLEDNAME="" DISPNAME="bind_storage ram_s2p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_s2p" PRAGMA="" RTLNAME="AB_U" SOURCE="LabB/BlockMatrix_design.cpp:7" URAM="0" VARIABLE="AB"/>
+                <BindNode BINDTYPE="storage" BRAM="2" BUNDLEDNAME="" DISPNAME="bind_storage ram_s2p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_s2p" PRAGMA="" RTLNAME="AB_1_U" SOURCE="LabB/BlockMatrix_design.cpp:7" URAM="0" VARIABLE="AB_1"/>
+                <BindNode BINDTYPE="storage" BRAM="2" BUNDLEDNAME="" DISPNAME="bind_storage ram_s2p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_s2p" PRAGMA="" RTLNAME="AB_2_U" SOURCE="LabB/BlockMatrix_design.cpp:7" URAM="0" VARIABLE="AB_2"/>
+                <BindNode BINDTYPE="storage" BRAM="2" BUNDLEDNAME="" DISPNAME="bind_storage ram_s2p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_s2p" PRAGMA="" RTLNAME="AB_3_U" SOURCE="LabB/BlockMatrix_design.cpp:7" URAM="0" VARIABLE="AB_3"/>
+                <BindNode BINDTYPE="storage" BRAM="2" BUNDLEDNAME="" DISPNAME="bind_storage ram_s2p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_s2p" PRAGMA="" RTLNAME="AB_4_U" SOURCE="LabB/BlockMatrix_design.cpp:7" URAM="0" VARIABLE="AB_4"/>
+                <BindNode BINDTYPE="storage" BRAM="2" BUNDLEDNAME="" DISPNAME="bind_storage ram_s2p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_s2p" PRAGMA="" RTLNAME="AB_5_U" SOURCE="LabB/BlockMatrix_design.cpp:7" URAM="0" VARIABLE="AB_5"/>
+                <BindNode BINDTYPE="storage" BRAM="2" BUNDLEDNAME="" DISPNAME="bind_storage ram_s2p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_s2p" PRAGMA="" RTLNAME="AB_6_U" SOURCE="LabB/BlockMatrix_design.cpp:7" URAM="0" VARIABLE="AB_6"/>
+                <BindNode BINDTYPE="storage" BRAM="2" BUNDLEDNAME="" DISPNAME="bind_storage ram_s2p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_s2p" PRAGMA="" RTLNAME="AB_7_U" SOURCE="LabB/BlockMatrix_design.cpp:7" URAM="0" VARIABLE="AB_7"/>
+                <BindNode BINDTYPE="storage" BRAM="2" BUNDLEDNAME="" DISPNAME="bind_storage ram_s2p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_s2p" PRAGMA="" RTLNAME="AB_8_U" SOURCE="LabB/BlockMatrix_design.cpp:7" URAM="0" VARIABLE="AB_8"/>
+                <BindNode BINDTYPE="storage" BRAM="2" BUNDLEDNAME="" DISPNAME="bind_storage ram_s2p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_s2p" PRAGMA="" RTLNAME="AB_9_U" SOURCE="LabB/BlockMatrix_design.cpp:7" URAM="0" VARIABLE="AB_9"/>
+                <BindNode BINDTYPE="storage" BRAM="2" BUNDLEDNAME="" DISPNAME="bind_storage ram_s2p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_s2p" PRAGMA="" RTLNAME="AB_10_U" SOURCE="LabB/BlockMatrix_design.cpp:7" URAM="0" VARIABLE="AB_10"/>
+                <BindNode BINDTYPE="storage" BRAM="2" BUNDLEDNAME="" DISPNAME="bind_storage ram_s2p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_s2p" PRAGMA="" RTLNAME="AB_11_U" SOURCE="LabB/BlockMatrix_design.cpp:7" URAM="0" VARIABLE="AB_11"/>
+                <BindNode BINDTYPE="storage" BRAM="2" BUNDLEDNAME="" DISPNAME="bind_storage ram_s2p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_s2p" PRAGMA="" RTLNAME="AB_12_U" SOURCE="LabB/BlockMatrix_design.cpp:7" URAM="0" VARIABLE="AB_12"/>
+                <BindNode BINDTYPE="storage" BRAM="2" BUNDLEDNAME="" DISPNAME="bind_storage ram_s2p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_s2p" PRAGMA="" RTLNAME="AB_13_U" SOURCE="LabB/BlockMatrix_design.cpp:7" URAM="0" VARIABLE="AB_13"/>
+                <BindNode BINDTYPE="storage" BRAM="2" BUNDLEDNAME="" DISPNAME="bind_storage ram_s2p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_s2p" PRAGMA="" RTLNAME="AB_14_U" SOURCE="LabB/BlockMatrix_design.cpp:7" URAM="0" VARIABLE="AB_14"/>
+                <BindNode BINDTYPE="storage" BRAM="2" BUNDLEDNAME="" DISPNAME="bind_storage ram_s2p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_s2p" PRAGMA="" RTLNAME="AB_15_U" SOURCE="LabB/BlockMatrix_design.cpp:7" URAM="0" VARIABLE="AB_15"/>
+            </BindNodes>
+        </Module>
+    </ModuleInformation>
+    <FIFOInformation/>
+    <UserConfigCommands>
+        <config_op>
+            <ENTRY impl="all mul" latency="-1 mul" op="mul" precision="mul standard"/>
+            <ENTRY impl="all add" latency="-1 add" op="add" precision="add standard"/>
+            <ENTRY impl="all sub" latency="-1 sub" op="sub" precision="sub standard"/>
+            <ENTRY impl="all fadd" latency="-1 fadd" op="fadd" precision="fadd standard"/>
+            <ENTRY impl="all fsub" latency="-1 fsub" op="fsub" precision="fsub standard"/>
+            <ENTRY impl="all fdiv" latency="-1 fdiv" op="fdiv" precision="fdiv standard"/>
+            <ENTRY impl="all fexp" latency="-1 fexp" op="fexp" precision="fexp standard"/>
+            <ENTRY impl="all flog" latency="-1 flog" op="flog" precision="flog standard"/>
+            <ENTRY impl="all fmul" latency="-1 fmul" op="fmul" precision="fmul standard"/>
+            <ENTRY impl="all frsqrt" latency="-1 frsqrt" op="frsqrt" precision="frsqrt standard"/>
+            <ENTRY impl="all frecip" latency="-1 frecip" op="frecip" precision="frecip standard"/>
+            <ENTRY impl="all fsqrt" latency="-1 fsqrt" op="fsqrt" precision="fsqrt standard"/>
+            <ENTRY impl="all dadd" latency="-1 dadd" op="dadd" precision="dadd standard"/>
+            <ENTRY impl="all dsub" latency="-1 dsub" op="dsub" precision="dsub standard"/>
+            <ENTRY impl="all ddiv" latency="-1 ddiv" op="ddiv" precision="ddiv standard"/>
+            <ENTRY impl="all dexp" latency="-1 dexp" op="dexp" precision="dexp standard"/>
+            <ENTRY impl="all dlog" latency="-1 dlog" op="dlog" precision="dlog standard"/>
+            <ENTRY impl="all dmul" latency="-1 dmul" op="dmul" precision="dmul standard"/>
+            <ENTRY impl="all drsqrt" latency="-1 drsqrt" op="drsqrt" precision="drsqrt standard"/>
+            <ENTRY impl="all drecip" latency="-1 drecip" op="drecip" precision="drecip standard"/>
+            <ENTRY impl="all dsqrt" latency="-1 dsqrt" op="dsqrt" precision="dsqrt standard"/>
+            <ENTRY impl="all hadd" latency="-1 hadd" op="hadd" precision="hadd standard"/>
+            <ENTRY impl="all hsub" latency="-1 hsub" op="hsub" precision="hsub standard"/>
+            <ENTRY impl="all hdiv" latency="-1 hdiv" op="hdiv" precision="hdiv standard"/>
+            <ENTRY impl="all hmul" latency="-1 hmul" op="hmul" precision="hmul standard"/>
+            <ENTRY impl="all hsqrt" latency="-1 hsqrt" op="hsqrt" precision="hsqrt standard"/>
+            <ENTRY impl="all facc" latency="-1 facc" op="facc" precision="facc standard"/>
+            <ENTRY impl="all fmacc" latency="-1 fmacc" op="fmacc" precision="fmacc standard"/>
+            <ENTRY impl="all fmadd" latency="-1 fmadd" op="fmadd" precision="fmadd standard"/>
+        </config_op>
+        <config_storage>
+            <ENTRY auto_srl_max_bits="1024 fifo" auto_srl_max_depth="2 fifo" impl="autosrl fifo" type="fifo"/>
+        </config_storage>
+    </UserConfigCommands>
+    <Args>
+        <Arg ArgName="Arows" index="0" direction="in" srcType="stream&lt;blockvec, 0&gt;&amp;" srcSize="512">
+            <hwRefs>
+                <hwRef type="interface" interface="Arows" name="" usage="data" direction="in"/>
+            </hwRefs>
+        </Arg>
+        <Arg ArgName="Bcols" index="1" direction="in" srcType="stream&lt;blockvec, 0&gt;&amp;" srcSize="512">
+            <hwRefs>
+                <hwRef type="interface" interface="Bcols" name="" usage="data" direction="in"/>
+            </hwRefs>
+        </Arg>
+        <Arg ArgName="ABpartial" index="2" direction="out" srcType="&amp;" srcSize="8192">
+            <hwRefs>
+                <hwRef type="port" interface="ABpartial_address0" name="ABpartial_address0" usage="address" direction="out"/>
+                <hwRef type="port" interface="ABpartial_ce0" name="ABpartial_ce0" usage="control" direction="out"/>
+                <hwRef type="port" interface="ABpartial_d0" name="ABpartial_d0" usage="data" direction="out"/>
+                <hwRef type="port" interface="ABpartial_q0" name="ABpartial_q0" usage="data" direction="in"/>
+                <hwRef type="port" interface="ABpartial_we0" name="ABpartial_we0" usage="control" direction="out"/>
+                <hwRef type="port" interface="ABpartial_address1" name="ABpartial_address1" usage="address" direction="out"/>
+                <hwRef type="port" interface="ABpartial_ce1" name="ABpartial_ce1" usage="control" direction="out"/>
+                <hwRef type="port" interface="ABpartial_d1" name="ABpartial_d1" usage="data" direction="out"/>
+                <hwRef type="port" interface="ABpartial_q1" name="ABpartial_q1" usage="data" direction="in"/>
+                <hwRef type="port" interface="ABpartial_we1" name="ABpartial_we1" usage="control" direction="out"/>
+            </hwRefs>
+        </Arg>
+        <Arg ArgName="it" index="3" direction="in" srcType="int" srcSize="32">
+            <hwRefs>
+                <hwRef type="port" interface="it" name="it" usage="data" direction="in"/>
+            </hwRefs>
+        </Arg>
+    </Args>
+    <Interfaces>
+        <Interface InterfaceName="ap_clk" type="clock" busTypeName="clock" mode="slave">
+            <busParams>
+                <busParam busParamName="ASSOCIATED_RESET">ap_rst</busParam>
+            </busParams>
+            <portMaps>
+                <portMap portMapName="ap_clk">CLK</portMap>
+            </portMaps>
+            <ports>
+                <port>ap_clk</port>
+            </ports>
+        </Interface>
+        <Interface InterfaceName="ap_rst" type="reset" busTypeName="reset" mode="slave">
+            <busParams>
+                <busParam busParamName="POLARITY">ACTIVE_HIGH</busParam>
+            </busParams>
+            <portMaps>
+                <portMap portMapName="ap_rst">RST</portMap>
+            </portMaps>
+            <ports>
+                <port>ap_rst</port>
+            </ports>
+        </Interface>
+        <Interface InterfaceName="ap_ctrl" type="ap_ctrl" busTypeName="acc_handshake" mode="slave">
+            <portMaps>
+                <portMap portMapName="ap_start">start</portMap>
+                <portMap portMapName="ap_done">done</portMap>
+                <portMap portMapName="ap_ready">ready</portMap>
+                <portMap portMapName="ap_idle">idle</portMap>
+            </portMaps>
+            <ports>
+                <port>ap_done</port>
+                <port>ap_idle</port>
+                <port>ap_ready</port>
+                <port>ap_start</port>
+            </ports>
+        </Interface>
+        <Interface InterfaceName="Arows" type="ap_fifo" busTypeName="acc_fifo_read" mode="master" dataWidth="512" portPrefix="Arows_">
+            <portMaps>
+                <portMap portMapName="Arows_dout">RD_DATA</portMap>
+                <portMap portMapName="Arows_empty_n">EMPTY_N</portMap>
+                <portMap portMapName="Arows_read">RD_EN</portMap>
+            </portMaps>
+            <ports>
+                <port>Arows_dout</port>
+                <port>Arows_empty_n</port>
+                <port>Arows_read</port>
+            </ports>
+            <constraints>
+                <constraint constraint_type="pragma interface" mode="ap_fifo" register_option="0" argName="Arows"/>
+            </constraints>
+        </Interface>
+        <Interface InterfaceName="Bcols" type="ap_fifo" busTypeName="acc_fifo_read" mode="master" dataWidth="512" portPrefix="Bcols_">
+            <portMaps>
+                <portMap portMapName="Bcols_dout">RD_DATA</portMap>
+                <portMap portMapName="Bcols_empty_n">EMPTY_N</portMap>
+                <portMap portMapName="Bcols_read">RD_EN</portMap>
+            </portMaps>
+            <ports>
+                <port>Bcols_dout</port>
+                <port>Bcols_empty_n</port>
+                <port>Bcols_read</port>
+            </ports>
+            <constraints>
+                <constraint constraint_type="pragma interface" mode="ap_fifo" register_option="0" argName="Bcols"/>
+            </constraints>
+        </Interface>
+        <Interface InterfaceName="ABpartial_address0" type="data" busTypeName="data" protocol="ap_memory" mode="master" dataWidth="8">
+            <portMaps>
+                <portMap portMapName="ABpartial_address0">DATA</portMap>
+            </portMaps>
+            <ports>
+                <port>ABpartial_address0</port>
+            </ports>
+            <constraints>
+                <constraint constraint_type="pragma interface" mode="ap_memory" register_option="0" argName="ABpartial"/>
+            </constraints>
+        </Interface>
+        <Interface InterfaceName="ABpartial_d0" type="data" busTypeName="data" protocol="ap_memory" mode="master" dataWidth="32">
+            <portMaps>
+                <portMap portMapName="ABpartial_d0">DATA</portMap>
+            </portMaps>
+            <ports>
+                <port>ABpartial_d0</port>
+            </ports>
+            <constraints>
+                <constraint constraint_type="pragma interface" mode="ap_memory" register_option="0" argName="ABpartial"/>
+            </constraints>
+        </Interface>
+        <Interface InterfaceName="ABpartial_q0" type="data" busTypeName="data" protocol="ap_memory" mode="slave" dataWidth="32">
+            <portMaps>
+                <portMap portMapName="ABpartial_q0">DATA</portMap>
+            </portMaps>
+            <ports>
+                <port>ABpartial_q0</port>
+            </ports>
+            <constraints>
+                <constraint constraint_type="pragma interface" mode="ap_memory" register_option="0" argName="ABpartial"/>
+            </constraints>
+        </Interface>
+        <Interface InterfaceName="ABpartial_address1" type="data" busTypeName="data" protocol="ap_memory" mode="master" dataWidth="8">
+            <portMaps>
+                <portMap portMapName="ABpartial_address1">DATA</portMap>
+            </portMaps>
+            <ports>
+                <port>ABpartial_address1</port>
+            </ports>
+            <constraints>
+                <constraint constraint_type="pragma interface" mode="ap_memory" register_option="0" argName="ABpartial"/>
+            </constraints>
+        </Interface>
+        <Interface InterfaceName="ABpartial_d1" type="data" busTypeName="data" protocol="ap_memory" mode="master" dataWidth="32">
+            <portMaps>
+                <portMap portMapName="ABpartial_d1">DATA</portMap>
+            </portMaps>
+            <ports>
+                <port>ABpartial_d1</port>
+            </ports>
+            <constraints>
+                <constraint constraint_type="pragma interface" mode="ap_memory" register_option="0" argName="ABpartial"/>
+            </constraints>
+        </Interface>
+        <Interface InterfaceName="ABpartial_q1" type="data" busTypeName="data" protocol="ap_memory" mode="slave" dataWidth="32">
+            <portMaps>
+                <portMap portMapName="ABpartial_q1">DATA</portMap>
+            </portMaps>
+            <ports>
+                <port>ABpartial_q1</port>
+            </ports>
+            <constraints>
+                <constraint constraint_type="pragma interface" mode="ap_memory" register_option="0" argName="ABpartial"/>
+            </constraints>
+        </Interface>
+        <Interface InterfaceName="it" type="data" busTypeName="data" protocol="ap_none" mode="slave" dataWidth="32">
+            <portMaps>
+                <portMap portMapName="it">DATA</portMap>
+            </portMaps>
+            <ports>
+                <port>it</port>
+            </ports>
+            <constraints>
+                <constraint constraint_type="pragma interface" mode="ap_none" register_option="0" argName="it"/>
+            </constraints>
+        </Interface>
+    </Interfaces>
+    <ReportHWInterface>
+        <section name="HW Interfaces" level="0">
+            <item name="AP_FIFO">
+                <table isCollapsed="0">
+                    <keys size="2">Interface, Data Width</keys>
+                    <column name="Arows">512, </column>
+                    <column name="Bcols">512, </column>
+                </table>
+            </item>
+            <item name="AP_MEMORY">
+                <table isCollapsed="0">
+                    <keys size="2">Interface, Bitwidth</keys>
+                    <column name="ABpartial_address0">8, , </column>
+                    <column name="ABpartial_address1">8, , </column>
+                    <column name="ABpartial_d0">32, , </column>
+                    <column name="ABpartial_d1">32, , </column>
+                    <column name="ABpartial_q0">32, , </column>
+                    <column name="ABpartial_q1">32, , </column>
+                </table>
+            </item>
+            <item name="REGISTER">
+                <table isCollapsed="0">
+                    <keys size="3">Interface, Mode, Bitwidth</keys>
+                    <column name="it">ap_none, 32, , </column>
+                </table>
+            </item>
+            <item name="TOP LEVEL CONTROL">
+                <table isCollapsed="0">
+                    <keys size="3">Interface, Type, Ports</keys>
+                    <column name="ap_clk">clock, ap_clk, </column>
+                    <column name="ap_rst">reset, ap_rst, </column>
+                    <column name="ap_ctrl">ap_ctrl_hs, ap_done ap_idle ap_ready ap_start, </column>
+                </table>
+            </item>
+        </section>
+    </ReportHWInterface>
+    <ReportSWInterface>
+        <section name="SW I/O Information" level="0">
+            <item name="Top Function Arguments">
+                <table isCollapsed="1">
+                    <keys size="3">Argument, Direction, Datatype</keys>
+                    <column name="Arows">in, stream&lt;blockvec 0&gt;&amp;</column>
+                    <column name="Bcols">in, stream&lt;blockvec 0&gt;&amp;</column>
+                    <column name="ABpartial">out, &amp;</column>
+                    <column name="it">in, int</column>
+                </table>
+            </item>
+            <item name="SW-to-HW Mapping">
+                <table isCollapsed="1">
+                    <keys size="4">Argument, HW Interface, HW Type, HW Usage</keys>
+                    <column name="Arows">Arows, interface, , </column>
+                    <column name="Bcols">Bcols, interface, , </column>
+                    <column name="ABpartial">ABpartial_address0, port, offset, </column>
+                    <column name="ABpartial">ABpartial_ce0, port, , </column>
+                    <column name="ABpartial">ABpartial_d0, port, , </column>
+                    <column name="ABpartial">ABpartial_q0, port, , </column>
+                    <column name="ABpartial">ABpartial_we0, port, , </column>
+                    <column name="ABpartial">ABpartial_address1, port, offset, </column>
+                    <column name="ABpartial">ABpartial_ce1, port, , </column>
+                    <column name="ABpartial">ABpartial_d1, port, , </column>
+                    <column name="ABpartial">ABpartial_q1, port, , </column>
+                    <column name="ABpartial">ABpartial_we1, port, , </column>
+                    <column name="it">it, port, , </column>
+                </table>
+            </item>
+        </section>
+    </ReportSWInterface>
+    <PragmaReport>
+        <Pragma type="dataflow" location="LabB/solution3/directives.tcl:8" status="warning" parentFunction="blockmatmul" variable="" isDirective="1" options="">
+            <Msg msg_id="214-114" msg_severity="WARNING" msg_body="Since the only kind of statements allowed in a canonical dataflow region are variable declarations and function calls, the compiler may not be able to correctly handle the region"/>
+        </Pragma>
+        <Pragma type="pipeline" location="LabB/solution3/directives.tcl:7" status="valid" parentFunction="blockmatmul" variable="" isDirective="1" options="II=1"/>
+    </PragmaReport>
+    <AutoPragmaReport>
+        <AutoPragma type="array_partition" parentFunction="blockmatmul" options="dim=2 type=complete  variable=AB" pragmaLocId="LabB/BlockMatrix_design.cpp:0:1" srcPragmaType="pipeline" srcPragmaLoc="LabB/solution3/directives.tcl:7" srcPragmaSource="directive" srcIsDirective="1" variable="AB" varLoc=""/>
+    </AutoPragmaReport>
+</profile>
+
